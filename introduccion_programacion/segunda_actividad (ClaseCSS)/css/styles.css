@@ -1,0 +1,83 @@
+
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'PT Serif', Tahoma;
+}
+
+p, sup, sub, a{
+    font-family: 'Roboto', Georgia;
+}
+
+h1{
+    font-size: 2.8rem;
+}
+
+h2{
+font-size: 2rem;
+}
+
+h3{
+    font-size: 1.7rem;
+}
+
+p{
+    font-size: 1.1rem;
+}
+
+sup, a{
+    color: rgb(255, 30, 161);
+}
+
+a{
+    text-decoration: none;
+}
+
+ol, ul{
+    list-style: none;
+}
+
+.psecundario{
+    font-family: 'Arial';
+    font-size: 0.9rem;
+    color: rgb(255, 30, 161);
+}
+
+nav{
+    background-color: white;
+    height: 60px;
+    position: fixed;
+    top: -15px;
+    width: 100%;
+}
+
+    nav ul{
+        height: 100%;
+        /* background-color: grey; */
+    }
+
+        nav ul li{
+            box-sizing: border-box;
+            display: inline-block;
+            padding: 9px 0;
+            text-align: center;
+            width: 24%;
+        }
+
+            nav ul li a{
+                /* background-color: red; */
+                border: 1px solid rgb(206, 206, 206);
+                border-radius: 7px;
+                display: block;
+                height: 100%;
+                width: 70%;
+            }
+            
+                nav ul li:hover a{
+                    background-color: black;
+                    color: white;
+                }
+
+header{
+    background-color: rgb(204, 204, 204);
+    text-align: center;
+}
