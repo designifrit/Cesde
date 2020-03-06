@@ -1,4 +1,12 @@
 
+:root{
+ --header-align: center;
+ --titulo-ppal: rgb(52, 0, 196);
+ --titulo-sec: rgb(107, 75, 180);
+ --subtitulo-ppal: rgb(159, 144, 214)(228, 28, 28);
+ --contenido: rgb(61, 47, 255);
+ --enlaces: rgb(38, 23, 102);
+}
 
 h1, h2, h3, h4, h5, h6{
     font-family: 'PT Serif', Tahoma;
@@ -9,14 +17,17 @@ p, sup, sub, a{
 }
 
 h1{
+    color: var(--titulo-ppal);
     font-size: 2.8rem;
 }
 
 h2{
+    color: val(--titulo-sec)
 font-size: 2rem;
 }
 
 h3{
+    color: var(--subtitulo-ppal);
     font-size: 1.7rem;
 }
 
@@ -25,10 +36,11 @@ p{
 }
 
 sup, a{
-    color: rgb(255, 30, 161);
+    color: val(--contenido);
 }
 
 a{
+    color: val(--enlaces);
     text-decoration: none;
 }
 
@@ -39,7 +51,12 @@ ol, ul{
 .psecundario{
     font-family: 'Arial';
     font-size: 0.9rem;
-    color: rgb(255, 30, 161);
+    color: val(--contenido);
+}
+
+body{
+    background-color: rgb(255, 236, 200);
+    padding-top: 30px;
 }
 
 nav{
@@ -58,7 +75,7 @@ nav{
         nav ul li{
             box-sizing: border-box;
             display: inline-block;
-            padding: 9px 0;
+            padding: 12px 0 7px 0;
             text-align: center;
             width: 24%;
         }
@@ -78,6 +95,18 @@ nav{
                 }
 
 header{
-    background-color: rgb(204, 204, 204);
     text-align: center;
 }
+
+.table{
+    align-content: center;
+    display: flex;
+    justify-content: space-around;
+}
+    table, th, tr, td{
+        border: 1px solid black;
+    }
+
+    th, tr, td{
+        padding: 7px;
+    }
