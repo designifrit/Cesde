@@ -12,7 +12,7 @@ h1, h2, h3, h4, h5, h6{
     font-family: 'PT Serif', Tahoma;
 }
 
-p, sup, sub, a{
+p, sup, sub, a, table{
     font-family: 'Roboto', Georgia;
 }
 
@@ -56,6 +56,9 @@ ol, ul{
 
 body{
     background-color: rgb(255, 236, 200);
+    background-image: url(../img/pattern.jpg);
+    background-repeat:no-repeat;
+    background-size: ;
     padding-top: 30px;
 }
 
@@ -105,8 +108,22 @@ header{
 }
     table, th, tr, td{
         border: 1px solid black;
+        border-collapse: collapse;
     }
 
     th, tr, td{
-        padding: 7px;
+        padding: 12px;
     }
+
+        table caption{
+            font-weight: 800;
+            font-size: 1.8rem;
+        }
+        
+        table tr:nth-child(1) th, table tfoot>tr{
+            background-color: grey;
+        }
+
+        table tr:nth-child(2){
+            background-color: rgb(148, 239, 255);
+        }
