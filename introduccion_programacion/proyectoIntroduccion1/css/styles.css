@@ -1,0 +1,14 @@
+
+
+:root{
+    --font-play: 'Playfair Display', serif;
+    --font-roboto: 'Roboto Slab', serif;
+}
+
+h1, h2, h3, h4, h5, h6, caption{
+    font-family: var(--font-roboto);
+}
+
+p, em, strong, sup, sub, del, ins, a, i, b, blockquote{
+    font-family: var(--font-play);
+}
