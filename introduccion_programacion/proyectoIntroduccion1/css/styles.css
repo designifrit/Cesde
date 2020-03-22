@@ -32,6 +32,8 @@ p, pre, em, strong, sup, sub, del, ins, a, i, b, blockquote{
 
 ul, ol{
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 span.iconos{
@@ -45,6 +47,7 @@ header#header h1{
 }
 
         header#header #nav{
+            margin: 30px;
             width: 100%;
         }
 
@@ -58,7 +61,7 @@ header#header h1{
                     background-color: grey;
                     border-radius: 3px;
                     box-sizing: border-box;
-                    display: inline-block;
+                    display: block;
                     height: 40px;
                     margin: 0 10px;
                     padding: 9px 0;
@@ -82,21 +85,25 @@ header#header h1{
 
                         header#header #nav ul li ol{
                             display: none;
-                            left: 49%;
                             position: absolute;
-                            top: 115px;
+                            top: 110px;
                             transition: var(--transition) !important;
                             width: 130px;
                         }
 
                             header#header #nav ul li:hover ol{
                                 display: block;
-                                top: 124px;
+                                top: 135px;
                             }
 
                                 header#header #nav ul ol li{
+                                    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
                                     transition: var(--transition);
                                     border-radius: 0;
+                                }
+                                
+                                header#header #nav ul ol li:first-child{
+                                    border-radius: 3px 3px 0 0;
                                 }
 
                                 header#header #nav ul ol li:last-child{
