@@ -4,41 +4,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Roboto+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+
+    <style>
+        header#header .home{
+        background: grey url(img/books.jpg) no-repeat fixed;
+        background-position: center 100%;
+        background-size: cover;
+        height: 40vh;
+        width: 100%;
+        }
+
+        main#main article section:last-child{
+            display: flex;
+            justify-content: center;
+        }
+
+            main#main article section:last-child div{
+                box-sizing: border-box;
+                height: 300px;
+                padding: 0 20px 0 0;
+                width: 40%;
+            }
+            main#main article section:last-child p{
+                box-sizing: border-box;
+                padding: 0 0 0 20px;
+                width: 60%;
+            }
+        
+        footer#footer{
+            margin-top: 50px;
+        }
+
+    </style>
+
     <title>El rincón del cuento</title>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="#">enlace</a></li>
-            <li><a href="#">enlace</a></li>
-        </ul>
-    </nav> 
-    <header>
-        <h1>El rincón del cuento</h1>
-        <img src="" alt="Encabezado">
+    <header id="header">
+        <h1><span class="material-icons iconos">menu_book </span> El rincón del cuento</h1>
+
+        <nav id="nav">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#">Cuentos </a><span class="material-icons iconos"> keyboard_arrow_down</span>
+                    <ol>
+                        <li><a href="cuento1.html">Cuento 1</a></li>
+                        <li><a href="cuento2.html">Cuento 2</a></li>
+                        <li><a href="cuento3.html">Cuento 3</a></li>
+                    </ol>
+                </li>
+            </ul>
+        </nav> 
+
+        <div class="home"></div>
     </header>
     
-    <main>
+    <main id="main">
         <article>
-            <section>
-                <h2>El rastro de tu sangre en la nieve</h2>
-                <p>Incluido en la colección Doce cuentos peregrinos publicada en 1992, El rastro de tu sangre en la nieve presenta a dos recién casados que inician su luna de miel desde España hasta París. Sin embargo, el placer sexual que experimenta Nena Daconte, la protagonista, va ligado a una sangre cuyo rastro va quedando a través del invierno europeo. Marcado por un giro final que define el potencial de la obra, el mejor relato de Gabo confirma el buenhacer del escritor colombiano para una literatura breve de la que derivarían algunas de sus grandes novelas.</p>
 
-                <blockquote>
-                    <caption></caption>
-                    Al anochecer, cuando llegaron a la frontera, Nena Daconte se dio cuenta de que el dedo con el anillo de bodas le seguía sangrando. El guardia civil con una manta de lana cruda sobre el tricornio de charol examinó los pasaportes a la luz de una linterna de carburo, haciendo un grande esfuerzo para que no lo derribara la presión del viento que soplaba de los Pirineos. Aunque eran dos pasaportes diplomáticos en regla, el guardia levantó la linterna para comprobar que los retratos se parecían a las caras.Nena Daconte era casi una niña, con unos ojos de pájaro feliz y una piel de melaza que todavía irradiaba la resolana del Caribe en el lúgubre anochecer de enero, y estaba arropada hasta el cuello con un abrigo de nucas de visón que no podía comprarse con el sueldo de un año de toda la guarnición fronteriza. Billy Sánchez de Ávila, su marido, que conducía el coche, era un año menor que ella, y casi tan bello, y llevaba una chaqueta de cuadros escoceses y una gorra de pelotero. Al contrario de su esposa, era alto y atlético y tenía las mandíbulas de hierro de los matones tímidos. Pero lo que revelaba mejor la condición de ambos era el automóvil platinado, cuyo interior exhalaba un aliento de bestia viva, como no se había visto otro por aquella frontera de pobres. Los asientos posteriores iban atiborrados de maletas demasiado nuevas y muchas cajas de regalos todavía sin abrir. Ahí estaba, además, el saxofón tenor que había sido la pasión dominante en la vida de Nena Daconte antes de que sucumbiera al amor contrariado de su tierno pandillero de balneario.
-                </blockquote>
-            </section>
             <section>
-                
+                <h2><span class="material-icons">book </span> Tu librería de referencia, ahora mejor que nunca</h2>
+                <p>sabemos qué es lo que más te gusta de tu librería física favorita y lo hemos perfeccionado para adaptarlo a tu día a día. Nuestra misión es llevar a tu mundo la magia de los libros, porque somos amantes de la lectura, igual que tú. ¿Y por qué lo hacemos? Porque creemos que las historias nos convierten en quienes somos y transforman el mundo que nos rodea
+                <br><br>
+                Nuestro catálogo cuenta con un sinfín de opciones y no deja de crecer. Encontrarás cualquier tipo de eBook imaginable, desde los clásicos de ayer hasta los best sellers de hoy, y todo aquello que se encuentra entre ambos extremos. Déjate sorprender por nuestras recomendaciones y descubrirás obras que te encantarán: recuerda que tenemos el libro perfecto esperándote.
+                </p>
             </section>
+
+            <section>
+                <div>
+                    <img src="img/anagrama.jpeg" alt="Anagrama" width="100%">
+                </div>
+                <p>Son muchas las editoriales, y autores, que se suman a la iniciativa #YoMeQuedoEnCasaLeyendo y aportan su grano de arena para que el confinamiento sea lo más liviano posible, para convertir la adversidad en oportunidad. Ten en cuenta ademásque si apartas los ojos de la pantalla un ratito no solo te haces un favor a ti, sino que mostrarás un poco de solidaridad: si todos estamos viendo series, notaremos que la banda no es tan ancha como parece, que la fibra es más frágil de lo que te venden y que en estos tiempos la red debe quedar lo menos sobrecargada posible para todos aquellos que la necesitan para trabajar. Estas son las editoriales, autores y plataformas que ofrecen sus libros electrónicos y audiolibros para que nos pasemos la cuarentena leyendo (o escuchando). Al hacerlo viajamos a lugares y tiempos remotos, vivimos aventuras sin salir de nuestra butaca, aprendemos a volar. Descubre de lo que es capaz tu propia imaginación.</p>
+            </section>
+
         </article>
     </main>
     
-    <footer>
-        <hr>
-        <p>derechos</p>
+    <footer id="footer">
+        <pre>
+            Derechos reservados
+            Alejandro Orozco E.
+            CESDE 21/03/2020
+        </pre>
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
