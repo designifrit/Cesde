@@ -6,7 +6,16 @@
     --subtitle: rgb(129, 102, 226);
     --paragraph: rgb(49, 45, 58);
     --transition: all 0.4s ease  0s;
+    --hover_link: rgb(122, 107, 175);
 }
+
+/* *,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
 
 body{
     margin: 0 auto;
@@ -31,7 +40,7 @@ p, pre, em, strong, sup, sub, del, ins, a, i, b, blockquote{
 }
 
 ul, ol{
-    list-style: none;
+    list-style-type: none;
     margin: 0;
     padding: 0;
 }
@@ -47,13 +56,17 @@ header#header h1{
 }
 
         header#header #nav{
-            margin: 30px;
+            display: flex;
+            justify-content: center;
+            margin: 30px 0;
             width: 100%;
         }
 
             header#header #nav ul{
+                box-sizing: border-box;
                 display: flex;
-                justify-content: center;
+                justify-content: space-between;
+                width: 270px;
             }
 
                 header#header #nav ul li{
@@ -63,8 +76,8 @@ header#header h1{
                     box-sizing: border-box;
                     display: block;
                     height: 40px;
-                    margin: 0 10px;
                     padding: 9px 0;
+                    position: relative;
                     text-align: center;
                     transition: var(--transition);
                     width: 130px;
@@ -86,14 +99,14 @@ header#header h1{
                         header#header #nav ul li ol{
                             display: none;
                             position: absolute;
-                            top: 110px;
+                            top: 0;
                             transition: var(--transition) !important;
                             width: 130px;
                         }
 
                             header#header #nav ul li:hover ol{
                                 display: block;
-                                top: 135px;
+                                top: 40px;
                             }
 
                                 header#header #nav ul ol li{
