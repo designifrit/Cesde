@@ -1,3 +1,9 @@
+
+/*
+Elaborar un algoritmo que le permita al usuario ingresar los nombres y las edades de 3 hermanos
+y el computador le muestre los 3 nombres y el promedio de edad de ellos.
+*/
+
 // Declarando las variables
 CADENA [20] NOM1
 CADENA [20] NOM2

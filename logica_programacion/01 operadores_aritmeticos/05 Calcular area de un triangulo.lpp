@@ -1,0 +1,54 @@
+
+/*
+Elaborar un algoritmo que le permita al usuario ingresar la altura
+y la base de un triangulo y el radio de un círculo y le muestre
+en la pantalla el área de estas dos figuras.
+*/
+
+/*
+DATOS DE INGRESO
+	1. Altura triangulo
+	2. Base triangulo
+	3. Radio circulo
+DATOS PROCESO
+	1. Calculo area triangulo
+		BASE * AREA / 2
+	2. Calculo area circulo
+		AREA = PI * RADIO
+DATOS SALIDA
+	1. Area triangulo
+	2. Area circulo
+*/
+
+REAL HT, BT, RC
+REAL PI, AT, AC 
+
+INICIO
+	
+	ESCRIBA "Este algoritmo calcula la area de un TRIANGULO y de un CIRCULO"
+	LLAMAR NUEVA_LINEA()
+	
+	// Calcular area de un TRIANGULO
+	
+	ESCRIBA "Ingresa la altura del TRIANGULO: "
+	LEA HT
+	ESCRIBA "Ingresa la base del TRIANGULO: "
+	LEA BT
+	
+	AT <- BT * HT / 2
+	
+	// Calcular area de un CIRCULO
+	
+	LLAMAR NUEVA_LINEA()
+	ESCRIBA "Ingresa el radio del CIRCULO, para calcular su AREA: "
+	LEA RC
+	
+	PI <- 3.141
+	AC <- PI * RC
+	
+	LLAMAR NUEVA_LINEA()
+	ESCRIBA "El area del TRIANGULO es: ", AT
+	LLAMAR NUEVA_LINEA()
+	ESCRIBA "El area del CIRCULO es: ", AC
+	
+FIN

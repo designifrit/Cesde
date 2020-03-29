@@ -1,0 +1,55 @@
+
+/*
+Una persona posee dos buses, al final del día desea conocer el producido pos cada bus
+y el total del producido. Por cada bus se digita el número de pasajeros transportados
+y el valor del pasaje.
+*/
+
+/*
+DATOS ENTRADA
+	1. Bus 1
+		a. numero pasajeros
+		b. valor pasaje
+	2. Bus 2
+		a. numero pasajeros
+		b. valor pasaje
+		
+DATOS SALIDA
+	1. Valor producido
+		a. Bus 1
+		b. Bus 2
+	2. Total producido
+*/
+
+ENTERO B1NP, B1VP, B2NP, B2VP
+ENTERO VPB1, VPB2, TP
+
+INICIO
+	
+	ESCRIBA "Este algoritmo calcula el valor de ganancias producido x cada bus y el valor total"
+	LLAMAR NUEVA_LINEA()
+	
+	// Ingreso de datos
+	ESCRIBA "BUS 1: Cuantos pasajeros recogio en el dia: "
+	LEA B1NP
+	ESCRIBA "BUS 1: Cual es el valor del pasaje: "
+	LEA B1VP
+	ESCRIBA "BUS 2: Cuantos pasajeros recogio en el dia: "
+	LEA B2NP
+	ESCRIBA "BUS 2: Cual es el valor del pasaje: "
+	LEA B2VP
+	
+	// Calcular ganancia de buses
+	VPB1 <- B1NP * B1VP
+	VPB2 <- B2NP * B2VP
+	TP <- VPB1 + VPB2
+	
+	// Salida de datos
+	LLAMAR NUEVA_LINEA()
+	ESCRIBA "Las ganancias generadas por el BUS 1 es de: ", VPB1
+	LLAMAR NUEVA_LINEA()
+	ESCRIBA "Las ganancias generadas por el BUS 2 es de: ", VPB2
+	LLAMAR NUEVA_LINEA()
+	ESCRIBA "La GANANCIA TOTAL generada por los 2 buses es de: ", TP
+	
+FIN

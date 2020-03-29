@@ -1,4 +1,11 @@
 
+/*
+Escriba un algoritmo que le permita al propietario de un bus ingresar el número
+de pasajeros transportados en un día, el valor del pasaje   y el valor pagado por combustible.
+El programa le debe mostrar el total producido por el bus, el valor pagado al conductor
+(que es el 10% del total producido) y la ganancia neta (producido menos los gastos).
+*/
+
 ENTERO NUMPAS, VALPAS, VALCOM, TOTALPROD, GANCOND, GANETA
 
 INICIO

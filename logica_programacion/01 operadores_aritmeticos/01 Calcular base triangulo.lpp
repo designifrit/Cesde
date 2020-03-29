@@ -1,4 +1,8 @@
 
+/*
+Elabore un algoritmo que permita calcular la base de un triángulo. Como datos de entrada se tiene el área y la altura
+*/
+
 REAL BASE, AREA, ALTURA
 
 INICIO

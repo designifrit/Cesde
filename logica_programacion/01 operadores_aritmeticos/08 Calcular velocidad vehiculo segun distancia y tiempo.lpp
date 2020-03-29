@@ -1,0 +1,36 @@
+
+/*
+8.	Elaborar un algoritmo que le permita al usuario ingresar la distancia
+recorrida por un vehículo y el tiempo que se demoró en recorrerlo y el computador
+le muestre la velocidad con que la recorrió.
+*/
+
+/*
+DATOS INGRESO
+	1. Distancia recorrida vehiculo
+	2. Tiempo que tardó en recorrer distancia
+DATOS SALIDA
+	1. Velocidad promedio vehiculo
+*/
+
+REAL DRV, TRD
+REAL VPV
+
+INICIO
+	
+	ESCRIBA "Este algoritmo calcula la velocidad promedio de un vehiculo segun el tiempo y la distancia que le tomo recorrerlo: "
+	LLAMAR NUEVA_LINEA()
+	
+	// Ingreso de datos
+	ESCRIBA "Escribe la distancia recorrida por el vehiculo: "
+	LEA DRV
+	ESCRIBA "Escribe el tiempo (HORA = 1.0) que le tomo hacer el recorrido: "
+	LEA TRD
+	
+	//Datos del proceso
+	VPV <- DRV / TRD
+	
+	// Salida de datos
+	ESCRIBA "La velocidad promedio del vehiculo fue de: ", VPV, " KM"
+	
+FIN

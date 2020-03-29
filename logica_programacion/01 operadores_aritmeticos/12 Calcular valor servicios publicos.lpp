@@ -1,0 +1,54 @@
+
+/*
+Elaborar un algoritmo que le permita al usuario ingresar los datos de la factura
+de servicios públicos y el computador le muestre el total que debe pagar. El usuario
+ingresará el total de KV de energía y el valor del K, el total de M3 de agua
+y el valor del M3, el total de impulsos telefónicos y el valor del impulso
+*/
+
+/*
+INGRESO DATOS
+	1. KV energia
+		a. Valor de Kv
+	2. M3 Agua
+		b. Valor de M3
+	3. Impulso telefónico
+		c. Valor del impulso
+SALIDA DATOS
+	1. Valor a pagar
+*/
+
+REAL IKV, VKV, IM3, VM3, IIT, VIT
+REAL TKV, TM3, TIT, VP
+
+INICIO
+	
+	ESCRIBA "Este algoritmo calcula el valor de los servicios publicos de acuerdo a la cantidad consumida"
+	LLAMAR NUEVA_LINEA()
+	
+	// Ingreso de datos
+	ESCRIBA "Ingrese la cantidad consumida de KV de energia: "
+	LEA IKV
+	ESCRIBA "Ingrese la cantidad consumida de m3 de agua: "
+	LEA IM3
+	ESCRIBA "Ingrese la cantidad consumida de impulsos del telefono: "
+	LEA IIT
+	
+	// Proceso de datos
+	VKV <- 520.2
+	VM3 <- 2760.57
+	VIT <- 420.5
+	
+	TKV <- VKV * IKV
+	TM3 <- VM3 * IM3
+	TIT <- VIT * IIT
+	
+	VP <- TKV + TM3 + TIT
+	
+	// Salida de datos
+	LLAMAR NUEVA_LINEA()
+	ESCRIBA "El valor total a pagar de la factura es: ", VP
+	LLAMAR NUEVA_LINEA()
+	ESCRIBA "El detalle de pago es: ", TKV, " por ENERGIA. ", TM3, " por AGUA. ", TIT, " por TELEFONO."
+	
+FIN

@@ -1,0 +1,49 @@
+
+/*
+Elaborar un algoritmo que calcule el valor que le puede prestar un banco a una persona,
+sabiendo que el monto del préstamo es 50 veces el dinero disponible que tiene.
+El dinero disponible es igual al salario mensual más los ingresos adicionales menos los gastos.
+Se debe mostrar el dinero disponible y el monto del préstamo.
+*/
+
+/*
+DATOS ENTRADA
+	1. Dinero disponible (DD = SM + IA - G)
+		a. Salario mensual
+		b. Ingresos adicionales
+		c. Gastos
+		
+DATOS PROCESO
+	1. Monto de prestamo *50
+DATOS SALIDA
+	1. Dinero disponible
+	2. Monto prestamo
+*/
+
+ENTERO DD, SM, IA, G, M, MP
+
+INICIO
+	
+	ESCRIBA "Este algoritmo calcula el monto disponible de un prestamo bancario segun el salario"
+	LLAMAR NUEVA_LINEA()
+	
+	// Ingreso de datos
+	ESCRIBA "Ingrese el salario mensual: "
+	LEA SM
+	ESCRIBA "Escriba los ingresos adicionales mensuales: "
+	LEA IA
+	ESCRIBA "Escriba sus gastos mensuales: "
+	LEA G
+	
+	// Proceso de datos
+	M <- 50
+	DD <- SM + IA - G
+	MP <- M * DD
+	
+	// Salida de datos
+	LLAMAR NUEVA_LINEA
+	ESCRIBA "El dinero disponible es de: ", DD, " de acuerdo a los ingresos y gastos de la persona"
+	LLAMAR NUEVA_LINEA
+	ESCRIBA "El monto del prestamo al que puede acceder es de: ", MP
+	
+FIN

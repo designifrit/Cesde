@@ -1,4 +1,9 @@
 
+/*
+Elaborar un algoritmo que le muestre al usuario el dinero que pude ahorrar en un año.
+El usuario ingresará su salario mensual, el monto de los ingresos extras mensuales y el valor de los gastos mensuales.
+*/
+
 ENTERO SM, EM, GM, AA
 
 INICIO

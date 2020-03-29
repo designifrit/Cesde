@@ -1,0 +1,50 @@
+
+/*
+9.	Crear un algoritmo donde el usuario pueda ingresar la cantidad de unidades
+vendidas de un artículo, el valor unitario de ese artículo, el porcentaje de IVA
+y el computador le muestre: el valor bruto de la venta, el valor que debe pagar
+por IVA y el valor neto de la venta.
+*/
+
+/*
+DATOS ENTRADA
+	1. Cantidad de unidades vendidas
+	2. Valor unitario articulo
+	3. Porcentaje IVA
+	
+DATOS SALIDA
+	1. Valor bruto venta
+	2. Valor pago IVA
+	3. Valor neto venta
+*/
+
+ENTERO CUV, VUA, IVA
+REAL VBV, VPI, VNV
+
+INICIO
+	
+	ESCRIBA "Este algoritmo calcula el valor bruto y neto de una venta"
+	LLAMAR NUEVA_LINEA()
+	
+	// Ingreso de datos
+	ESCRIBA "Escriba la cantidad de articulos vendidos: "
+	LEA CUV
+	ESCRIBA "Escriba el valor unitario del articulo: "
+	LEA VUA
+	ESCRIBA "Cual es el valor del IVA para este articulo: "
+	LEA IVA
+	
+	// proceso de datos
+	VBV <- CUV * VUA
+	VPI <- VBV * IVA / 100
+	VNV <- VBV + VPI
+	
+	// Salida de datos
+	LLAMAR NUEVA_LINEA()
+	ESCRIBA "El valor bruto de la venta es: ", VBV
+	LLAMAR NUEVA_LINEA()
+	ESCRIBA "El valor neto por la venta es: ", VNV
+	LLAMAR NUEVA_LINEA()
+	ESCRIBA "El valor pagado por concepto de IVA es: ", VPI
+	
+FIN
