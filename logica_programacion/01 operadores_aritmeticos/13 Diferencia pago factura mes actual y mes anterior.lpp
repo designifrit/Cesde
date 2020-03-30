@@ -20,17 +20,18 @@ INGRESO DATOS
 		b. Valor de M3
 	3. Impulso telefónico
 		c. Valor del impulso
+	4. Factura mes anterior
 SALIDA DATOS
 	1. Valor a pagar
 */
 
 
 REAL IKV, VKV, IM3, VM3, IIT, VIT
-REAL TKV, TM3, TIT, VP
+REAL TKV, TM3, TIT, VP, DMA, TDM
 
 INICIO
 	
-	ESCRIBA "Este algoritmo calcula el valor de los servicios publicos de acuerdo a la cantidad consumida"
+	ESCRIBA "Este algoritmo calcula el valor de los servicios publicos de acuerdo a la cantidad consumida, ademas muestra la diferencia de valor con la factura del mes pasado"
 	LLAMAR NUEVA_LINEA()
 	
 	// Ingreso de datos
@@ -40,6 +41,8 @@ INICIO
 	LEA IM3
 	ESCRIBA "Ingrese la cantidad consumida de impulsos del telefono: "
 	LEA IIT
+	ESCRIBA "Ingrese el valor total de la factura del mes anterior: "
+	LEA DMA
 	
 	// Proceso de datos
 	VKV <- 520.2
@@ -52,10 +55,18 @@ INICIO
 	
 	VP <- TKV + TM3 + TIT
 	
+	TDM <- DMA - VP
+	
 	// Salida de datos
 	LLAMAR NUEVA_LINEA()
 	ESCRIBA "El valor total a pagar de la factura es: ", VP
 	LLAMAR NUEVA_LINEA()
 	ESCRIBA "El detalle de pago es: ", TKV, " por ENERGIA. ", TM3, " por AGUA. ", TIT, " por TELEFONO."
+	LLAMAR NUEVA_LINEA()
+	ESCRIBA "La diferencia respecto a la factura del mes anterior es de: ", TDM
 	
 FIN
+
+
+
+

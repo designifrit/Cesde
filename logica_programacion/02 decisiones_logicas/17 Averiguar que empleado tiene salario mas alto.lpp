@@ -1,0 +1,57 @@
+
+/*
+Elabore un algoritmo que lea el nombre, el salario bruto, las deducciones
+y las bonificaciones de dos trabajadores, e imprima el nombre del que mas salario neto tiene.
+*/
+
+/*
+DATOS INGRESO
+	1. nombre de 2 empleados
+	2. Salario bruto de los 2 empleados
+	3. Deducciones de los 2 empleados
+	4. Bonificaciones de los 2 empleados
+	
+DATOS SALIDA
+	1. Nombre del empleado que gana mas dinero
+*/
+
+CADENA [30] E1
+CADENA [30] E2
+ENTERO SB1, SB2, D1, D2, B1, B2, SN1, SN2
+
+INICIO
+	
+	ESCRIBA "Este algoritmo determina cual de los 2 empleados tiene MAYOR salario neto"
+	LLAMAR NUEVA_LINEA
+	
+	// Ingreso de datos
+	ESCRIBA "Ingresa el nombre del 1er empleado: "
+	LEA E1
+	ESCRIBA "Ingresa el nombre del 2do empleado: "
+	LEA E2
+	ESCRIBA "De cuanto es el salario bruto de ", E1, ": "
+	LEA SB1
+	ESCRIBA "De cuanto es el salario bruto de ", E2, ": "
+	LEA SB2
+	ESCRIBA "Cuanto dinero se dedude del salario ", SB1," de ", E1, ": "
+	LEA D1
+	ESCRIBA "Cuanto dinero se dedude del salario ", SB2," de ", E2, ": "
+	LEA D2
+	ESCRIBA "Cuanto dinero recibe de bonificacion ", E1, ": "
+	LEA B1
+	ESCRIBA "Cuanto dinero recibe de bonificacion ", E2, ": "
+	LEA B2
+	LLAMAR NUEVA_LINEA()
+	
+	// Proceso de datos
+	SN1 <- SB1 + B1 - D1
+	SN2 <- SB2 + B2 - D2
+	
+	// Salida de datos
+	SI(SN1 > SN2)ENTONCES
+		ESCRIBA "El empleado ", E1, " tiene un salario neto MAYOR que el de ", E2, ", con una ganancia neta de: ", SN1
+	SINO
+		ESCRIBA "El empleado ", E2, " tiene un salario neto MAYOR que el de ", E1, ", con una ganancia neta de: ", SN2
+	FIN SI
+	
+FIN
