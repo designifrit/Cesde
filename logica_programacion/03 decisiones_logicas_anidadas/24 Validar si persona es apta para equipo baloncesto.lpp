@@ -1,0 +1,82 @@
+
+/*
+Se necesita un programa que diga si una persona es apta para un equipo de baloncesto o no,
+para que sea apto debe cumplir que si es hombre sea mayor de edad, que mida mas de 1.75 mts,
+que pese menos de 75 kg., o si es mujer que tenga mas de 16 años, que mida como mínimo 1.70 y
+que pese como máximo 60 kg. Se debe leer el nombre, el sexo (F = femenino, M = masculino),
+la edad, la estatura y el peso.
+*/
+
+/*
+DATOS INGRESO
+	1. Nombre
+	2. Sexo
+	3. Edad
+	4. Estatura
+	5. peso
+
+DATOS PROCESO
+	1. Si es hombre
+		a. Sea mayor de edad
+		b. Medir mas de 1.75 mts
+		c. Pesar < 75 kg
+	2. Si es mujer
+		a. Tener mas de 16 años
+		b. Medir mas de 1.70 mts
+		c. Pesar < 60 kg
+DATOS SALIDA
+	1. Si es apto
+*/
+
+CADENA [30] NOM
+CARACTER SEXO
+REAL EDAD, EST, PESO
+
+INICIO
+	
+	ESCRIBA "Este algoritmo determina si un persona es apta para entrar al equipo de baloncesto"
+	LLAMAR NUEVA_LINEA()
+	
+	//Ingreso de datos
+	ESCRIBA "Por favor ingresa tu nombre: "
+	LEA NOM
+	ESCRIBA NOM, " ingresa tu sexo (f = femenino, m = masculino): "
+	LEA SEXO
+	ESCRIBA NOM, " cuantos anios tienes: "
+	LEA EDAD
+	ESCRIBA NOM, " cual es tu estatura en cm (ejemplo = 165): "
+	LEA EST
+	ESCRIBA NOM, " cual es tu peso: "
+	LEA PESO
+	LLAMAR NUEVA_LINEA()
+	
+	// Proceso de datos
+	CASO SEXO
+		'f': 
+			SI(EDAD > 16) Y (EDAD < 25)ENTONCES
+				SI(EST >= 170) Y (PESO <= 60)ENTONCES
+					ESCRIBA "Eres APTO, puedes ingresar al equipo de baloncesto ", NOM
+				SINO
+					ESCRIBA "No tienes la estatura o peso requerido para ingresar al equipo de baloncesto"
+					LLAMAR NUEVA_LINEA()
+					ESCRIBA "Tu estatura debe ser mayor a 170 cm y pesar menos de 70 kg"
+				FIN SI
+			SINO
+				ESCRIBA "No tienes la edad requerida para ingresar al equipo de baloncesto"
+			FIN SI
+		'm': 
+			SI(EDAD >= 18) Y (EDAD < 25)ENTONCES
+				SI(EST >= 175) Y (PESO <= 75)ENTONCES
+					ESCRIBA "Eres APTO, puedes ingresar al equipo de baloncesto ", NOM
+				SINO
+					ESCRIBA "No tienes la estatura o peso requerido para ingresar al equipo de baloncesto"
+					LLAMAR NUEVA_LINEA()
+					ESCRIBA "Tu estatura debe ser mayor a 175 cm y pesar menos de 75 kg"
+				FIN SI
+			SINO
+				ESCRIBA "No tienes la edad requerida para ingresar al equipo de baloncesto"
+			FIN SI
+		SINO: ESCRIBA "No ingresaste un SEXO valido, por favor intenta de nuevo"
+	FIN CASO
+	
+FIN

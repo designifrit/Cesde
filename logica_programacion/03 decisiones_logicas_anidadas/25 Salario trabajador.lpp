@@ -1,5 +1,13 @@
 
-/* Este algoritmo calcula salario del trabajador e imprime salario */
+/*
+laborar un programa que le permita a un usuario ingresar el nombre de un trabajador,
+y el número de horas trabajadas, se pide que el programa le imprima el salario bruto,
+las bonificaciones, las deducciones y el salario neto; teniendo en cuenta que las bonificaciones
+serán de $20.000.oo si trabajó como máximo 48 horas, de $50.000.oo si trabajo entre 49 y 58 horas
+y de $100.000 si trabajó mas de 58 horas. Las deducciones son de $10.000 si el salario básico
+hora es menor de $5.000.oo, de $20.000.oo si  el salario básico hora es mayor de $5.000.oo y
+menor de $8.000.oo y de $ 50.000.oo si su salario básico hora es de $8.000.oo o mas.
+*/
 
 /*
 DATOS DE ENTRADA
