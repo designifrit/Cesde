@@ -1,8 +1,9 @@
 
 :root{
-    --bg: rgb(200, 200, 200):
+    --bg: rgb(255, 221, 159);
 }
 
 .bg{
     background-color: var(--bg);
+    border: 1px solid grey;
 }
