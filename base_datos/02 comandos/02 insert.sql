@@ -1,11 +1,12 @@
 
-
+/*
 idproducto IDENTITY
 descripcion
 color
 precio
+*/
 
-
+--Inserta información en la tabla Producto
 INSERT INTO Producto VALUES('Remera manga larga','Roja',250)
 INSERT INTO Producto VALUES('Camisa','Blanca',550)
 INSERT INTO Producto VALUES('Sweeter rayado','Negro/blanco',450)
