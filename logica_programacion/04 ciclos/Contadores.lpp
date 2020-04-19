@@ -1,0 +1,117 @@
+
+/*
+CONTADORES
+
+Se usan cuando necesitamos encontrar cuantas veces se sucede un hhecho dentro de un
+proceso repetitivo
+
+Se implementan con una variable de tipo entero
+*/
+
+/*
+ACUMULADOORES
+
+Es un campo variableque se incrementa en una cantidad variiable cada que se ejecuta un ciclo
+Al igual que los contadoores se inicializan anttes del ciclo, se incrementan dentro del ciclo 
+y se imprimen después del cierre del ciclo
+*/
+
+/*
+Escribir un algoritomo donde el usuario ingrese para N personas el nombre, el sexo (F/M) y 
+el número de hijos
+
+Se debe mostrar: El nombre de la persona y el valor total del subsidio que es de $ 34.800 por hijo,
+cuantas mujeres son, cuantos hombres son, Total hijos de las mujeres y total hijos de los hombres
+
+DATOS ENTRADA
+	- N personas
+	- Nombre
+	- Sexo (M/F)
+	- Hijos
+
+DATOS SALIDA
+	- Nombre persona y valor total subsidio
+	- Cuantas mujeres
+	- Cuantos hombres
+	- Cuantos hijos
+		- de las mujeres
+		- de los hombres
+		
+ANÁLISIS
+	nro. registros		N > Dato identificador
+	Datos de entrada	Nombre, sexo, hijos
+	Datos proceso		valor total subsidio = numero hijos * 34800
+	Datos salida		Nombre
+						valor total subsidio
+						cuantas mujeres
+						cuantos hombres
+						cuantos hijos de las mujeres
+						cuantos hijos de los hombres
+*/
+
+ENTERO N, I, NRHIJOS, VTSUB, CF, CM, AHF, AHM
+CADENA [40] NOM
+CARACTER SX
+
+INICIO
+	CF <- 0
+	CM <- 0
+	AHF <- 0
+	AHM <- 0
+	
+	ESCRIBA "Ingresa la cantidad de personas: "
+	LEA N
+	
+	PARA I <- 1 HASTA N HAGA
+		ESCRIBA "Nombre: "
+		LEA NOM
+		ESCRIBA "Sexo (F/M): "
+		LEA SX
+		ESCRIBA "Numero de hijos: "
+		LEA NRHIJOS
+		VTSUB <- NRHIJOS * 34800
+		LLAMAR NUEVA_LINEA()
+		ESCRIBA NOM, ", el valor que recibe del subsidio es: $",VTSUB
+		LLAMAR NUEVA_LINEA()
+		ESCRIBA "------------------------------------------------------"
+		LLAMAR NUEVA_LINEA()
+		
+		SI(SX = 'F')O(SX = 'f')ENTONCES
+			CF <- CF + 1
+			AHF <- AHF + NRHIJOS
+		SINO
+			SI(SX = 'M')O(SX = 'm')ENTONCES
+				CM <- CM + 1
+				AHM <- AHM + NRHIJOS
+			SINO
+				ESCRIBA "Error en el genero [F/M]"
+			FIN SI
+		FIN SI
+	FIN PARA
+	
+	ESCRIBA "Cantidad de mujeres: ", CF
+	LLAMAR NUEVA_LINEA()
+	ESCRIBA "Cantidad de hombres: ", CM
+	LLAMAR NUEVA_LINEA()
+	ESCRIBA "Total hijos de las mujeres: ", AHF
+	LLAMAR NUEVA_LINEA()
+	ESCRIBA "Total hijos de los hombres: ", AHM
+FIN
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
