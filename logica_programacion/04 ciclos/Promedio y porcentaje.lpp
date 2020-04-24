@@ -1,0 +1,80 @@
+
+/*
+Se tiene una cantidad desconocida de registros, cada registro contiene el nombre,
+el sexo, la edad y la estatura de una persona. Se desea un programaque muestre:
+
+	1. El promedio de estatura de los hombres
+	2. El porcentaje que representa las mujeres mayores de edad respecto a todas las mujeres
+*/
+
+/*
+DATOS ENTRADA
+	Número de registros = no se conocen (? ==> Dato centinela)
+	
+	Nombre NM
+	Sexo SX
+	Edad ED
+	Estatura EST
+	
+DATOS SALIDA
+	Promedio estatura hombres
+	Porcentaje mujeres mayores de edad
+DATOS PROCESO
+	Promedio = acumulador / contador
+	Porcentaje = 1er contador * 100 / 2do contador
+*/
+
+CADENA [30] NOM
+CARACTER SX
+ENTERO ED, CM, CFMAY, CF
+REAL EST, AEST, PROMEDIO, PORCENTAJE
+
+INICIO
+	
+	// Inicializar contadores y acumuladores
+	CM <- 0
+	CFMAY <- 0
+	CF <- 0
+	AEST <- 0
+	PROMEDIO <- 0
+	PORCENTAJE <- 0
+	
+	ESCRIBA "Escriba el nombre: "
+	LEA NOM
+	
+	MIENTRAS (NOM <> "*") HAGA
+		ESCRIBA "Escriba el sexo (f/m): "
+		LEA SX
+		ESCRIBA "Escriba la edad: "
+		LEA ED
+		ESCRIBA "Escriba la estatura: "
+		LEA EST
+		
+		SI (SX = 'M') O (SX = 'm') ENTONCES
+			AEST <- AEST + EST
+			CM <- CM + 1
+		SINO
+			SI (SX = 'F') O (SX = 'f') ENTONCES
+				CF <- CF + 1
+				SI (ED >= 18) ENTONCES
+					CFMAY <- CFMAY + 1
+				FIN SI
+			SINO
+				ESCRIBA "Error en el campo sexo, registro no contabilizado"
+				LLAMAR NUEVA_LINEA()
+			FIN SI
+		FIN SI
+		
+		ESCRIBA "Nombre (Digite * si desea terminar): "
+		LEA NOM
+		
+	FIN MIENTRAS
+	
+	PROMEDIO <- AEST / CM
+	PORCENTAJE <- CFMAY * 100 / CF
+	
+	ESCRIBA "Promedio de estatura hombres: ", PROMEDIO
+	LLAMAR NUEVA_LINEA()
+	ESCRIBA "Porcentaje de mujeres mayores de edad: ", PORCENTAJE, "%"
+	
+FIN

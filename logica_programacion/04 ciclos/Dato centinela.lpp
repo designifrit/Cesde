@@ -1,0 +1,28 @@
+
+/*
+CICLOS CON DATO CENTINELA
+
+El ciclo no finaliza hasta que se le de la instrucción
+*/
+
+ENTERO ED
+CADENA [40] NOM
+CARACTER SX
+
+INICIO
+	
+	ESCRIBA "Ingrese el nombre: "
+	LEA NOM
+	
+	MIENTRAS (NOM <> "N") HAGA
+		
+		ESCRIBA "Cual es el sexo (F/M): "
+		LEA SX
+		ESCRIBA "Escriba la edad: "
+		LEA ED
+		
+		ESCRIBA "Desea ingresar otro registro? (S/N): "
+		LEA NOM
+	FIN MIENTRAS
+	
+FIN
