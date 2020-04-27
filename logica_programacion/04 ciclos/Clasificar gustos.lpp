@@ -1,0 +1,21 @@
+
+
+/*
+Se tiene un grupo de registros, no se conoce cuántos, cada registro contiene el nombre , la edad , la estatura, sexo(1=hombre, 2 = mujer ) , deporte (1=natación, 2=futbol , 3 = ciclismo , 4 = patinaje , 5 = otro deporte)
+
+
+Elaboré un algoritmo que imprima
+	
+a) promedio de la edad  de las personas que prefieren futbol
+	
+b) porcentaje que representan las mujeres que prefieren el ciclismo respecto a las personas de ciclismo
+	
+c) Nombre de las mujer más alta del patinaje
+	d) cuántos de los que practican natación , que pesan menos de 50 kg y miden más de 1.80 mts 
+	
+e) promedio de edad de todas las personas sin importar el deporte que practiquen
+*/
+
+INICIO
+	
+FIN
