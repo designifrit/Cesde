@@ -1,0 +1,148 @@
+<?xml version="1.0"?>
+<SqlWorkbenchSqlProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="Recuperación de datos">
+  <Items>
+    <LogicalFolder Name="Connections" Type="2" Sorted="true">
+      <Items>
+        <ConnectionNode Name="CERBERUS:CERBERUS\Alejandro">
+          <Created>2020-04-27T16:23:07.6851091-05:00</Created>
+          <Type>SQL</Type>
+          <Server>CERBERUS</Server>
+          <UserName />
+          <Authentication>Windows Authentication</Authentication>
+          <InitialDB>HiperAlmacen</InitialDB>
+          <LoginTimeout>30</LoginTimeout>
+          <ExecutionTimeout>0</ExecutionTimeout>
+          <ConnectionProtocol>NotSpecified</ConnectionProtocol>
+          <ApplicationName>Microsoft SQL Server Management Studio - Query</ApplicationName>
+        </ConnectionNode>
+      </Items>
+    </LogicalFolder>
+    <LogicalFolder Name="Queries" Type="0" Sorted="true">
+      <Items>
+        <FileNode Name="01 Mostrar clientes con fecha de ingreso.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:CERBERUS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>CERBERUS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>01 Mostrar clientes con fecha de ingreso.sql</FullPath>
+        </FileNode>
+        <FileNode Name="02 Mostrar productos Stock menor 10.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:CERBERUS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>CERBERUS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>02 Mostrar productos Stock menor 10.sql</FullPath>
+        </FileNode>
+        <FileNode Name="03 Mostrar clientes comuna 9 o 6.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:CERBERUS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>CERBERUS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>03 Mostrar clientes comuna 9 o 6.sql</FullPath>
+        </FileNode>
+        <FileNode Name="04 Datos facturas mes junio 2018.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:CERBERUS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>CERBERUS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>04 Datos facturas mes junio 2018.sql</FullPath>
+        </FileNode>
+        <FileNode Name="05 Sumar ventas facturas.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:CERBERUS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>CERBERUS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>05 Sumar ventas facturas.sql</FullPath>
+        </FileNode>
+        <FileNode Name="06 Hallar promedio precios.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:CERBERUS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>CERBERUS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>06 Hallar promedio precios.sql</FullPath>
+        </FileNode>
+        <FileNode Name="07 Mostrar clientes cuyos apellidos inician con B.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:CERBERUS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>CERBERUS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>07 Mostrar clientes cuyos apellidos inician con B.sql</FullPath>
+        </FileNode>
+        <FileNode Name="08 Mostrar el menor valor.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:CERBERUS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>CERBERUS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>08 Mostrar el menor valor.sql</FullPath>
+        </FileNode>
+        <FileNode Name="09 Mostrar productos terminan en S.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:CERBERUS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>CERBERUS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>09 Mostrar productos terminan en S.sql</FullPath>
+        </FileNode>
+        <FileNode Name="10 Mostrar productos stock entre 1 - 5.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:CERBERUS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>CERBERUS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>10 Mostrar productos stock entre 1 - 5.sql</FullPath>
+        </FileNode>
+        <FileNode Name="11 Mostrar clientes ingresaron marzo-abril.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:CERBERUS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>CERBERUS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>11 Mostrar clientes ingresaron marzo-abril.sql</FullPath>
+        </FileNode>
+        <FileNode Name="12 Mostrar nombres clientes 4 letra A.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:CERBERUS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>CERBERUS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>12 Mostrar nombres clientes 4 letra A.sql</FullPath>
+        </FileNode>
+        <FileNode Name="13 5 primeros clientes comuna 9 ingreso 01-01-2019.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:CERBERUS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>CERBERUS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>13 5 primeros clientes comuna 9 ingreso 01-01-2019.sql</FullPath>
+        </FileNode>
+        <FileNode Name="14 Cuantos categoria 2 precio y cantidad.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:CERBERUS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>CERBERUS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>14 Cuantos categoria 2 precio y cantidad.sql</FullPath>
+        </FileNode>
+        <FileNode Name="15 Unidades producto 29 vendidas factura 4.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:CERBERUS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>CERBERUS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>15 Unidades producto 29 vendidas factura 4.sql</FullPath>
+        </FileNode>
+        <FileNode Name="16 Mostrar hab Medellín por fecha.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:CERBERUS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>CERBERUS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>16 Mostrar hab Medellín por fecha.sql</FullPath>
+        </FileNode>
+        <FileNode Name="17 Productos stock entre 5 y 10 desc por categoría.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:CERBERUS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>CERBERUS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>17 Productos stock entre 5 y 10 desc por categoría.sql</FullPath>
+        </FileNode>
+        <FileNode Name="18 Agrupar clientes por comuna.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:CERBERUS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>CERBERUS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>18 Agrupar clientes por comuna.sql</FullPath>
+        </FileNode>
+        <FileNode Name="19 Agrupar desc productos categoria 3.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:CERBERUS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>CERBERUS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>19 Agrupar desc productos categoria 3.sql</FullPath>
+        </FileNode>
+        <FileNode Name="20 Agrupar clientes ciudad y fecha.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:CERBERUS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>CERBERUS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>20 Agrupar clientes ciudad y fecha.sql</FullPath>
+        </FileNode>
+      </Items>
+    </LogicalFolder>
+    <LogicalFolder Name="Miscellaneous" Type="3" Sorted="true">
+      <Items />
+    </LogicalFolder>
+  </Items>
+</SqlWorkbenchSqlProject>
