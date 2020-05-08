@@ -42,7 +42,7 @@ p, a, em, strong, i, b, small, sup, sub,h1, h2, h3, h4, h5, h6, button, span{
     padding: 15px 50px 15px 20px;
 }
 
-header.container-fluid{
+header.container{
     margin: 0 auto;
     padding: 0;
 }
@@ -51,7 +51,7 @@ header.container-fluid{
         width: 50px;
     }
     
-    header nav.navcol{
+    header nav#nav{
         background-color: white;
         padding: 20px 30px;
     }
@@ -196,7 +196,7 @@ main article:nth-child(1) .button span, main article:nth-child(3) .button span{
     transform: translateX(0);
 }
 
-    main article:nth-child(1) .button:hover span{
+    main article:nth-child(1) .button:hover span, main article:nth-child(2) .button:hover span, main article:nth-child(3) .button:hover span{
         transform: translateX(7px);
     }
 
@@ -228,7 +228,7 @@ footer{
         color: grey;
     }
 
-@media only screen and (max-width:768px){
+@media only screen and (max-width:991px){
 
     header nav #navbarNav ul li a{
         text-align: center;
