@@ -1,0 +1,23 @@
+
+:root{
+    --bg-color: rgb(43, 20, 255);
+}
+
+#container{
+    background: var(--bg-color);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    height: 98vh;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+}
+
+header#header{
+    background: red url(../img/bg.jpg);
+    background-size: cover;
+    background-position: bottom center;
+    height: 50vh;
+    width: 90%;
+}

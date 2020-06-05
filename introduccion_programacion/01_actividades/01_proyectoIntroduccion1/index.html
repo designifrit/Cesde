@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Roboto+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <style>
+        header#header .home{
+        background: grey url(img/books.jpg) no-repeat;
+        background-position: center 100%;
+        background-size: cover;
+        height: 40vh;
+        width: 100%;
+        }
+        
+        main#main article section:last-child{
+            display: flex;
+            justify-content: center;
+        }
+
+            main#main article section:last-child div{
+                box-sizing: border-box;
+                height: 300px;
+                padding: 0 20px 0 0;
+                width: 40%;
+            }
+            main#main article section:last-child p{
+                box-sizing: border-box;
+                padding: 0 0 0 20px;
+                width: 60%;
+            }
+        
+        footer#footer{
+            margin-top: 50px;
+        }
+
+    </style>
+
+    <title>El rincón del cuento</title>
+</head>
+<body>
+    <header id="header">
+        <h1><span class="material-icons iconos">menu_book </span> El rincón del cuento</h1>
+
+        <nav id="nav">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#">Cuentos </a><span class="material-icons iconos"> keyboard_arrow_down</span>
+                    <ol>
+                        <li><a href="cuento1.html">Cuento 1</a></li>
+                        <li><a href="cuento2.html">Cuento 2</a></li>
+                        <li><a href="cuento3.html">Cuento 3</a></li>
+                    </ol>
+                </li>
+            </ul>
+        </nav> 
+
+        <div class="home"></div>
+    </header>
+    
+    <main id="main">
+        <article>
+
+            <section>
+                <h2><span class="material-icons">book </span> Tu librería de referencia, ahora mejor que nunca</h2>
+                <p>sabemos qué es lo que más te gusta de tu librería física favorita y lo hemos perfeccionado para adaptarlo a tu día a día. Nuestra misión es llevar a tu mundo la magia de los libros, porque somos amantes de la lectura, igual que tú. ¿Y por qué lo hacemos? Porque creemos que las historias nos convierten en quienes somos y transforman el mundo que nos rodea
+                <br><br>
+                Nuestro catálogo cuenta con un sinfín de opciones y no deja de crecer. Encontrarás cualquier tipo de eBook imaginable, desde los clásicos de ayer hasta los best sellers de hoy, y todo aquello que se encuentra entre ambos extremos. Déjate sorprender por nuestras recomendaciones y descubrirás obras que te encantarán: recuerda que tenemos el libro perfecto esperándote.
+                </p>
+            </section>
+
+            <section>
+                <div>
+                    <img src="img/anagrama.jpeg" alt="Anagrama" width="100%">
+                </div>
+                <p>Son muchas las editoriales, y autores, que se suman a la iniciativa #YoMeQuedoEnCasaLeyendo y aportan su grano de arena para que el confinamiento sea lo más liviano posible, para convertir la adversidad en oportunidad. Ten en cuenta ademásque si apartas los ojos de la pantalla un ratito no solo te haces un favor a ti, sino que mostrarás un poco de solidaridad: si todos estamos viendo series, notaremos que la banda no es tan ancha como parece, que la fibra es más frágil de lo que te venden y que en estos tiempos la red debe quedar lo menos sobrecargada posible para todos aquellos que la necesitan para trabajar. Estas son las editoriales, autores y plataformas que ofrecen sus libros electrónicos y audiolibros para que nos pasemos la cuarentena leyendo (o escuchando). Al hacerlo viajamos a lugares y tiempos remotos, vivimos aventuras sin salir de nuestra butaca, aprendemos a volar. Descubre de lo que es capaz tu propia imaginación.</p>
+            </section>
+
+        </article>
+    </main>
+    
+    <footer id="footer">
+        <pre>
+            Derechos reservados
+            Alejandro Orozco E.
+            CESDE 21/03/2020
+        </pre>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

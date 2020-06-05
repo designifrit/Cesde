@@ -1,0 +1,29 @@
+
+:root{
+    --bg: rgb(255, 221, 159);
+}
+
+.bg{
+    background-color: var(--bg);
+    border: 1px solid grey;
+}
+
+header.container-fluid{
+    margin: 0 auto;
+    padding: 0;
+}
+
+header #header>div{
+    align-items: center;
+    background-color: bisque;
+    background-image: url(../img/banner-header-tapete-14525316867Uo.jpg);
+    background-size: cover;
+    display: flex;
+    height: 35vh;
+    width: 100%;
+}
+
+header #header>div h1{
+    color: white;
+    padding: 0 0 0 10%;
+}

@@ -1,0 +1,197 @@
+
+:root{
+    --font-play: 'Playfair Display', serif;
+    --font-roboto: 'Roboto Slab', serif;
+    --title: rgb(83, 36, 250);
+    --subtitle: rgb(129, 102, 226);
+    --paragraph: rgb(49, 45, 58);
+    --transition: all 0.4s ease  0s;
+    --hover_link: rgb(122, 107, 175);
+}
+
+/* *,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+body{
+    margin: 0 auto;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, caption{
+    font-family: var(--font-roboto);
+}
+
+h1{
+    color: var(--title);
+}
+
+h2, h3, h4, h5, h6, caption{
+    color: var(--subtitle);
+}
+
+p, pre, em, strong, sup, sub, del, ins, a, i, b, blockquote{
+    color: var(--paragraph);
+    font-family: var(--font-play);
+}
+
+ul, ol{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+span.iconos{
+    position: relative;
+    font-size: 1em;
+    top: 5px;
+}
+
+header#header h1{
+    text-align: center;
+}
+
+        header#header #nav{
+            display: flex;
+            justify-content: center;
+            margin: 30px 0;
+            width: 100%;
+        }
+
+            header#header #nav ul{
+                box-sizing: border-box;
+                display: flex;
+                justify-content: space-between;
+                width: 270px;
+            }
+
+                header#header #nav ul li{
+                    color: white;
+                    background-color: grey;
+                    border-radius: 3px;
+                    box-sizing: border-box;
+                    display: block;
+                    height: 40px;
+                    padding: 9px 0;
+                    position: relative;
+                    text-align: center;
+                    transition: var(--transition);
+                    width: 130px;
+                }
+
+                header#header #nav ul li:hover{
+                    background-color: var(--title);
+                }
+
+                    header#header #nav ul li a{
+                        color: white;
+                        text-decoration: none;
+                    }
+                    
+                        header#header #nav ul li a:hover{
+                            color: white;
+                        }
+
+                        header#header #nav ul li ol{
+                            display: none;
+                            position: absolute;
+                            top: 0;
+                            transition: var(--transition) !important;
+                            width: 130px;
+                        }
+
+                            header#header #nav ul li:hover ol{
+                                display: block;
+                                top: 40px;
+                            }
+
+                                header#header #nav ul ol li{
+                                    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.5);
+                                    transition: var(--transition);
+                                    border-radius: 0;
+                                }
+                                
+                                header#header #nav ul ol li:first-child{
+                                    border-radius: 3px 3px 0 0;
+                                }
+
+                                header#header #nav ul ol li:last-child{
+                                    border-radius: 0 0 3px 3px;
+                                }
+
+main#main{
+    box-sizing: border-box;
+    padding: 0 3%;
+    width: 100%;
+}
+
+    main#main section .resumen{
+        display: flex;
+    }
+
+    main#main article section:first-child{
+        margin-top: 50px;
+    }
+
+    main#main section:nth-child(2){
+        display: flex;
+        justify-content: center;
+        margin: 0 30px;
+        padding: 30px 0;
+    }
+
+        main#main section .resumen div{
+            box-sizing: border-box;
+            display: inline-block;
+            width: 15%;
+        }
+
+        main#main section .resumen blockquote{
+            box-sizing: border-box;
+            display: inline-block;
+            text-indent: 1rem;
+            width: 84%;
+        }
+
+            main#main section blockquote>span:before{
+                content: "''";
+            }
+
+            main#main section blockquote span{
+                color: var(--title);
+                display: inline-block;
+                font-size: 1rem;
+                font-weight: bolder;
+            }
+
+                main#main section blockquote ul span{
+                    position: relative;
+                    font-size: 2rem;
+                    top: 10px;
+                }
+            
+                main#main section blockquote ul a{
+                    font-weight: bolder;
+                    text-decoration: none;
+                    transition: var(--transition);
+                }
+
+                main#main section blockquote ul a:hover{
+                    color: var(--title);
+                }
+
+footer#footer{
+    background-color: rgb(28, 28, 29);
+    box-sizing: border-box;
+    margin: 30px 0;
+    padding: 20px 0;
+    width: 100%;
+}
+
+    footer#footer pre{
+        color: white;
+    }

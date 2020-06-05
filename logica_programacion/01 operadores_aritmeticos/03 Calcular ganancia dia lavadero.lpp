@@ -1,0 +1,75 @@
+
+/*
+3.	En un lavadero de vehículos se relacionan al final del día la cantidad de taxis que se lavaron,
+la cantidad de buses, la cantidad de particulares y la cantidad de motos. Se desea un programa que
+muestre el dinero realizado por cada tipo de vehículo (taxis, buses, particulares y motos) y el total
+realizado en el lavadero. El precio de los taxis es de $3.000, los buses a $10.000, los particulares
+a $5.000 y las motos a $2.000.
+*/
+
+/*
+DATOS ENTRADA
+	1. Cantidad de vehiculos lavados
+		a. Taxis
+		b. Buses
+		c. Particulares
+		d. Motos
+DATOS PROCESO
+	1. Precios
+		a. Taxis $3000
+		b. Buses $10000
+		c. Particulares $5000
+		d. Motos $2000
+DATOS SALIDA
+	1. Ganancia lavado
+		a. ganancia taxis
+		b. ganancia buses
+		c. ganancia particulares
+		d. ganancia motos
+	2. Total ganancias
+*/
+
+ENTERO LT, LB, LP, LM, GT
+ENTERO PT, PB, PP, PM
+
+INICIO
+	
+	// Precio de lavado de vehículos
+	PT <- 3000
+	PB <- 10000
+	PP <- 5000
+	PM <- 2000
+	
+	ESCRIBA "Este algoritmo calcula la ganancia del lavadero de acuuerdo a los tipos de vehiculos que ingresaron"
+	
+	LLAMAR NUEVA_LINEA()
+	
+	// Ingreso de numero de vehiculos lavadoos
+	ESCRIBA "Cuantos TAXIS fueron lavados: "
+	LEA LT
+	ESCRIBA "Cuantos BUSES fueron lavados: "
+	LEA LB
+	ESCRIBA "Cuantos PARTICULARES fueron lavados: "
+	LEA LP
+	ESCRIBA "Cuantos MOTOS fueron lavados: "
+	LEA LM
+	LLAMAR NUEVA_LINEA()
+	LLAMAR NUEVA_LINEA()
+	
+	// Calcular ganancia por vehículo
+	LT <- LT * PT
+	LB <- LP * PB
+	LP <- LP * PP
+	LM <- LM * PM
+	
+	ESCRIBA "Las ganancias del lavadero por vehiculo es: "
+	LLAMAR NUEVA_LINEA()
+	ESCRIBA LT, " por lavado de TAXIS. ", LB, " por lavado de BUSES. ", LP, " por lavado de PARTICULARES. ", LM, " por lavado de MOTOS."
+	LLAMAR NUEVA_LINEA()
+	LLAMAR NUEVA_LINEA()
+	
+	// Calcular ganancia total
+	GT <- LT + LB + LP + LM
+	ESCRIBA "La ganancia TOTAL del lavadero es: ",  GT
+	
+FIN

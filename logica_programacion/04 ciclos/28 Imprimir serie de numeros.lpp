@@ -1,0 +1,44 @@
+
+/*
+Elaborar un algoritmo que imprima los primeros 15 términos de la siguiente serie de números:
+                       4 - 8 - 12 - 16 - 20 - 24 .........
+*/
+
+/*
+DATOS ENTRADA
+	1. Número inicial = 4
+DATOS SALIDA
+	1. Serie de números
+*/
+
+ENTERO SERIE, ING, SUM, NUM
+
+INICIO
+	
+	ESCRIBA "Este algoritmo imprime una serie de numeros a traves de un ciclo repetitivo, cuando se cumple la condicion se finaliza la operacion"
+	LLAMAR NUEVA_LINEA()
+	
+	// Ingreso de datos
+	ESCRIBA "Escriba cuantas veces desea hacer la suma: "
+	LEA ING
+	
+	SERIE <- 0
+	SUM <- 0
+	
+	// Proceso de datos	
+	MIENTRAS(SERIE < ING)HAGA
+	
+		// Salida de datos
+		ESCRIBA "Escriba un numero a sumar: "
+		LEA NUM
+		SUM <- SUM + NUM
+		ESCRIBA SUM
+		
+		LLAMAR NUEVA_LINEA()
+		
+		// Incremento
+		SERIE <- SERIE + 1
+		
+	FIN MIENTRAS
+	
+FIN

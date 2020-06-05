@@ -1,0 +1,56 @@
+
+/*
+6.	Crear un algoritmo que le pida al usuario los datos de un trabajador así:
+El número de horas trabajadas en el mes, el salario básico hora,
+la cantidad de años que tiene de laborar en la empresa y el valor que le deducen mensualmente.
+El algoritmo le debe mostrar: El salario bruto, el valor de la bonificación
+($30.000 por cada año laborado), el valor de las deducciones y el salario neto   
+*/
+
+/*
+DATOS ENTRADA
+	1. Horas trabajadas mes
+	2. Salario basico hora
+	3. Cantidad de años en la empresa
+	4. Deducción mensual
+DATOS PROCESO
+	
+DATOS SALIDA
+	1. Salario bruto
+	2. valor bonificación ($30000 x año laborado)
+	3. Valor deducciones
+	4. Salario neto
+*/
+
+ENTERO HTM, SBH, CAE, DM
+ENTERO SB, SN, VB, VD
+
+INICIO
+	
+	ESCRIBA "Este algoritmo calcula el salario neto de un trabajador de acuerdo a las horas trabajadas, el salario basico x hora, cantidad de anios en la empresa y las deducciones mensuales"
+	LLAMAR NUEVA_LINEA()
+	
+	// Ingreso de datos
+	ESCRIBA "Cuantas horas trabajo en el mes: "
+	LEA HTM
+	ESCRIBA "Cual es el salario basico por hora del trabajador: "
+	LEA SBH
+	ESCRIBA "Cuantos anios lleva en la empresa: "
+	LEA CAE
+	ESCRIBA "Cuanto se le deduce mensualmente: "
+	LEA DM
+	
+	// Calcular Bonificaciones y deducciones
+	VB <- CAE * 30000
+	VD <- DM
+	
+	// Calcular Salario bruto y neto
+	SB <- (HTM * SBH) + VB
+	SN <- SB - VD
+	
+	// Salida de datos
+	LLAMAR NUEVA_LINEA()
+	ESCRIBA "El SALARIO BRUTO del trabajador es: ", SB, " que incluye las BONIFICACIONES x anio trabajado: ", VB
+	LLAMAR NUEVA_LINEA()
+	ESCRIBA "El SALARIO NETO del trabajador es: ", SN, " que incluye las DEDUCCIONES que se le realizan: ", VD
+FIN

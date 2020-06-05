@@ -1,0 +1,20 @@
+
+/*
+Elaborar un algoritmo que le muestre al usuario el dinero que pude ahorrar en un año.
+El usuario ingresará su salario mensual, el monto de los ingresos extras mensuales y el valor de los gastos mensuales.
+*/
+
+ENTERO SM, EM, GM, AA
+
+INICIO
+	ESCRIBA "-- ESTE ALGORITMO CALCULA CUANTO PUEDES AHORRAR EN 1 ANIO --"
+	ESCRIBA "ESCRIBA CUALES SON SUS INGRESOS MENSUALES: "
+	LEA SM
+	ESCRIBA "ESCRIBA CUALES SON SUS INGRESOS EXTRAS MENSUALES: "
+	LEA EM
+	ESCRIBA "ESCRIBA CUANTO GASTA MENSUALMENTE: "
+	LEA GM
+	
+	AA <- (SM + EM - GM) * 12
+	ESCRIBA "ESTA ES LA CANTIDAD QUE PUEDE AHORRAR ANUALMENTE: ", AA
+FIN

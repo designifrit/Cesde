@@ -1,0 +1,29 @@
+
+/*
+Escriba un algoritmo que le permita al propietario de un bus ingresar el número
+de pasajeros transportados en un día, el valor del pasaje   y el valor pagado por combustible.
+El programa le debe mostrar el total producido por el bus, el valor pagado al conductor
+(que es el 10% del total producido) y la ganancia neta (producido menos los gastos).
+*/
+
+ENTERO NUMPAS, VALPAS, VALCOM, TOTALPROD, GANCOND, GANETA
+
+INICIO
+	ESCRIBA "-- ESTE ALGORITOMO CALCULA LA GANANCIA NETA DE UN BUS POR DÍA Y CUANTO ES EL VALOR A PAGAR AL CONDUCTOR --"
+	LLAMAR NUEVA_LINEA()
+	ESCRIBA "ESCRIBA CUANTOS PASAJEROS TRANSPORTO EN EL DIA: "
+	LEA NUMPAS
+	ESCRIBA "ESCRIBA EL VALOR DEL PASAJE: "
+	LEA VALPAS
+	ESCRIBA "CUANTO GASTA EN COMBUSTIBLE X DIA: "
+	LEA VALCOM
+	
+	TOTALPROD <- NUMPAS * VALPAS
+	GANCOND <- TOTALPROD *10 / 100
+	GANETA <- TOTALPROD - GANCOND - VALCOM
+	ESCRIBA "ESTE ES EL VALOR BRUTO PRODUCIDO: ", TOTALPROD
+	LLAMAR NUEVA_LINEA()
+	ESCRIBA " EL VALOR DE PAGO QUE CORRESPONDE PARA EL CONDUCTOR: ", GANCOND
+	LLAMAR NUEVA_LINEA()
+	ESCRIBA " ESTA ES SU GANANCIA NETA :", GANETA
+FIN

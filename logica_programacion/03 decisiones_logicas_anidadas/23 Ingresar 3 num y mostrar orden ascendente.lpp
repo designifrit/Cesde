@@ -1,0 +1,60 @@
+/*
+Este algoritmo permite ingresar 3 numeros y mostrar en orden ascendente
+*/
+
+/*
+N1, N2, N3
+N1, N3, N2
+N2, N1, N3
+N2, N3, N1
+N3, N1, N2
+N3, N2, N1
+*/
+
+entero n1, n2, n3
+
+inicio
+
+	escriba "Este algoritmo permite ingresar 3 numeros y mostrar en orden ascendente"
+	
+	llamar nueva_linea()
+	
+	escriba "Escriba el 1er numero: "
+	lea n1
+	escriba "Escriba el 1do numero: "
+	lea n2
+	escriba "Escriba el 3er numero: "
+	lea n3
+	
+	llamar nueva_linea()
+	
+	si(n1 < n2) Y (n1 < n3)entonces
+		si(n2 < n3)entonces
+			escriba "numeros en orden ascendente: ", n1, " ", n2, " ", n3
+		sino
+			escriba "numeros en orden ascendente: ", n1, " ", n3, " ", n2
+		fin si
+		
+		si(n2 < n1) Y (n2 < n3)entonces
+			si(n1 < n3)entonces
+				escriba "numeros en orden ascendente: ", n2, " ", n1, " ",n3
+			sino
+				escriba "numeros en orden ascendente: ", n2, " ", n3, " ",n1
+			fin si
+		sino
+			si(n3 < n1) Y (n3 < n2)entonces
+				si(n1 < n2)entonces
+					escriba "numeros en orden ascendente: ", n3, " ", n1, " ", n2
+				sino
+					escriba "numeros en orden ascendente: ", n3, " ", n2, " ", n1
+				fin si
+			sino
+				escriba "LOS 3 NUMEROS SON IGUALES"
+			fin si
+		fin si
+	sino
+		
+	fin si
+	
+	
+fin

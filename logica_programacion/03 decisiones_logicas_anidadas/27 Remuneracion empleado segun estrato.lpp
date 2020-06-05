@@ -1,0 +1,39 @@
+
+/*
+Calcular la remuneración de un empleado de acuerdo a su estrato, se pide que ingrese su nombre,
+el estrato y el salario basico del empleado. Debe mostrar la remuneracion de acuerdo a el estrato
+*/
+
+CADENA [35] NOM
+ENTERO ESTR, SBCO, VRR
+
+INICIO
+
+	ESCRIBA "Este algoritmo calcula la remuneracion del empleado"
+	LLAMAR NUEVA_LINEA()
+	
+	// Ingreso de datos
+	ESCRIBA "Ingrese el nombre del empleado: "
+	LEA NOM
+	ESCRIBA "Ingrese el estrato del empleado (1/2/3/4/5/6): "
+	LEA ESTR
+	ESCRIBA "Ingrese el salario basico: "
+	LEA SBCO
+	
+	// Proceso de datos
+	CASO ESTR
+		1:	VRR <- SBCO
+		2:	VRR <- SBCO * 80 / 100
+		3:	VRR <- SBCO * 60 / 100
+		4:	VRR <- SBCO * 50 / 100
+		5:	VRR <- SBCO * 45 / 100
+		6:	VRR <- SBCO * 40 / 100
+		SINO:	VRR <- 0
+				ESCRIBA "Error en el estrato"
+	FIN CASO
+	
+	// Salida de datos	
+	LLAMAR NUEVA_LINEA()
+	ESCRIBA "Su remuneracion es de: ", VRR
+	
+FIN

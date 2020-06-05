@@ -1,0 +1,56 @@
+
+/*
+Crear un algoritmo que le permita al usuario ingresar el nombre de un estudiante,
+la cantidad de materias que matriculó y el valor de cada materia y el computador
+le imprima el valor neto de la matrícula sabiendo que al valor de las materias se
+le debe sumar la papelería que tiene un costo fijo de $20.000 y el carné un valor de $8.000
+El estudiante tiene un descuento del 20 % sobre el costo de las materias.
+*/
+
+/*
+DATOS ENTRADA
+	1. Nombre del estudiante
+	2. Cantidad materiales matriculadas
+	3. Valor cada materia
+	
+DATOS SALIDA
+	1. Valor neto matricula
+	2. Valor extra de matricula
+		a. papeleria 20000
+		b. Carnet 8000
+	3. Descuento de matricula 20 porciento
+*/
+
+CADENA [40] NEST
+ENTERO MMAT, VMAT
+
+ENTERO VB, VN, VEP, VEC, DM
+
+INICIO
+	
+	ESCRIBA "Este algoritmo calcula el valor de matricula de un estudiante"
+	LLAMAR NUEVA_LINEA
+	
+	// Ingreso de datos
+	ESCRIBA "Escriba el nombre del estudiante: "
+	LEA NEST
+	ESCRIBA "Cual es el valor de cada materia: "
+	LEA VMAT
+	ESCRIBA "Cual es la cantidad de materias matriculadas: "
+	LEA MMAT
+	
+	// Proceso de datos
+	VB <- VMAT * MMAT
+	VEP <- 20000
+	VEC <- 8000
+	VN <- VB + VEP + VEC
+	
+	// Salida de datos
+	LLAMAR NUEVA_LINEA()
+	ESCRIBA "El valor bruto de la matricula es: ", VB
+	LLAMAR NUEVA_LINEA()
+	ESCRIBA "El valor neto de la matriicula es: ", VN
+	LLAMAR NUEVA_LINEA()
+	ESCRIBA "Esto incluye gastos extras como: ", "PAPELERIA: ", VEP, " CARNET: ", VEC
+	
+FIN

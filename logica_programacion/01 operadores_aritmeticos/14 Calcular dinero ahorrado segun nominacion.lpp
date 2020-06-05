@@ -1,0 +1,66 @@
+
+/*
+14.	Elabore un algoritmo que le muestre al usuario el total de dinero
+que tiene sabiendo que el algoritmo le pide que digite: el número de billetes de $1000,
+de $2000, de $5000, de $10.000, de 20.000 y de 50.000 que posee.
+*/
+
+/*
+DATOS INGRESO
+	0. Numero de monedas 500
+	1. Numero de billetes / monedas 1000
+	2. Numero de billetes 2000
+	3. Numero de billetes 5000
+	4. Numero de billetes 10000
+	5. Numero de billetes 20000
+	6. Numero de billetes 50000
+	7. Numero de billetes 100000
+	
+DATOS SALIDA
+	1. Dinero total ahorrado
+*/
+
+ENTERO VM5, VB1, VB2, VB5, VB10, VB20, VB50, VB100
+ENTERO NM5, NB1, NB2, NB5, NB10, NB20, NB50, NB100
+ENTERO DTA
+
+INICIO
+	
+	ESCRIBA "Este algoritmo calcula el dinero ahorrado segun la cantidad / nominacion"
+	LLAMAR NUEVA_LINEA
+	
+	// Ingreso de datos
+	VM5 <- 500
+	VB1 <- 1000
+	VB2 <- 2000
+	VB5 <- 5000
+	VB10 <- 10000
+	VB20 <- 20000
+	VB50 <- 50000
+	VB100 <- 100000
+	
+	ESCRIBA "Escriba la cantidad de monedas de $500: "
+	LEA NM5
+	ESCRIBA "Escriba la cantidad de billetes de $1.000: "
+	LEA NB1
+	ESCRIBA "Escriba la cantidad de billetes de $2.000: "
+	LEA NB2
+	ESCRIBA "Escriba la cantidad de billetes de $5.000: "
+	LEA NB5
+	ESCRIBA "Escriba la cantidad de billetes de $10.000: "
+	LEA NB10
+	ESCRIBA "Escriba la cantidad de billetes de $20.000: "
+	LEA NB20
+	ESCRIBA "Escriba la cantidad de billetes de $50.000: "
+	LEA NB50
+	ESCRIBA "Escriba la cantidad de billetes de $100.000: "
+	LEA NB100
+	
+	// Proceso de datos
+	DTA <- (NM5 * VM5) + (NB1 * VB1) + (NB2 * VB2) + (NB5 * VB5) + (NB10 * VB10) + (NB20 * VB20) + (NB50 * VB50) + (NB100 * VB100)
+	
+	// Salida de datos
+	LLAMAR NUEVA_LINEA()
+	ESCRIBA "Dinero total ahorrado es de: $", DTA
+	
+FIN

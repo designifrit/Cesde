@@ -1,0 +1,95 @@
+
+:root{
+    --font: 'Roboto Condensed', sans-serif;
+}
+
+.gcolor{
+    background-color: grey;
+}
+
+.dcolor{
+    background-color: rgb(38, 0, 255);
+}
+
+.dmcolor{
+    background-color: rgb(99, 72, 255);
+    position: relative;
+}
+
+.dscolor{
+    background-color: rgb(72, 115, 255);
+}
+
+.dycolor{
+    background-color: rgb(72, 188, 255);
+}
+
+body, pre{
+    font-family: var(--font);
+}
+
+header, main, footer{
+    margin: 30px 0;
+}
+
+header{
+    text-align: center;
+}
+
+main{
+    display: block;
+}
+
+main article section:nth-child(1) div, main article section:nth-child(4) div{
+    float: left;
+    height: 10vh;
+    width: 5%;
+}
+
+main article section:nth-child(2), main article section:nth-child(3){
+    display: block;
+    float: left;
+    width: 50%;
+}
+
+main article section:nth-child(2)>div{
+    clear: both;
+    float: right;
+}
+
+    main article section:nth-child(2) div, main article section:nth-child(3) div{
+        height: 15vh;
+        width: 100%;
+    }
+
+    main article section:nth-child(2) div:nth-child(2), main article section:nth-child(3) div:nth-child(2){
+        width: 80%;
+    }
+
+    span.small_box{
+        background-color: yellow;
+        bottom: 0;
+        display: block;
+        height: 50px;
+        position: absolute;
+        width: 50px;
+    }
+
+    div.izq span{
+        left: 0;
+    }
+
+    div.der span{
+        right: 0;
+    }
+
+footer{
+    background-color: rgb(22, 22, 22);
+    clear: both;
+    padding: 20px 0 5px 0;
+}
+
+    footer pre{
+        color: white;
+    }
+
