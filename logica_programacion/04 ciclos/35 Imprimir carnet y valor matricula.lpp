@@ -1,0 +1,28 @@
+
+/*
+En una universidad, cada que se matricula un estudiante se elabora un registro con el
+número del carnet, la cantidad de materias matriculadas y el estrato social al que pertenece,
+Elabore un algoritmo que imprima por cada estudiante el carnet y el valor de la matricula,
+teniendo en cuenta que si el número de materias es superior a 5 y el estrato social es
+igual a 1 se le hace un descuento del 20 %. Cada materia tiene un valor de $100. 000.oo
+*/
+
+/*
+DATOS DE ENTRADA
+	0. Nombre							NOM
+	1. Número de carnet estudiante		NC
+	2. Cantidad de materias				CMM
+		- Valor materia $100000
+	3. Estrato							ES
+DATOS DE SALIDA
+	1. Carnet estudiante				NC
+	2. Valor matricula					VM
+		- SI(NM > 5) Y (ES = 1) > 20% DC
+DATOS DEL PROCESO
+	
+*/
+
+INICIO
+	
+FIN
+
