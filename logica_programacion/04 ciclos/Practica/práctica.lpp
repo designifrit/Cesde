@@ -1,0 +1,156 @@
+
+/*
+Se tiene una cantidad desconocida de registros (N = dato identificador), cada registro contiene
+los datos de un trabajador así:
+
+- Nombre, edad, sexo, número de hijos, estado civil (1 = soltero, 2 = casado, 3 = unión libre)
+- sección a la que pertenece (1 = planta, 2 = ventas, 3 = sistemas, 4 = contabilidad)
+- Salario básico hora, número de horas trabajadas
+
+Elabore un algoritmo que encuentre e imprima:
+	a. Nombre y salario neto de todo el personal
+	b. Promedio del número de hijos de las personas de contabilidad
+	c. Nombre de la persona de sistemas que más salario neto tiene
+	d. Porcentaje que representan las personas solteras de ventas, respecto a todo el personal
+	e. Nombre de la persona de planta que trabajó en menor número de horas
+	
+ANÁLISIS
+
+	NRO. DE REGISTROS
+		- ? => Dato centinela => Ciclo mientras (NOM = "*" SALIR)
+	
+	DATOS DE ENTREDA
+		- NOM
+		- EDAD
+		- SEXO
+		- NHIJOS
+		- ECIVIL
+		- SECCION
+		- SBH
+		- NHT
+	
+	DATOS DE SALIDA
+		- NOM SALARIO TODOS
+		
+		- PROMEDIO NHIJOS SECCION = 4
+			PROM = acumulador ANH4 + contador CNH4
+		
+		- MAYOR SALARIO SEC = 3
+			MAYOR, NOMMAYOR
+			
+		- PORCENTAJE ECIVIL = 1 (SEC = 2 * 100 / SEC = 2)
+			C12, C2
+			
+		- MENOR NHT SECCION = 1
+			MENOR, NOMMENOR
+	
+	DATOS DEL PROCESO
+		- SALARIO = SBH * NHT
+		- PROM = ANH4 / CNH4
+		- PORC = C12 * 100 / C2
+*/
+
+CADENA [35] NOM, NOMMAYOR, NOMMENOR
+CARACTER SEXO
+ENTERO EDAD, NHIJOS, ECIVIL, SECCION, SBH, ANH4, CNH4, C12, C2
+REAL NHT, SALARIO, MAYOR, MENOR, PROM, PORC
+
+INICIO
+	
+	// Inicializar
+	ANH4 <- 0
+	CNH4 <- 0
+	MAYOR <- 0
+	NOMMAYOR <- "NO APLICA"
+	C12 <- 0
+	C2 <- 0
+	MENOR <- 500
+	NOMMENOR <- "NO APLICA"
+	
+	//Dato identificador (cuantos datos se van a procesar)
+	ESCRIBA "Ingrese el nombre (* si desea terminar):  "
+	LEA NOM
+	
+	// DATOS DE ENTRADA
+	MIENTRAS (NOM <> "*") HAGA
+	
+		ESCRIBA "Escriba la edad: "
+		LEA EDAD
+		ESCRIBA "Sexo (F/M): "
+		LEA SEXO
+		ESCRIBA "Cantidad de hijos: "
+		LEA NHIJOS
+		ESCRIBA "Estado civil (1 = soltero, 2 = casado, 3 = Union libre): "
+		LEA ECIVIL
+		ESCRIBA "A que seccion pertenece (1 = planta, 2 = ventas, 3 = sistemas, 4 = contabilidad): "
+		LEA SECCION
+		ESCRIBA "Salario basico hora: "
+		LEA SBH
+		ESCRIBA "Horas trabajadas: "
+		LEA NHT
+		
+		// 1. Mostrar salario
+		SALARIO <- SBH * NHT
+		LLAMAR NUEVA_LINEA()
+		ESCRIBA NOM, " Su salario es: $", SALARIO
+		LLAMAR NUEVA_LINEA()
+		LLAMAR NUEVA_LINEA()
+		
+		// 
+		CASO SECCION
+			1:	SI(NHT < MENOR)ENTONCES
+					MENOR <- NHT
+					NOMMENOR <- NOM
+				FIN SI
+			
+			2:	C2 <- C2 + 1
+				SI(ECIVIL = 1)ENTONCES
+					C12 <- C12 + 1
+				FIN SI
+			
+			3:	SI(SALARIO > MAYOR)ENTONCES
+					MAYOR <- SALARIO
+					NOMMAYOR <- NOM
+				FIN SI
+			
+			4:	ANH4 <- ANH4 + NHIJOS
+				CNH4 <- CNH4 + 1
+			
+			SINO:	ESCRIBA "Error en el campo SECCION"
+					LLAMAR NUEVA_LINEA()
+		FIN CASO
+		
+		// Para finalizar el ingreso de datos
+		ESCRIBA "Ingrese el nombre (* si desea terminar):  "
+		LEA NOM
+		
+	FIN MIENTRAS
+	
+	//DATOS DE SALIDA
+	
+	//
+	SI (CNH4 <> 0) ENTONCES
+		PROM <- ANH4 * CNH4
+		ESCRIBA "El promedio de numero de hijos de las personas de contabilidad es: ", PROM
+	SINO
+		ESCRIBA "No se ingresaron personas en contabilidad"
+	FIN SI
+	
+	//
+	LLAMAR NUEVA_LINEA()
+	
+	SI (C2 <> 0) ENTONCES
+		PORC <- C12 * 100 / C2
+		ESCRIBA "Porcentaje de personas solteras en ventas: ", PORC,"%"
+	SINO
+		ESCRIBA "No se ingresaron personas en ventas"
+	FIN SI
+	
+	// 
+	LLAMAR NUEVA_LINEA()
+	ESCRIBA "Nombre de la persona de sistemas que mas salario tiene: ", NOMMAYOR, " con $", MAYOR
+	// 
+	LLAMAR NUEVA_LINEA()
+	ESCRIBA "Nombre de la persona de sistemas que menos salario tiene: ", NOMMENOR, " con $", MENOR
+FIN
+

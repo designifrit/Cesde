@@ -1,0 +1,115 @@
+
+/*
+En un almacén, cada que se realiza una venta se elabora un registro con el nombre del articulo,
+el precio por unidad y la cantidad de artículos vendidos. Suponiendo que se hicieron 20 ventas,
+elabore un algoritmo que imprima por cada venta el nombre del articulo y el valor total de la venta.
+
+Para el mismo enunciado del ejercicio anterior, suponga que si el valor de la venta es mayor
+de 50.000.oo se concede un descuento del 10 % sobre el valor de la venta.
+*/
+
+/*
+DATOS DE ENTRADA
+	0. N ventas							N (centinela)
+	1. Nombre artículo					NOM
+	2. Precio unidad					PU
+	3. Cantidad artículos vendidos		CV
+DATOS DE SALIDA
+	1. Por cada venta
+		- Nombre						NOM
+		- Valor total					VT
+DATOS DEL PROCESO
+	1. VT <- PU x CV
+	2. SI (VT >= 50000)					D (VT * 10 / 100)
+*/
+
+ENTERO PU, CV
+CADENA [40] NOM
+CARACTER N, NC
+REAL VT, D, VD
+
+INICIo
+	
+	PU <- 0
+	CV <- 0
+	N <- 'a'
+	
+	ESCRIBA "Este algoritmo registra las ventas realizadas y calcula el valor total a pagar"
+	LLAMAR NUEVA_LINEA()
+	
+	MIENTRAS (N <> '*') HAGA
+		
+		// DATOS DE ENTRADA
+		LLAMAR NUEVA_LINEA()
+		ESCRIBA "Ingresa el nombre del articulo vendido: "
+		LEA NOM
+		ESCRIBA "Cual es el precio de la unidad: "
+		LEA PU
+		ESCRIBA "Cuantos articulos se vendieron: "
+		LEA CV
+		
+		// DATOS DEL PROCESO
+		SI (PU >= 1) Y (CV >= 1) ENTONCES
+			VT <- PU * CV
+			
+			SI (VT >= 50000) ENTONCES
+				D <- VT * 10/100
+				VD <- VT - D
+				
+				// DATOS DE SALIDA
+				LLAMAR NUEVA_LINEA()
+				ESCRIBA "Articulo vendido: ", NOM
+				LLAMAR NUEVA_LINEA()
+				ESCRIBA "Valor de la venta: ", VT
+				LLAMAR NUEVA_LINEA()
+				
+				LLAMAR NUEVA_LINEA()
+				ESCRIBA "Tiene un descuento de: ", D
+				LLAMAR NUEVA_LINEA()
+				ESCRIBA "El valor total a pagar es: ", VD
+				LLAMAR NUEVA_LINEA()
+			SINO
+				LLAMAR NUEVA_LINEA()
+				ESCRIBA "Articulo vendido: ", NOM
+				LLAMAR NUEVA_LINEA()
+				ESCRIBA "Valor de la venta: ", VT
+				LLAMAR NUEVA_LINEA()
+			FIN SI
+		SINO
+			LLAMAR NUEVA_LINEA()
+			ESCRIBA "Ingresaste un valor / cantidad invalida"
+			LLAMAR NUEVA_LINEA()
+			PU <- 0
+			CV <- 0
+			VT <- 0
+		FIN SI
+		
+		// Pregunta si desea finalizar
+		NC <- 'a'
+		MIENTRAS (NC <> 'f') HAGA
+			
+			LLAMAR NUEVA_LINEA()
+			ESCRIBA "Desea continuar S / N: "
+			LEA N
+		
+			CASO N
+				'S':
+					NC <- 'f'
+				's':
+					NC <- 'f'
+				'N':
+					N <- '*'
+					NC <- 'f'
+				'n':
+					N <- '*'
+					NC <- 'f'
+				SINO:
+					ESCRIBA "Ingreso una respuesta invalida"
+					N <- 'a'
+			FIN CASO
+			
+		FIN MIENTRAS
+		
+	FIN MIENTRAS
+	
+FIN

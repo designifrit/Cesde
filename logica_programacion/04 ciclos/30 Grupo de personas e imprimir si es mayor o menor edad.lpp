@@ -1,0 +1,86 @@
+
+
+/*
+Elabore un algoritmo que lea para un grupo de N personas el nombre y la edad
+e imprima por cada una el nombre y un mensaje que imprima si es mayor o menor de edad.
+*/
+
+/*
+DATOS DE INGRESO
+	1. Grupo de personas					R
+		- Nombre							NOM
+		- Edad								ED
+DATOS DE SALIDA
+	1. Imprimir datos de cada usuario		
+	2. Si es mayor o menor de edad
+	3. Cual es el usuario mas viejo			V
+		- Imprimir nombre					NOMV
+		- Imprimir edad						EDV
+DATOS DEL PROCESO
+	
+*/
+
+ENTERO N, R, ED, EDV
+CADENA [40] NOM, NOMV
+
+INICIO
+	R <- 0
+	N <- 0
+	EDV <- 1
+	
+	ESCRIBA "Este algoritmo imprime los datos de N grupo de personas y determina si son mayor o menor de edad"
+	LLAMAR NUEVA_LINEA()
+	
+	// Cantidad de registros
+	LLAMAR NUEVA_LINEA()
+	ESCRIBA "Cantidad de personas que va a registrar: "
+	LEA R
+	
+	SI (R < 100) ENTONCES
+		MIENTRAS (N < R) HAGA
+			
+			//DATOS DE ENTRADA
+			LLAMAR NUEVA_LINEA()
+			LLAMAR NUEVA_LINEA()
+			ESCRIBA "Ingrese el nombre de la persona: "
+			LEA NOM
+			ESCRIBA "Cual es la edad: "
+			LEA ED
+			
+			SI (ED < 120) ENTONCES
+				// DATOS DE SALIDA
+				LLAMAR NUEVA_LINEA()
+				ESCRIBA "Nombre del usuario ingresado: ", NOM
+				
+				// Si es mayor o menor de edad
+				SI (ED < 18) ENTONCES
+					LLAMAR NUEVA_LINEA()
+					ESCRIBA NOM, " es menor de edad ya que tiene ", ED, " anios"
+				SINO
+					LLAMAR NUEVA_LINEA()
+					ESCRIBA NOM, " es mayor de edad ya que tiene ", ED, " anios"
+				FIN SI
+				
+				// Cual es el mas viejo
+				SI (ED > EDV) ENTONCES
+					EDV <- ED
+					NOMV <- NOM
+				FIN SI
+				
+				N <- N + 1
+			SINO
+				ESCRIBA "La edad ingresada es muy alta o incorrecta, por favor vuelva a ingresar los datos"
+			FIN SI
+			
+		FIN MIENTRAS
+	FIN SI
+	
+	SI (R <> 0) ENTONCES
+		LLAMAR NUEVA_LINEA()
+		LLAMAR NUEVA_LINEA()
+		ESCRIBA "El usuario ingresado con mas edad es ", NOMV, " ya que tiene ", EDV, " anios"
+	SINO
+		LLAMAR NUEVA_LINEA()
+		ESCRIBA "El numero de registro ingresado no es valido"
+	FIN SI
+FIN

@@ -1,0 +1,84 @@
+
+/*
+Elabore un algoritmo que lea el nombre, la edad y la estatura de un grupo de 20 personas
+e imprima el nombre solo de las personas que sean mayores de edad y que su estatura
+sea mayor de 1.80 mts.
+*/
+
+/*
+DATOS DE ENTRADA
+	0. N personas			N
+	1. Nombre				NOM
+	2. Edad					ED
+	3. Estatura				EST
+DATOS DE SALIDA
+	1. Solo nombre mayores de: 
+		Nombre				MNOM
+		personas > edad		MED
+		estatura > 1.80		MEST
+DATOS DEL PROCESO
+	
+*/
+
+ENTERO C, N, ED, MED
+CADENA [40] NOM, MNOM1, MNOM2
+REAL EST, MEST
+
+INICIO
+	C <- 0
+	
+	ESCRIBA "Este algoritmo imprime el NOMBRE de una persona mayor de edad y estatura de un grupo de personas"
+	LLAMAR NUEVA_LINEA()
+	
+	LLAMAR NUEVA_LINEA()
+	ESCRIBA "Cuantas personas vas a ingresar: "
+	LEA N
+	LLAMAR NUEVA_LINEA()
+	
+	MIENTRAS (C < N) HAGA
+		
+		//DATOS DE ENTRADA
+		LLAMAR NUEVA_LINEA()
+		ESCRIBA "Ingresa el nombre de la persona: "
+		LEA NOM
+		LLAMAR NUEVA_LINEA()
+		ESCRIBA "Cual es la edad: "
+		LEA ED
+		LLAMAR NUEVA_LINEA()
+		ESCRIBA "Cual es la estatura: "
+		LEA EST
+		LLAMAR NUEVA_LINEA()
+		
+		//DATOS DEL PROCESO
+		SI (ED >= 18) Y (EST >= 180) ENTONCES
+			SI (ED > MED) ENTONCES
+				MNOM1 <- NOM
+				MED <- ED
+			SINO
+				SI (EST > MEST) ENTONCES
+					MNOM2 <- NOM
+					MEST <- EST
+				FIN SI
+			FIN SI
+		SINO
+			LLAMAR NUEVA_LINEA()
+			ESCRIBA "El usuario ingresado es menor de edad o no tiene la estatura necesaria"
+			LLAMAR NUEVA_LINEA()
+		FIN SI
+		
+		LLAMAR NUEVA_LINEA()
+		ESCRIBA "Nombre del usuario ingresado: ", NOM
+		LLAMAR NUEVA_LINEA()
+		ESCRIBA "Edad: ", ED
+		LLAMAR NUEVA_LINEA()
+		ESCRIBA "Estatura: ", EST
+		LLAMAR NUEVA_LINEA()
+		
+		C <- C + 1
+	FIN MIENTRAS
+	
+	LLAMAR NUEVA_LINEA()
+	ESCRIBA "La persona con mayor edad es: ", MNOM1, " con ", MED
+	LLAMAR NUEVA_LINEA()
+	ESCRIBA "La persona con mayor estatura es: ", MNOM2, " con ", MEST
+FIN

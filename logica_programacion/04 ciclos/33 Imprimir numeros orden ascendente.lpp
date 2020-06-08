@@ -1,0 +1,47 @@
+
+/*
+Se tienen 10 parejas de números, elabore un algoritmo que
+imprima cada pareja de números en orden ascendente.
+*/
+
+/*
+DATOS DE ENTRADA
+	- Ingreso de numero						N
+	- Ingreso de repeticiones				R
+DATOS DE SALIDA
+	- Salida de 10 pares de numeros asc		PA
+DATOS DEL PROCESO
+	- PA <- PA * N
+*/
+
+REAL DC, N, R, PA
+
+INICIO
+	DC <- 0
+	
+	ESCRIBA "Este algoritmo imprime parejas de numeros ascendentes"
+	LLAMAR NUEVA_LINEA()
+	
+	// DATOS DE ENTRADA
+	LLAMAR NUEVA_LINEA()
+	ESCRIBA "Ingresa el numero a imprimir en pares ascendentes: "
+	LEA N
+	LLAMAR NUEVA_LINEA()
+	ESCRIBA "Cuantas veces deseas que se imprima: "
+	LEA R
+	LLAMAR NUEVA_LINEA()
+	
+	PA <- N
+	
+	// DATOS DE SALIDA
+	MIENTRAS (DC < R) HAGA
+		
+		PA <- (PA * N) / 2
+		ESCRIBA PA, " - "
+		PA <- (PA * N) / 2
+		ESCRIBA PA
+		LLAMAR NUEVA_LINEA()
+		
+		DC <- DC + 1
+	FIN MIENTRAS
+FIN

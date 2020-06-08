@@ -1,4 +1,5 @@
 
+
 /*
 Se tienen 10 registros, cada registro contiene el nombre, salario básico hora,
 el número de horas trabajadas, el total de deducciones y el total de bonificaciones.
@@ -6,15 +7,58 @@ Elabore un algoritmo que imprima por cada trabajador el nombre, el salario bruto
 */
 
 /*
-DATOS INGRESO
-	
-DATOS SALIDA
-	
+DATOS DE ENTRADA
+	1. N registros						N
+	2. Nombre							NOM
+	3. Salario básico hora				SBH
+	4. Horas trabajadas					HT
+	5. Total deducciones				TD
+	6. Total bonificaciones				TB
+DATOS DE SALIDA
+	1. Imprima x cada trabajador
+		- Nombre						NOM
+		- Salario bruto					SB
+		- Salario neto					SN
+DATOS DEL PROCESO
+	1. SB <- (SBH * HT) + TB
+	2. SN <- SB - TD
 */
 
+ENTERO N, SBH, TD, TB
+CADENA [40] NOM
+REAL HT, SB, SN
 
 INICIO
 	
+	N <- 0
 	
+	ESCRIBA "Ingrese el nombre del trabajador (ingrese * para finalizar): "
+	LEA NOM
 	
+	MIENTRAS (NOM <> "*") HAGA
+	
+		ESCRIBA "Ingrese el salario basico hora: "
+		LEA SBH
+		ESCRIBA "Cuantas horas trabajo en la semana: "
+		LEA HT
+		ESCRIBA "Ingrese el total de deducciones: "
+		LEA TD
+		ESCRIBA "Ingrese el total de bonificaciones: "
+		LEA TB
+		
+		SB <- (SBH * HT) + TB
+		SN <- SB - TD
+		
+		LLAMAR NUEVA_LINEA()
+		ESCRIBA "El salario bruto de ", NOM, " es de $", SB, ", el salario neto es de $", SN
+		
+		LLAMAR NUEVA_LINEA()
+		LLAMAR NUEVA_LINEA()
+		ESCRIBA "Ingrese el nombre del trabajador (ingrese * para finalizar): "
+		LEA NOM
+		
+		N <- N + 1
+	FIN MIENTRAS
+	
+	ESCRIBA "Se ingreso un total de ", N, " registros"
 FIN
