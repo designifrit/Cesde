@@ -1,0 +1,24 @@
+
+/*
+Un empresario del transporte cuenta con 30 vehículos entre buses, busetas y colectivos.
+Al final del día se elabora por cada vehículo un registro con la placa,
+el tipo (1= bus, 2= buseta, 3= colectivo) y el número de pasajeros transportados.
+Elabore un algoritmo que imprima por cada vehículo la placa, el dinero recolectado y
+el pago para el conductor que es el 20 % del total recolectado. También tenga en cuenta
+que el precio del pasaje en Bus es de $2200.oo, en Buseta es de $ 2500.oo y en Colectivos
+es de $3500.oo.
+*/
+
+/*
+DATOS DE ENTRADA
+	
+DATOS DE SALIDA
+	
+DATOS DEL PROCESO
+	
+*/
+
+
+INICIO
+	
+FIN
