@@ -1,0 +1,143 @@
+
+/*
+Elaborar un algoritmo que lea para un grupo de N personas el nombre, la edad y el deporte
+(1= fútbol, 2=baloncesto, 3= otro deporte) e imprima cuantos de fútbol son mayores de edad,
+cuantos de baloncesto son menores de edad y cuantas personas prefieren otro deporte.
+*/
+
+/*
+DATOS DE ENTRADA
+	1. N personas							NOM
+	2. Edad									ED
+	3. Deporte								DEP
+		(1= fútbol, 2=baloncesto, 3= otro deporte)
+DATOS DE SALIDA
+	1. Cuantos mayores ed futbol			FMAY
+	2. Cuantos menores ed baloncesto		BMEN
+	3. Cuantos prefieren otro deporte		OD
+DATOS DEL PROCESO
+	1. FMAY <- FMAY + 1
+	2. BMEN <- BMEN + 1
+	3. OD <- OD + 1
+*/
+
+ENTERO ED, DEP, FMAY, BMEN, OD
+CADENA [50] NOM, NDEP
+CARACTER N, R
+
+INICIO
+	R <- 'E'
+	FMAY <- 0
+	BMEN <- 0
+	OD <- 0
+	
+	ESCRIBA "Este algoritmo determina a cuantos les gusta el futbol, baloncesto otro deporte y establece la edad"
+	LLAMAR NUEVA_LINEA()
+	LLAMAR NUEVA_LINEA()
+	
+	MIENTRAS (N <> '*') HAGA
+		
+		// DATOS DE ENTRADA
+		ESCRIBA "Ingresa el nombre del deportista: "
+		LEA NOM
+		
+		MIENTRAS (R <> '*') HAGA
+			ESCRIBA "Cual es la edad: "
+			LEA ED
+			
+			SI (ED <= 120) ENTONCES
+				R <- '*'
+			SINO
+				ESCRIBA "Ha ingresado un valor invalido"
+				LLAMAR NUEVA_LINEA()
+				R <- 'E'
+			FIN SI
+		FIN MIENTRAS
+		
+		R <- 'E'
+		
+		MIENTRAS (R <> '*') HAGA
+			ESCRIBA "Cual es el deporte que practica (1 = futbol, 2 = baloncesto, 3 = otro deporte): "
+			LEA DEP
+			LLAMAR NUEVA_LINEA()
+			
+			CASO DEP
+				1:
+					NDEP <- "FUTBOL"
+					R <- '*'
+				2:
+					NDEP <- "BALONCESTO"
+					R <- '*'
+				3:
+					NDEP <- "OTRO DEPORTE"
+					R <- '*'
+				SINO:
+					ESCRIBA "Ha ingresado un valor invalido"
+					LLAMAR NUEVA_LINEA()
+					R <- 'E'
+			FIN CASO
+		FIN MIENTRAS
+		
+		R <- 'E'
+		
+		// DATOS DEL PROCESO
+		LLAMAR NUEVA_LINEA()
+		ESCRIBA "El Nombre del deportista es: ", NOM
+		LLAMAR NUEVA_LINEA()
+		ESCRIBA NOM, " tiene ", ED, " anios"
+		LLAMAR NUEVA_LINEA()
+		ESCRIBA "Su deporte favorito es ", NDEP
+		LLAMAR NUEVA_LINEA()
+		
+		SI(DEP = 1)O(DEP = 2)ENTONCES
+			SI(DEP = 1)Y(ED >= 18)ENTONCES
+				FMAY <- FMAY + 1
+			SINO
+				SI(DEP = 2)Y(ED < 18)ENTONCES
+					BMEN <- BMEN + 1
+				FIN SI
+			FIN SI
+		SINO
+			OD <- OD + 1
+		FIN SI
+		
+		// VERIFICA SI CONTINUAR
+		MIENTRAS (R <> '*') HAGA
+			LLAMAR NUEVA_LINEA()
+			ESCRIBA "DESEA INGRESAR OTRO REGISTRO (S / N): "
+			LEA N
+			LLAMAR NUEVA_LINEA()
+			
+			CASO N
+				'S':
+					N <- 'S'
+					R <- '*'
+				's':
+					N <- 'S'
+					R <- '*'
+				'N':
+					N <- '*'
+					R <- '*'
+				'n':
+					N <- '*'
+					R <- '*'
+				SINO:
+					ESCRIBA "Ha ingresado un valor invalido"
+					LLAMAR NUEVA_LINEA()
+					R <- 'E'
+			FIN CASO
+		FIN MIENTRAS
+		
+		R <- 'E'
+		
+	FIN MIENTRAS
+	
+	// DATOS DE SALIDA
+	LLAMAR NUEVA_LINEA()
+	ESCRIBA "Jugadores de futbol mayores de edad: ", FMAY
+	LLAMAR NUEVA_LINEA()
+	ESCRIBA "Jugadores de baloncesto menores de edad: ", BMEN
+	LLAMAR NUEVA_LINEA()
+	ESCRIBA "Personas que prefieren otros deportes: ", OD
+	LLAMAR NUEVA_LINEA()
+FIN

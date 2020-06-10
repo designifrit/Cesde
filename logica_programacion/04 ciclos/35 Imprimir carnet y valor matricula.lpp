@@ -11,18 +11,70 @@ igual a 1 se le hace un descuento del 20 %. Cada materia tiene un valor de $100.
 DATOS DE ENTRADA
 	0. Nombre							NOM
 	1. Número de carnet estudiante		NC
-	2. Cantidad de materias				CMM
+	2. Cantidad de materias				CM
 		- Valor materia $100000
-	3. Estrato							ES
+	3. Estrato							EST
 DATOS DE SALIDA
 	1. Carnet estudiante				NC
 	2. Valor matricula					VM
-		- SI(NM > 5) Y (ES = 1) > 20% DC
+		- 20% decuento = EST 1
 DATOS DEL PROCESO
-	
+	- SI(NM > 5) Y (ES = 1) > 20% DC	
 */
+
+ENTERO N, C, NC, CM, EST, VM, VTB
+CADENA [50] NOM
+REAL VTD, VTN
 
 INICIO
 	
+	// INICIALIZAR
+	C <- 0
+	
+	ESCRIBA "Algoritmo que imprime por cada estudiante el carnet y el valor de la matricula con posibilidad de descuento"
+	LLAMAR NUEVA_LINEA
+	
+	LLAMAR NUEVA_LINEA()
+	ESCRIBA "Cuantos estudiantes desea matricular: "
+	LEA N
+	LLAMAR NUEVA_LINEA()
+	
+	MIENTRAS (C < N) HAGA
+		
+		// DATOS DE INGRESO
+		LLAMAR NUEVA_LINEA()
+		ESCRIBA "Escriba el nombre del estudiante: "
+		LEA NOM
+		ESCRIBA "Cual es el numero del carnet: "
+		LEA NC
+		ESCRIBA "Cuantas materias desea matricular (1 minimo / 7 maximo): "
+		LEA CM
+		ESCRIBA "Cual es el estrato del estudiante (1 / 2 / 3 / 4 / 5 / 6): "
+		LEA EST
+		
+		// DATOS DEL PROCESO
+		VM <- 120000
+		VTB <- VM * CM
+		
+		LLAMAR NUEVA_LINEA()
+		ESCRIBA "El estudiante ", NOM, " con el numero de carnet ", NC, ", ha ingresado ", CM, " ha matricular este semestre"
+		LLAMAR NUEVA_LINEA()
+		
+		SI (CM >= 5) Y (EST = 1) ENTONCES
+			VTD <- VTB * 20 / 100
+			VTN <- VTB - VTD
+			
+			ESCRIBA "Aplica para un descuento de: $", VTD
+			LLAMAR NUEVA_LINEA()
+			ESCRIBA "El valor de la matricula con descuento es de: $", VTN
+		SINO
+			LLAMAR NUEVA_LINEA()
+			ESCRIBA "No aplica para el descuento"
+			LLAMAR NUEVA_LINEA()
+			ESCRIBA "El valor de la matricula es de: $", VTB
+		FIN SI
+		
+		C <- C + 1
+	FIN MIENTRAS
+	
 FIN
-
