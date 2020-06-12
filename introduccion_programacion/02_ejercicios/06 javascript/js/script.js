@@ -1,3 +1,5 @@
 
 
-console.log('Hola mundo!');
+let nombreUsuario;
+let password;
+
