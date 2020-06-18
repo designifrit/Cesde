@@ -1,0 +1,40 @@
+
+/*
+Calcula la potencia de 2 numeros
+
+5 ^ 6 = 5 * 5 * 5 * 5 * 5
+*/
+
+ENTERO BAS, EXP
+REAL POTENCIA
+
+FUNCION FPOTENCIA(ENTERO BASE, ENTERO EXPONENTE): REAL
+	ENTERO I
+	REAL POTE
+	INICIO
+		// INICIALIZAR
+		POTE <- 1
+		
+		// PROCESO
+		PARA I <- 1 HASTA EXPONENTE HAGA
+			POTE <- POTE * BASE
+		FIN PARA
+		
+		// SALIDA
+		RETORNE POTE
+	FIN
+	
+INICIO
+	ESCRIBA "Este algoritmo calcula la potencia de 2 numeros"
+	LLAMAR NUEVA_LINEA()
+	
+	LLAMAR NUEVA_LINEA()
+	ESCRIBA "Digite la base: "
+	LEA BAS
+	ESCRIBA "Digite el exponente: "
+	LEA EXP
+	
+	POTENCIA <- FPOTENCIA(BAS, EXP)
+	LLAMAR NUEVA_LINEA()
+	ESCRIBA BAS, " elevado a la ", EXP, " = ", POTENCIA
+FIN
