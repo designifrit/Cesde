@@ -1,15 +1,139 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Javascript</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- google API -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <!-- styles -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Bootstrap</title>
+  </head>
+
+  <body>
+
+    <header id="header" class="container">
+      <nav id="nav" class="navbar fixed-top navbar-expand-lg navbar-light navcol">
+        <a class="navbar-brand" href="index.html">
+          <img class="logo" src="img/logo.png" alt="Logo Alore">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav d-flex justify-content-center">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Portafolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div id="header">
+        <h1></h1>
+      </div>
+    </header>
+
+
+
+    <main id="main" class="container">
+        <article class="row">
+          <div class="col-12 col-md-12">
+            <div class="portada"></div>
+          </div>
+          <div class="col-12 col-md-4">
+            <h3 id="titulo" class="mt-5">Titulo</h3>
+          </div>
+          <div class="col-12 col-md-8">
+            <p id="parrafo1" class="mt-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente ratione corporis, itaque ad nam cum dolore necessitatibus dolorem maxime ullam odio repellendus id ipsum. Hic assumenda eius tempore amet beatae?</p>
+            <button type="button" class="btn mt-2 button">conoce nuestros planes<span class="material-icons">keyboard_arrow_right</span></button>
+          </div>
+        </article>
+        <article class="row">
+          <div class="d-none d-md-block col-md-3">
+          </div>
+          <div class="d-none d-md-block col-md-2">
+            <img src="https://picsum.photos/id/598/600/400" width="100%" alt="">
+          </div>
+          <div class="d-none d-md-block col-md-3">
+            <img src="https://picsum.photos/id/642/600/400" width="100%" alt="">
+          </div>
+          <div class="col-12 col-md-4">
+            <img src="https://picsum.photos/id/211/600/400" width="100%" alt="">
+          </div>
+        </article>
+        <article class="row mt-5">
+          <div class="col-12 col-md-4">
+            <h3>Sobre mi</h3>
+          </div>
+          <div class="col-12 col-md-8">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore odio inventore aliquam, eveniet ipsam ratione quibusdam necessitatibus cum delectus, velit veritatis vero, esse sit accusantium quia explicabo porro sapiente temporibus?</p>
+            <button type="button" class="btn mt-2 button">saber mas<span class="material-icons">keyboard_arrow_right</span></button>
+          </div>
+        </article>
+    </main>
+
+
+
+    <footer id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 mt-5">
+            <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h2>
+          </div>
+          <div class="col-12 col-md-4">
+            <span>Chat</span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa provident placeat ducimus voluptatem, error quasi vitae, veritatis praesentium incidunt fugiat quibusdam voluptas numquam eius unde saepe quis consequatur quam eos!</p>
+          </div>
+          <div class="col-12 col-md-4">
+            <span>Contacto</span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa provident placeat ducimus voluptatem, error quasi vitae, veritatis praesentium incidunt fugiat quibusdam voluptas numquam eius unde saepe quis consequatur quam eos!</p>
+          </div>
+          <div class="col-12 col-md-4 mb-5">
+            <span>Encuentro</span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa provident placeat ducimus voluptatem, error quasi vitae, veritatis praesentium incidunt fugiat quibusdam voluptas numquam eius unde saepe quis consequatur quam eos!</p>
+          </div>
+        </div>
+      </div>
+    </footer>
     
 
+    <!-- javascript -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
-</body>
+  </body>
 </html>
