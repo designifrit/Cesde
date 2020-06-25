@@ -139,6 +139,12 @@
           <AssociatedConnUserName />
           <FullPath>20 Agrupar clientes ciudad y fecha.sql</FullPath>
         </FileNode>
+        <FileNode Name="21 Procedimiento almacenado.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:CERBERUS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>CERBERUS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>21 Procedimiento almacenado.sql</FullPath>
+        </FileNode>
       </Items>
     </LogicalFolder>
     <LogicalFolder Name="Miscellaneous" Type="3" Sorted="true">
