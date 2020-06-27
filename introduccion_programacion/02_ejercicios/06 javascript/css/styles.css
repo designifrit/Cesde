@@ -19,8 +19,12 @@
     font-family: var(--font-titles);
 } */
 
-p, a, em, strong, i, b, small, sup, sub,h1, h2, h3, h4, h5, h6, button, span{
+p, a, em, strong, i, b, small, sup, input, label, sub,h1, h2, h3, h4, h5, h6, button, span, small{
     font-family: var(--font-parag);
+}
+
+.alert{
+    color: var(--hover3);
 }
 
 .button{
