@@ -1,15 +1,15 @@
 <?xml version="1.0"?>
-<SqlWorkbenchSqlProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="Veterinaria_Solution">
+<SqlWorkbenchSqlProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="Ordenes en SQL">
   <Items>
     <LogicalFolder Name="Connections" Type="2" Sorted="true">
       <Items>
         <ConnectionNode Name="CERBERUS:CERBERUS\Alejandro">
-          <Created>2020-04-27T10:24:36.2450095-05:00</Created>
+          <Created>2020-06-28T13:59:26.9907053-05:00</Created>
           <Type>SQL</Type>
           <Server>CERBERUS</Server>
           <UserName />
           <Authentication>Windows Authentication</Authentication>
-          <InitialDB>master</InitialDB>
+          <InitialDB>HiperAlmacen</InitialDB>
           <LoginTimeout>30</LoginTimeout>
           <ExecutionTimeout>0</ExecutionTimeout>
           <ConnectionProtocol>NotSpecified</ConnectionProtocol>
@@ -19,65 +19,65 @@
     </LogicalFolder>
     <LogicalFolder Name="Queries" Type="0" Sorted="true">
       <Items>
-        <FileNode Name="00 Attach base de datos.sql">
+        <FileNode Name="01 SP [a] Adición categoría 11.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:CERBERUS:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>CERBERUS</AssociatedConnSrvName>
           <AssociatedConnUserName />
-          <FullPath>00 Attach base de datos.sql</FullPath>
+          <FullPath>01 SP [a] Adición categoría 11.sql</FullPath>
         </FileNode>
-        <FileNode Name="01 Creación base de datos.sql">
+        <FileNode Name="01 SP [b] Modificar cantidad y suma precio.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:CERBERUS:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>CERBERUS</AssociatedConnSrvName>
           <AssociatedConnUserName />
-          <FullPath>01 Creación base de datos.sql</FullPath>
+          <FullPath>01 SP [b] Modificar cantidad y suma precio.sql</FullPath>
         </FileNode>
-        <FileNode Name="02 Creación de tablas e Identity.sql">
+        <FileNode Name="01 SP [c] Discontinue productos.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:CERBERUS:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>CERBERUS</AssociatedConnSrvName>
           <AssociatedConnUserName />
-          <FullPath>02 Creación de tablas e Identity.sql</FullPath>
+          <FullPath>01 SP [c] Discontinue productos.sql</FullPath>
         </FileNode>
-        <FileNode Name="03 LLaves foráneas.sql">
+        <FileNode Name="01 SP [d] Imprimir promedio.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:CERBERUS:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>CERBERUS</AssociatedConnSrvName>
           <AssociatedConnUserName />
-          <FullPath>03 LLaves foráneas.sql</FullPath>
+          <FullPath>01 SP [d] Imprimir promedio.sql</FullPath>
         </FileNode>
-        <FileNode Name="04 Registros tabla.sql">
+        <FileNode Name="02 Subconsulta [a] Suma descuentos.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:CERBERUS:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>CERBERUS</AssociatedConnSrvName>
           <AssociatedConnUserName />
-          <FullPath>04 Registros tabla.sql</FullPath>
+          <FullPath>02 Subconsulta [a] Suma descuentos.sql</FullPath>
         </FileNode>
-        <FileNode Name="05 Adición registro Perro Firulais .sql">
+        <FileNode Name="02 Subconsulta [b] Muestra clientes compraron impresoras.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:CERBERUS:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>CERBERUS</AssociatedConnSrvName>
           <AssociatedConnUserName />
-          <FullPath>05 Adición registro Perro Firulais .sql</FullPath>
+          <FullPath>02 Subconsulta [b] Muestra clientes compraron impresoras.sql</FullPath>
         </FileNode>
-        <FileNode Name="06 Agendar cita Firulais.sql">
+        <FileNode Name="02 Subconsulta [c] Muestra nombre y precio productos cliente.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:CERBERUS:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>CERBERUS</AssociatedConnSrvName>
           <AssociatedConnUserName />
-          <FullPath>06 Agendar cita Firulais.sql</FullPath>
+          <FullPath>02 Subconsulta [c] Muestra nombre y precio productos cliente.sql</FullPath>
         </FileNode>
-        <FileNode Name="07 Cambio fecha cita.sql">
+        <FileNode Name="03 Busqueda tablas [a] Muestre productos vendidos diciembre.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:CERBERUS:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>CERBERUS</AssociatedConnSrvName>
           <AssociatedConnUserName />
-          <FullPath>07 Cambio fecha cita.sql</FullPath>
+          <FullPath>03 Busqueda tablas [a] Muestre productos vendidos diciembre.sql</FullPath>
         </FileNode>
-        <FileNode Name="08 Cambio de raza de Firulais.sql">
+        <FileNode Name="03 Busqueda tablas [b] Muestre cliente compraron 12 meses.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:CERBERUS:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>CERBERUS</AssociatedConnSrvName>
           <AssociatedConnUserName />
-          <FullPath>08 Cambio de raza de Firulais.sql</FullPath>
+          <FullPath>03 Busqueda tablas [b] Muestre cliente compraron 12 meses.sql</FullPath>
         </FileNode>
-        <FileNode Name="09 Anular registro cita Firulais.sql">
+        <FileNode Name="03 Busqueda tablas [c].sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:CERBERUS:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>CERBERUS</AssociatedConnSrvName>
           <AssociatedConnUserName />
-          <FullPath>09 Anular registro cita Firulais.sql</FullPath>
+          <FullPath>03 Busqueda tablas [c].sql</FullPath>
         </FileNode>
       </Items>
     </LogicalFolder>

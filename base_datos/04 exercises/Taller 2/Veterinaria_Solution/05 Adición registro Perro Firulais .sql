@@ -11,6 +11,7 @@ SELECT * FROM Mascota
 SET IDENTITY_INSERT Mascota ON
 -- Inserta registro nombre del perro y fecha de nacimiento
 INSERT INTO Mascota(idMascota, nombreMascota, fechaNacimiento) VALUES('0010', 'Firulais', '2018-03-01')
+SET IDENTITY_INSERT Mascota OFF
 
 SELECT * FROM Raza
 -- Inserta registro de raza Dalmata
