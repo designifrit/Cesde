@@ -11,14 +11,87 @@ deporte (1=natación, 2= fútbol, 3=ciclismo, 4=patinaje, 5=otro deporte). Elabore
 
 /*
 DATOS DEL PROCESO
-	
+	1. N registros																		N
+	2. Nombre																			NOM
+	3. Edad																				EDA
+	4. Estatura																			EST
+	5. Sexo																				SEX
+		(1=hombre, 2=mujer)
+	6. Deporte																			DEP
+		(1=natación, 2= fútbol, 3=ciclismo, 4=patinaje, 5=otro deporte)
 DATOS DE SALIDA
-	
+	1. Promedio edad > prefieren futbol													PEF
+	2. Porcentaje mujeres prefieren ciclismo respecto a todos los de ciclismo			PMC
+	3. Nombre mujer mas alta patinaje													PMA
+	4. Practican natación > miden  + 1.80mts											PNM
+	5. Promedio edad todas las personas													PET
 DATOS DEL PROCESO
-	
+	1. PEF = APEF2 / CPEF2
+	2. PMC = CPMC2 * 100 / CPMT3
+	3. PMA = SI(SEX = 2)Y(DEP = 4)
+	4. PNM = SI(DEP = 1)Y(EST >= 180)
+	5. PET = APET / CPET
 */
 
+ENTERO EDA, SEXO, DEP, PNM, APEF2, CPEF2, CPMC2, CPMT3, APET, CPET
+CADENA [40] NOM, PMA
+CARACTER N, R
+REAL EST, PEF, PMC, PET
 
 INICIO
 	
+	// INICIALIZACION
+	N <- 'F'
+	R <- 'F'
+	PEF <- 0
+	APEF2 <- 0
+	CPEF2 <- 0
+	PMC <- 0
+	CPMC2 <- 0
+	CPMT3 <- 0
+	PMA <- 0
+	PNM <- 0
+	PET <- 0
+	APET <- 0
+	CPET <- 0
+	
+	ESCRIBA "Este algoritmo impreme el promedio, porcentaje y determina la altura de acuerdo a un grupo de registros de deportes"
+	LLAMAR NUEVA_LINEA()
+	
+	MIENTRAS(N <> '*')HAGA
+		
+		
+		MIENTRAS(R <> '*')HAGA
+			LLAMAR NUEVA_LINEA()
+			ESCRIBA "Desea ingresar otro registro (S = continuar / * = para finalizar): "
+			LEA N
+				'S':
+					R <- '*'
+				's':
+					R <- '*'
+				'*':
+					N <- '*'
+					R <- '*'
+				SINO:
+					LLAMAR NUEVA_LINEA()
+					ESCRIBA "Ha ingresado un valor invalido"
+					R <- 'F'
+			CASO N
+				
+			FIN CASO
+		FIN MIENTRAS
+	FIN MIENTRAS
 FIN
+
+
+
+
+
+
+
+
+
+
+
+
+
