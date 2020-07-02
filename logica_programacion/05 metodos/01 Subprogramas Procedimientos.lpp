@@ -1,0 +1,115 @@
+
+/*
+PROGRAMA PRINCIPAL
+
+SUBPROGRAMA
+Es un conjunto de instrucciones que cumplen una labor específica y que es activado por otro programa
+(Programa principal)
+
+Existen 2 tipos de programas:
+	- Procedimientos
+	- Funciones
+	
+	PROCEDIMIENTOS
+	Se caracterizan porque pueden tener varios parámetros tanto de entrada como de salida.
+	El nombre del procedimiento debe cumplir con las características del nombre de un campo variable
+	
+		PROCEDIMIENTOS nombre (parametros de enttrada y de salida)
+			declaración de variables locales
+			INICIO
+			FIN
+	
+	PARAMETROS
+	Son las variables por medios de las cuales se comunica el programa con el subprograma
+
+*****************************************************************************************
+*/
+
+/*
+EJEMPLO
+Crear un procedimiento que encuentre la suma de dos números
+	DATOS DE ENTRADA	N1, N2
+	DATOS DE SALIDA		SUMA
+	DATOS DEL PROCESO	SUMA <- N1 + N2
+
+PROCEDIMIENTO SUMADOS(ENTERO N1, ENTERO N2, VAR ENTERO SUMA)
+	INICIO
+		SUMA <- N1 + N2
+	FIN
+*/
+
+/*
+EJEMPLO
+Crear un procedimiento que encuentre el mayor de dos números
+	DATOS DE ENTRADA	NR1, NR2
+	DATOS DE SALIDA		MAYOR
+	DATOS DEL PROCESO	(NR1 > NR2)
+
+PROCEDIMIENTO MAYDOS(ENTERO NR1, ENTERO NR2, VAR ENTERO MAYOR)
+	INICIO
+		SI(NR1 > NR2)ENTONCES
+			MAYOR <- NR1
+		SINO
+			MAYOR <- NR2
+		FIN SI
+	FIN
+*/
+
+/*
+*****************************************************************************************
+
+ESTRUCTURA DE UN PROGRAMA CON SUBPROGRAMAS
+	1. Declaración de variables del programa principal (Globales ó públicas)
+	2. Código de los subprogramas
+	3. Inicio
+	4. LLamar subprograma
+	5. Fin
+*/
+
+//Variables del programa principal
+ENTERO NUM1, NUM2, NUM3, NUM4, R1, R2, SUM
+
+// Procedimientos
+PROCEDIMIENTO SUMADOS(ENTERO N1, ENTERO N2, VAR ENTERO SUMA)
+	INICIO
+		SUMA <- N1 + N2
+	FIN
+
+// Programa principal
+INICIO
+	ESCRIBA "Digite el primer numero: "
+	LEA NUM1
+	ESCRIBA "Digite el segundo numero: "
+	LEA NUM2
+	ESCRIBA "Digite el tercer numero: "
+	LEA NUM3
+	ESCRIBA "Digite el cuarto numero: "
+	LEA NUM4
+	
+	LLAMAR SUMADOS(NUM1, NUM2, R1)
+	LLAMAR SUMADOS(NUM1, NUM2, R2)
+	LLAMAR SUMADOS(R1, R2, SUM)
+	
+	LLAMAR NUEVA_LINEA()
+	ESCRIBA "La suma es: ", SUM
+FIN
+
+/*
+REGLAS QUE SE DEBEN CUMPLIR
+	1. Las variables qZue se utilizan para comunicar el subprograma con el programa principal se
+	distinguen así:
+		- En el subprograma se llama parámetros
+		- En el programa principal se llama argumentos
+	2. La cantidad de argumentos debe ser igual a la cantidad de parámetros
+	3. El orden de los parámetros y los argumentos debe ser el mismo
+	4. Cada pareja Argumento / Parámetro debe ser del mismo tipo
+	5. Los parámetros deben ser todos variables
+	6. Los argumentos pueden ser variables o constantes con excepción los de salida (variable)
+	7. Un subprograma puede ser utilizado varias veces
+	8. Un subprograma puede llamar a otro subprograma
+	9. Un programa puede llamarse a si mismo (recursividad)
+*/
+
+
+
+

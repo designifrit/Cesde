@@ -1,0 +1,60 @@
+
+/*
+PROGRAMA PRINCIPAL
+
+SUBPROGRAMA
+Es un conjunto de instrucciones que cumplen una labor específica y que es activado por otro programa
+(Programa principal)
+
+Existen 2 tipos de programas:
+	- Procedimientos
+	- Funciones
+	
+	FUNCIONES
+	Se caracterizan porque la función siempre devuelve un dato y lo hace en su nombre, por lo tanto
+	para utilizar una función se le debe asignar una variable
+	
+		FUNCION nombre (parametros de entrada): tipo de dato de salida
+			declaración de variables locales
+			INICIO
+				RETORNE variable
+			FIN
+	
+	PARAMETROS
+	Son las variables por medios de las cuales se comunica el programa con el subprograma
+
+*****************************************************************************************
+*/
+
+/*
+*****************************************************************************************
+
+ESTRUCTURA DE UN PROGRAMA CON SUBPROGRAMAS
+	1. Declaración de variables del programa principal (Globales ó públicas)
+	2. Código de los subprogramas
+	3. Inicio
+	4. LLamar subprograma
+	5. Fin
+*/
+
+//Variables del programa principal
+ENTERO NUMERO1, NUMERO2, SUMA
+
+// Funciones
+FUNCION SUMADOS(ENTERO N1, ENTERO N2): ENTERO
+	ENTERO SUM
+	INICIO
+		SUM <- N1 + N2
+	FIN
+
+// Programa principal
+INICIO
+	ESCRIBA "Digite el primer numero: "
+	LEA NUMERO1
+	ESCRIBA "Digite el segundo numero: "
+	LEA NUMERO2
+	
+	SUMA <- SUMADOS(NUMERO1, NUMERO2)
+	ESCRIBA "La suma de los numeros es: ", SUMA
+FIN
+

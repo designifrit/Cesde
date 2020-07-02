@@ -19,6 +19,12 @@
     </LogicalFolder>
     <LogicalFolder Name="Queries" Type="0" Sorted="true">
       <Items>
+        <FileNode Name="00 Attach base de datos.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:CERBERUS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>CERBERUS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>00 Attach base de datos.sql</FullPath>
+        </FileNode>
         <FileNode Name="01 Creación base de datos.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:CERBERUS:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>CERBERUS</AssociatedConnSrvName>
