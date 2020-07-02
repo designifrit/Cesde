@@ -1,0 +1,239 @@
+
+/*
+Elaborar un algoritmo que al ejecutarse le muestre
+al usuario un menú de la siguiente forma:
+			MENU
+	1. Bonificacion
+	2. Potencia de un numero
+	3. Nombre y edad de la persona mas joven
+	4. Terminar
+*/
+
+/*
+DATOS DE ENTRADA
+	1. Bonificacion (funcion)									
+		a. Nombre												bonNom
+		b. Estado civil											bonEst
+			(1 = Soltero, 2 = Casado, 3 = Union libre)
+		c. Salario mensual										bonSal
+	2. Potencia de un numero (funcion)							
+		a. Numero base											potBase
+		b. Numero potencia										potPot
+	3. Persona mas joven										
+		a. Ingreso cantidad de personas							n
+		b. Nombre												jovNom
+		c. Edad													jovEdad
+DATOS DE SALIDA
+	1. Bonificacion												resBonificacion
+		a. Soltero = Medio salario mensual
+		b. Casado = 1 salario mensual
+		c. Union libre = 2 salarios mensuales
+	2. Potencia de un numero									resPotencia
+	3. Mostrar nombre y edad de persona mas joven				resNomJoven, resEdadJoven
+DATOS DEL PROCESO
+	1.	IF(bonEst = 1) = resBonificacion
+		IF(bonEst = 2) = resBonificacion
+		IF(bonEst = 3) = resBonificacion
+	2. potBase ^ potPot = resPotencia
+	3. IF(jovEdad < resEdadJoven)
+		resNomJoven <- jovNom
+		resEdadJoven <- jovEdad
+*/
+
+// VARIABLES GLOBALES ----------------------------------------------------------
+CARACTER n1, n2, detener
+CADENA[40] bonNom, jovNom, resNomJoven
+ENTERO opcion, bonEst, bonSal, jovNum, jovEdad, resBonificacion, resEdadJoven
+REAL potBase, potPot, resPotencia
+
+// PROCEDIMIENTOS --------------------------------------------------------------
+PROCEDIMIENTO cargaMenu(var entero pMenu)
+INICIO
+	LLAMAR NUEVA_LINEA()
+	ESCRIBA "---- MENU DE OPCIONES ----"
+	LLAMAR NUEVA_LINEA()
+	ESCRIBA "1. Calcular bonificacion de un empleado: "
+	LLAMAR NUEVA_LINEA()
+	ESCRIBA "2. Calcular la Potencia de un numero: "
+	LLAMAR NUEVA_LINEA()
+	ESCRIBA "3. Determinar que persona ingresada es la mas joven: "
+	LLAMAR NUEVA_LINEA()
+	ESCRIBA "4. Terminar el programa (SALIR): "
+	LLAMAR NUEVA_LINEA()
+	LLAMAR NUEVA_LINEA()
+	ESCRIBA "Opcion: "
+	LEA pMenu
+	
+	LLAMAR NUEVA_LINEA()
+FIN
+
+PROCEDIMIENTO generarTitulo(cadena[30] pTitulo)
+INICIO
+	LLAMAR NUEVA_LINEA()
+	ESCRIBA "******************************************************************"
+	LLAMAR NUEVA_LINEA()
+	ESCRIBA "        " + ptitulo
+	LLAMAR NUEVA_LINEA()
+	ESCRIBA "******************************************************************"
+	LLAMAR NUEVA_LINEA()
+FIN
+
+PROCEDIMIENTO menorEdad(cadena[40] pNom, entero pEdad)
+
+INICIO
+	n1 <- 'f'
+	MIENTRAS(n1 <> 'n')HAGA
+		SI(pEdad < resEdadJoven)ENTONCES
+			resNomJoven <- pNom
+			resEdadJoven <- pEdad
+		FIN SI
+		MIENTRAS(n2 <> 'n')HAGA
+			LLAMAR NUEVA_LINEA()
+			ESCRIBA "Desea ingresar otro registro (S/N)"
+			LEA n2
+			CASO n2
+				's':
+					n2 <- 'n'
+				'S':
+					n2 <- 'n'
+				'n':
+					n1 <- 'n'
+					n2 <- 'n'
+				'N':
+					n1 <- 'n'
+					n2 <- 'n'
+				SINO:
+					LLAMAR NUEVA_LINEA()
+					ESCRIBA "Escriba una opcion valida"
+					LLAMAR NUEVA_LINEA()
+					n2 <- 'f'
+			FIN CASO
+		FIN MIENTRAS
+		n2 <- 'f'
+		
+		SI(n1 <> 'n')ENTONCES
+			ESCRIBA "Escribe el nombre de la persona: "
+			LEA pNom
+			ESCRIBA "Cual es la edad: "
+			LEA pEdad
+		FIN SI
+		LLAMAR NUEVA_LINEA()
+	FIN MIENTRAS
+
+	ESCRIBA resNomJoven, " es la persona mas joven con ", resEdadJoven, " anios"
+FIN
+
+// FUNCIONES -------------------------------------------------------------------
+FUNCION bonificacionEmpleado(var cadena[40] pNom, entero pCivil, entero pSalario) : ENTERO
+ENTERO salario
+INICIO
+	SI(pCivil =  1)ENTONCES
+		salario <- pSalario / 2
+	SINO
+		SI(pCivil = 2)ENTONCES
+			salario <- pSalario
+			SINO
+				SI(pCivil = 3)ENTONCES
+					salario <- pSalario * 2
+				SINO
+					ESCRIBA "la opcion que ingreso en estado civil es invalida"
+					salario <- 0
+			FIN SI
+		FIN SI
+	FIN SI
+	RETORNE salario
+FIN
+
+FUNCION potenciaNumero(var real pBase, real pPotencia): REAL
+REAL potencia
+INICIO
+	potencia <- pBase ^ pPotencia
+	RETORNE potencia
+FIN
+
+// PROGRAMA PRINCIPAL ----------------------------------------------------------
+INICIO
+	/* INICIALIZACION */
+	n1 <- 'f'
+	n2 <- 'f'
+	resBonificacion <- 0
+	resPotencia <- 0
+	resNomJoven <- ""
+	resEdadJoven <- 110
+	
+	/* MENÚ DE SELECCIÓN */
+	REPITA
+	LLAMAR LIMPIAR_PANTALLA()
+		LLAMAR cargaMenu(opcion)
+		
+		CASO opcion
+			1: 
+				LLAMAR LIMPIAR_PANTALLA()
+				LLAMAR generarTitulo("Calcula la bonificacion de un empleado")
+				LLAMAR NUEVA_LINEA()
+				ESCRIBA "Escriba el nombre del empleado: "
+				LEA bonNom
+				ESCRIBA "Escriba el estado civil (1 = Soltero, 2 = Casado, 3 = Union libre): "
+				LEA bonEst
+				ESCRIBA "Cual es el salario mensual del empleado: $"
+				LEA bonSal
+				resBonificacion <- bonificacionEmpleado(bonNom, bonEst, bonSal)
+				LLAMAR NUEVA_LINEA()
+				ESCRIBA "La bonificacion de salario para ", bonNom," es: $", resBonificacion
+				LLAMAR NUEVA_LINEA()
+				LLAMAR NUEVA_LINEA()
+				ESCRIBA "        Digite ENTER para regresar al menu"
+				LEA detener
+			2: 
+				LLAMAR LIMPIAR_PANTALLA()
+				LLAMAR generarTitulo("Calcula la Potencia de un numero")
+				LLAMAR NUEVA_LINEA()
+				ESCRIBA "Ingrese el numero Base: "
+				LEA potBase
+				ESCRIBA "Ingresa el segundo numero: "
+				LEA potPot
+				resPotencia <- potenciaNumero(potBase, potPot)
+				ESCRIBA "La potencia del numero base es: ", resPotencia
+				LLAMAR NUEVA_LINEA()
+				LLAMAR NUEVA_LINEA()
+				ESCRIBA "        Digite ENTER para regresar al menu"
+				LEA detener
+			3: 
+				LLAMAR LIMPIAR_PANTALLA()
+				LLAMAR generarTitulo("Determinar que persona ingresada es la mas joven")
+				LLAMAR NUEVA_LINEA()
+				
+				ESCRIBA "Escribe el nombre de la persona: "
+				LEA jovNom
+				ESCRIBA "Cual es la edad de la persona: "
+				LEA jovEdad
+				
+				LLAMAR menorEdad(jovNom, jovEdad)
+				
+				LLAMAR NUEVA_LINEA()
+				LLAMAR NUEVA_LINEA()
+				ESCRIBA "        Digite ENTER para regresar al menu"
+				LEA detener
+			4: 
+				LLAMAR LIMPIAR_PANTALLA()
+				LLAMAR generarTitulo("Gracias por usar nuestro software")
+			SINO:
+				LLAMAR NUEVA_LINEA()
+				LLAMAR generarTitulo("Escriba una opcion valida")
+				LLAMAR NUEVA_LINEA()
+				LEA detener
+		FIN CASO
+	HASTA(opcion = 4)
+FIN
+
+
+
+
+
+
+
+
+
+
+
+

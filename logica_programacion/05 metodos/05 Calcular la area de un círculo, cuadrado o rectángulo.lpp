@@ -1,0 +1,109 @@
+
+/*
+Realizar un programa que esté en capacidad de calcular el área
+de cualquiera de estas figuras: Círculo, cuadrado o rectángulo
+*/
+
+/*
+DATOS DE ENTRADA
+	
+DATOS DE SALIDA
+	1. Calcular área del círculo
+	2. Calcular área del cuadrado
+	3. Calcular área del rectángulo
+DATOS DEL PROCESO
+	Círculo
+		A = p1 * r2
+	Cuadrado
+		A = b ^ 2
+	rectángulo
+		A = b h
+*/
+
+// VARIABLES GLOBALES
+ENTERO opcion
+REAL radio, resultado, base, altura
+
+// PROCEDIMIENTOS
+PROCEDIMIENTO cargaMenu(var entero pMenu)
+INICIO
+	LLAMAR NUEVA_LINEA()
+	ESCRIBA "---- MENU DE OPCIONES ----"
+	LLAMAR NUEVA_LINEA()
+	ESCRIBA "1. Area de un circulo: "
+	LLAMAR NUEVA_LINEA()
+	ESCRIBA "2. Area de un cuadrado: "
+	LLAMAR NUEVA_LINEA()
+	ESCRIBA "3. Area de un rectangulo: "
+	LLAMAR NUEVA_LINEA()
+	ESCRIBA "Opcion: "
+	LEA pMenu
+	
+	LLAMAR NUEVA_LINEA()
+FIN
+
+PROCEDIMIENTO generarTitulo(cadena[30] pTitulo)
+INICIO
+	LLAMAR NUEVA_LINEA()
+	ESCRIBA "*****************************************************"
+	LLAMAR NUEVA_LINEA()
+	ESCRIBA "             " + ptitulo
+	LLAMAR NUEVA_LINEA()
+	ESCRIBA "*****************************************************"
+	LLAMAR NUEVA_LINEA()
+FIN
+
+// FUNCIONES
+FUNCION calcularAreaCirculo(real pRadio) : real
+real pi
+real areaCirculo
+INICIO
+	pi <- 3.1416
+	areaCirculo <- pi * (pRadio ^ pRadio)
+	RETORNE areaCirculo
+FIN
+
+FUNCION calcularAreaCuadrado(real pBase) : real
+real areaCuadrado
+INICIO
+	areaCuadrado <- (pBase * pBase)
+	RETORNE areaCuadrado
+FIN
+ 
+FUNCION calcularAreaRectangulo(real pBase, real pAltura) : real
+real areaRectangulo
+INICIO
+	areaRectangulo <- (pBase * pAltura)
+	RETORNE areaRectangulo
+FIN
+
+// PROGRAMA PRINCIPAL
+INICIO
+	/* MENÚ DE SELECCIÓN*/
+	LLAMAR cargaMenu(opcion)
+	
+	CASO opcion
+		1: // Calcular área del círculo
+			LLAMAR generarTitulo("Calcula de Area del circulo")
+			ESCRIBA "Ingrese el radio del circulo: "
+			LEA radio
+			resultado <- calcularAreaCirculo(radio)
+			ESCRIBA "El area del circulo es: ", resultado
+		2: // Calcular área del cuadrado
+			LLAMAR generarTitulo("Calcula de Area del cuadrado")
+			ESCRIBA "Ingrese la base del cuadrado: "
+			LEA base
+			resultado <- calcularAreaCuadrado(base)
+			ESCRIBA "El area del cuadrado es: ", resultado
+		3: // Calcular área del rectangulo
+			LLAMAR generarTitulo("Calcula de Area del rectangulo")
+			ESCRIBA "Ingrese la base del rectangulo: "
+			LEA base
+			ESCRIBA "Ingrese la altura del rectangulo: "
+			LEA altura
+			resultado <- alcularAreaRectangulo(base, altura)
+			ESCRIBA "La altura del rectangulo es: ", resultado
+		SINO: // Opción no valida
+			ESCRIBA "Escriba una opción valida: " 
+	FIN CASO
+FIN
