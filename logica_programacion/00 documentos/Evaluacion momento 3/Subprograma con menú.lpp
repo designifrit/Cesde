@@ -88,7 +88,6 @@ INICIO
 			resEdadJoven <- pEdad
 		FIN SI
 		MIENTRAS(n2 <> 'n')HAGA
-			LLAMAR NUEVA_LINEA()
 			ESCRIBA "Desea ingresar otro registro (S/N)"
 			LEA n2
 			CASO n2
@@ -225,15 +224,3 @@ INICIO
 		FIN CASO
 	HASTA(opcion = 4)
 FIN
-
-
-
-
-
-
-
-
-
-
-
-
