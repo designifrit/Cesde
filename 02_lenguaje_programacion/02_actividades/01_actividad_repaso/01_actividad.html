@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            overflow: hidden;
+        }
+        ul{
+            list-style: none;
+        }
+        ul li{
+            display: flex;
+            justify-content: space-between;
+            left: -38px;
+            position: relative;
+        }
+        #container{
+            align-items: center;
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            overflow: hidden;
+            width: 100%;
+        }
+        #container #box{
+            background-color:rgb(230, 230, 230);
+            padding: 35px;
+            min-width: 290px;
+            width: 19%;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="container">
+        <div id="box">
+            <h1>Almacén WC</h1>
+            <ul>
+                <li>Precio de los Zapatos: <span id="pzapatos"></span></li>
+                <li>Precio de los Tenis: <span id="ptenis"></span></li>
+                <li>Precio de las Camisetas: <span id="pcamisetas"></span></li>
+                <li>Precio de los Jeans: <span id="pjeans"></span></li>
+            </ul>
+            <hr>
+            <ul>
+                <li>Total: <span id="total"></span></li>
+                <li>Promedio de Precios: <span id="promprecios"></span></li>
+                <li>Nuevo Precio Zapatos: <span id="npzapatos"></span></li>
+                <li>Nuevo Precio jeans: <span id="npjeans"></span></li>
+            </ul>
+            <hr>
+        </div>
+        
+    </div>
+    <script>
+
+        // Variables
+        let vzapatos = 350000;
+        let vtenis = 280000;
+        let vcamisetas = 175000;
+        let vjeans = 200000;
+        let vtotal;
+        let vpromedio;
+        let vnpzapatos;
+        let vnpjeans;
+
+        // Entrada
+        let pzapatos = document.getElementById('pzapatos');
+        let ptenis = document.getElementById('ptenis');
+        let pcamisetas = document.getElementById('pcamisetas');
+        let pjeans = document.getElementById('pjeans');
+
+        let total = document.getElementById('total');
+        let promprecios = document.getElementById('promprecios');
+        let npzapatos = document.getElementById('npzapatos');
+        let npjeans = document.getElementById('npjeans');
+
+        // Salida - Precios productos
+        pzapatos.textContent = '$' + vzapatos;
+        ptenis.textContent = '$' + vtenis;
+        pcamisetas.textContent = '$' + vcamisetas;
+        pjeans.textContent = '$' + vjeans;
+
+        // Salida - Total Promedio Descuento
+        vtotal = vzapatos + vtenis + vcamisetas + vjeans;
+        total.textContent = '$' + vtotal;
+
+        vpromedio = (vzapatos + vtenis + vcamisetas + vjeans) / 4;
+        promprecios.textContent = '$' + vpromedio;
+
+        vnpzapatos = vzapatos - (vzapatos * 0.008);
+        npzapatos.textContent = '$' + vnpzapatos;
+
+        vnpjeans = vjeans + (vjeans * 0.062);
+        npjeans.textContent = '$' + vnpjeans;
+
+        // Salida - Consola
+        console.log("Precio de los Zapatos: $" + vzapatos);
+        console.log("Precio de los Tenis: $" + vtenis);
+        console.log("Precio de los Camisetas: $" + vcamisetas);
+        console.log("Precio de los Jeans: $" + vjeans);
+
+    </script>
+</body>
+</html>
