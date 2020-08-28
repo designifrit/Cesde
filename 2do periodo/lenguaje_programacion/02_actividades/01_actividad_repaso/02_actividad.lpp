@@ -1,11 +1,132 @@
 
 /*
-Actividad 2. La empresa WC cuenta con 4 empleados. Un empleado labora 8 horas diarias en la modalidad por proyectos.
-Si el tipo de proyecto es diferente de A y B el valor de la hora día es de $5.000, si es tipo B el valor de la
-hora día es de $10.000 y si es tipo A, el valor de la hora día es de $20.000. Mostrar por consola el valor de la hora día.
-Calcular el sueldo mensual; este cálculo se obtiene de multiplicar el valor de la hora día por las horas laborales diarias
-(tener en cuenta que son 8 horas diarias y 30 días del mes). Luego, Si el sueldo mensual es mayor a $1.500.000 mostrar
-por consola "Salario es mayor a tope máximo", si sueldo mensual no supera el $1.500.000 entonces pagarle al empleado por
-concepto de hora extra el valor de la hora día incrementada en un 6% (tener en cuenta que se le pagarán 3 horas extras).
+Actividad 2.
+La empresa WC cuenta con 4 empleados. Un empleado labora 8 horas diarias
+en la modalidad por proyectos. Si el tipo de proyecto es diferente de A y B el valor de la
+hora día es de $5.000, si es tipo B el valor de la hora día es de $10.000 y si es tipo A,
+el valor de la hora día es de $20.000. Mostrar por consola el valor de la hora día.
+
+Calcular el sueldo mensual; este cálculo se obtiene de multiplicar el valor de la hora día
+por las horas laborales diarias (tener en cuenta que son 8 horas diarias y 30 días del mes).
+Luego, Si el sueldo mensual es mayor a $1.500.000 mostrar por consola "Salario es mayor a
+tope máximo", si sueldo mensual no supera el $1.500.000 entonces pagarle al empleado por
+concepto de hora extra el valor de la hora día incrementada en un 6%
+(tener en cuenta que se le pagarán 3 horas extras).
 */
 
+/*
+DATOS ENTRADA
+	1. Numero empleados																	NEMP
+		a. Numero de registros															N
+	2. Nombre empleado																	NOM
+	3. Horas trabajadas																	HTRA
+	4. Segun tipo de proyecto valor hora (A: $20000, B: $10000, C: $5000)				VTPRO
+		a. Proyecto A																	VTA
+		b. Proyecto B																	VTB
+		c. Proyecto C																	VTC
+DATOS SALIDA
+	1. Mostrar valor hora según tipo proyecto											
+	2. IF sueldo mensual > $1.500.000	--> Mostrar "Salario es mayor a tope máximo"	SM
+	
+DATOS PROCESO
+	1. Calcular sueldo mensual			--> valor hora día (8 horas * 30 dias)			SM
+	3. IF sueldo mensual < $1.500.000	--> Hora extra incrementa valor 6%				HEXT
+*/
+
+// VARIABLES GLOBALES ----------------------------------------------------------------
+CARACTER VTPRO, NT
+ENTERO N, NEMP, HTRA, VTA, VTB, VTC
+CADENA[40] NOM
+REAL SM, HEXT, VHEXT
+
+// PROGRAMA PRINCIPAL ----------------------------------------------------------------
+INICIO
+	//Inicializacion
+	N <- 0
+	NT <- 'f'
+	VTA <- 20000
+	VTB <- 10000
+	VTC <- 5000
+	
+	// Datos de entrada
+	LLAMAR NUEVA_LINEA()
+	ESCRIBA "Ingresa el numero de empleados a las que vas a calcularles el salario: "
+	LEA NEMP
+	
+	MIENTRAS (N < NEMP) HAGA
+		LLAMAR NUEVA_LINEA()
+		LLAMAR NUEVA_LINEA()
+		ESCRIBA "Ingrese el nombre del empleado: "
+		LEA NOM
+		ESCRIBA "Cuantas horas trabajo por dia (8 horas es la jornada laboral sin extras): "
+		LEA HTRA
+		
+		SI(HTRA > 8)ENTONCES
+			HEXT <- HTRA - 8
+			HEXT <- HEXT * 30
+		FIN SI
+		
+		MIENTRAS (NT = 'f') HAGA
+			ESCRIBA	"En que tipo de proyecto trabajo (A = avanzado, B = medio, C = de otro tipo): "
+			LEA VTPRO
+		
+			SI(VTPRO = 'A')O(VTPRO = 'a')ENTONCES
+				SM <- (HTRA * VTA) * 30
+				ESCRIBA "El valor de este tipo de proyecto es de: $", VTA, " por hora trabajada"
+				VHEXT <- (HEXT * VTA) * 0.6
+				NT <- 'v'
+			SINO
+				SI(VTPRO = 'B')O(VTPRO = 'b')ENTONCES
+					SM <- (HTRA * VTB) * 30
+					ESCRIBA "El valor de este tipo de proyecto es de: $", VTB, " por hora trabajada"
+					VHEXT <- (HEXT * VTB) * 0.6
+					NT <- 'v'
+				SINO
+					SI(VTPRO = 'C')O(VTPRO = 'c')ENTONCES
+						SM <- (HTRA * VTC) * 30
+						ESCRIBA "El valor de este tipo de proyecto es de: $", VTC, " por hora trabajada"
+						VHEXT <- (HEXT * VTC) * 0.6
+						NT <- 'v'
+					SINO
+						LLAMAR NUEVA_LINEA()
+						ESCRIBA "Ingrese un valor valido para tipo de proyecto"
+						LLAMAR NUEVA_LINEA()
+						NT <- 'f'
+					FIN SI
+				FIN SI	
+			FIN SI
+		FIN MIENTRAS
+		NT <- 'f'
+		
+		
+		//salida
+		SI(SM < 1500000)ENTONCES
+			LLAMAR NUEVA_LINEA()
+			ESCRIBA "Su salario es menor al tope maximo con un total de: $", SM
+			
+			SI(HEXT > 1)ENTONCES
+				LLAMAR NUEVA_LINEA()
+				ESCRIBA "Trabajo ", HEXT, " horas extras para este proyecto"
+				LLAMAR NUEVA_LINEA()
+				ESCRIBA "Tiene derecho a un incremento de 6% con las horas extras, con un total de : $", VHEXT
+			SINO
+				LLAMAR NUEVA_LINEA()
+				ESCRIBA "No trabajo horas extras"
+			FIN SI
+		SINO
+			LLAMAR NUEVA_LINEA()
+			ESCRIBA "Su salario es mayor al tope maximo con un total de: $", SM
+			
+			SI(HEXT > 1)ENTONCES
+				LLAMAR NUEVA_LINEA()
+				ESCRIBA "Trabajo ", HEXT, " horas extras para este proyecto"
+			SINO
+				LLAMAR NUEVA_LINEA()
+				ESCRIBA "No trabajo horas extras"
+			FIN SI
+		FIN SI
+		
+		N <- N + 1
+	FIN MIENTRAS
+	
+FIN
