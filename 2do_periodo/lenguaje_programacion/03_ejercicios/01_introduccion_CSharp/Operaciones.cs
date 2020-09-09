@@ -12,15 +12,15 @@ namespace _01_introduccion_CSharp
         // (get  set): Métodos para recibir
 
 
-        public void nuestraSuma()   // Métodos (funciones o procedimientos)
+        public void nuestraSuma(int n1, int n2)   // Métodos (funciones o procedimientos)
         // modo acceso 
         // Tipo retorno
         // Nombre del método
         // (Argumentos o parámetros)
         {
-            int suma = numeroUno + numeroDos;
-            Console.WriteLine($"La suma del número {numeroUno} y {numeroDos} es: {suma}");
-            Console.WriteLine($"La suma del número {numeroUno} y {numeroDos} es: {numeroUno + numeroDos}");
+            int suma = n1 + n2;
+            Console.WriteLine($"La suma del número {n1} y {n2} es: {suma}");
+            Console.WriteLine($"La suma del número {n1} y {n2} es: {n1 + n2}");
         }
     }
 }

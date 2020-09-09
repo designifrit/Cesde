@@ -1,0 +1,13 @@
+C:\Program Files\Ampps\www\Cesde\2do_periodo\lenguaje_programacion\03_ejercicios\02_hotel_huespedes\obj\Debug\netcoreapp3.1\02_hotel_huespedes.csprojAssemblyReference.cache
+C:\Program Files\Ampps\www\Cesde\2do_periodo\lenguaje_programacion\03_ejercicios\02_hotel_huespedes\obj\Debug\netcoreapp3.1\02_hotel_huespedes.AssemblyInfoInputs.cache
+C:\Program Files\Ampps\www\Cesde\2do_periodo\lenguaje_programacion\03_ejercicios\02_hotel_huespedes\obj\Debug\netcoreapp3.1\02_hotel_huespedes.AssemblyInfo.cs
+C:\Program Files\Ampps\www\Cesde\2do_periodo\lenguaje_programacion\03_ejercicios\02_hotel_huespedes\obj\Debug\netcoreapp3.1\02_hotel_huespedes.csproj.CoreCompileInputs.cache
+C:\Program Files\Ampps\www\Cesde\2do_periodo\lenguaje_programacion\03_ejercicios\02_hotel_huespedes\bin\Debug\netcoreapp3.1\02_hotel_huespedes.exe
+C:\Program Files\Ampps\www\Cesde\2do_periodo\lenguaje_programacion\03_ejercicios\02_hotel_huespedes\bin\Debug\netcoreapp3.1\02_hotel_huespedes.deps.json
+C:\Program Files\Ampps\www\Cesde\2do_periodo\lenguaje_programacion\03_ejercicios\02_hotel_huespedes\bin\Debug\netcoreapp3.1\02_hotel_huespedes.runtimeconfig.json
+C:\Program Files\Ampps\www\Cesde\2do_periodo\lenguaje_programacion\03_ejercicios\02_hotel_huespedes\bin\Debug\netcoreapp3.1\02_hotel_huespedes.runtimeconfig.dev.json
+C:\Program Files\Ampps\www\Cesde\2do_periodo\lenguaje_programacion\03_ejercicios\02_hotel_huespedes\bin\Debug\netcoreapp3.1\02_hotel_huespedes.dll
+C:\Program Files\Ampps\www\Cesde\2do_periodo\lenguaje_programacion\03_ejercicios\02_hotel_huespedes\bin\Debug\netcoreapp3.1\02_hotel_huespedes.pdb
+C:\Program Files\Ampps\www\Cesde\2do_periodo\lenguaje_programacion\03_ejercicios\02_hotel_huespedes\obj\Debug\netcoreapp3.1\02_hotel_huespedes.dll
+C:\Program Files\Ampps\www\Cesde\2do_periodo\lenguaje_programacion\03_ejercicios\02_hotel_huespedes\obj\Debug\netcoreapp3.1\02_hotel_huespedes.pdb
+C:\Program Files\Ampps\www\Cesde\2do_periodo\lenguaje_programacion\03_ejercicios\02_hotel_huespedes\obj\Debug\netcoreapp3.1\02_hotel_huespedes.genruntimeconfig.cache
