@@ -8,3 +8,4 @@
     echo('El nombre de usuario es '.$nombreUsuario); // Concatenación
     echo('El número PI es '.constante);
 ?>
+
