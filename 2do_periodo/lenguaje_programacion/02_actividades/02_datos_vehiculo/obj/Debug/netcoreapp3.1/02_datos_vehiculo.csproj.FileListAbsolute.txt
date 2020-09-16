@@ -1,0 +1,4 @@
+C:\Program Files\Ampps\www\Cesde\2do_periodo\lenguaje_programacion\02_actividades\02_datos_vehiculo\obj\Debug\netcoreapp3.1\02_datos_vehiculo.csprojAssemblyReference.cache
+C:\Program Files\Ampps\www\Cesde\2do_periodo\lenguaje_programacion\02_actividades\02_datos_vehiculo\obj\Debug\netcoreapp3.1\02_datos_vehiculo.AssemblyInfoInputs.cache
+C:\Program Files\Ampps\www\Cesde\2do_periodo\lenguaje_programacion\02_actividades\02_datos_vehiculo\obj\Debug\netcoreapp3.1\02_datos_vehiculo.AssemblyInfo.cs
+C:\Program Files\Ampps\www\Cesde\2do_periodo\lenguaje_programacion\02_actividades\02_datos_vehiculo\obj\Debug\netcoreapp3.1\02_datos_vehiculo.csproj.CoreCompileInputs.cache

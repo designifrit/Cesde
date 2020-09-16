@@ -6,7 +6,19 @@ namespace _02_hotel_huespedes
     {
         // Propiedades o atributos
         public int huesped {get; set;}
-        public int dias {get; set;}
+
+        int Dias;
+        public int dias {
+            get{return Dias;}
+            set{
+                if(value >= 1){
+                    Dias = value;
+                }else{
+                    Console.WriteLine("Cantidad de días debe ser mínimo 1");
+                }
+            }
+        }
+
         public string habitacion {get; set;}
         
         // Métodos
