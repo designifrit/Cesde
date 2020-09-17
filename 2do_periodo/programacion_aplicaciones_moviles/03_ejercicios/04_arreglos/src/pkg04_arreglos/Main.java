@@ -23,5 +23,10 @@ public class Main {
             Arreglo tridimensional (Cubos - x, y, z)
         */
         
+        /* VECTORES
+            Arreglo de una sola dimension
+            Debe tener un nombre y maneja un número N posiciones
+            En programación los vectores comienzan en cero
+        */
     }
 }
