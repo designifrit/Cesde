@@ -25,6 +25,13 @@
             <a class="navbar-brand" href="#">
                 <img src="https://www.php.net/images/logos/php-logo.svg" width="30" height="30" alt="" loading="lazy">
             </a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Programación web 1</a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
 </div>
@@ -35,7 +42,7 @@
         <h1>Calcular 2 números enteros</h1>
     </section>
 
-    <section class="row" id="section2">
+    <section class="row justify-content-md-center" id="section2">
         <div class="col">
             <form action="01_calcular_numeros_enteros.php" method="post">
                 <div class="form-group">
@@ -58,16 +65,36 @@
                     <input type="number" class="form-control" id="numero2" placeholder="Ingrese 2do número" name="numero2">
                 </div>
                 <button type="reset" class="btn btn-secondary margen">Borrar</button>
-                <button type="submit" class="btn btn-primary margen">Enviar</button>
+                <button type="submit" class="btn btn-primary margen" name="enviar">Enviar</button>
             </form>
 
             <?php
-                if(){
-
-                }else{
-                    print();
+                function Calcular(){
+                    $resultado = 0;
+                    if(isset($_POST['enviar'])){
+                        
+                        if($_POST['numero1'] !="" && $_POST['numero2'] !=""){
+                            if($_POST['operacion'] =="suma"){
+                                $resultado = $_POST['numero1'] + $_POST['numero2'];
+                            }elseif($_POST['operacion'] =="resta"){
+                                $resultado = $_POST['numero1'] - $_POST['numero2'];
+                            }elseif($_POST['operacion'] ="multiplicacion"){
+                                $resultado = $_POST['numero1'] * $_POST['numero2'];
+                            }elseif($_POST['operacion'] ="division"){
+                                $resultado = $_POST['numero1'] / $_POST['numero2'];
+                            }
+                        }else{
+                            print ("Ingresa un valor para la operacion");
+                        }
+                    return $resultado;
+                    }
                 }
             ?>
+            <?php if(isset($_POST['enviar'])):?>
+                <h5>
+                    <?php print ("El total es: ".Calcular());?>
+                </h5>
+            <?php endif ?>
 
         </div>
     </section>
@@ -79,5 +106,3 @@
 
 </body>
 </html>
-
-
