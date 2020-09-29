@@ -67,7 +67,14 @@ Permita que su código muestre cual sucursal tiene la mejor sumatoria de salario
         <div class="col-12">
             <?php if($_POST['enviar']):?>
                 <?php
-                    $usuariosSucursalA = [];
+                    $usuariosSucursalA = [
+                        "nombre" => "",
+                        "telefono" => "",
+                        "direccion" => "",
+                        "salario" => ""
+                    ];
+
+                    print_r($usuariosSucursalA);
                 ?>
             <?php endif ?>
         </div>

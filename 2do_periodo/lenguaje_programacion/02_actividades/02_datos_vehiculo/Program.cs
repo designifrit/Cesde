@@ -63,7 +63,7 @@ namespace _02_datos_vehiculo
                 mod_vehiculo = modelo,
                 accid_vehiculo = accidentes,
                 valor_vehiculo = valor,
-                banderazo = banderazo
+                Banderazo_taxi = banderazo
             };
         }
     }
