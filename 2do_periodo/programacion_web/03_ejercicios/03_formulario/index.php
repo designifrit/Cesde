@@ -11,7 +11,7 @@
     <header>
 
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <a class="navbar-brand" href="#">SupermercadoJ1</a>
+                <a class="navbar-brand" href="#">Supermercado J1</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -21,14 +21,7 @@
                         <li class="nav-item active">
                             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
                     </ul>
-                    <form class="form-inline my-2 my-lg-0">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                    </form>
                 </div>
         </nav>
 
@@ -40,38 +33,34 @@
             <div class="row justify-content-center">
                 <div class="col-4">
                     <form class="mt-5" action="index.php" method="POST">
-                        <h4 class="text-center">ORDEN DE COMPRA</h4>
+                        <h4 class="text-center">Orden de compra</h4>
                         <div class="row">
                             <div class="col">
-                                <input type="number" class="form-control" placeholder="Producto1" name="peso">
+                                <input type="text" class="form-control" placeholder="Producto" name="producto">
                             </div>
                             <div class="col">
-                                <input type="number" class="form-control" placeholder="Precio" name="altura">
+                                <input type="number" class="form-control" placeholder="Precio" name="precio">
                             </div>
                         </div>
-                        <button type="submit" class="btn btn-primary mt-5" name="botonEnvio">Submit</button>
+                        <button style="margin-bottom: 15px;" type="submit" class="btn btn-primary mt-5" name="botonEnvio">Submit</button>
                     </form>
 
                     
                     <?php if(isset($_POST["botonEnvio"])):?> 
 
                     <h4>  
-                        
 
-                        <?php 
-                            $productoA=$_POST["producto1"];
-                            $precioA=$_POST["precio1"];
-                            $costoEnvio=8000;
-                            $total=$precioA+$costoEnvio;
+                        <?php
+                            $productoA = $_POST["producto"];
+                            $precioA = $_POST["precio"];
+                            $costoEnvio = 8000;
+                            $total = $precioA + $costoEnvio;
                             echo("El total es de: ".$total);
                         ?> 
                         
                     </h4> 
 
                     <?php endif ?>
-
-
-                    
 
                 </div>
             </div>
