@@ -1,0 +1,4 @@
+C:\Program Files\Ampps\www\Cesde\2do_periodo\lenguaje_programacion\02_actividades\03_evento\obj\Debug\netcoreapp3.1\03_evento.csprojAssemblyReference.cache
+C:\Program Files\Ampps\www\Cesde\2do_periodo\lenguaje_programacion\02_actividades\03_evento\obj\Debug\netcoreapp3.1\03_evento.AssemblyInfoInputs.cache
+C:\Program Files\Ampps\www\Cesde\2do_periodo\lenguaje_programacion\02_actividades\03_evento\obj\Debug\netcoreapp3.1\03_evento.AssemblyInfo.cs
+C:\Program Files\Ampps\www\Cesde\2do_periodo\lenguaje_programacion\02_actividades\03_evento\obj\Debug\netcoreapp3.1\03_evento.csproj.CoreCompileInputs.cache
