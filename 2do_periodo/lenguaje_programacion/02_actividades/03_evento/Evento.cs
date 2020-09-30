@@ -6,7 +6,21 @@ namespace _03_evento
     class Evento
     {
         // Propiedades
-        public string NombreEvento{get; set;}
+        string nombre;
+        public string NombreEvento{
+            get{
+                return nombre;
+            }
+            set{
+                if(value != ""){
+                    nombre = value;
+                    Console.WriteLine($"El nombre del evento es {nombre}");
+                }else{
+                    Console.WriteLine("No ha ingresado información para Nombre");
+                }
+                
+            }
+        }
         int asistencia;
         public int AsistenciaEvento{
             get{
@@ -30,7 +44,7 @@ namespace _03_evento
                     asistencia = 14500000;
                     Console.WriteLine("Se le ha asignado el salón Imperial");
                 }else{
-                    Console.WriteLine("Ingresó un valor inválido para asistencia");
+                    Console.WriteLine("Ingresó un valor inválido para Asistencia");
                     asistencia = 0;
                 }
             }
@@ -59,7 +73,7 @@ namespace _03_evento
                         evento = 7500000;
                         break;
                     default:
-                        Console.WriteLine("Ingresó un valor inválido para tipo de evento");
+                        Console.WriteLine("Ingresó un valor inválido para Tipo de evento");
                         evento = 0;
                         break;
                 }
@@ -92,11 +106,13 @@ namespace _03_evento
 
         //Métodos
 
-        public int valorPagar(string nombre, int asistencia, int evento, int buffet){
-
-            int totalPagar = asistencia + evento + buffet;
-            Console.WriteLine($"El nombre del evento es: {nombre}");
+        public int valorPagar(){
+            int totalPagar = ServicioBuffet + asistencia + evento;
             return totalPagar;
         }
+
+        // public abstract void EventoDecoración();
+        // public abstract void Comidas();
+
     }
 }

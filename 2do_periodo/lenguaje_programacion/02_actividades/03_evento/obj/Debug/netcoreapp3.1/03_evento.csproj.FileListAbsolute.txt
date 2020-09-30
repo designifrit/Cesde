@@ -2,3 +2,12 @@ C:\Program Files\Ampps\www\Cesde\2do_periodo\lenguaje_programacion\02_actividade
 C:\Program Files\Ampps\www\Cesde\2do_periodo\lenguaje_programacion\02_actividades\03_evento\obj\Debug\netcoreapp3.1\03_evento.AssemblyInfoInputs.cache
 C:\Program Files\Ampps\www\Cesde\2do_periodo\lenguaje_programacion\02_actividades\03_evento\obj\Debug\netcoreapp3.1\03_evento.AssemblyInfo.cs
 C:\Program Files\Ampps\www\Cesde\2do_periodo\lenguaje_programacion\02_actividades\03_evento\obj\Debug\netcoreapp3.1\03_evento.csproj.CoreCompileInputs.cache
+C:\Program Files\Ampps\www\Cesde\2do_periodo\lenguaje_programacion\02_actividades\03_evento\bin\Debug\netcoreapp3.1\03_evento.exe
+C:\Program Files\Ampps\www\Cesde\2do_periodo\lenguaje_programacion\02_actividades\03_evento\bin\Debug\netcoreapp3.1\03_evento.deps.json
+C:\Program Files\Ampps\www\Cesde\2do_periodo\lenguaje_programacion\02_actividades\03_evento\bin\Debug\netcoreapp3.1\03_evento.runtimeconfig.json
+C:\Program Files\Ampps\www\Cesde\2do_periodo\lenguaje_programacion\02_actividades\03_evento\bin\Debug\netcoreapp3.1\03_evento.runtimeconfig.dev.json
+C:\Program Files\Ampps\www\Cesde\2do_periodo\lenguaje_programacion\02_actividades\03_evento\bin\Debug\netcoreapp3.1\03_evento.dll
+C:\Program Files\Ampps\www\Cesde\2do_periodo\lenguaje_programacion\02_actividades\03_evento\bin\Debug\netcoreapp3.1\03_evento.pdb
+C:\Program Files\Ampps\www\Cesde\2do_periodo\lenguaje_programacion\02_actividades\03_evento\obj\Debug\netcoreapp3.1\03_evento.dll
+C:\Program Files\Ampps\www\Cesde\2do_periodo\lenguaje_programacion\02_actividades\03_evento\obj\Debug\netcoreapp3.1\03_evento.pdb
+C:\Program Files\Ampps\www\Cesde\2do_periodo\lenguaje_programacion\02_actividades\03_evento\obj\Debug\netcoreapp3.1\03_evento.genruntimeconfig.cache
