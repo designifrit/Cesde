@@ -24,7 +24,7 @@ public class Main {
         //Entrada
         System.out.print("Ingrese la cantidad de números enteros: ");
         n = objLeer.nextInt();
-        int[] numEnteros = new int[n];
+        int[] numEnteros = new int[n]; //Creación de arreglo
         
         System.out.println("Ingresa una posición para key: ");
         p = objLeer.nextInt();
