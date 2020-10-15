@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">App_movil</string>
+    <string name="delete">Delete</string>
+    <string name="calcular">CALCULAR</string>
+    <string name="velocidad">Velocidad</string>
+    <string name="digite_tiempo">Digite tiempo</string>
+    <string name="digite_espacio">Digite espacio</string>
+    <string name="aplicacion_velocidad">Aplicacion Velocidad</string>
+    <string name="limpiar">limpiar</string>
+</resources>
