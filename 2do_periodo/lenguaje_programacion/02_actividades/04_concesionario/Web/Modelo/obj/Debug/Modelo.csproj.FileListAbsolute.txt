@@ -1,0 +1,7 @@
+C:\Program Files\Ampps\www\Cesde\2do_periodo\lenguaje_programacion\02_actividades\04_concesionario\Web\Modelo\bin\Debug\Modelo.exe.config
+C:\Program Files\Ampps\www\Cesde\2do_periodo\lenguaje_programacion\02_actividades\04_concesionario\Web\Modelo\bin\Debug\Modelo.exe
+C:\Program Files\Ampps\www\Cesde\2do_periodo\lenguaje_programacion\02_actividades\04_concesionario\Web\Modelo\bin\Debug\Modelo.pdb
+C:\Program Files\Ampps\www\Cesde\2do_periodo\lenguaje_programacion\02_actividades\04_concesionario\Web\Modelo\obj\Debug\Modelo.csprojAssemblyReference.cache
+C:\Program Files\Ampps\www\Cesde\2do_periodo\lenguaje_programacion\02_actividades\04_concesionario\Web\Modelo\obj\Debug\Modelo.csproj.CoreCompileInputs.cache
+C:\Program Files\Ampps\www\Cesde\2do_periodo\lenguaje_programacion\02_actividades\04_concesionario\Web\Modelo\obj\Debug\Modelo.exe
+C:\Program Files\Ampps\www\Cesde\2do_periodo\lenguaje_programacion\02_actividades\04_concesionario\Web\Modelo\obj\Debug\Modelo.pdb
