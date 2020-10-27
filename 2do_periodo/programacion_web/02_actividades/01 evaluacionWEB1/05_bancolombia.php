@@ -46,19 +46,19 @@ Permita que su código muestre cual sucursal tiene la mejor sumatoria de salario
                 <h6>Por favor ingrese la información del usuario</h6>
                 <div class="form-group margen">
                     <label for="nombre">Nombre</label>
-                    <input type="text" class="form-control" id="nombre" placeholder="Nombre del usuario" name="nombre" require>
+                    <input type="text" class="form-control" id="nombre" placeholder="Nombre del usuario" name="datos['nombre']" require>
                 </div>
                 <div class="form-group">
                     <label for="telefono">Teléfono</label>
-                    <input type="number" class="form-control" id="telefono" placeholder="Ingrese el teléfono" name="telefono" require>
+                    <input type="number" class="form-control" id="telefono" placeholder="Ingrese el teléfono" name="datos['telefono']" require>
                 </div>
                 <div class="form-group">
                     <label for="direccion">Dirección</label>
-                    <input type="text" class="form-control" id="direccion" placeholder="Ingrese la dirección" name="direccion" require>
+                    <input type="text" class="form-control" id="direccion" placeholder="Ingrese la dirección" name="datos['direccion']" require>
                 </div>
                 <div class="form-group">
                     <label for="salario">Salario</label>
-                    <input type="number" class="form-control" id="salario" placeholder="Cuál es el salario" name="salario" require>
+                    <input type="number" class="form-control" id="salario" placeholder="Cuál es el salario" name="datos['salario']" require>
                 </div>
                 <button type="reset" class="btn btn-secondary margen">Borrar</button>
                 <button type="submit" class="btn btn-primary margen" name="enviar">Enviar</button>
@@ -67,14 +67,23 @@ Permita que su código muestre cual sucursal tiene la mejor sumatoria de salario
         <div class="col-12">
             <?php if($_POST['enviar']):?>
                 <?php
-                    $usuariosSucursalA = [
-                        "nombre" => "",
-                        "telefono" => "",
-                        "direccion" => "",
-                        "salario" => ""
+                    $datos = [
+                        "nombre" => array($_POST['datos[nombre]']),
+                        "telefono" => array($_POST['datos[telefono]']),
+                        "direccion" => array($_POST['datos[direccion]']),
+                        "salario" => array($_POST['datos[salario]'])
                     ];
 
-                    print_r($usuariosSucursalA);
+                    foreach($datos as $array){
+                        echo ($array['nombre']);
+                        echo ("<br>");
+                        echo ($array['telefono']);
+                        echo ("<br>");
+                        echo ($array['direccion']);
+                        echo ("<br>");
+                        echo ($array['salario']);
+                        echo ("<br>");
+                    }
                 ?>
             <?php endif ?>
         </div>

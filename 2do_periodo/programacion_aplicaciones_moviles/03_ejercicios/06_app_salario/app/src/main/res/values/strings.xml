@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Salario</string>
+    <string name="aplicacion_salarios">Aplicacion salarios</string>
+    <string name="salarios">Salarios</string>
+</resources>

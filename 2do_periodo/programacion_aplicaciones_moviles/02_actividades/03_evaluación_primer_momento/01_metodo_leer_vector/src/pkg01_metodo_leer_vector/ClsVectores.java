@@ -1,7 +1,7 @@
 /*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
+1. Crear un método que lea un vector de números enteros de tamaño N y luego otro método
+que reciba como parámetros de entrada el vector, su tamaño y un dato, y devuelva la posición
+donde se encuentra dicho dato, suponga que el dato si está y solo una vez
  */
 package pkg01_metodo_leer_vector;
 import java.util.Scanner;
@@ -19,22 +19,22 @@ public class ClsVectores {
     // Leer el vector, su índice y los datos
     public int[] leerVector(int n)
     {
-       int[] numeros = new int[n];
-       for(i = 0; i < n; i++) 
-       {
-           System.out.print("Ingrese un elemento en el índice [" + i + "]: ");
-           numeros[i] = objLeer.nextInt();
-       }	
-       return numeros;
+        int[] numeros = new int[n];
+        for(i = 0; i < n; i++) 
+        {
+            System.out.print("Ingrese un elemento en el índice [" + i + "]: ");
+            numeros[i] = objLeer.nextInt();
+        }	
+        return numeros;
     }
     
     public void imprimirVector(int n, int[] numEnteros)
     {
-       System.out.println("\nEstos son los elementos del vector\n");
-       for(i = 0; i < n; i++) 
-       {
-           System.out.print(numEnteros[i] + "  ");
-       }
+        System.out.println("\nEstos son los elementos del vector\n");
+        for(i = 0; i < n; i++) 
+        {
+            System.out.print(numEnteros[i] + "  ");
+        }
     }
     
     public void posicionVector(int p, int[] numEnteros)
