@@ -15,6 +15,7 @@ namespace Vista
 
         }
 
+        // Evento INSERT tipo vehículo
         protected void btnAdd_Click(object sender, EventArgs e)
         {
             int TipoVehiculoId = Int32.Parse(textId.Text);
@@ -31,6 +32,60 @@ namespace Vista
             }
 
             negocioAddTipovehiculo = null;
+        }
+
+        // Evento LIST tipo vehículo
+        protected void btnlist_Click(object sender, EventArgs e)
+        {
+            GridView.DataSource = LogicaControladorTipovehiculo.NegociarSelectTipoVehiculo();
+
+            // Organiza los datos en la tabla GridView
+            GridView.DataBind();
+
+            // Los campos ID y Nombre quedan vacíos después de ejecutar
+            textId.Text = textName.Text = "";
+        }
+
+        // Evento UPDATE tipo vehículo 
+        protected void btnUpdate_Click(object sender, EventArgs e)
+        {
+            int TipoVehiculoId = Int32.Parse(textId.Text);
+            string TipoVehiculoName = textName.Text;
+
+            LogicaControladorTipovehiculo negocioUpdateTipovehiculo = new LogicaControladorTipovehiculo();
+
+            int resultadoUpdateTipoVehiculo = negocioUpdateTipovehiculo.NegociarUpdateTipoVehiculo(TipoVehiculoId, TipoVehiculoName);
+
+            if (resultadoUpdateTipoVehiculo > 0)
+            {
+                labelMensaje.Text = "Actualización exitosa";
+            }
+            else
+            {
+                labelMensaje.Text = "No se pudo actualizar";
+            }
+
+            negocioUpdateTipovehiculo = null;
+        }
+
+        protected void btnDelete_Click(object sender, EventArgs e)
+        {
+            int TipoVehiculoId = Int32.Parse(textId.Text);
+
+            LogicaControladorTipovehiculo negocioDeleteTipovehiculo = new LogicaControladorTipovehiculo();
+
+            int resultadoDeleteTipoVehiculo = negocioDeleteTipovehiculo.NegociarDeleteTipoVehiculo(TipoVehiculoId);
+
+            if (resultadoDeleteTipoVehiculo > 0)
+            {
+                labelMensaje.Text = "Eliminado exitoso";
+            }
+            else
+            {
+                labelMensaje.Text = "No se pudo eliminar";
+            }
+
+            negocioDeleteTipovehiculo = null;
         }
     }
 }

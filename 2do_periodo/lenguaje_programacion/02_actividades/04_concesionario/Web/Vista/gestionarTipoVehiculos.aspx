@@ -53,10 +53,31 @@
                 <div class="col-8">
                     <asp:Button ID="btnAdd" Text="Add" runat="server" class="btn btn-primary" OnClick="btnAdd_Click"/>
                 </div>
+                <div class="col-4">
+                    <asp:Button ID="btnlist" Text="List" runat="server" class="btn btn-primary" OnClick="btnlist_Click" />
+                    <asp:Button ID="btnUpdate" Text="Update" runat="server" class="btn btn-primary" OnClick="btnUpdate_Click"/>
+                    <asp:Button ID="btnDelete" Text="Delete" runat="server" class="btn btn-primary" OnClick="btnDelete_Click"/>
+                </div>
             </div>
             <div class="row">
-                <asp:Label ID="labelMensaje" runat="server" class="alert" EnableViewState="false"/>
+                <asp:Label ID="labelMensaje" runat="server" ForeColor="Blue" class="alert" EnableViewState="false"/>
+
+                <br />
+
+                <table class="table">
+                    <tr>
+                        <th>
+                            <asp:GridView ID="GridView" runat="server" AutoGenerateColumns="false">
+                                <Columns>
+                                    <asp:BoundField DataField="id" HeaderText="Id"/>
+                                    <asp:BoundField DataField="nombre" HeaderText="Name"/>
+                                </Columns>
+                            </asp:GridView>
+                        </th>
+                    </tr>
+                </table>
             </div>
+            
         </form>
     </main>
 
