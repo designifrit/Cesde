@@ -68,6 +68,7 @@ namespace Vista
             negocioUpdateTipovehiculo = null;
         }
 
+        // Evento DELETE tipo vehículo
         protected void btnDelete_Click(object sender, EventArgs e)
         {
             int TipoVehiculoId = Int32.Parse(textId.Text);

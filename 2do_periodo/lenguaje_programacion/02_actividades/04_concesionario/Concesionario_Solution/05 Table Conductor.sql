@@ -11,10 +11,11 @@ CREATE TABLE Conductor(
 	CONSTRAINT FK_Vehiculo FOREIGN KEY(id_vehiculo) REFERENCES Vehiculo(id),
 	CONSTRAINT FK_Tipo_Conductor FOREIGN KEY(id_tipo_conductor) REFERENCES Tipo_Conductor(id)
 )
+GO
 
 SELECT * FROM Conductor
-
 GO
+
 CREATE PROCEDURE addConductor(
 	@id int,
 	@nombre varchar(40),
@@ -22,7 +23,8 @@ CREATE PROCEDURE addConductor(
 	@id_vehiculo int,
 	@id_tipo_conductor int
 )
-
-AS INSERT INTO Conductor VALUES(@id, @nombre, @tipo_licencia, @id_vehiculo, @id_tipo_conductor)
+AS
+	INSERT INTO Conductor VALUES(@id, @nombre, @tipo_licencia, @id_vehiculo, @id_tipo_conductor)
+GO
 
 EXECUTE addConductor 1, 'Alejandro Orozco', 'Clase A1', 1, 1
