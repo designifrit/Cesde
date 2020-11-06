@@ -29,12 +29,12 @@
             <?php foreach($usuarios as $cliente):?>
                 <div class="col mb-4">
                     <div class="card h-100">
-                        <img src="images/user.jpg" class="card-img-top" style="width: 30px;" alt="User">
+                        <img src="images/user.png" class="card-img-top" style="width: 64px; margin: 20px 20px 0 20px;" alt="User">
                             <div class="card-body">
                             <h5 class="card-title">
                                 <span><?php echo($cliente["nombre"])?></span>
                                 <span class="card-title"><?php echo($cliente["apellido"])?></span>
-                                <span class="card-title" style="text-transform: uppercase; color: #7122E0;"><?php echo($cliente["genero"])?></span>
+                                <kbd class="card-title" style="text-transform: uppercase; color: white;"><?php echo($cliente["genero"])?></kbd>
                             </h5>
                             <p class="card-text"><?php echo($cliente["descripcion"])?></p>
                             <a href="eliminarUsuarios.php?id=<?php echo($cliente['id'])?>" class="btn btn-danger">Eliminar</a>
