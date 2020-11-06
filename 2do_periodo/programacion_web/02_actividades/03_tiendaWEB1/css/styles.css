@@ -1,0 +1,259 @@
+
+:root{
+    --hover: rgb(255, 221, 159);
+    --hover2: rgb(61, 230, 159);
+    --hover3: rgb(85, 47, 255);
+    --font-titles: 'Lora', serif;
+    --font-parag: 'Roboto', sans-serif;
+    --transitions: all 0.3s ease 0s;
+    --animation: element 4s linear infinite 0s;
+    --bg: #222;
+}
+
+.bg{
+    background-color: var(--bg);
+    border: 1px solid grey;
+}
+
+/* h1, h2, h3{
+    font-family: var(--font-titles);
+} */
+
+p, a, em, strong, i, b, small, sup, sub,h1, h2, h3, h4, h5, h6, button, span{
+    font-family: var(--font-parag);
+}
+
+.button{
+    border: 1px solid black;
+    color: black;
+    display: inline-block;
+    font-size: 1.2rem;
+    padding: 15px 40px 15px 20px;
+    transition: var(--transitions);
+}
+
+.button:hover{
+    background-color: var(--hover3);
+    border: 1px solid var(--hover3);
+    color: white;
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 15px 50px 15px 20px;
+}
+
+nav img.logo{
+    width: 50px;
+}
+
+nav#nav{
+    background-color: white;
+    padding: 20px 30px;
+}
+    nav #login{
+        background-color: var(--bg);
+
+    }
+
+    nav#nav #login ul{
+        display: inline-block;
+        list-style: none;
+    }
+
+    nav #nav_menu{
+        display: flex;
+        justify-content: center;
+    }
+
+    nav #nav_menu ul{
+        width: 100%;
+    }
+
+
+    /*
+        nav #nav_menu ul li{
+            margin: 0 2%;
+            font-size: 1.2rem;
+        }
+
+            nav #nav_menu ul li a{
+                color: black;
+                position: relative;
+                overflow: hidden;
+                transition: var(--transitions);
+                width: 100%;
+            }
+            
+            nav #nav_menu ul li a::before{
+                background-color: var(--hover3);
+                content: '';
+                height: 4px;
+                position: absolute;
+                transform: translate(-8px, 38px);
+                transform-origin: bottom;
+                transition: var(--transitions);
+                width: 100%;
+            }
+            
+            nav #nav_menu ul li:hover a{
+                color: var(--hover3);
+            }
+
+            nav #nav_menu ul li:hover a::before{
+                transform: translate(-8px, 31px);
+            }
+
+header.container{
+    margin: 0 auto;
+    padding: 0;
+}
+
+    header #header{
+        align-items: center;
+        box-sizing: border-box;
+        display: flex;
+        height: 50vh;
+        justify-content: center;
+        padding-top: 200px;
+        width: 100%;
+    }
+
+    header #header h1{
+        color: black;
+        position: relative;
+        text-align: center;
+    }
+
+        header #header::before{
+            animation: h1-text-1 7s ease-out infinite 0s;
+            content: 'Creando nuevas ideas';
+            color: black;
+            font-size: 5rem;
+            line-height: 5rem;
+            opacity: 1;
+            position: absolute;
+            text-align: center;
+            transform: translateY(0);
+            width: 80%;
+        }
+
+        header #header::after{
+            animation: h1-text-2 7s ease-out infinite 0s;
+            content: 'Definiendo experiencias digitales';
+            color: black;
+            font-size: 5rem;
+            line-height: 5rem;
+            opacity: 1;
+            position: absolute;
+            text-align: center;
+            transform: translateY(0);
+            width: 80%;
+        }
+
+        @keyframes h1-text-1{
+            0%{
+                transform: translateY(0);
+                opacity: 0;
+            }
+            10%{
+                transform: translateY(-50px);
+                opacity: 1;
+            }
+            45%{
+                opacity: 1;
+                transform: translateY(-50px);
+            }
+            60%{
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            100%{
+                opacity: 0;
+            }
+        }
+
+        @keyframes h1-text-2{
+            0%{
+                opacity: 0;
+            }
+            50%{
+                transform: translateY(0);
+                opacity: 0;
+            }
+            60%{
+                opacity: 1;
+                transform: translateY(-50px);
+            }
+            95%{
+                opacity: 1;
+                transform: translateY(-50px);
+            }
+            100%{
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+        }
+
+main article:nth-child(1) .portada{
+    background-image: url(../img/portada.png);
+    background-color: grey;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+}
+
+main article:nth-child(1) .button span, main article:nth-child(3) .button span{
+    display: inline-block;
+    font-size: 1.9rem;
+    position: absolute;
+    transition: transform 0.3 ease;
+    transform: translateX(0);
+}
+
+    main article:nth-child(1) .button:hover span, main article:nth-child(2) .button:hover span, main article:nth-child(3) .button:hover span{
+        transform: translateX(7px);
+    }
+
+main article:nth-child(2){
+    margin-top: 170px;
+}
+
+footer{
+    background-color: var(--bg);
+    margin-top: 170px;
+}
+
+    footer h2{
+        padding: 50px 0;
+        text-align: center;
+    }
+
+    footer span{
+        display: inline-block;
+        font-size: 1.3rem;
+        padding-bottom: 10px;
+    }
+
+    footer h2, footer span{
+        color: white;
+    }
+
+    footer p{
+        color: grey;
+    }
+
+@media only screen and (max-width:991px){
+
+    header nav #navbarNav ul li a{
+        text-align: center;
+    }
+    
+    header nav #navbarNav ul li a::before{
+        content: unset;
+    }
+
+}
+
+*/
