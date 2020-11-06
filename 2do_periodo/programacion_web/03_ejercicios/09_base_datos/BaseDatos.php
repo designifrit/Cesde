@@ -1,18 +1,18 @@
 
 <?php
     class BaseDatos{
-        // Atributos
+        // ---------------------- Atributos ----------------------
         public $usuarioBD = "root";
         public $passwordBD = "mysql";
 
-        // Constructor
+        // ---------------------- Constructor ----------------------
         public function __construct(){
 
         }
 
-        // Métodos
+        // ---------------------- Métodos ----------------------
 
-        // A. Establecer conexion
+        // Establecer conexion
         public function conectarBD(){
             
             // Intenta la conexion
@@ -32,7 +32,7 @@
             }
         }
 
-        // B. Agregar datos a la BD
+        // C. Agregar Datos BD
         public function agregarDatos($consultaSQL){
             // 1. Establecer conexion
             $conexionBD = $this -> conectarBD();
@@ -48,6 +48,48 @@
                 echo("usuario agregado");
             }else{
                 echo("error");
+            }
+        }
+
+        // R. Leer Datos BD
+        public function consultarDatos($consultaSQL){
+            // Establecer conexion
+            $conexionBD = $this -> conectarBD();
+
+            // Preparar consulta
+            $consultarDatos = $conexionBD -> prepare($consultaSQL);
+
+            // Establecer el método de consulta
+            $consultarDatos -> setFetchMode(PDO::FETCH_ASSOC);
+
+            // Ejecutar la operación en la BD
+            $consultarDatos -> execute();
+
+            // Retorne los datos consultados
+            return($consultarDatos -> fetchAll());
+        }
+
+        // U. Actualizar Datos BD
+        public function actualizarDatos($consultaSQL){
+
+        }
+
+        // D. Eliminar Datos BD
+        public function eliminarDatos($consultaSQL){
+            // Establecer
+            $conexionBD = $this -> conectarBD();
+
+            // Preparar
+            $eliminarDatos = $conexionBD -> prepare($consultaSQL);
+
+            // Ejecutar
+            $resultado = $eliminarDatos -> execute();
+
+            // Verificar
+            if($resultado){
+                echo("Usuario eliminado");
+            }else{
+                echo("Error");
             }
         }
     }
