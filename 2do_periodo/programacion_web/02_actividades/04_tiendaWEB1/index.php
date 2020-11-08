@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alore store</title>
+    <title>Alore store / Read</title>
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e
@@ -31,6 +31,10 @@
     <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
+    <?php
+        include('inc/Consultar.php');
+    ?>
+
 </head>
 <body>
     
@@ -50,7 +54,7 @@
                     <li><a href="index.php">Home</a></li>
                     <li><a href="create.php">Create</a></li>
                     <li><a href="update.php">Update</a></li>
-                    <li><a href="contact.php">Contact</a></li>
+                    <li><a href="delete.php">Delete</a></li>
                 </ul>
             </div>
         </div>
@@ -75,7 +79,24 @@
             <div class="col-12">
                 <h1>Productos Destacados</h1>
             </div>
-            <div class="col-12 col-sm-4">
+
+            <?php foreach($productos as $posicion):?>
+                <div class="col-12 col-sm-4">
+                    <div class="card h-100">
+                        <img src="img/barn-946699_640.jpg" class="card-img-top" alt="Producto">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <?php echo($posicion["nombre"])?>
+                            </h5>
+                            <p class="card-text"><?php echo($posicion["marca"])?></p>
+                            <span>$<?php echo($posicion["precio"])?></span>
+                            <span><?php echo($posicion["descripcion"])?></span>
+                        </div>
+                    </div>
+                </div>
+            <?php endforeach?>
+
+            <!-- <div class="col-12 col-sm-4">
                 <div class="card h-100">
                     <img src="img/barn-946699_640.jpg" class="card-img-top" alt="Producto">
                     <div class="card-body">
@@ -134,7 +155,7 @@
                         <span>$89.00</span>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </article>
     </main>
 
@@ -151,9 +172,9 @@
             <div class="col-12 col-sm-4 navmap">
                 <h5>Atención Cliente</h5>
                 <ul>
-                    <li><a href="contact.php">Contactanos</a></li>
                     <li><a href="create.php">Create</a></li>
                     <li><a href="update.php">Update</a></li>
+                    <li><a href="delete.php">Delete</a></li>
                     <li><a href="#">Sobre nosotros</a></li>
                 </ul>
             </div>

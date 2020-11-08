@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alore store / </title>
+    <title>Alore store / Delete</title>
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e
@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lora&family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles_secundary.css">
 
     <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
@@ -50,34 +51,54 @@
                     <li><a href="index.php">Home</a></li>
                     <li><a href="create.php">Create</a></li>
                     <li><a href="update.php">Update</a></li>
-                    <li><a href="contact.php">Contact</a></li>
+                    <li><a href="delete.php">Delete</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <header id="header" class="container-fluid">
-        <div class="row">
-            <div id="slider">
-                <figure>
-                    <img src="img/header2.jpg" alt="Fotografia modelo">
-                    <img src="img/header3.jpg" alt="Fotografia modelo">
-                    <img src="img/header1.jpg" alt="Fotografia modelo">
-                    <img src="img/header4.jpg" alt="Fotografia modelo">
-                    <img src="img/header2.jpg" alt="Fotografia modelo">
-                </figure>
+    <header id="header" class="create_image">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="box">
+                        <h4>DELETE</h4>
+                        <p>Borrar registros</p>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
     
+    <main id="main" class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1>Eliminar productos de la base de datos</h1>
+            </div>
+            <div class="col-12 col-sm-4">
+                <div class="card h-100">
+                    <img src="img/barn-946699_640.jpg" class="card-img-top" alt="Producto">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a short card.</p>
+                        <span>$89.00</span>
+                        <div class="boton_delete material-icons">
+                            close
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
     <footer class="container" id="footer">
         <div class="row">
             <div class="col-12 col-sm-4 navmap">
                 <h5>Atención Cliente</h5>
                 <ul>
-                    <li><a href="contact.php">Contactanos</a></li>
                     <li><a href="create.php">Create</a></li>
                     <li><a href="update.php">Update</a></li>
+                    <li><a href="delete.php">Delete</a></li>
                     <li><a href="#">Sobre nosotros</a></li>
                 </ul>
             </div>
