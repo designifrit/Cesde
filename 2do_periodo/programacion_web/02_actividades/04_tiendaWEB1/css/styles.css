@@ -199,7 +199,7 @@ header#header::before{
             border-radius: 25px;
             box-shadow: 1px 1px 4px rgba(34, 34, 34, 0.9);
             color: var(--bg);
-            content: "⁐";
+            content: "↓";
             display: flex;
             font-size: 1.2em;
             justify-content: center;
@@ -252,9 +252,9 @@ header#header::before{
     }
 
             div#slider figure img{
-                width: 20%;
-                height: auto;
                 float: left;
+                height: auto;
+                width: 20%;
             }
 
             @keyframes slide { 
@@ -383,7 +383,7 @@ footer#footer{
             border-radius: 0 3px 3px 0;
             color: white;
             position: absolute;
-            right: 0;
+            right: 15px;
             transition: var(--transitions);
         }
 
@@ -408,4 +408,8 @@ footer#footer{
             top: 21%;
         }
 
+        div#slider figure {
+            max-height: 50vh;
+            width: 500%;
+        }
 }
