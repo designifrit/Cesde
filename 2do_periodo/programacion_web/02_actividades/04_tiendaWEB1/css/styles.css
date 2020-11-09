@@ -34,9 +34,9 @@ h4{
 }
 
 h5{
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     font-weight: 600;
-    letter-spacing: 0.07rem;
+    letter-spacing: 0.09rem;
 }
 
 p, a, em, strong, i, b, small, sup, sub,h1, h2, h3, h4, h5, h6, button, span, input{
@@ -167,6 +167,10 @@ nav#nav .navbar{
                     color: var(--hover3);
                     transform: translateY(-2px);
                 }
+    
+    nav#nav #nav_menu #nav_desplegable{
+        position: absolute;
+    }
 
 header#header{
     padding-top: 131px;
@@ -301,9 +305,17 @@ main#main{
                 line-height: 1.2rem;
             }
 
-            main#main .card .card-body span{
+            main#main .card .card-body span.precio{
                 color: var(--hover3);
+                display: block;
                 line-height: 2.2rem;
+            }
+
+            main#main .card .card-body p.descripcion{
+                color: var(--bg);
+                display: block;
+                font-size: 0.9rem;
+                line-height: 1.2rem;
             }
 
 aside#aside{
@@ -400,6 +412,10 @@ footer#footer{
 
 @media only screen and (max-width:768px){
 
+    nav#nav #nav_menu #nav_desktop{
+        display: none;
+    }
+
     header#header::before{
         top: 27%;
     }
@@ -414,6 +430,8 @@ footer#footer{
         }
 }
 
-@media only screen and (min-width:1200px){
-    
+@media only screen and (min-width:769px){
+    nav#nav #nav_menu #nav_mobile{
+        display: none;
+    }
 }

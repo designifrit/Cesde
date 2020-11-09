@@ -42,9 +42,9 @@ main#main{
         /* background-color: rgba(255,255,255,1); */
         border-radius: 50%;
         box-sizing: border-box;
-        bottom: 180px;
         color: #222;
         cursor: pointer;
+        display: none;
         font-size: 2.2em;
         font-weight: 300;
         height: 50px;
@@ -53,8 +53,13 @@ main#main{
         right: 14px;
         text-align: center;
         transition: var(--transitions3);
+        top: 14px;
         width: 50px;
-        z-index: 999;
+        z-index: 900;
+    }
+
+    main#main .card:hover .boton_delete{
+        display: block;
     }
 
     main#main .card .boton_delete:hover{
@@ -79,7 +84,7 @@ main#main{
 
         main#main .card .boton_delete:hover::after{
             background-color: var(--hover4);
-            transform: scale(1.1);
+            transform: scale(1.15);
         }
 
         main#main .card .boton_delete::before{
@@ -156,3 +161,22 @@ main#main{
                 outline: none !important;
                 transition: var(--transitions);
             }
+
+@media only screen and (max-width:991px){
+    header#header{
+        background-position: center 80px;
+    }
+
+    main#main .card .boton_delete{
+        font-size: 1.6em;
+        height: 40px;
+        padding: 8px 0 0 1px;
+        right: 7px;
+        top: 7px;
+        width: 40px;
+    }
+
+    main#main .card .boton_delete::before{
+        transform: translate(-110%, 24%);
+    }
+}

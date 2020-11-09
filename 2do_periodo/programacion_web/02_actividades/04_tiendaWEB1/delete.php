@@ -31,7 +31,10 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-
+    <?php
+        include("inc/Consultar.php");
+    ?>
+    
 </head>
 <body>
 
@@ -75,19 +78,26 @@
             <div class="col-12">
                 <h1>Eliminar productos de la base de datos</h1>
             </div>
-            <div class="col-12 col-sm-4">
-                <div class="card h-100">
-                    <img src="img/barn-946699_640.jpg" class="card-img-top" alt="Producto">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a short card.</p>
-                        <span>$89.00</span>
-                        <div class="boton_delete material-icons">
-                            close
+
+            <?php foreach($productos as $posicion):?>
+                <div class="col-12 col-sm-4">
+                    <div class="card h-100">
+                        <img src="img/girl-1828538_640.jpg" class="card-img-top" alt="Producto">
+                        <div class="card-body">
+                            <h5 class="card-title"><?php echo($posicion["nombre"])?></h5>
+                            <p class="card-text"><?php echo($posicion["marca"])?></p>
+                            <span class="precio">$<?php echo($posicion["precio"])?></span>
+                            <p class="descripcion"><?php echo($posicion["descripcion"])?></p>
+                            
+                            <a href="inc/Eliminar.php?id=<?php echo($posicion['id'])?>">
+                                <div class="boton_delete material-icons">
+                                    close
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
-            </div>
+            <?php endforeach?>
         </div>
     </main>
 

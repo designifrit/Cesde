@@ -23,7 +23,7 @@
                 // Instanciar - "PDO es una clase"
                 $conexionBD = new PDO($datosBD, $this -> usuarioBD, $this -> passwordBD);
 
-                echo("Conexión exitosa"."<br>");
+                // echo("Conexión exitosa"."<br>");
                 return($conexionBD);
             }
             // Sí hay un error la almacena en $error
@@ -47,7 +47,7 @@
             if($resultado){
                 echo("Producto agregado");
             }else{
-                echo("error");
+                // echo("error");
             }
         }
 

@@ -115,7 +115,7 @@
                     </div>
                     <div class="form-group">
                         <label for="descripcion">Descripción del producto</label>
-                        <textarea class="form-control" id="descripcion" name="descripcion" placeholder="Designed at Hebe and made in Auckland, NZ." rows="3"></textarea>
+                        <textarea class="form-control" id="descripcion" name="descripcion" placeholder="Agrega una descripción del producto" rows="3"></textarea>
                     </div>
                     <button class="btn btn-primary" type="submit" name="enviar">Registrar producto</button>
                 </form>

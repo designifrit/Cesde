@@ -9,8 +9,8 @@
     $transaccion = new BaseDatos();
 
     // 3. Crear consulta SQL para eliminar
-    $consultaSQL = "DELETE FROM clientes WHERE id = '$idEliminar'";
+    $consultaSQL = "DELETE FROM productos WHERE id = '$idEliminar'";
 
-    // 4. LLamar m├ętodo para eliminar datos
+    // 4. LLamar método para eliminar datos
     $transaccion -> eliminarDatos($consultaSQL);
 ?>

@@ -50,12 +50,25 @@
         <div>
             <div id="nav_menu" class="container">
                 <a href="index.php" class="navbar-brand"><img src="img/logo.png" width="70" alt="Logo - Volver al inicio"></a>
-                <ul class="row">
+                <ul id="nav_desktop" class="row">
                     <li><a href="index.php">Home</a></li>
                     <li><a href="create.php">Create</a></li>
                     <li><a href="update.php">Update</a></li>
                     <li><a href="delete.php">Delete</a></li>
                 </ul>
+                
+                <button id="nav_mobile" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="material-icons">
+                        menu
+                    </span>
+                </button>
+
+                <div id="nav_desplegable" class="collapse" id="navbarToggleExternalContent">
+                    <div class="bg-dark p-4">
+                        <h5 class="text-white h4">Collapsed content</h5>
+                        <span class="text-muted">Toggleable via the navbar brand.</span>
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
@@ -83,14 +96,12 @@
             <?php foreach($productos as $posicion):?>
                 <div class="col-12 col-sm-4">
                     <div class="card h-100">
-                        <img src="img/barn-946699_640.jpg" class="card-img-top" alt="Producto">
+                        <img src="img/girl-1828538_640.jpg" class="card-img-top" alt="Producto">
                         <div class="card-body">
-                            <h5 class="card-title">
-                                <?php echo($posicion["nombre"])?>
-                            </h5>
+                            <h5 class="card-title"><?php echo($posicion["nombre"])?></h5>
                             <p class="card-text"><?php echo($posicion["marca"])?></p>
-                            <span>$<?php echo($posicion["precio"])?></span>
-                            <span><?php echo($posicion["descripcion"])?></span>
+                            <span class="precio">$<?php echo($posicion["precio"])?></span>
+                            <p class="descripcion"><?php echo($posicion["descripcion"])?></p>
                         </div>
                     </div>
                 </div>
