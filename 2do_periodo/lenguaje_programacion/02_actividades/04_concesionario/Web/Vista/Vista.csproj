@@ -67,18 +67,58 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="gestionarConductor.aspx" />
+    <Content Include="gestionarContrato.aspx" />
+    <Content Include="gestionarRuta.aspx" />
+    <Content Include="gestionarTipoConductor.aspx" />
     <Content Include="gestionarTipoVehiculos.aspx" />
+    <Content Include="gestionarVehiculo.aspx" />
     <Content Include="index.html" />
     <Content Include="styles.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="gestionarConductor.aspx.cs">
+      <DependentUpon>gestionarConductor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gestionarConductor.aspx.designer.cs">
+      <DependentUpon>gestionarConductor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gestionarContrato.aspx.cs">
+      <DependentUpon>gestionarContrato.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gestionarContrato.aspx.designer.cs">
+      <DependentUpon>gestionarContrato.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gestionarRuta.aspx.cs">
+      <DependentUpon>gestionarRuta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gestionarRuta.aspx.designer.cs">
+      <DependentUpon>gestionarRuta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gestionarTipoConductor.aspx.cs">
+      <DependentUpon>gestionarTipoConductor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gestionarTipoConductor.aspx.designer.cs">
+      <DependentUpon>gestionarTipoConductor.aspx</DependentUpon>
+    </Compile>
     <Compile Include="gestionarTipoVehiculos.aspx.cs">
       <DependentUpon>gestionarTipoVehiculos.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="gestionarTipoVehiculos.aspx.designer.cs">
       <DependentUpon>gestionarTipoVehiculos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gestionarVehiculo.aspx.cs">
+      <DependentUpon>gestionarVehiculo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gestionarVehiculo.aspx.designer.cs">
+      <DependentUpon>gestionarVehiculo.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

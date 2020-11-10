@@ -24,3 +24,32 @@ AS
 GO
 
 EXECUTE addContrato 1, 1, 1
+
+
+
+/* Creando procedimiento almacenado para Actualizar datos */
+CREATE PROCEDURE updateContrato(
+	@id int,
+	@id_conductor int,
+	@id_vehiculo int
+)
+AS
+	UPDATE Contrato SET 
+		[id_conductor] = @id_conductor,
+		[id_vehiculo] = @id_vehiculo
+		WHERE id = @id
+GO
+
+EXECUTE updateContrato 1, 1, 1
+GO
+
+/* Creando procedimiento almacendado para Eliminar datos */
+CREATE PROCEDURE deleteContrato(
+		@id int
+)
+AS
+	DELETE FROM Contrato WHERE id = @id
+GO
+
+EXECUTE deleteContrato 3
+GO

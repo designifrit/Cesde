@@ -48,9 +48,17 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TipoVehiculo\AccesoMetodosCRUDtipoVehiculo.cs" />
     <Compile Include="TipoVehiculo\MetodosCRUDtipoVehiculo.cs" />
+    <Compile Include="Vehiculo\AccesoMetodosCRUDVehiculo.cs" />
+    <Compile Include="Vehiculo\MetodosCRUDVehiculo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Conductor\" />
+    <Folder Include="Contrato\" />
+    <Folder Include="Ruta\" />
+    <Folder Include="TipoConductor\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,18 +1,18 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="gestionarTipoVehiculos.aspx.cs" Inherits="Vista.gestionarTipoVehiculos" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="gestionarRuta.aspx.cs" Inherits="Vista.gestionarRuta" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>Concesionario / Tipo de vehículo</title>
+    <title>Concesionario / Ruta</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lora&family=Roboto&display=swap" rel="stylesheet">
     <link href="styles.css" rel="stylesheet" />
 </head>
 <body>
-
+    
     <!-- ######################### NAV ######################### -->
 
     <nav id="nav">
@@ -40,53 +40,56 @@
     <!-- ######################### FORMULARIO ######################### -->
 
     <main class="container">
-        <h1>Tipo de vehículo</h1>
+        <h1>Ruta</h1>
 
-        <form id="form1" runat="server">
+        <form id="form3" runat="server">
             <div class="form-row">
-                <div class="form-group col-md-6">
-                    <label for="textId">ID</label>
+                <div class="form-group col">
+                    <label for="textBox">ID</label>
                     <asp:TextBox ID="textId" runat="server" class="form-control"></asp:TextBox>
                 </div>
-                <div class="form-group col-md-6">
-                    <label for="textName">Nombre</label>
-                    <asp:TextBox ID="textName" runat="server" class="form-control"></asp:TextBox>
+                <div class="form-group col">
+                    <label for="textEstacion">Estacion</label>
+                    <asp:TextBox ID="textEstacion" runat="server" class="form-control"></asp:TextBox>
+                </div>
+                <div class="form-group col">
+                    <label for="TextIdVehiculo">ID Vehiculo</label>
+                    <asp:TextBox ID="TextIdVehiculo" runat="server" class="form-control"></asp:TextBox>
                 </div>
             </div>
             <div class="form-row">
-                <div class="form-group col-md-8">
+                <div class="form-group col-8">
 
                     <!-- *************** C *************** -->
-                    <asp:Button ID="btnAdd" Text="Add" runat="server" class="btn btn-primary" OnClick="btnAdd_Click"/>
+                    <asp:Button ID="btnAdd" Text="Add" runat="server" class="btn btn-primary"/>
                 </div>
-                <div class="form-group col-md-4">
+                <div class="form-group col-4">
 
                     <!-- *************** R.U.D *************** -->
-                    <asp:Button ID="btnlist" Text="List" runat="server" class="btn btn-secondary" OnClick="btnlist_Click" />
-                    <asp:Button ID="btnUpdate" Text="Update" runat="server" class="btn btn-secondary" OnClick="btnUpdate_Click"/>
-                    <asp:Button ID="btnDelete" Text="Delete" runat="server" class="btn btn-danger" OnClick="btnDelete_Click"/>
+                    <asp:Button ID="btnlist" Text="List" runat="server" class="btn btn-secondary"/>
+                    <asp:Button ID="btnUpdate" Text="Update" runat="server" class="btn btn-secondary"/>
+                    <asp:Button ID="btnDelete" Text="Delete" runat="server" class="btn btn-danger"/>
                 </div>
             </div>
 
             <!-- ######################### READ ######################### -->
 
             <div class="row">
-                <div class="col">
-                    <asp:Label ID="labelMensaje" runat="server" ForeColor="Blue" class="alert" EnableViewState="false"/><br />
+                <asp:Label ID="labelMensaje" runat="server" ForeColor="Blue" class="alert" EnableViewState="false"/><br />
 
-                    <table class="table table-borderless">
-                        <tr>
-                            <td scope="col">
-                                <asp:GridView ID="GridView" runat="server" AutoGenerateColumns="false">
-                                    <Columns>
-                                        <asp:BoundField DataField="id" HeaderText="Id"/>
-                                        <asp:BoundField DataField="nombre" HeaderText="Name"/>
-                                    </Columns>
-                                </asp:GridView>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
+                <table class="table table-borderless">
+                    <tr>
+                        <td scope="col">
+                            <asp:GridView ID="GridView" runat="server" AutoGenerateColumns="false">
+                                <Columns>
+                                    <asp:BoundField DataField="id" HeaderText="Id"/>
+                                    <asp:BoundField DataField="estacion" HeaderText="Estación"/>
+                                    <asp:BoundField DataField="id_vehiculo" HeaderText="ID Vehículo"/>
+                                </Columns>
+                            </asp:GridView>
+                        </td>
+                    </tr>
+                </table>
             </div>
 
         </form>

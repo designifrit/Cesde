@@ -1,18 +1,18 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="gestionarTipoVehiculos.aspx.cs" Inherits="Vista.gestionarTipoVehiculos" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="gestionarConductor.aspx.cs" Inherits="Vista.gestionarConductor" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>Concesionario / Tipo de vehículo</title>
+    <title>Concesionario / Conductor</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lora&family=Roboto&display=swap" rel="stylesheet">
     <link href="styles.css" rel="stylesheet" />
 </head>
 <body>
-
+    
     <!-- ######################### NAV ######################### -->
 
     <nav id="nav">
@@ -27,9 +27,9 @@
                         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="gestionarVehiculo.aspx">Vehículo</a></li>
                         <li class="nav-item"><a class="nav-link" href="gestionarTipoVehiculos.aspx">Tipo de vehículo</a></li>
-                        <li class="nav-item"><a class="nav-link" href="gestionarConductor.aspx">Conductor</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="gestionarConductor.aspx">Conductor</a></li>
                         <li class="nav-item"><a class="nav-link" href="gestionarTipoConductor.aspx">Tipo de conductor</a></li>
-                        <li class="nav-item active"><a class="nav-link" href="gestionarRuta.aspx">Ruta</a></li>
+                        <li class="nav-item"><a class="nav-link" href="gestionarRuta.aspx">Ruta</a></li>
                         <li class="nav-item"><a class="nav-link" href="gestionarContrato.aspx">Contrato</a></li>
                     </ul>
                 </div>
@@ -40,9 +40,9 @@
     <!-- ######################### FORMULARIO ######################### -->
 
     <main class="container">
-        <h1>Tipo de vehículo</h1>
+        <h1>Conductor</h1>
 
-        <form id="form1" runat="server">
+        <form id="form5" runat="server">
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="textId">ID</label>
@@ -54,17 +54,31 @@
                 </div>
             </div>
             <div class="form-row">
+                <div class="form-group col-md-4">
+                    <label for="textNTextTipoLicenciaame">Tipo de licencia</label>
+                    <asp:TextBox ID="TextTipoLicencia" runat="server" class="form-control"></asp:TextBox>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="textVehiculo">ID Vehiculo</label>
+                    <asp:TextBox ID="TextVehiculo" runat="server" class="form-control"></asp:TextBox>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="TextTipoConductor">ID Tipo de conductor</label>
+                    <asp:TextBox ID="TextTipoConductor" runat="server" class="form-control"></asp:TextBox>
+                </div>
+            </div>
+            <div class="form-row">
                 <div class="form-group col-md-8">
 
                     <!-- *************** C *************** -->
-                    <asp:Button ID="btnAdd" Text="Add" runat="server" class="btn btn-primary" OnClick="btnAdd_Click"/>
+                    <asp:Button ID="btnAdd" Text="Add" runat="server" class="btn btn-primary"/>
                 </div>
                 <div class="form-group col-md-4">
 
                     <!-- *************** R.U.D *************** -->
-                    <asp:Button ID="btnlist" Text="List" runat="server" class="btn btn-secondary" OnClick="btnlist_Click" />
-                    <asp:Button ID="btnUpdate" Text="Update" runat="server" class="btn btn-secondary" OnClick="btnUpdate_Click"/>
-                    <asp:Button ID="btnDelete" Text="Delete" runat="server" class="btn btn-danger" OnClick="btnDelete_Click"/>
+                    <asp:Button ID="btnlist" Text="List" runat="server" class="btn btn-secondary"/>
+                    <asp:Button ID="btnUpdate" Text="Update" runat="server" class="btn btn-secondary"/>
+                    <asp:Button ID="btnDelete" Text="Delete" runat="server" class="btn btn-danger"/>
                 </div>
             </div>
 
@@ -80,7 +94,10 @@
                                 <asp:GridView ID="GridView" runat="server" AutoGenerateColumns="false">
                                     <Columns>
                                         <asp:BoundField DataField="id" HeaderText="Id"/>
-                                        <asp:BoundField DataField="nombre" HeaderText="Name"/>
+                                        <asp:BoundField DataField="nombre" HeaderText="Nombre"/>
+                                        <asp:BoundField DataField="tipo_licencia" HeaderText="Tipo de licencia"/>
+                                        <asp:BoundField DataField="id_vehiculo" HeaderText="ID Vehiculo"/>
+                                        <asp:BoundField DataField="id_tipo_conductor" HeaderText="ID Tipo de conductor"/>
                                     </Columns>
                                 </asp:GridView>
                             </td>

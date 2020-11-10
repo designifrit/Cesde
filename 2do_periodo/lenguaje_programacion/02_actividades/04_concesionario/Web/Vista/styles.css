@@ -1,10 +1,192 @@
 ﻿
+/* ################### Variables ################### */
+
+:root {
+    --hover: rgb(255, 221, 159);
+    --hover2: rgb(61, 230, 159);
+    --hover3: rgb(85, 47, 255);
+    --font-titles: 'Lora', serif;
+    --font-parag: 'Roboto', sans-serif;
+    --transitions: all 0.3s ease 0s;
+    --transitions2: all 0.3s ease 0.2s;
+    --animation: element 4s linear infinite 0s;
+    --bg: #222;
+    --bg2: rgb(254, 254, 254);
+}
+
+/* ################### General ################### */
+
+.bg {
+    background-color: var(--bg);
+    border: 1px solid grey;
+}
 
 h1 {
-    padding:40px 0;
+    font-size: 2.2rem;
 }
 
-.alert {
-    color: slateblue;
-    padding: 40px 0;
+h2 {
+    font-size: 1.8rem;
 }
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1.3rem;
+}
+
+h5 {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.09rem;
+}
+
+p, a, em, strong, i, b, small, sup, sub, h1, h2, h3, h4, h5, h6, button, span, input {
+    font-family: var(--font-parag);
+}
+
+/* ################### Formularios ################### */
+
+form {
+    padding: 30px 0;
+}
+
+    label {
+        color: #222;
+    }
+
+    .entrada:focus{
+        outline: none !important;
+        border-color: var(--hover3);
+        box-shadow: 0 0 10px rgba(85, 47, 255, 0.5);
+    }
+
+    form .boton {
+        background-color: #222;
+        border-color: 0px solid var(--hover3);
+        color: white;
+        outline: none !important;
+        padding: 6px 20px;
+        transition: var(--transitions);
+    }
+
+        form .boton:hover {
+            background-color: var(--hover3);
+            border-color: 1px solid var(--hover3);
+            color: white;
+            outline: none !important;
+            transition: var(--transitions);
+        }
+
+/* ################### Nav ################### */
+
+nav#nav {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+
+    nav#nav .navbar {
+        margin: 0;
+        padding: 0;
+    }
+
+    nav#nav div:nth-child(1) {
+        background-color: var(--bg);
+    }
+
+    nav#nav div:nth-child(2) {
+        background-color: var(--bg2);
+    }
+
+    nav#nav #login {
+        padding: 9px 0 1px 0;
+        width: 100%;
+    }
+
+        nav#nav #login ul {
+            display: flex;
+            justify-content: flex-end;
+            list-style: none;
+            height: 17px;
+            width: 100%;
+        }
+
+            nav#nav #login ul li:nth-child(1) {
+                margin-right: 40px;
+                text-align: right;
+                width: 130px;
+            }
+
+            nav#nav #login ul li a {
+                color: white;
+                font-family: var(--font-parag);
+                font-size: 0.75rem;
+                font-weight: 600;
+                letter-spacing: 0.1em;
+                text-decoration: none;
+                text-transform: uppercase;
+                transition: var(--transitions);
+            }
+
+            nav#nav #login ul li:hover a {
+                color: var(--hover2);
+            }
+
+            nav#nav #login ul li a span {
+                display: inline-block;
+                position: absolute;
+                transform: translate(-30px);
+            }
+
+            nav#nav #login ul li:nth-child(2) a span {
+                display: inline-block;
+                position: absolute;
+                transform: translate(-14px, 4px);
+            }
+
+    nav#nav #nav_menu {
+        background-color: var(--bg2);
+        display: flex;
+        justify-content: space-between;
+        height: 88px;
+        padding: 5px 0 3px 0;
+        width: 100%;
+    }
+
+        nav#nav #nav_menu ul {
+            display: flex;
+            align-items: center;
+            list-style: none;
+        }
+
+            nav#nav #nav_menu ul li {
+                margin: 0 0 0 30px;
+                padding: 28px 0;
+            }
+
+                nav#nav #nav_menu ul li:nth-child(4) {
+                    margin-right: 28px;
+                }
+
+                nav#nav #nav_menu ul li a {
+                    color: var(--bg);
+                    display: inline-block;
+                    font-family: var(--font-parag);
+                    font-size: 1rem;
+                    position: relative;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    transition: var(--transitions);
+                }
+
+                nav#nav #nav_menu ul li:hover a {
+                    color: var(--hover3);
+                    transform: translateY(-2px);
+                }
+
+        nav#nav #nav_menu #nav_desplegable {
+            position: absolute;
+        }

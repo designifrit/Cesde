@@ -56,5 +56,12 @@
       <Name>Modelo</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Conductor\" />
+    <Folder Include="Contrato\" />
+    <Folder Include="Ruta\" />
+    <Folder Include="TipoConductor\" />
+    <Folder Include="Vehiculo\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

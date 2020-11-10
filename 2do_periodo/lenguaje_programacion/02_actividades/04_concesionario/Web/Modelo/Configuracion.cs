@@ -9,7 +9,7 @@ namespace Modelo
     public class Configuracion
     {
         /* static string cadenaConexion = @"Data Source=CERBERUS; Initial Catalog=Concesionario; Trusted_Connection=True"; */
-        static string cadenaConexion = @"Data Source=ALEJANDROOROZCO\SQLEXPRESS; Initial Catalog=Concesionario; Trusted_Connection=True";
+        static string cadenaConexion = @"Data Source=CERBERUS; Initial Catalog=Concesionario; Trusted_Connection=True";
 
         public static string CadenaConexion
         {
