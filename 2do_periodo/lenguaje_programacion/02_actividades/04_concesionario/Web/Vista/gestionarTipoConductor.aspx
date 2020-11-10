@@ -28,8 +28,8 @@
                         <li class="nav-item"><a class="nav-link" href="gestionarVehiculo.aspx">Vehículo</a></li>
                         <li class="nav-item"><a class="nav-link" href="gestionarTipoVehiculos.aspx">Tipo de vehículo</a></li>
                         <li class="nav-item"><a class="nav-link" href="gestionarConductor.aspx">Conductor</a></li>
-                        <li class="nav-item"><a class="nav-link" href="gestionarTipoConductor.aspx">Tipo de conductor</a></li>
-                        <li class="nav-item active"><a class="nav-link" href="gestionarRuta.aspx">Ruta</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="gestionarTipoConductor.aspx">Tipo de conductor</a></li>
+                        <li class="nav-item"><a class="nav-link" href="gestionarRuta.aspx">Ruta</a></li>
                         <li class="nav-item"><a class="nav-link" href="gestionarContrato.aspx">Contrato</a></li>
                     </ul>
                 </div>
@@ -49,7 +49,7 @@
                     <asp:TextBox ID="textId" runat="server" class="form-control"></asp:TextBox>
                 </div>
                 <div class="form-group col">
-                    <label for="textName">Nombre</label>
+                    <label for="textName">Tipo de conductor</label>
                     <asp:TextBox ID="textName" runat="server" class="form-control"></asp:TextBox>
                 </div>
             </div>
@@ -57,14 +57,14 @@
                 <div class="col-8">
 
                     <!-- *************** C *************** -->
-                    <asp:Button ID="btnAdd" Text="Add" runat="server" class="btn btn-primary"/>
+                    <asp:Button ID="btnAdd" Text="Add" runat="server" class="btn btn-primary" OnClick="btnAdd_Click"/>
                 </div>
                 <div class="col-4">
 
                     <!-- *************** R.U.D *************** -->
-                    <asp:Button ID="btnlist" Text="List" runat="server" class="btn btn-secondary"/>
-                    <asp:Button ID="btnUpdate" Text="Update" runat="server" class="btn btn-secondary" />
-                    <asp:Button ID="btnDelete" Text="Delete" runat="server" class="btn btn-danger" />
+                    <asp:Button ID="btnlist" Text="List" runat="server" class="btn btn-secondary" OnClick="btnlist_Click"/>
+                    <asp:Button ID="btnUpdate" Text="Update" runat="server" class="btn btn-secondary" OnClick="btnUpdate_Click" />
+                    <asp:Button ID="btnDelete" Text="Delete" runat="server" class="btn btn-danger" OnClick="btnDelete_Click" />
                 </div>
             </div>
 

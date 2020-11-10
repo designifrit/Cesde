@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Modelo.TipoVehiculo;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
@@ -8,15 +9,19 @@ using System.Threading.Tasks;
 
 namespace Modelo.Vehiculo
 {
-    class AccesoMetodosCRUDVehiculo
+    public class AccesoMetodosCRUDVehiculo
     {
         // Operación INSERT
-        public int InsertVehiculo(int id, string nombre)
+        public int InsertVehiculo(int id, string marca, string modelo, string placa, int anio, int id_Tipo_Vehiculo)
         {
             SqlCommand _comando = MetodosCRUDVehiculo.CrearComandoProcAlmacInsert_Vehiculo();
 
             _comando.Parameters.AddWithValue("@id", id);
-            _comando.Parameters.AddWithValue("@nombre", nombre);
+            _comando.Parameters.AddWithValue("@marca", marca);
+            _comando.Parameters.AddWithValue("@modelo", modelo);
+            _comando.Parameters.AddWithValue("@placa", placa);
+            _comando.Parameters.AddWithValue("@anio", anio);
+            _comando.Parameters.AddWithValue("@id_Tipo_Vehiculo", id_Tipo_Vehiculo);
 
             return MetodosCRUDVehiculo.EjecutarComandoProcAlmacInsert_Vehiculo(_comando);
         }
@@ -24,33 +29,37 @@ namespace Modelo.Vehiculo
         // Operación SELECT
         public static DataTable ListVehiculo()
         {
-            SqlCommand _comando = MetodosCRUDtipoVehiculo.CrearComandoSelect_TipoVehiculo();
+            SqlCommand _comando = MetodosCRUDVehiculo.CrearComandoSelect_Vehiculo();
 
-            _comando.CommandText = "SELECT * FROM Tipo_Vehiculo";
+            _comando.CommandText = "SELECT * FROM Vehiculo";
 
-            return MetodosCRUDtipoVehiculo.EjecutarComandoSelect_TipoVehiculo(_comando);
+            return MetodosCRUDVehiculo.EjecutarComandoSelect_Vehiculo(_comando);
         }
 
         // Operación UPDATE
-        public int UpdateVehiculo(int id, string nombre)
+        public int UpdateVehiculo(int id, string marca, string modelo, string placa, int anio, int id_Tipo_Vehiculo)
         {
-            SqlCommand _comando = MetodosCRUDtipoVehiculo.CrearComandoProcAlmacUpdate_TipoVehiculo();
+            SqlCommand _comando = MetodosCRUDVehiculo.CrearComandoProcAlmacUpdate_Vehiculo();
 
             _comando.Parameters.AddWithValue("@id", id);
-            _comando.Parameters.AddWithValue("@nombre", nombre);
+            _comando.Parameters.AddWithValue("@marca", marca);
+            _comando.Parameters.AddWithValue("@modelo", modelo);
+            _comando.Parameters.AddWithValue("@placa", placa);
+            _comando.Parameters.AddWithValue("@anio", anio);
+            _comando.Parameters.AddWithValue("@id_Tipo_Vehiculo", id_Tipo_Vehiculo);
 
-            return MetodosCRUDtipoVehiculo.EjecutarComandoProcAlmacUpdate_TipoVehiculo(_comando);
+            return MetodosCRUDVehiculo.EjecutarComandoProcAlmacUpdate_Vehiculo(_comando);
         }
 
         // Operación DELETE
         public int DeleteVehiculo(int id)
         {
-            SqlCommand _comando = MetodosCRUDtipoVehiculo.CrearComandoProcAlmacDelete_TipoVehiculo();
+            SqlCommand _comando = MetodosCRUDVehiculo.CrearComandoProcAlmacDelete_Vehiculo();
 
             _comando.Parameters.AddWithValue("@id", id);
             // No es necesario llevar el nombre
 
-            return MetodosCRUDtipoVehiculo.EjecutarComandoProcAlmacDelete_TipoVehiculo(_comando);
+            return MetodosCRUDVehiculo.EjecutarComandoProcAlmacDelete_Vehiculo(_comando);
         }
     }
 }

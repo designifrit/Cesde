@@ -6,19 +6,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Modelo.Vehiculo
+namespace Modelo.TipoConductor
 {
-    public class MetodosCRUDVehiculo
+    public class MetodosCRUDtipoConductor
     {
         // Crear tipo comando INSERT - Tipo procedimiento almacenado
-        public static SqlCommand CrearComandoProcAlmacInsert_Vehiculo()
+        public static SqlCommand CrearComandoProcAlmacInsert_TipoConductor()
         {
             // Usar la conexión
             string _cadenaConexion = Configuracion.CadenaConexion;
 
             SqlConnection _conexion = new SqlConnection(_cadenaConexion);
 
-            SqlCommand _comando = new SqlCommand("addVehiculo", _conexion);
+            SqlCommand _comando = new SqlCommand("addTipoConductor", _conexion);
 
             _comando.CommandType = CommandType.StoredProcedure;
 
@@ -26,7 +26,7 @@ namespace Modelo.Vehiculo
         }
 
         // Ejecutar tipo de comando INSERT
-        public static int EjecutarComandoProcAlmacInsert_Vehiculo(SqlCommand comando)
+        public static int EjecutarComandoProcAlmacInsert_TipoConductor(SqlCommand comando)
         {
             try
             {
@@ -43,7 +43,7 @@ namespace Modelo.Vehiculo
         }
 
         // Crear tipo comando SELECT - Tipo Instrucción
-        public static SqlCommand CrearComandoSelect_Vehiculo()
+        public static SqlCommand CrearComandoSelect_TipoConductor()
         {
             // Usar la conexion
             string _cadenaConexion = Configuracion.CadenaConexion;
@@ -60,7 +60,7 @@ namespace Modelo.Vehiculo
         }
 
         // Ejecutar tipo comando SELECT
-        public static DataTable EjecutarComandoSelect_Vehiculo(SqlCommand comando)
+        public static DataTable EjecutarComandoSelect_TipoConductor(SqlCommand comando)
         {
             DataTable _tabla = new DataTable();
 
@@ -77,14 +77,14 @@ namespace Modelo.Vehiculo
         }
 
         // Crear tipo comando UPDATE - Tipo procedimiento almacendado
-        public static SqlCommand CrearComandoProcAlmacUpdate_Vehiculo()
+        public static SqlCommand CrearComandoProcAlmacUpdate_TipoConductor()
         {
             // Usar la conexión
             string _cadenaConexion = Configuracion.CadenaConexion;
 
             SqlConnection _conexion = new SqlConnection(_cadenaConexion);
 
-            SqlCommand _comando = new SqlCommand("updateVehiculo", _conexion);
+            SqlCommand _comando = new SqlCommand("updateTipoConductor", _conexion);
 
             _comando.CommandType = CommandType.StoredProcedure;
 
@@ -92,7 +92,7 @@ namespace Modelo.Vehiculo
         }
 
         // Ejecutar tipo comando UPDATE
-        public static int EjecutarComandoProcAlmacUpdate_Vehiculo(SqlCommand comando)
+        public static int EjecutarComandoProcAlmacUpdate_TipoConductor(SqlCommand comando)
         {
             try
             {
@@ -110,7 +110,7 @@ namespace Modelo.Vehiculo
         }
 
         // Crear tipo comando DELETE - Tipo procedimiento almacendado
-        public static SqlCommand CrearComandoProcAlmacDelete_Vehiculo()
+        public static SqlCommand CrearComandoProcAlmacDelete_TipoConductor()
         {
             // Usar la conexión
             string _cadenaConexion = Configuracion.CadenaConexion;
@@ -119,7 +119,7 @@ namespace Modelo.Vehiculo
             SqlConnection _conexion = new SqlConnection(_cadenaConexion);
 
             // Crear objeto tipo SQLCommand
-            SqlCommand _comando = new SqlCommand("deleteVehiculo", _conexion);
+            SqlCommand _comando = new SqlCommand("deleteTipoConductor", _conexion);
 
             _comando.CommandType = CommandType.StoredProcedure;
 
@@ -127,7 +127,7 @@ namespace Modelo.Vehiculo
         }
 
         // Ejecutar tipo comando DELETE
-        public static int EjecutarComandoProcAlmacDelete_Vehiculo(SqlCommand comando)
+        public static int EjecutarComandoProcAlmacDelete_TipoConductor(SqlCommand comando)
         {
             try
             {

@@ -15,7 +15,7 @@
 
     <!-- ######################### NAV ######################### -->
 
-    <nav id="nav">
+    <nav id="nav" class="mb-3">
         <div>
             <div id="nav_menu" class="navbar navbar-expand-lg navbar-dark bg-dark">
                 <a class="navbar-brand" href="#">Concesionario</a>
@@ -26,10 +26,10 @@
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="gestionarVehiculo.aspx">Vehículo</a></li>
-                        <li class="nav-item"><a class="nav-link" href="gestionarTipoVehiculos.aspx">Tipo de vehículo</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="gestionarTipoVehiculos.aspx">Tipo de vehículo</a></li>
                         <li class="nav-item"><a class="nav-link" href="gestionarConductor.aspx">Conductor</a></li>
                         <li class="nav-item"><a class="nav-link" href="gestionarTipoConductor.aspx">Tipo de conductor</a></li>
-                        <li class="nav-item active"><a class="nav-link" href="gestionarRuta.aspx">Ruta</a></li>
+                        <li class="nav-item"><a class="nav-link" href="gestionarRuta.aspx">Ruta</a></li>
                         <li class="nav-item"><a class="nav-link" href="gestionarContrato.aspx">Contrato</a></li>
                     </ul>
                 </div>

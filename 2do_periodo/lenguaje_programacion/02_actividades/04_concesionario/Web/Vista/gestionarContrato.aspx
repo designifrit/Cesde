@@ -61,14 +61,14 @@
                 <div class="col-8">
 
                     <!-- *************** C *************** -->
-                    <asp:Button ID="btnAdd" Text="Add" runat="server" class="btn btn-primary"/>
+                    <asp:Button ID="btnAdd" Text="Add" runat="server" class="btn btn-primary" OnClick="btnAdd_Click"/>
                 </div>
                 <div class="col-4">
 
                     <!-- *************** R.U.D *************** -->
-                    <asp:Button ID="btnlist" Text="List" runat="server" class="btn btn-secondary"/>
-                    <asp:Button ID="btnUpdate" Text="Update" runat="server" class="btn btn-secondary"/>
-                    <asp:Button ID="btnDelete" Text="Delete" runat="server" class="btn btn-danger"/>
+                    <asp:Button ID="btnlist" Text="List" runat="server" class="btn btn-secondary" OnClick="btnlist_Click"/>
+                    <asp:Button ID="btnUpdate" Text="Update" runat="server" class="btn btn-secondary" OnClick="btnUpdate_Click"/>
+                    <asp:Button ID="btnDelete" Text="Delete" runat="server" class="btn btn-danger" OnClick="btnDelete_Click"/>
                 </div>
             </div>
 

@@ -55,7 +55,7 @@
             </div>
             <div class="form-row">
                 <div class="form-group col-md-4">
-                    <label for="textNTextTipoLicenciaame">Tipo de licencia</label>
+                    <label for="TextTipoLicencia">Tipo de licencia</label>
                     <asp:TextBox ID="TextTipoLicencia" runat="server" class="form-control"></asp:TextBox>
                 </div>
                 <div class="form-group col-md-4">
@@ -71,14 +71,14 @@
                 <div class="form-group col-md-8">
 
                     <!-- *************** C *************** -->
-                    <asp:Button ID="btnAdd" Text="Add" runat="server" class="btn btn-primary"/>
+                    <asp:Button ID="btnAdd" Text="Add" runat="server" class="btn btn-primary" OnClick="btnAdd_Click"/>
                 </div>
                 <div class="form-group col-md-4">
 
                     <!-- *************** R.U.D *************** -->
-                    <asp:Button ID="btnlist" Text="List" runat="server" class="btn btn-secondary"/>
-                    <asp:Button ID="btnUpdate" Text="Update" runat="server" class="btn btn-secondary"/>
-                    <asp:Button ID="btnDelete" Text="Delete" runat="server" class="btn btn-danger"/>
+                    <asp:Button ID="btnlist" Text="List" runat="server" class="btn btn-secondary" OnClick="btnlist_Click"/>
+                    <asp:Button ID="btnUpdate" Text="Update" runat="server" class="btn btn-secondary" OnClick="btnUpdate_Click"/>
+                    <asp:Button ID="btnDelete" Text="Delete" runat="server" class="btn btn-danger" OnClick="btnDelete_Click"/>
                 </div>
             </div>
 
