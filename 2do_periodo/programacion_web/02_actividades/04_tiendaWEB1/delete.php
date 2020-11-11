@@ -82,10 +82,10 @@
             <?php foreach($productos as $posicion):?>
                 <div class="col-12 col-sm-4">
                     <div class="card h-100">
-                        <img src="img/girl-1828538_640.jpg" class="card-img-top" alt="Producto">
+                        <img src="data:<?php $posicion['tipo_imagen']?>; base64, <?php echo base64_encode($posicion['foto'])?>" class="card-img-top" alt="Producto">
                         <div class="card-body">
-                            <h5 class="card-title"><?php echo($posicion["nombre"])?></h5>
-                            <p class="card-text"><?php echo($posicion["marca"])?></p>
+                            <h5 class="card-title"><?php echo($posicion["marca"])?></h5>
+                            <p class="card-text"><?php echo($posicion["nombre"])?></p>
                             <span class="precio">$<?php echo($posicion["precio"])?></span>
                             <p class="descripcion"><?php echo($posicion["descripcion"])?></p>
                             

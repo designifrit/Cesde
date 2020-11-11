@@ -47,7 +47,7 @@
             if($resultado){
                 echo("Producto agregado");
             }else{
-                // echo("error");
+                echo("error");
             }
         }
 

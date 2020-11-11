@@ -80,18 +80,18 @@
                 <h1>Registrar productos en la base de datos</h1>
             </div>
             <div class="col">
-                <form action="create.php" method="POST" class="needs-validation" novalidate>
+                <form action="create.php" method="POST" class="needs-validation" enctype="multipart/form-data" novalidate>
                     <div class="form-row">
                         <div class="col-md-6 mb-3">
-                            <label for="nombre">Nombre del producto</label>
-                            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Chaqueta de cuero" required>
+                            <label for="marca">Marca</label>
+                            <input type="text" class="form-control" id="marca" name="marca" placeholder="Marca" maxlength="25" required>
                             <div class="valid-feedback">
                                 Luce bien!
                             </div>
                         </div>
                         <div class="col-md-6 mb-3">
-                            <label for="marca">Marca</label>
-                            <input type="text" class="form-control" id="marca" name="marca" placeholder="Vélez" required>
+                            <label for="nombre">Nombre del producto</label>
+                            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre del producto" maxlength="25" required>
                             <div class="valid-feedback">
                                 Luce bien!
                             </div>
@@ -100,14 +100,14 @@
                     <div class="form-row">
                         <div class="col-md-6 mb-3">
                             <label for="precio">Precio</label>
-                            <input type="number" class="form-control" id="precio" name="precio" placeholder="128.800" required>
+                            <input type="number" class="form-control" id="precio" name="precio" placeholder="$79.900" maxlength="9" required>
                             <div class="invalid-feedback">
                                 Por favor inserta un precio válido
                             </div>
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="archivo">Adjuntar imagen del producto</label>
-                            <input type="file" id="archivo" name="archivo">
+                            <input type="file" id="archivo" name="archivo" required>
                             <div class="invalid-feedback">
                                 Por favor adjunta un archivo válido
                             </div>
@@ -115,12 +115,13 @@
                     </div>
                     <div class="form-group">
                         <label for="descripcion">Descripción del producto</label>
-                        <textarea class="form-control" id="descripcion" name="descripcion" placeholder="Agrega una descripción del producto" rows="3"></textarea>
+                        <textarea class="form-control" id="descripcion" name="descripcion" placeholder="Agrega una descripción del producto" maxlength="70" rows="3" required></textarea>
                     </div>
                     <button class="btn btn-primary" type="submit" name="enviar">Registrar producto</button>
                 </form>
             </div>
         </div>
+
     </main>
     
     <footer class="container" id="footer">
