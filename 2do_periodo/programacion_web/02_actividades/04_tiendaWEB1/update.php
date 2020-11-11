@@ -31,7 +31,10 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-
+    <?php
+        include('inc/Consultar.php');
+    ?>
+    
 </head>
 <body>
 
