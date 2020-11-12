@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Viaje</string>
+    <string name="viaje_express">Viaje express</string>
+    <string name="seleccione_la_cantidad_de_personas_a_viajar">Seleccione la cantidad de personas a viajar</string>
+    <string name="cantidad_de_tickets">Cantidad de tickets</string>
+    <string name="_1">1</string>
+    <string name="escoga_una_opci_n_de_transporte">Escoga una opción de transporte</string>
+    <string name="avion">Avion</string>
+    <string name="bus">Bus</string>
+    <string name="taxi_express">Taxi express</string>
+    <string name="alimentaci_n">Alimentación</string>
+    <string name="lasa_a">Lasaña</string>
+    <string name="pizza">Pizza</string>
+    <string name="hamburguesa">Hamburguesa</string>
+    <string name="desea_incluir_la_propina">Desea incluir la propina?</string>
+    <string name="_0">0</string>
+    <string name="calcular">Calcular</string>
+    <string name="limpiar">Limpiar</string>
+</resources>
