@@ -57,18 +57,7 @@
                     <li><a href="delete.php">Delete</a></li>
                 </ul>
                 
-                <button id="nav_mobile" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="material-icons">
-                        menu
-                    </span>
-                </button>
 
-                <div id="nav_desplegable" class="collapse" id="navbarToggleExternalContent">
-                    <div class="bg-dark p-4">
-                        <h5 class="text-white h4">Collapsed content</h5>
-                        <span class="text-muted">Toggleable via the navbar brand.</span>
-                    </div>
-                </div>
             </div>
         </div>
     </nav>

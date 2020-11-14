@@ -10,6 +10,7 @@
         $apellido = $_POST["apellido"];
         $descripcion = $_POST["descripcion"];
         $genero = $_POST["genero"];
+        $foto = $_POST["foto"];
 
         // echo($nombre.$apellido.$descripcion.$genero);
 
@@ -19,9 +20,12 @@
         // $transaccion -> conectarBD();
 
         // Crear consulta
-        $consultaSQL = "INSERT INTO clientes(nombre, apellido, descripcion, genero) VALUES ('$nombre', '$apellido', '$descripcion', '$genero')";
+        $consultaSQL = "INSERT INTO clientes(nombre, apellido, descripcion, genero, foto) VALUES ('$nombre', '$apellido', '$descripcion', '$genero', '$foto')";
 
         // Llamo al método de la clase BD agregarDatos()
         $transaccion -> agregarDatos($consultaSQL);
+
+        // Redireccionar
+        header("location: formulario.php");
     }
 ?>

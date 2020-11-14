@@ -80,7 +80,7 @@
                 <h1>Registrar productos en la base de datos</h1>
             </div>
             <div class="col">
-                <form action="create.php" method="POST" class="needs-validation" enctype="multipart/form-data" novalidate>
+                <form action="create.php" method="POST" class="needs-validation" enctype="multipart/form-data">
                     <div class="form-row">
                         <div class="col-md-6 mb-3">
                             <label for="marca">Marca</label>

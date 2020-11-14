@@ -8,9 +8,6 @@
     // 2. Definir la consulta para buscar datos
     $consultaSQL = "SELECT * FROM productos WHERE 1";
 
-    //Mostrar Imagen 
-    
-
     // 3. Ejecutar el m├ętodo ConsultarDatos y almacenar respuesta en variable
     $productos = $transaccion -> consultarDatos($consultaSQL);
 

@@ -162,6 +162,80 @@ main#main{
                 transition: var(--transitions);
             }
 
+            main#main .card a.actualizar{
+                background-color: white;
+                border-radius: 50%;
+                box-sizing: border-box;
+                color: var(--hover3);
+                cursor: pointer;
+                display: none;
+                font-size: 2.1em;
+                font-weight: 300;
+                height: 50px;
+                padding: 8px 0 0 2px;
+                position: absolute;
+                right: 14px;
+                text-align: center;
+                text-decoration: none;
+                transition: var(--transitions3);
+                top: 14px;
+                width: 50px;
+                z-index: 900;
+            }
+
+            main#main .card:hover a.actualizar{
+                display: block;
+            }
+
+            main#main .card a.actualizar:hover{
+                /* background-color: var(--hover4); */
+                color: white;
+            }
+        
+                main#main .card a.actualizar::after{
+                    background-color: white;
+                    border-radius: 50%;
+                    box-shadow: 1px 1px 7px rgba(34, 34, 34, 1);
+                    content: "";
+                    height: 100%;
+                    left: 0;
+                    position: absolute;
+                    top: 0;
+                    transform: scale(1);
+                    transition: var(--transitions3);
+                    width: 100%;
+                    z-index: -1;
+                }
+        
+                main#main .card a.actualizar:hover::after{
+                    background-color: var(--hover3);
+                    transform: scale(1.15);
+                }
+
+                main#main .card a.actualizar::before{
+                    background-color: white;
+                    border-radius: 3px;
+                    color: #222;
+                    content: "update";
+                    font-family: var(--font-parag);
+                    font-size: 1rem;
+                    height: 28px;
+                    left: 0;
+                    opacity: 0;
+                    padding: 7px 12px;
+                    position: absolute;
+                    top: 0;
+                    text-align: center;
+                    transform: translate(-120%, 40%);
+                    transition: var(--transitions2);
+                    z-index: -999;
+                }
+        
+                main#main .card a.actualizar:hover::before{
+                    /* transform: translate(-2px,-45px); */
+                    opacity: 1;
+                }
+        
 @media only screen and (max-width:991px){
     header#header{
         background-position: center 80px;

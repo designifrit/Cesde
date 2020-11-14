@@ -336,10 +336,6 @@ footer#footer{
     padding-top: 60px;
 }
 
-    footer#footer div:nth-child(1){
-        
-    }
-
         footer#footer .navmap h5{
             font-size: 1.1rem;
             font-weight: 100;
@@ -409,7 +405,6 @@ footer#footer{
         padding: 10px 0 25px 0;
     }
 
-
 @media only screen and (max-width:768px){
 
     nav#nav #nav_menu #nav_desktop{
@@ -428,10 +423,4 @@ footer#footer{
             max-height: 50vh;
             width: 500%;
         }
-}
-
-@media only screen and (min-width:769px){
-    nav#nav #nav_menu #nav_mobile{
-        display: none;
-    }
 }

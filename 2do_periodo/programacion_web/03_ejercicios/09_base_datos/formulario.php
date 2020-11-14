@@ -49,6 +49,12 @@
                         </div>
                     </div>
                 </div>
+                <div class="row mt-3 mb-3">
+                    <div class="col">
+                        <label class="font-weight-bold col">URL</label>
+                        <input class="form-control col" type="text" name="foto" placeholder="https://www.dominio.com/imagen">
+                    </div>
+                </div>
                 <button type="submit" class="btn btn-info btn-block" name="botonEnvio">Registrar</button>
 
 

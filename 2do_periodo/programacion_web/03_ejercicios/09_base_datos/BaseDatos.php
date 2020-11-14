@@ -71,7 +71,21 @@
 
         // U. Actualizar Datos BD
         public function actualizarDatos($consultaSQL){
+            // Establecer
+            $conexionBD = $this -> conectarBD();
 
+            // Preparar
+            $editarDatos = $conexionBD -> prepare($consultaSQL);
+
+            // Ejecutar
+            $resultado = $editarDatos -> execute();
+
+            // Verificar
+            if($resultado){
+                echo("Usuario actualizado");
+            }else{
+                echo("Error");
+            }
         }
 
         // D. Eliminar Datos BD

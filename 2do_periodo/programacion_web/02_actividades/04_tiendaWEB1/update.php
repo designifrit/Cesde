@@ -32,7 +32,7 @@
     <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
     <?php
-        include('inc/Consultar.php');
+        include('inc/Actualizar.php');
     ?>
     
 </head>
@@ -78,64 +78,75 @@
             <div class="col-12">
                 <h1>Actualizar productos de la base de datos</h1>
             </div>
-            <div class="col">
-                <form class="needs-validation" novalidate>
-                    <div class="form-row">
-                        <div class="col-md-6 mb-3">
-                        <label for="validationCustom01">First name</label>
-                        <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
-                        <div class="valid-feedback">
-                            Looks good!
+
+                <!-- Tarjetas -->
+                <?php foreach($productos as $posicion):?>
+                    <div class="col-12 col-sm-4">
+                        <div class="card h-100"> 
+                            <img src="data:<?php $posicion['tipo_imagen']?>; base64, <?php echo base64_encode($posicion['foto'])?>" class="card-img-top" alt="Producto">
+                            <div class="card-body">
+                                <h5 class="card-title"><?php echo($posicion["marca"])?></h5>
+                                <p class="card-text"><?php echo($posicion["nombre"])?></p>
+                                <span class="precio">$<?php echo($posicion["precio"])?></span>
+                                <p class="descripcion"><?php echo($posicion["descripcion"])?></p>
+                                <a href="#" type="button" class="material-icons actualizar" data-toggle="modal" data-target="#editar<?php echo($posicion["id"])?>">edit</a>
+                            </div>
                         </div>
-                        </div>
-                        <div class="col-md-6 mb-3">
-                        <label for="validationCustom02">Last name</label>
-                        <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
-                        <div class="valid-feedback">
-                            Looks good!
-                        </div>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="editar<?php echo($posicion["id"])?>" tabindex="-1" aria-labelledby="ModalEditar" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h3 class="modal-title" id="ModalEditar">Edición de producto</h3>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="update.php?id=<?php echo($posicion["id"])?>" method="POST">
+                                        
+                                            <div class="form-group">
+                                                <label for="marcaEditar">Marca</label>
+                                                <input type="text" class="form-control" id="marcaEditar" name="marcaEditar" value="<?php echo($posicion["marca"])?>" maxlength="25">
+                                                <div class="valid-feedback">
+                                                    Luce bien!
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>Nombre del producto</label>
+                                                <input type="text" class="form-control" name="nombreEditar" value="<?php echo($posicion["nombre"])?>" maxlength="25">
+                                                <div class="valid-feedback">
+                                                    Luce bien!
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <label for="precioEditar">Precio</label>
+                                                <input type="number" class="form-control" id="precioEditar" name="precioEditar" value="<?php echo($posicion["precio"])?>" maxlength="9">
+                                                <div class="invalid-feedback">
+                                                    Por favor inserta un precio válido
+                                                </div>
+                                            </div>
+                                            <!-- <div class="form-row">
+                                                <label for="archivoEditar">Adjuntar imagen del producto</label>
+                                                <input type="file" id="archivoEditar" name="archivoEditar">
+                                                <div class="invalid-feedback">
+                                                    Por favor adjunta un archivo válido
+                                                </div>
+                                            </div> -->
+                                            <div class="form-group">
+                                                <label>Descripcion:</label>
+                                                    <textarea class="form-control" name="descripcionEditar" rows="3" maxlength="70"><?php echo($posicion["descripcion"])?></textarea>
+                                            </div>
+                                            <button type="submit" class="btn btn-warning" name="botonEditar">Enviar</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="form-row">
-                        <div class="col-md-6 mb-3">
-                        <label for="validationCustom03">City</label>
-                        <input type="text" class="form-control" id="validationCustom03" required>
-                        <div class="invalid-feedback">
-                            Please provide a valid city.
-                        </div>
-                        </div>
-                        <div class="col-md-3 mb-3">
-                        <label for="validationCustom04">State</label>
-                        <select class="custom-select" id="validationCustom04" required>
-                            <option selected disabled value="">Choose...</option>
-                            <option>...</option>
-                        </select>
-                        <div class="invalid-feedback">
-                            Please select a valid state.
-                        </div>
-                        </div>
-                        <div class="col-md-3 mb-3">
-                        <label for="validationCustom05">Zip</label>
-                        <input type="text" class="form-control" id="validationCustom05" required>
-                        <div class="invalid-feedback">
-                            Please provide a valid zip.
-                        </div>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                        <label class="form-check-label" for="invalidCheck">
-                            Agree to terms and conditions
-                        </label>
-                        <div class="invalid-feedback">
-                            You must agree before submitting.
-                        </div>
-                        </div>
-                    </div>
-                    <button class="btn btn-primary" type="submit">Submit form</button>
-                </form>
-            </div>
+                <?php endforeach?>
+
         </div>
     </main>
 
