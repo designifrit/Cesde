@@ -49,6 +49,7 @@
         $consultarSQL = "UPDATE productos SET nombre = '$nombre', marca = '$marca', precio = '$precio', descripcion= '$descripcion' WHERE id = '$id'";
 
         $transaccion -> actualizarDatos($consultarSQL);
+
+        header("Location:update.php");
     }
-    
 ?>

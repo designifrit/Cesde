@@ -47,5 +47,7 @@
 
         // Llamo al método de la clase BD agregarDatos()
         $transaccion -> agregarDatos($consultaSQL);
+
+        header("Location:create.php");
     }
 ?>
