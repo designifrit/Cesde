@@ -96,66 +96,6 @@
                 </div>
             <?php endforeach?>
 
-            <!-- <div class="col-12 col-sm-4">
-                <div class="card h-100">
-                    <img src="img/barn-946699_640.jpg" class="card-img-top" alt="Producto">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a short card.</p>
-                        <span>$89.00</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-4">
-                <div class="card h-100">
-                    <img src="img/girl-1828538_640.jpg" class="card-img-top" alt="Producto">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a short card.</p>
-                        <span>$89.00</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-4">
-                <div class="card h-100">
-                    <img src="img/girl-1848473_640.jpg" class="card-img-top" alt="Producto">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a short card.</p>
-                        <span>$89.00</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-4">
-                <div class="card h-100">
-                    <img src="img/girl-1848472_640.jpg" class="card-img-top" alt="Producto">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a short card.</p>
-                        <span>$89.00</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-4">
-                <div class="card h-100">
-                    <img src="img/portrait-597173_640.jpg" class="card-img-top" alt="Producto">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a short card.</p>
-                        <span>$89.00</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-4">
-                <div class="card h-100">
-                    <img src="img/portrait-3083402_640.jpg" class="card-img-top" alt="Producto">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a short card.</p>
-                        <span>$89.00</span>
-                    </div>
-                </div>
-            </div> -->
         </article>
     </main>
 

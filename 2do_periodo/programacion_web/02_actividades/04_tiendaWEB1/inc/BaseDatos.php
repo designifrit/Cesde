@@ -45,9 +45,10 @@
 
             // Verifico el resultado
             if($resultado){
-                echo("Producto agregado");
+                header("Refresh: 3; Location:create.php");
+                echo('<div class="alert alert-primary" style="position: fixed; top: 140px; left: 9px;" role="alert">'.$_SESSION['notificacion']['create'].'</div>');
             }else{
-                echo("error");
+                echo("Error al agregar los registros");
             }
         }
 
@@ -82,9 +83,10 @@
 
             // Verifico el resultado
             if($resultado){
-                echo("usuario agregado");
+                header("Refresh: 3; location: update.php");
+                echo('<div class="alert alert-success" style="position: fixed; top: 140px; left: 9px;" role="alert">'.$_SESSION['notificacion']['update'].'</div>');
             }else{
-                echo("error");
+                echo("Error al consultar los registros");
             }
         }
 
@@ -101,10 +103,19 @@
 
             // Verificar
             if($resultado){
-                echo("Producto eliminado");
+                header("Refresh: 3; Location: ../delete.php");
+                echo('<div class="alert alert-danger" style="position: fixed; top: 140px; left: 9px;" role="alert">'.$_SESSION['notificacion']['delete'].'</div>');
             }else{
-                echo("Error");
+                echo("Error al eliminar el registro");
             }
         }
     }
+
+    session_start();
+
+    $_SESSION['notificacion'] = array();
+    $_SESSION['notificacion']['create'] = 'Se ha registrado el producto';
+    $_SESSION['notificacion']['update'] = 'Se ha actualizado el producto';
+    $_SESSION['notificacion']['delete'] = 'Se ha eliminado el producto';
 ?>
+

@@ -134,11 +134,12 @@
                                                     Por favor adjunta un archivo válido
                                                 </div>
                                             </div> -->
-                                            <div class="form-group">
+                                            <div class="form-group mt-3">
                                                 <label>Descripcion:</label>
                                                     <textarea class="form-control" name="descripcionEditar" rows="3" maxlength="70"><?php echo($posicion["descripcion"])?></textarea>
                                             </div>
                                             <button type="submit" class="btn btn-warning" name="botonEditar">Enviar</button>
+                                            
                                         </form>
                                     </div>
                                 </div>

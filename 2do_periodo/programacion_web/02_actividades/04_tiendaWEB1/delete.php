@@ -89,7 +89,7 @@
                             <span class="precio">$<?php echo($posicion["precio"])?></span>
                             <p class="descripcion"><?php echo($posicion["descripcion"])?></p>
                             
-                            <a href="inc/Eliminar.php?id=<?php echo($posicion['id'])?>">
+                            <a href="inc/Eliminar.php?id=<?php echo($posicion['id'])?>" name="botonEliminar">
                                 <div class="boton_delete material-icons">
                                     close
                                 </div>
