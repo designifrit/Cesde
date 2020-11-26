@@ -156,6 +156,7 @@
             android:backgroundTint="@color/purple_700"
             android:gravity="center"
             android:text="Adicionar"
+            android:onClick="Guardar"
             android:textColor="@color/white"
             android:textSize="14sp" />
     </LinearLayout>
@@ -214,6 +215,7 @@
             android:backgroundTint="@color/purple_700"
             android:gravity="center"
             android:text="Limpiar"
+            android:onClick="Limpiar"
             android:textColor="@color/white"
             android:textSize="14sp" />
 
@@ -225,6 +227,7 @@
             android:backgroundTint="@color/purple_700"
             android:gravity="center"
             android:text="Regresar"
+            android:onClick="Regresar"
             android:textColor="@color/white"
             android:textSize="14sp" />
     </LinearLayout>

@@ -11,7 +11,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     EditText etUsuario, etContrasena;
-    Button btIngresar;
+    Button btIngresar, btRegistrarse;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
         etUsuario = findViewById(R.id.etUsuario);
         etContrasena = findViewById(R.id.etContrasena);
         btIngresar = findViewById(R.id.btIngresar);
+        btRegistrarse = findViewById(R.id.btRegistrarse);
     }
 
     public void Ingresar(View view){
@@ -39,5 +40,10 @@ public class MainActivity extends AppCompatActivity {
             intIngresar.putExtra("datos", usuario);
             startActivity(intIngresar);
         }
+    }
+
+    public void Registrarse(View view){
+        Intent intRegistrarse = new Intent(this, RegistrarseActivity.class);
+        startActivity(intRegistrarse);
     }
 }

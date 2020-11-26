@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -73,6 +74,16 @@ public class MainActivity extends AppCompatActivity {
             }else if(rbHamburguesa.isChecked()){
                 aliment = 16500;
             }
+        }else if(rbBus.isChecked() || rbTaxi.isChecked()){
+            if(rbHamburguesa.isChecked() || rbPizza.isChecked() || rbLasagna.isChecked()) {
+                aliment = 0;
+                Toast.makeText(this, "La alimentación solo aplica para viajes en Avión", Toast.LENGTH_SHORT).show();
+
+                rbLasagna.setChecked(false);
+                rbPizza.setChecked(false);
+                rbHamburguesa.setChecked(false);
+                tvTotal.setText("0");
+            }
         }
 
         cantPersona = Integer.parseInt(etCantTickets.getText().toString());
@@ -104,19 +115,23 @@ public class MainActivity extends AppCompatActivity {
         double total;
         total = 0;
 
-        total = HallarCostoTransporte(view) + HallarCostoAlimentacion(view) + HallarCostoPropina(view);
-        tvTotal.setText(String.valueOf(total));
+        if(rbAvion.isChecked() || rbTaxi.isChecked() || rbBus.isChecked()){
+            total = HallarCostoTransporte(view) + HallarCostoAlimentacion(view) + HallarCostoPropina(view);
+            tvTotal.setText(String.valueOf(total));
+        }else{
+            Toast.makeText(this, "Seleccione una opción de viaje", Toast.LENGTH_SHORT).show();
+        }
     }
 
     public void Limpiar(View view){
-        rbAvion.isChecked();
-        rbBus.isChecked();
-        rbTaxi.isChecked();
-        rbLasagna.isChecked();
-        rbPizza.isChecked();
-        rbHamburguesa.isChecked();
+        rbAvion.setChecked(false);
+        rbBus.setChecked(false);
+        rbTaxi.setChecked(false);
+        rbLasagna.setChecked(false);
+        rbPizza.setChecked(false);
+        rbHamburguesa.setChecked(false);
         cbPropina.setChecked(false);
         etCantTickets.setText("1");
-        tvTotal.setText("");
+        tvTotal.setText("0");
     }
 }
