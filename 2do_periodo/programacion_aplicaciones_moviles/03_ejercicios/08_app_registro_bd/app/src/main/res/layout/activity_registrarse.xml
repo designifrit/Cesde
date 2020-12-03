@@ -144,6 +144,7 @@
             android:layout_weight="1"
             android:backgroundTint="@color/purple_700"
             android:gravity="center"
+            android:onClick="Consultar"
             android:text="Consultar"
             android:textColor="@color/white"
             android:textSize="14sp" />
@@ -181,6 +182,7 @@
             android:backgroundTint="@color/purple_700"
             android:gravity="center"
             android:text="Modificar"
+            android:onClick="Modificar"
             android:textColor="@color/white"
             android:textSize="14sp" />
 
@@ -192,6 +194,7 @@
             android:backgroundTint="@color/purple_700"
             android:gravity="center"
             android:text="Eliminar"
+            android:onClick="Eliminar"
             android:textColor="@color/white"
             android:textSize="14sp" />
     </LinearLayout>

@@ -1,6 +1,9 @@
 package com.example.appregistro;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -35,10 +38,23 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(this, "Usuario y contraseña son requeridos", Toast.LENGTH_LONG).show();
             etUsuario.requestFocus();
         }else{
-            /* Biblioteca clase Intent */
-            Intent intIngresar = new Intent(this, SaludoActivity.class);
-            intIngresar.putExtra("datos", usuario);
-            startActivity(intIngresar);
+            /* Abre la conexión a la base de datos */
+            MainSQLiteOpenHelper Admin = new MainSQLiteOpenHelper(this, "Concesionario", null, 1);
+            SQLiteDatabase db = Admin.getReadableDatabase();
+
+            Cursor fila = db.rawQuery("SELECT * FROM Usuario WHERE idUsuario = '" + usuario + "' and clave = '" + clave + "' ", null);
+
+            if(fila.moveToFirst()){
+                /* Biblioteca clase Intent */
+                Intent intIngresar = new Intent(this, SaludoActivity.class);
+                intIngresar.putExtra("datos", usuario);
+                startActivity(intIngresar);
+            }else{
+                Toast.makeText(this, "Usuario o clave inválido", Toast.LENGTH_LONG).show();
+                etContrasena.setText("");
+                etUsuario.requestFocus();
+            }
+            db.close();
         }
     }
 
