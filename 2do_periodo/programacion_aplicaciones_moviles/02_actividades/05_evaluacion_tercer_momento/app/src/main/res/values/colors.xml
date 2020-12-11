@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#523CFF</color>
-    <color name="colorPrimaryAccent">#D81B60</color>
-
-    <color name="purple">#523CFF</color>
+    <color name="cp_blue">#05AFF2</color>
+    <color name="cs_blue">#05C7F2</color>
+    <color name="ca_blue">#252B42</color>
+    <color name="white">#F2F2F2</color>
+    <color name="black">#0D0D0D</color>
+    <color name="grey">#ACB5C6</color>
 </resources>

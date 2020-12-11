@@ -2,11 +2,9 @@
     <!-- Base application theme. -->
     <style name="Theme.Concesionario" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">#008577</item>
-        <item name="colorPrimaryDark">#523CFF</item>
-        <item name="colorAccent">#D81B60</item>
+        <item name="colorPrimary">@color/cp_blue</item>
+        <item name="colorPrimaryDark">@color/cp_blue</item>
+        <item name="colorAccent">@color/ca_blue</item>
         <!-- Customize your theme here. -->
-
-        <color name="purple">#523CFF</color>
     </style>
 </resources>
