@@ -1,9 +1,262 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".IngresarActivity">
+    tools:context=".IngresarActivity"
+    android:orientation="vertical">
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@color/cp_blue"
+            android:padding="20dp">
+
+            <Button
+                android:id="@+id/btBackMain"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/cp_blue"
+                android:drawableStart="@drawable/arrow_back"
+                android:drawablePadding="10dp"
+                android:text="@string/regresar"
+                android:textSize="16sp"
+                android:fontFamily="@font/archivo_narrow"
+                android:textColor="@color/white"
+                android:textAlignment="textStart"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:onClick="Regresar"/>
+
+            <TextView
+                android:id="@+id/tvDatos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btBackMain"
+                android:fontFamily="@font/archivo_narrow"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:includeFontPadding="false"
+                android:text="@string/estos_son_los_datos_del_veh_culo"
+                android:textColor="@color/white"
+                android:textSize="18sp"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingTop="30dp"
+            android:paddingRight="20dp">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/n_mero_de_placa">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/etPlaca"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/car_numberb"
+                    android:drawablePadding="10sp"
+                    android:fontFamily="@font/source_sans_pro"
+                    android:inputType="text"
+                    android:maxLength="6"
+                    android:text="">
+
+                </android.support.design.widget.TextInputEditText>
+
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="20dp">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/modelo_del_veh_culo">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/etModelo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/coche"
+                    android:drawablePadding="10sp"
+                    android:fontFamily="@font/source_sans_pro"
+                    android:inputType="text"
+                    android:text="">
+
+                </android.support.design.widget.TextInputEditText>
+
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="20dp">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/marca_del_veh_culo">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/etMarca"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/brand"
+                    android:drawablePadding="10sp"
+                    android:fontFamily="@font/source_sans_pro"
+                    android:inputType="text"
+                    android:text="">
+
+                </android.support.design.widget.TextInputEditText>
+
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="20dp">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/precio_del_veh_culo">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/etPrecio"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/dollar"
+                    android:drawablePadding="10sp"
+                    android:fontFamily="@font/source_sans_pro"
+                    android:inputType="number"
+                    android:maxLength="9"
+                    android:text="">
+
+                </android.support.design.widget.TextInputEditText>
+
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="20dp">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/contrase_a">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/etIngPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/password"
+                    android:drawablePadding="10sp"
+                    android:fontFamily="@font/source_sans_pro"
+                    android:inputType="textPassword"
+                    android:text="">
+
+                </android.support.design.widget.TextInputEditText>
+
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="20dp">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/verifica_la_contrase_a">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/etVerPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/password"
+                    android:drawablePadding="10sp"
+                    android:fontFamily="@font/source_sans_pro"
+                    android:inputType="textPassword"
+                    android:text="">
+
+                </android.support.design.widget.TextInputEditText>
+
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="20dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btModificar"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="@color/ca_blue"
+                android:fontFamily="@font/archivo_narrow"
+                android:text="@string/modificar_datos"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:onClick="Modificar"/>
+
+            <Button
+                android:id="@+id/btVender"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:backgroundTint="@color/alert"
+                android:fontFamily="@font/archivo_narrow"
+                android:text="@string/vender"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:onClick="Eliminar"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -43,6 +43,7 @@
                 android:textStyle="bold" />
 
             <TextView
+                android:id="@+id/tvBienvenido"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/tvConcesionario"
@@ -99,7 +100,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:paddingLeft="20dp"
-            android:paddingTop="30dp"
+            android:paddingTop="20dp"
             android:paddingRight="20dp">
 
             <android.support.design.widget.TextInputLayout
@@ -108,13 +109,15 @@
                 android:hint="@string/n_mero_de_placa">
 
                 <android.support.design.widget.TextInputEditText
-                    android:id="@+id/etUsuario"
+                    android:id="@+id/etPlaca"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableStart="@drawable/coche"
                     android:drawablePadding="10sp"
+                    android:inputType="text"
+                    android:maxLength="6"
                     android:fontFamily="@font/source_sans_pro"
-                    android:text="@string/het345">
+                    android:text="">
 
                 </android.support.design.widget.TextInputEditText>
 
@@ -127,7 +130,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:paddingLeft="20dp"
-            android:paddingTop="20dp"
+            android:paddingTop="10dp"
             android:paddingRight="20dp">
 
             <android.support.design.widget.TextInputLayout
@@ -143,7 +146,7 @@
                     android:drawablePadding="10sp"
                     android:fontFamily="@font/source_sans_pro"
                     android:inputType="textPassword"
-                    android:text="@string/jhon_doe">
+                    android:text="">
 
                 </android.support.design.widget.TextInputEditText>
 
@@ -156,7 +159,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:paddingLeft="20dp"
-            android:paddingTop="40dp"
+            android:paddingTop="30dp"
             android:paddingRight="20dp"
             android:paddingBottom="20dp">
 
@@ -168,7 +171,8 @@
                 android:fontFamily="@font/archivo_narrow"
                 android:text="@string/ingresar"
                 android:textColor="@color/white"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:onClick="Ingresar" />
 
         </LinearLayout>
 
@@ -187,7 +191,7 @@
                 android:layout_marginBottom="10dp"
                 android:fontFamily="@font/source_sans_pro"
                 android:gravity="center"
-                android:text="@string/vas_a_registrar_una_placa"
+                android:text="@string/necesitas_registrar_un_veh_culo"
                 android:textSize="15sp" />
 
             <Button
@@ -198,7 +202,8 @@
                 android:fontFamily="@font/archivo_narrow"
                 android:text="@string/registrar"
                 android:textColor="@color/white"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:onClick="Registrar"/>
 
         </LinearLayout>
 
