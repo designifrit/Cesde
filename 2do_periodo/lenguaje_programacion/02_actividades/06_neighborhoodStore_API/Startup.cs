@@ -29,6 +29,10 @@ namespace neighborhoodStore
         {
             services.AddDbContext<StoreContext>(opt =>
                                               opt.UseInMemoryDatabase("StoreList"));
+            services.AddDbContext<ClientContext>(opt =>
+                                              opt.UseInMemoryDatabase("ClientList"));
+            services.AddDbContext<PurchaseContext>(opt =>
+                                              opt.UseInMemoryDatabase("PurchaseList"));
             services.AddControllers();
         }
 

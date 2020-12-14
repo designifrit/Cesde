@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fojYyKEqa1Q8lxqAfNztLKgtEwKDhupiM2TWQ2QaMGkA4AE2wJWL6q+XYagVTkSv/FsI4Kvfpxke4MR7ebugBQ==",
+  "dgSpecHash": "5hBIavIOYOQzsFCpFxKOTM4tTgX/z6mng3LnBkrX2VXOLT2RGDv3OSNLsWFi+RS0C8DMn3vF8IZg4MJLZ1yOFg==",
   "success": true,
-  "projectFilePath": "C:\\Program Files\\Ampps\\www\\Cesde\\2do_periodo\\lenguaje_programacion\\02_actividades\\neighborhoodStore\\neighborhoodStore.csproj",
+  "projectFilePath": "C:\\Program Files\\Ampps\\www\\Cesde\\2do_periodo\\lenguaje_programacion\\02_actividades\\06_neighborhoodStore_API\\neighborhoodStore.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Alejandro\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\Alejandro\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",

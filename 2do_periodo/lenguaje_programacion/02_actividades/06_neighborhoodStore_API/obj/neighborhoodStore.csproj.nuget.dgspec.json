@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Program Files\\Ampps\\www\\Cesde\\2do_periodo\\lenguaje_programacion\\02_actividades\\neighborhoodStore\\neighborhoodStore.csproj": {}
+    "C:\\Program Files\\Ampps\\www\\Cesde\\2do_periodo\\lenguaje_programacion\\02_actividades\\06_neighborhoodStore_API\\neighborhoodStore.csproj": {}
   },
   "projects": {
-    "C:\\Program Files\\Ampps\\www\\Cesde\\2do_periodo\\lenguaje_programacion\\02_actividades\\neighborhoodStore\\neighborhoodStore.csproj": {
+    "C:\\Program Files\\Ampps\\www\\Cesde\\2do_periodo\\lenguaje_programacion\\02_actividades\\06_neighborhoodStore_API\\neighborhoodStore.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Program Files\\Ampps\\www\\Cesde\\2do_periodo\\lenguaje_programacion\\02_actividades\\neighborhoodStore\\neighborhoodStore.csproj",
+        "projectUniqueName": "C:\\Program Files\\Ampps\\www\\Cesde\\2do_periodo\\lenguaje_programacion\\02_actividades\\06_neighborhoodStore_API\\neighborhoodStore.csproj",
         "projectName": "neighborhoodStore",
-        "projectPath": "C:\\Program Files\\Ampps\\www\\Cesde\\2do_periodo\\lenguaje_programacion\\02_actividades\\neighborhoodStore\\neighborhoodStore.csproj",
+        "projectPath": "C:\\Program Files\\Ampps\\www\\Cesde\\2do_periodo\\lenguaje_programacion\\02_actividades\\06_neighborhoodStore_API\\neighborhoodStore.csproj",
         "packagesPath": "C:\\Users\\Alejandro\\.nuget\\packages\\",
-        "outputPath": "C:\\Program Files\\Ampps\\www\\Cesde\\2do_periodo\\lenguaje_programacion\\02_actividades\\neighborhoodStore\\obj\\",
+        "outputPath": "C:\\Program Files\\Ampps\\www\\Cesde\\2do_periodo\\lenguaje_programacion\\02_actividades\\06_neighborhoodStore_API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
