@@ -7,12 +7,14 @@ public class ClsViaje implements Serializable {
     private String ciudad;
     private String persona;
     private String valor;
+    private Boolean anular;
 
-    public ClsViaje(String codigo, String ciudad, String persona, String valor) {
+    public ClsViaje(String codigo, String ciudad, String persona, String valor, Boolean anular) {
         this.codigo = codigo;
         this.ciudad = ciudad;
         this.persona = persona;
         this.valor = valor;
+        this.anular = anular;
     }
 
     public String getCodigo() {
@@ -47,6 +49,14 @@ public class ClsViaje implements Serializable {
         this.valor = valor;
     }
 
+    public Boolean getAnular() {
+        return anular;
+    }
+
+    public void setAnular(Boolean anular) {
+        this.anular = anular;
+    }
+
     @Override
     public String toString() {
         return "ClsViaje{" +
@@ -54,6 +64,7 @@ public class ClsViaje implements Serializable {
                 ", ciudad='" + ciudad + '\'' +
                 ", persona='" + persona + '\'' +
                 ", valor='" + valor + '\'' +
+                ", anular=" + anular +
                 '}';
     }
 }
