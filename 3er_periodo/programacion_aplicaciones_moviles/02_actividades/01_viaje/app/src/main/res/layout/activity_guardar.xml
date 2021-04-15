@@ -42,7 +42,7 @@
         app:layout_constraintVertical_bias="0.0">
 
         <EditText
-            android:id="@+id/etCodigo"
+            android:id="@+id/etCodigo2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -65,7 +65,7 @@
         app:layout_constraintVertical_bias="0.0">
 
         <EditText
-            android:id="@+id/etCiudad"
+            android:id="@+id/etCiudad2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -89,7 +89,7 @@
         app:layout_constraintVertical_bias="0.0">
 
         <EditText
-            android:id="@+id/etPersonas"
+            android:id="@+id/etPersonas2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -113,7 +113,7 @@
         app:layout_constraintVertical_bias="0.0">
 
         <EditText
-            android:id="@+id/etValor"
+            android:id="@+id/etValor2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -138,13 +138,12 @@
         app:layout_constraintVertical_bias="0.0">
 
         <Button
-            android:id="@+id/btGuardarSQL"
+            android:id="@+id/btConsultarArray"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:backgroundTint="@color/purple_500"
-            android:textColor="@color/white"
-            android:text="Guardar" />
+            android:onClick="consultarArray"
+            android:text="Consultar Array" />
     </LinearLayout>
 
     <LinearLayout
@@ -159,13 +158,13 @@
         app:layout_constraintVertical_bias="0.0">
 
         <Button
-            android:id="@+id/btConsultarSQL"
+            android:id="@+id/btGuardarSQL"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:backgroundTint="@color/purple_500"
             android:textColor="@color/white"
-            android:text="Consultar base de datos" />
+            android:text="Guardar en Base de datos" />
     </LinearLayout>
 
     <LinearLayout
@@ -180,11 +179,13 @@
         app:layout_constraintVertical_bias="0.0">
 
         <Button
-            android:id="@+id/btLimpiar"
+            android:id="@+id/btConsultarSQL"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:text="Limpiar" />
+            android:backgroundTint="@color/purple_500"
+            android:textColor="@color/white"
+            android:text="Consultar base de datos" />
     </LinearLayout>
 
     <LinearLayout
@@ -199,10 +200,31 @@
         app:layout_constraintVertical_bias="0.0">
 
         <Button
-            android:id="@+id/btRegresar"
+            android:id="@+id/btLimpiar2"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:onClick="limpiar"
+            android:text="Limpiar" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout10"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout9"
+        app:layout_constraintVertical_bias="0.0">
+
+        <Button
+            android:id="@+id/btRegresar2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:onClick="regresar"
             android:text="Regresar" />
     </LinearLayout>
 

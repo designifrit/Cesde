@@ -93,7 +93,8 @@
             android:layout_weight="1"
             android:backgroundTint="@color/purple_500"
             android:textColor="@color/white"
-            android:text="Guardar viaje" />
+            android:onClick="guardar"
+            android:text="ingresar viaje" />
     </LinearLayout>
 
     <LinearLayout
