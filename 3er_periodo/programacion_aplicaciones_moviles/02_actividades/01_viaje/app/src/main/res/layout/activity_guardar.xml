@@ -10,22 +10,23 @@
         android:id="@+id/layout1"
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="50dp"
+        android:layout_marginEnd="16dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/tvGuardar"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:textSize="20sp"
-            android:textColor="@color/purple_500"
             android:gravity="center"
-            android:textStyle="bold"
-            android:text="Guardar en base de datos" />
+            android:text="@string/guardar_en_base_de_datos"
+            android:textColor="@color/purple_500"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
     </LinearLayout>
 
@@ -33,7 +34,9 @@
         android:id="@+id/layout2"
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="50dp"
+        android:layout_marginEnd="16dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -43,20 +46,22 @@
 
         <EditText
             android:id="@+id/etCodigo2"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:ems="10"
             android:gravity="center"
-            android:textSize="16sp"
+            android:hint="@string/c_digo_del_viaje"
             android:inputType="number"
-            android:hint="Código del viaje" />
+            android:textSize="16sp" />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/layout3"
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -66,14 +71,14 @@
 
         <EditText
             android:id="@+id/etCiudad2"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:ems="10"
             android:gravity="center"
-            android:textSize="16sp"
+            android:hint="@string/ciudad_de_destino"
             android:inputType="textPersonName"
-            android:hint="Ciudad de destino" />
+            android:textSize="16sp" />
 
     </LinearLayout>
 
@@ -81,6 +86,8 @@
         android:id="@+id/layout4"
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -90,14 +97,14 @@
 
         <EditText
             android:id="@+id/etPersonas2"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:ems="10"
             android:gravity="center"
-            android:textSize="16sp"
+            android:hint="@string/cantidad_de_personas"
             android:inputType="number"
-            android:hint="Cantidad de personas" />
+            android:textSize="16sp" />
 
     </LinearLayout>
 
@@ -105,6 +112,8 @@
         android:id="@+id/layout5"
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -114,22 +123,50 @@
 
         <EditText
             android:id="@+id/etValor2"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:ems="10"
             android:gravity="center"
-            android:textSize="16sp"
+            android:hint="@string/valor_del_viaje_por_persona"
             android:inputType="number"
-            android:hint="Valor del viaje por persona" />
+            android:textSize="16sp" />
 
     </LinearLayout>
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/layout10"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_marginStart="16dp"-->
+<!--        android:layout_marginEnd="16dp"-->
+<!--        android:orientation="horizontal"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/layout5"-->
+<!--        app:layout_constraintVertical_bias="0.0">-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/etAnular2"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="1"-->
+<!--            android:ems="10"-->
+<!--            android:gravity="center"-->
+<!--            android:hint="@string/disponibilidad"-->
+<!--            android:inputType="number"-->
+<!--            android:textSize="16sp" />-->
+
+<!--    </LinearLayout>-->
 
     <LinearLayout
         android:id="@+id/layout6"
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="50dp"
+        android:layout_marginEnd="16dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -138,18 +175,19 @@
         app:layout_constraintVertical_bias="0.0">
 
         <Button
-            android:id="@+id/btConsultarArray"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:onClick="consultarArray"
-            android:text="Consultar Array" />
+            android:text="@string/consultar_array" />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/layout7"
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -159,18 +197,20 @@
 
         <Button
             android:id="@+id/btGuardarSQL"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:backgroundTint="@color/purple_500"
-            android:textColor="@color/white"
-            android:text="Guardar en Base de datos" />
+            android:text="@string/guardar_en_base_de_dato"
+            android:textColor="@color/white" />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/layout8"
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -180,18 +220,20 @@
 
         <Button
             android:id="@+id/btConsultarSQL"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:backgroundTint="@color/purple_500"
-            android:textColor="@color/white"
-            android:text="Consultar base de datos" />
+            android:text="@string/consultar_base_de_datos"
+            android:textColor="@color/white" />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/layout9"
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -201,17 +243,18 @@
 
         <Button
             android:id="@+id/btLimpiar2"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:onClick="limpiar"
-            android:text="Limpiar" />
+            android:text="@string/limpiar" />
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/layout10"
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -221,11 +264,11 @@
 
         <Button
             android:id="@+id/btRegresar2"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:onClick="regresar"
-            android:text="Regresar" />
+            android:text="@string/regresar" />
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>

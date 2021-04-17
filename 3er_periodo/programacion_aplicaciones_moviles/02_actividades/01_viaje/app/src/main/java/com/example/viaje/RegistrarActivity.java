@@ -44,7 +44,7 @@ public class RegistrarActivity extends AppCompatActivity {
 
     public void adicionar(View view){
         String codigo, ciudad, persona, valor;
-        Boolean anular;
+        boolean anular;
 
         codigo = etCodigo.getText().toString();
         ciudad = etCiudad.getText().toString();

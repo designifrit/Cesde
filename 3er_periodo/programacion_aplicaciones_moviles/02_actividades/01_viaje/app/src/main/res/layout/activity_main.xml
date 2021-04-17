@@ -11,75 +11,58 @@
         android:id="@+id/layout1"
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="50dp"
+        android:layout_marginEnd="16dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/tvViaje"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
-            android:textSize="20sp"
-            android:textColor="@color/purple_500"
             android:gravity="center"
-            android:textStyle="bold"
-            android:text="Viaje" />
+            android:text="@string/viaje"
+            android:textColor="@color/purple_500"
+            android:textSize="20sp"
+            android:textStyle="bold" />
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/layout2"
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/layout3"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
         android:layout_marginTop="50dp"
-        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/layout1"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintVertical_bias="0.0"
+        app:helperTextEnabled="true"
+        app:helperText="Ingresa el código para verificar el viaje registrado">
 
-        <TextView
-            android:id="@+id/tvIngresarCodigo"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:textSize="15sp"
-            android:gravity="center"
-            android:text="Ingresa el código para guardar el viaje registrado" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/layout3"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/layout2"
-        app:layout_constraintVertical_bias="0.0">
-
-        <EditText
+        <android.support.design.widget.TextInputEditText
             android:id="@+id/etCodigo"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:ems="10"
-            android:textSize="15sp"
-            android:gravity="center"
-            android:inputType="number"
-            android:hint="Código del viaje" />
-    </LinearLayout>
+            android:textSize="16sp"
+            android:hint="@string/c_digo_del_viaje">
+
+        </android.support.design.widget.TextInputEditText>
+    </android.support.design.widget.TextInputLayout>
 
     <LinearLayout
         android:id="@+id/layout4"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:orientation="horizontal"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="50dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -88,19 +71,21 @@
 
         <Button
             android:id="@+id/btGuardar"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:backgroundTint="@color/purple_500"
-            android:textColor="@color/white"
             android:onClick="guardar"
-            android:text="ingresar viaje" />
+            android:text="@string/ingresar_viaje"
+            android:textColor="@color/white" />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/layout5"
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -110,10 +95,11 @@
 
         <Button
             android:id="@+id/btRegistrar"
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:onClick="registrar"
-            android:text="Registrar" />
+            android:text="@string/registrar" />
     </LinearLayout>
+
 </android.support.constraint.ConstraintLayout>

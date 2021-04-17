@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
         String codigo;
         codigo = etCodigo.getText().toString();
 
+
         if(codigo.isEmpty()){
             Toast.makeText(this, "ingresa el código del viaje", Toast.LENGTH_SHORT).show();
             etCodigo.requestFocus();

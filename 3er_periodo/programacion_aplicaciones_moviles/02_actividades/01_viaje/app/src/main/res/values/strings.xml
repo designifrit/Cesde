@@ -1,3 +1,29 @@
 <resources>
     <string name="app_name">Viaje</string>
+    <string name="viaje">Viaje</string>
+    <string name="c_digo_del_viaje">Código del viaje</string>
+    <string name="ingresar_viaje">ingresar viaje</string>
+    <string name="registrar">Registrar</string>
+    <string name="registrar_viaje">Registrar viaje</string>
+    <string name="ciudad_de_destino">Ciudad de destino</string>
+    <string name="cantidad_de_personas">Cantidad de personas</string>
+    <string name="valor_por_persona">Valor por persona</string>
+    <string name="consulta_de_registros_anulados">Consulta de registros anulados</string>
+    <string name="consultar">Consultar</string>
+    <string name="adicionar">Adicionar</string>
+    <string name="modificar">Modificar</string>
+    <string name="anular">Anular</string>
+    <string name="limpiar">Limpiar</string>
+    <string name="regresar">Regresar</string>
+    <string name="guardar_en_base_de_datos">Guardar en base de datos</string>
+    <string name="c_digo_del_viaje">Código del viaje</string>
+    <string name="ciudad_de_destino">Ciudad de destino</string>
+    <string name="cantidad_de_personas">Cantidad de personas</string>
+    <string name="valor_del_viaje_por_persona">Valor del viaje por persona</string>
+    <string name="consultar_array">Consultar Array</string>
+    <string name="guardar_en_base_de_dato">Guardar en Base de datos</string>
+    <string name="consultar_base_de_datos">Consultar base de datos</string>
+    <string name="limpiar">Limpiar</string>
+    <string name="regresar">Regresar</string>
+    <string name="disponibilidad">Disponibilidad</string>
 </resources>

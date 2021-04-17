@@ -14,7 +14,7 @@ import android.widget.Toast;
 import java.util.ArrayList;
 
 public class GuardarActivity extends AppCompatActivity {
-    EditText etCodigo2, etCiudad2, etPersona2, etValor2;
+    EditText etCodigo2, etCiudad2, etPersona2, etValor2, etAnular2;
     Button btGuadarSQL, btConsultarSQL, btLimpiar2, btRegresar2;
     String codigo;
     long respuesta;
@@ -33,6 +33,7 @@ public class GuardarActivity extends AppCompatActivity {
         etCiudad2 = findViewById(R.id.etCiudad2);
         etPersona2 = findViewById(R.id.etPersonas2);
         etValor2 = findViewById(R.id.etValor2);
+        etAnular2 = findViewById(R.id.etAnular2);
         btGuadarSQL = findViewById(R.id.btGuardarSQL);
         btConsultarSQL = findViewById(R.id.btConsultarSQL);
         btLimpiar2 = findViewById(R.id.btLimpiar2);
@@ -50,28 +51,30 @@ public class GuardarActivity extends AppCompatActivity {
         sw = 0;
         posicion = 0;
 
-        codigo = getIntent().getStringExtra("codigo");
-        etCodigo2.setText(codigo);
+        codigo = etCodigo2.getText().toString();
 
-        while (posicion < arrayListViaje.size() && sw == 0){
-
-            // Recorrer ArrayList hasta encontrar el registro
-            objetoViaje = arrayListViaje.get(posicion);
-
-            if(codigo.equals(objetoViaje.getCodigo())){
-                sw = 1;
-            }else{
-                posicion++;
-            }
-        }
-
-        if(sw == 0){
-            Toast.makeText(this, "Registro no encontrado", Toast.LENGTH_SHORT).show();
-            posicion=-1;
+        if(codigo.isEmpty()){
+            Toast.makeText(this, "El código del viaje es requerido", Toast.LENGTH_SHORT).show();
+            etCodigo2.requestFocus();
         }else {
-            etCiudad2.setText(objetoViaje.getCiudad());
-            etPersona2.setText(objetoViaje.getPersona());
-            etValor2.setText(objetoViaje.getValor());
+            while (posicion < arrayListViaje.size() && sw == 0){
+                objetoViaje = arrayListViaje.get(posicion);
+
+                if(codigo.equals(objetoViaje.getCodigo())){
+                    sw = 1;
+                }else{
+                    posicion++;
+                }
+            }
+
+            if(sw == 0){
+                Toast.makeText(this, "Registro no encontrado", Toast.LENGTH_SHORT).show();
+                posicion=-1;
+            }else{
+                etCiudad2.setText(objetoViaje.getCiudad());
+                etPersona2.setText(objetoViaje.getPersona());
+                etValor2.setText(objetoViaje.getValor());
+            }
         }
     }
 
