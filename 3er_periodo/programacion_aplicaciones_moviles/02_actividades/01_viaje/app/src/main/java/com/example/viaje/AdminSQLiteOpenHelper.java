@@ -12,12 +12,12 @@ public class AdminSQLiteOpenHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL("create table viaje(codigo text primary key, ciudad text, persona text, valor text)");
+        db.execSQL("create table viaje(codigo text primary key, ciudad text, persona text, valor text, anular boolean)");
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         db.execSQL("drop table if exists viaje");
-        db.execSQL("create table viaje(codigo text primary key, ciudad text, persona text, valor text)");
+        db.execSQL("create table viaje(codigo text primary key, ciudad text, persona text, valor text, anular boolean)");
     }
 }

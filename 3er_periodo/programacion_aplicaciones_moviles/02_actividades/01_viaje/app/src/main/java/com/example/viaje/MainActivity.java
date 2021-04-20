@@ -1,9 +1,6 @@
 package com.example.viaje;
 
-import android.content.ContentValues;
 import android.content.Intent;
-import android.database.sqlite.SQLiteDatabase;
-import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -66,11 +63,8 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(this, "Código de viaje no registrado", Toast.LENGTH_SHORT).show();
                     etCodigo.requestFocus();
                 }else{
-                    Intent intGuardar = new Intent(this, GuardarActivity.class);
                     Intent intCodigo = new Intent(this, GuardarActivity.class);
-                    intGuardar.putExtra("lista", arrayListViaje);
                     intCodigo.putExtra("codigo", codigo);
-                    startActivity(intGuardar);
                     startActivity(intCodigo);
                 }
             }
