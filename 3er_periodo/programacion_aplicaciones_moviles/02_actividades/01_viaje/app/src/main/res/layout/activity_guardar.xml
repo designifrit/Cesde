@@ -30,7 +30,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="@string/verificar_base_de_datos"
+                android:text="@string/consultar_base_de_datos"
                 android:textColor="@color/purple_500"
                 android:textSize="20sp"
                 android:textStyle="bold" />
@@ -57,7 +57,6 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:ems="10"
-                android:gravity="center"
                 android:drawableStart="@drawable/invoice"
                 android:drawablePadding="10sp"
                 android:hint="@string/c_digo_del_viaje"
@@ -84,7 +83,6 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:ems="10"
-                android:gravity="center"
                 android:drawableStart="@drawable/pin"
                 android:drawablePadding="10sp"
                 android:hint="@string/ciudad_de_destino"
@@ -112,7 +110,6 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:ems="10"
-                android:gravity="center"
                 android:drawableStart="@drawable/user"
                 android:drawablePadding="10sp"
                 android:hint="@string/cantidad_de_personas"
@@ -140,7 +137,6 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:ems="10"
-                android:gravity="center"
                 android:drawableStart="@drawable/dollar"
                 android:drawablePadding="10sp"
                 android:hint="@string/valor_del_viaje_por_persona"
@@ -170,7 +166,7 @@
                 android:layout_weight="1"
                 android:backgroundTint="@color/purple_500"
                 android:onClick="consultarSQL"
-                android:text="@string/consultar_base_de_datos"
+                android:text="@string/consultar"
                 android:textColor="@color/white" />
         </LinearLayout>
 

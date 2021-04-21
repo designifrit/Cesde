@@ -21,4 +21,6 @@
     <string name="guardar_en_base_de_dato">Guardar en Base de datos</string>
     <string name="consultar_base_de_datos">Consultar base de datos</string>
     <string name="verificar_base_de_datos">Verificar base de datos</string>
+    <string name="viability">Viability</string>
+    <string name="anulado">Anulado</string>
 </resources>
