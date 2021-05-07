@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SesionFragment">
+
+    <TextView
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/inicio_de_sesion"
+        android:gravity="center_horizontal"
+        />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/correo_electr_nico"
+        android:gravity="center_horizontal"
+        />
+    <EditText
+        android:id="@+id/etCorreo"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:hint="@string/usuario_dominio_com"
+        android:inputType="textEmailAddress"
+        android:gravity="center_horizontal"
+        android:autofillHints="Correo" />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/contrase_a"
+        android:gravity="center_horizontal"
+        />
+    <EditText
+        android:id="@+id/etClave"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:hint="@string/contrase_a"
+        android:inputType="textPassword"
+        android:gravity="center_horizontal"
+        android:autofillHints="contraseña" />
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/btIngresar"
+        android:layout_height="wrap_content"
+        android:layout_width="200dp"
+        android:text="@string/ingresar"
+        android:layout_gravity="center_horizontal"
+        />
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/tvRegistrar"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/haz_clic_aqu_para_registrarse"
+        android:textColor="#3F51B5"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        />
+
+</LinearLayout>

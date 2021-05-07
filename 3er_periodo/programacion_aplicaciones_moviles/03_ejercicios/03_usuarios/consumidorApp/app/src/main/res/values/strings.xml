@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Consumidor</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="haz_clic_aqu_para_registrarse">haz clic aquí para registrarse</string>
+    <string name="ingresar">ingresar</string>
+    <string name="contrase_a">contraseña</string>
+    <string name="usuario_dominio_com">usuario@dominio.com</string>
+    <string name="correo_electr_nico">correo electrónico</string>
+    <string name="inicio_de_sesion">inicio de sesion</string>
+</resources>

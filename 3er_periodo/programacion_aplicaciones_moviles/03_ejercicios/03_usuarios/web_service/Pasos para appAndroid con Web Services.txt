@@ -16,7 +16,8 @@ usuario.sql
 c. Se debe crear en Mysql una base de datos llamada bdusuarios (para este caso) y importar la base de datos usuario.sql (sobre bdusuarios)
  y llenar con al menos tres registros la tabla usuarios
 d. Entrar al Visual Studio Code y verificar codigo de sesion.php registrocorreo.php
-Verificar conexion a traves de entrar a un navegador e ingresar la direccion http://localhost/usuarios/sesion.php?correo=fmc@gmail.com&clave=123 
+Verificar conexion a traves de entrar a un navegador e ingresar la direccion http://localhost/usuarios/sesion.php?correo=fmc@gmail.com&clave=123
+Mi ruta: [http://localhost:8080/Cesde/3er_periodo/programacion_aplicaciones_moviles/03_ejercicios/03_usuarios/web_service/sesion.php?correo=fmc@gmail.com&clave=123]
 el correo y la clave son cualquiera (que este en la base de datos bdusuarios)
 Nota:Se verifica que el archivo sesion.php retorna los datos en formato JSON
 

@@ -2,13 +2,13 @@
 
 namespace App\Controllers;
 
-class Home extends BaseController
+class LoginController extends BaseController
 {
 	public function index()
 	{	
 		echo view('layouts/header');
 		echo view('layouts/nav');
-		echo view('home');
+		echo view('login_view');
 		echo view('layouts/footer');
 	}
 }
