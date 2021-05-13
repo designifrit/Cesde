@@ -32,8 +32,17 @@ $routes->setAutoRoute(true);
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
+
+// Se debe agregar la ruta para poder iniciar el controllador
 $routes->get('/', 'Home::index');
 $routes->get('/login', 'LoginController::index');
+$routes->post('/signin', 'LoginController::signIn');
+$routes->get('/task', 'TaskController::index');
+$routes->get('/task/create', 'TaskController::create');
+$routes->post('/add-task', 'TaskController::addTask');
+$routes->get('/delete-task', 'TaskController::deleteTask');
+$routes->get('/update-task', 'TaskController::updateTask');
+$routes->post('/update-task', 'TaskController::updateEditedTask');
 /*
  * --------------------------------------------------------------------
  * Additional Routing

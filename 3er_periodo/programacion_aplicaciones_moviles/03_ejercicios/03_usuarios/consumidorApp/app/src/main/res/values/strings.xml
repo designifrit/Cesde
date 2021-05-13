@@ -17,4 +17,9 @@
     <string name="p_e_micorreo_gmail_com">p.e. micorreo@gmail.com</string>
     <string name="registrar">Registrar</string>
     <string name="regresar">Regresar</string>
+    <string name="consultar">Consultar</string>
+    <string name="modificar">modificar</string>
+    <string name="guardar">Guardar</string>
+    <string name="limpiar">Limpiar</string>
+    <string name="eliminar">Eliminar</string>
 </resources>

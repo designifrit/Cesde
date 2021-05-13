@@ -33,3 +33,4 @@
     <meta name="msapplication-TileImage" content="<?php echo base_url();?>/public/assets/img/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 </head>
+<body>

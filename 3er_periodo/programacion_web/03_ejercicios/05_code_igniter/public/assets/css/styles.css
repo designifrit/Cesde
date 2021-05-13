@@ -39,7 +39,7 @@ h5{
     letter-spacing: 0.09rem;
 }
 
-p, a, em, strong, i, b, small, sup, sub,h1, h2, h3, h4, h5, h6, button, span, input{
+p, a, em, strong, i, b, small, sup, sub,h1, h2, h3, h4, h5, h6, button, span, input, div, label{
     font-family: var(--font-parag);
 }
 
@@ -48,7 +48,7 @@ p, a, em, strong, i, b, small, sup, sub,h1, h2, h3, h4, h5, h6, button, span, in
     color: black;
     display: inline-block;
     font-size: 1.2rem;
-    padding: 15px 40px 15px 20px;
+    padding: 7px 20px 7px 8px;
     transition: var(--transitions);
 }
 
@@ -58,10 +58,12 @@ p, a, em, strong, i, b, small, sup, sub,h1, h2, h3, h4, h5, h6, button, span, in
     color: white;
     display: inline-block;
     font-size: 1.2rem;
-    font-weight: bold;
-    padding: 15px 50px 15px 20px;
+    padding: 7px 20px 7px 8px;
 }
 
+.card{
+    margin: 35px 0;
+}
 
 nav#nav{
     position: fixed;
@@ -88,8 +90,8 @@ nav#nav .navbar{
     }
 
         nav#nav #login ul{
-            /* display: flex;
-            justify-content: flex-end; */
+            display: flex;
+            justify-content: flex-end;
             list-style: none;
             height: 17px;
             width: 100%;
@@ -140,12 +142,12 @@ nav#nav .navbar{
         nav#nav #nav_menu ul{
             display: flex;
             align-items: center;
+            height: 100%;
             list-style: none;
         }
 
             nav#nav #nav_menu ul li{
                 margin: 0 0 0 30px;
-                padding: 28px 0;
             }
 
             nav#nav #nav_menu ul li:nth-child(4){
@@ -282,9 +284,13 @@ main#main{
         text-align: center;
     }
 
+    main#main article{
+        padding-top: 150px;
+    }
+
 aside#aside{
     align-items: center;
-    background: var(--bg) url(../img/aside1.jpg) center no-repeat fixed;
+    background: var(--bg) url(../img/tu-arriendo.jpg) center no-repeat fixed;
     background-size: cover;
     color: white;
     display: flex;
@@ -337,14 +343,6 @@ footer#footer{
                 transform: translateX(5px);
             }
 
-        footer#footer .navmap form div.form-group{
-            display: flex;
-        }
-
-        footer#footer .navmap form input{
-            width: 100%;
-        }
-
         footer#footer .navmap form input:focus{
             border: 1px solid var(--hover3);
             box-shadow: none;
@@ -354,8 +352,6 @@ footer#footer{
             background-color: #222;
             border-radius: 0 3px 3px 0;
             color: white;
-            position: absolute;
-            right: 15px;
             transition: var(--transitions);
         }
 
@@ -368,7 +364,7 @@ footer#footer{
         justify-content: center;
         padding: 10px 0 25px 0;
     }
-/* 
+
 @media only screen and (max-width:768px){
 
     nav#nav #nav_menu #nav_desktop{
@@ -387,4 +383,4 @@ footer#footer{
             max-height: 50vh;
             width: 500%;
         }
-} */
+}

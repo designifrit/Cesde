@@ -18,8 +18,8 @@
                 <h5>Newsletter</h5>
                 <p><em>Únete a nuestro correo promocional</em></p>
                 <form action="index.php" method="POST">
-                    <div class="form-group">
-                        <input type="email" name="suscribe" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="correo">
+                    <div class="input-group">
+                        <input type="email" name="suscribe" class="form-control" id="correo_suscripcion" aria-label="correo suscripcion" aria-describedby="emailHelp" placeholder="correo suscripcion">
                         <button type="button" class="btn">enviar</button>
                     </div>
                 </form>
