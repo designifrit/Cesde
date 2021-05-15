@@ -59,7 +59,7 @@ public class RegistrarActivity extends AppCompatActivity implements Response.Err
     }
 
     private void guardar() {
-        String url, producto, descripcion, existencias, valor;
+        String url = "", producto, descripcion, existencias, valor;
 
         producto = etProducto.getText().toString();
         descripcion = etDescripcion.getText().toString();
@@ -71,42 +71,50 @@ public class RegistrarActivity extends AppCompatActivity implements Response.Err
         }else{
             if(sw == 0){
                 url = "http://192.168.1.6:8080/Cesde/3er_periodo/programacion_aplicaciones_moviles/02_actividades/02_product_store/web_service/crea.php";
-            }else if(sw == 1){
+            }else if(sw == 1) {
                 url = "http://192.168.1.6:8080/Cesde/3er_periodo/programacion_aplicaciones_moviles/02_actividades/02_product_store/web_service/actualiza.php";
-                sw = 0;
-                StringRequest postRequest = new StringRequest(Request.Method.POST, url,
-                        response -> {
-                            etProducto.setText("");
-                            etDescripcion.setText("");
-                            etExistencias.setText("");
-                            etValor.setText("");
-                            etProducto.requestFocus();
-                            Toast.makeText(getApplicationContext(), "Registro del producto realizado correctamente!", Toast.LENGTH_LONG).show();
-                        },
-                        error -> Toast.makeText(getApplicationContext(), "Registro del producto incorrecto!", Toast.LENGTH_LONG).show()
-                ) {
-                    @Override
-                    protected Map<String, String> getParams()
-                    {
-
-                        Map<String, String> params = new HashMap<>();
-                        params.put("producto",etProducto.getText().toString().trim());
-                        params.put("descripcion", etDescripcion.getText().toString().trim());
-                        params.put("existencias",etExistencias.getText().toString().trim());
-                        params.put("valor",etValor.getText().toString().trim());
-                        return params;
-                    }
-                };
-                RequestQueue requestQueue = Volley.newRequestQueue(this);
-                requestQueue.add(postRequest);
             }
+            sw = 0;
+            StringRequest postRequest = new StringRequest(Request.Method.POST, url,
+                    response -> {
+                        etProducto.setText("");
+                        etDescripcion.setText("");
+                        etExistencias.setText("");
+                        etValor.setText("");
+                        etProducto.requestFocus();
+                        Toast.makeText(getApplicationContext(), "Registro del producto realizado correctamente!", Toast.LENGTH_LONG).show();
+                    },
+                    error -> Toast.makeText(getApplicationContext(), "Registro del producto incorrecto!", Toast.LENGTH_LONG).show()
+            ) {
+                @Override
+                protected Map<String, String> getParams()
+                {
+
+                    Map<String, String> params = new HashMap<>();
+                    params.put("producto",etProducto.getText().toString().trim());
+                    params.put("descripcion", etDescripcion.getText().toString().trim());
+                    params.put("existencias",etExistencias.getText().toString().trim());
+                    params.put("valor",etValor.getText().toString().trim());
+                    return params;
+                }
+            };
+            RequestQueue requestQueue = Volley.newRequestQueue(this);
+            requestQueue.add(postRequest);
         }
     }
 
     public void consultar(){
-        String url = "http://192.168.1.6:8080/Cesde/3er_periodo/programacion_aplicaciones_moviles/02_actividades/02_product_store/web_service/consulta.php?producto=" + etProducto.getText().toString();
-        jRequest = new JsonObjectRequest(Request.Method.GET,url,null,this,this);
-        rQueue.add(jRequest);
+        String producto;
+
+        producto = etProducto.getText().toString();
+
+        if(producto.isEmpty()){
+            Toast.makeText(this, "Nombre del producto es requerido", Toast.LENGTH_SHORT).show();
+        }else{
+            String url = "http://192.168.1.6:8080/Cesde/3er_periodo/programacion_aplicaciones_moviles/02_actividades/02_product_store/web_service/consulta.php?producto=" + etProducto.getText().toString();
+            jRequest = new JsonObjectRequest(Request.Method.GET,url,null,this,this);
+            rQueue.add(jRequest);
+        }
     }
         @Override
         public void onErrorResponse(VolleyError error) {
@@ -116,7 +124,7 @@ public class RegistrarActivity extends AppCompatActivity implements Response.Err
 
         @Override
         public void onResponse(JSONObject response) {
-            Toast.makeText(this, "Ingreso exitoso", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Consulta exitosa", Toast.LENGTH_SHORT).show();
 
             // datos_producto: arreglo que envia los datos en formato JSON, en el archivo php
             JSONArray jsonArray = response.optJSONArray("datos_producto");
@@ -140,7 +148,7 @@ public class RegistrarActivity extends AppCompatActivity implements Response.Err
             }
         }
 
-    public void eliminar(){
+    private void eliminar(){
         String producto, descripcion, existencias, valor;
         producto = etProducto.getText().toString();
         descripcion = etDescripcion.getText().toString();
@@ -187,7 +195,7 @@ public class RegistrarActivity extends AppCompatActivity implements Response.Err
         sw = 0;
     }
 
-    public void regresar(){
+    private void regresar(){
         Intent IntRegresar = new Intent(getBaseContext(), MainActivity.class);
         startActivity(IntRegresar);
     }

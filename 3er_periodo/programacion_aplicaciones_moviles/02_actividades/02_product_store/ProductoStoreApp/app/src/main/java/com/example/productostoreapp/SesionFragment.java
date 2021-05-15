@@ -57,11 +57,18 @@ public class SesionFragment extends Fragment implements Response.Listener<JSONOb
         return vista;
     }
 
-    public void ingresar()
-    {
-        String url = "http://192.168.1.6:8080/Cesde/3er_periodo/programacion_aplicaciones_moviles/02_actividades/02_product_store/web_service/sesion.php?producto=" + etIngresar.getText().toString();
-        jRequest = new JsonObjectRequest(Request.Method.GET,url,null,this,this);
-        rQueue.add(jRequest);
+    public void ingresar() {
+        String producto;
+
+        producto = etIngresar.getText().toString();
+
+        if(producto.isEmpty()){
+            Toast.makeText(getContext(), "Ingresa el nombre del producto", Toast.LENGTH_SHORT).show();
+        }else{
+            String url = "http://192.168.1.6:8080/Cesde/3er_periodo/programacion_aplicaciones_moviles/02_actividades/02_product_store/web_service/sesion.php?producto=" + etIngresar.getText().toString();
+            jRequest = new JsonObjectRequest(Request.Method.GET,url,null,this,this);
+            rQueue.add(jRequest);
+        }
     }
 
         @Override
