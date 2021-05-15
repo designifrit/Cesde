@@ -18,4 +18,4 @@ else
 	echo "Correo ya existe....";
 }
 mysqli_close($cnx);
- ?>
+?>

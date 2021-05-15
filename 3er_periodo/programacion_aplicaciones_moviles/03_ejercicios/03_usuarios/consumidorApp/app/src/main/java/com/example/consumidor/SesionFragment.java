@@ -40,10 +40,12 @@ public class SesionFragment extends Fragment implements Response.Listener<JSONOb
 
         // Se debe incluir el View para poder ubicr los objetos en fragment_sesion, debido a que no estamos trabajando en una actividad sino una vista
         View vista = inflater.inflate(R.layout.fragment_sesion,container,false);
+
         etCorreo = vista.findViewById(R.id.etCorreo);
         etClave = vista.findViewById(R.id.etClave);
         btIngresar = vista.findViewById(R.id.btIngresar);
         tvRegistrar = vista.findViewById(R.id.tvRegistrar);
+
         rQueue = Volley.newRequestQueue(Objects.requireNonNull(getContext()));  // Solicitar la conexion a internet
 
         // Evento onClick

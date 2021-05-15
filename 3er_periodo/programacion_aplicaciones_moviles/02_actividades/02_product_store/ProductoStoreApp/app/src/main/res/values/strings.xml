@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Producto Store App</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tienda_de_productos">Tienda de productos</string>
+    <string name="c_digo_del_producto">Código del producto</string>
+    <string name="nombre_del_producto">Nombre del producto</string>
+    <string name="ingresar">Ingresar</string>
+    <string name="haz_click_aqu_para_registrar_un_producto">Haz click aquí para registrar un producto</string>
+    <string name="registro_de_productos">Registro de productos</string>
+    <string name="descripci_n_del_producto">Descripción del producto</string>
+    <string name="existencias_del_producto">Existencias del producto</string>
+    <string name="valor_del_producto">Valor del producto</string>
+    <string name="limpiar">limpiar</string>
+    <string name="regresar">Regresar</string>
+    <string name="guardar">Guardar</string>
+    <string name="consultar">Consultar</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="informaci_n_del_producto">Información del producto</string>
+    <string name="registrar">Registrar</string>
+</resources>
