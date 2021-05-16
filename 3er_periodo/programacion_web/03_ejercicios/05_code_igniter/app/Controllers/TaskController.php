@@ -42,12 +42,18 @@ class TaskController extends BaseController
 		// A través de $request obtiene los datos en POST desde el formulario
 		$task = $request -> getPost('task');
 		$description = $request -> getPost('description');
-		$imageUrl = $request -> getPost('imageUrl');
 
-		echo $description;
-		echo $imageUrl;
+		$image = $request -> getFile('imageTask');	// Se trae la imagen del formulario
+		$imageName = $image -> getRandomName();	// Crea un nombre random para la imagen
+		$imagePath = "";	// Se crea la variable para asignar la ruta de almacenamiento
 		
-		$taskModel -> addTask($task, $description, $imageUrl);	// Almacenar los datos en la BD
+		// Si es válida la imagen y puede ser movida
+		if($image -> isValid(0 && !$image -> hasMoved())){
+			$image -> move('./uploads/images/', $imageName);	// La carpeta predefinida para move() es la carpeta public
+			$imagePath = base_url().'/public/uploads/images/'.$imageName;
+		}
+		
+		$taskModel -> addTask($task, $description, $imagePath);	// Almacenar los datos en la BD
 		return redirect() -> to('/public/task');	// Redirigir a la View > task
 	}
 
