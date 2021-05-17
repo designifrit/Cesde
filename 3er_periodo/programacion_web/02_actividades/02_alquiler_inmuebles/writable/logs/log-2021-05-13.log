@@ -1,0 +1,50 @@
+CRITICAL - 2021-05-13 12:25:58 --> Array to string conversion
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\03_ejercicios\05_code_igniter\app\Controllers\TaskController.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', 'C:\\xampp\\htdocs...', 55)
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\03_ejercicios\05_code_igniter\system\CodeIgniter.php(936): App\Controllers\TaskController->deleteTask()
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\03_ejercicios\05_code_igniter\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TaskController))
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\03_ejercicios\05_code_igniter\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\03_ejercicios\05_code_igniter\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-13 12:26:05 --> Array to string conversion
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\03_ejercicios\05_code_igniter\app\Controllers\TaskController.php(55): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', 'C:\\xampp\\htdocs...', 55)
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\03_ejercicios\05_code_igniter\system\CodeIgniter.php(936): App\Controllers\TaskController->deleteTask()
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\03_ejercicios\05_code_igniter\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TaskController))
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\03_ejercicios\05_code_igniter\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\03_ejercicios\05_code_igniter\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-13 13:00:50 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\03_ejercicios\05_code_igniter\system\Model.php(615): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\03_ejercicios\05_code_igniter\system\Model.php(834): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\03_ejercicios\05_code_igniter\app\Controllers\TaskController.php(65): CodeIgniter\Model->__call('updateTask', Array)
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\03_ejercicios\05_code_igniter\system\CodeIgniter.php(936): App\Controllers\TaskController->updateTask()
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\03_ejercicios\05_code_igniter\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TaskController))
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\03_ejercicios\05_code_igniter\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\03_ejercicios\05_code_igniter\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-05-13 13:04:07 --> Invalid file: layouts/update_task_view.php
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\03_ejercicios\05_code_igniter\system\View\View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layouts/update_...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\03_ejercicios\05_code_igniter\system\Common.php(1217): CodeIgniter\View\View->render('layouts/update_...', Array, true)
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\03_ejercicios\05_code_igniter\app\Controllers\TaskController.php(71): view('layouts/update_...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\03_ejercicios\05_code_igniter\system\CodeIgniter.php(936): App\Controllers\TaskController->updateTask()
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\03_ejercicios\05_code_igniter\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TaskController))
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\03_ejercicios\05_code_igniter\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\03_ejercicios\05_code_igniter\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-05-13 13:04:14 --> Invalid file: layouts/update_task_view.php
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\03_ejercicios\05_code_igniter\system\View\View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layouts/update_...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\03_ejercicios\05_code_igniter\system\Common.php(1217): CodeIgniter\View\View->render('layouts/update_...', Array, true)
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\03_ejercicios\05_code_igniter\app\Controllers\TaskController.php(71): view('layouts/update_...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\03_ejercicios\05_code_igniter\system\CodeIgniter.php(936): App\Controllers\TaskController->updateTask()
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\03_ejercicios\05_code_igniter\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TaskController))
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\03_ejercicios\05_code_igniter\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\03_ejercicios\05_code_igniter\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-05-13 13:38:04 --> Invalid file: layouts/update_task_view.php
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\03_ejercicios\05_code_igniter\system\View\View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('layouts/update_...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\03_ejercicios\05_code_igniter\system\Common.php(1217): CodeIgniter\View\View->render('layouts/update_...', Array, true)
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\03_ejercicios\05_code_igniter\app\Controllers\TaskController.php(71): view('layouts/update_...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\03_ejercicios\05_code_igniter\system\CodeIgniter.php(936): App\Controllers\TaskController->updateTask()
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\03_ejercicios\05_code_igniter\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\TaskController))
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\03_ejercicios\05_code_igniter\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\03_ejercicios\05_code_igniter\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
