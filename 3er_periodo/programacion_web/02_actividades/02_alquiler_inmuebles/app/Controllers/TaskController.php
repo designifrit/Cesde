@@ -2,6 +2,7 @@
 
 namespace App\Controllers;
 
+// Se conecta con el Modelo para la base de datos
 use App\Models\TaskModel;
 
 class TaskController extends BaseController

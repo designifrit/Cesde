@@ -18,7 +18,7 @@ class LoginController extends BaseController
 			'username'  => 'johndoe',
 			'email'     => 'johndoe@some-site.com',
 			'logged_in' => TRUE
-	];
+		];
 		$session -> set($newdata);
 		return redirect() -> to('/public/task/create');
 	}

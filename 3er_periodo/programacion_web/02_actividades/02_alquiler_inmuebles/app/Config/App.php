@@ -23,7 +23,7 @@ class App extends BaseConfig
 	 *
 	 * @var string
 	 */
-	public $baseURL = 'http://localhost:8080/Cesde/3er_periodo/programacion_web/03_ejercicios/05_code_igniter';
+	public $baseURL = 'http://localhost:8080/Cesde/3er_periodo/programacion_web/02_actividades/02_alquiler_inmuebles';
 
 	/**
 	 * --------------------------------------------------------------------------

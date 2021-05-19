@@ -3,7 +3,7 @@
         <div id="login" class="container">
             <ul>
                 <li><a href="<?php echo base_url().'/public/login'?>"><span class="material-icons">account_circle</span>Log in</a></li>
-                <li><a href="#"><span>•</span>Crear cuenta</a></li>
+                <li><a href="<?php echo base_url().'/public/create-account'?>"><span>•</span>Crear cuenta</a></li>
             </ul>
         </div>
     </div>
@@ -14,8 +14,8 @@
             <ul id="nav_desktop">
                 <li><a href="<?php echo base_url().'/public'?>">Home</a></li>
                 <li><a href="<?php echo base_url().'/public/task'?>">Apartamentos</a></li>
-                <li><a href=<?php echo base_url().'/public/task/create'?>>add apartamento</a></li>
-                <li><a href="delete.php">perfil</a></li>
+                <li><a href="<?php echo base_url().'/public/task/create'?>">add apartamento</a></li>
+                <li><a href="<?php echo base_url().'/public/task/perfil'?>">perfil</a></li>
             </ul>
 
             <!-- Mobile menu -->

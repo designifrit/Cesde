@@ -37,6 +37,8 @@ $routes->setAutoRoute(true);
 $routes->get('/', 'Home::index');
 $routes->get('/login', 'LoginController::index');
 $routes->post('/signin', 'LoginController::signIn');
+$routes->get('/create-account', 'SignupController::index');
+$routes->post('/signup', 'SignupController::signUp');
 $routes->get('/task', 'TaskController::index');
 $routes->get('/task/create', 'TaskController::create');
 $routes->post('/add-task', 'TaskController::addTask');

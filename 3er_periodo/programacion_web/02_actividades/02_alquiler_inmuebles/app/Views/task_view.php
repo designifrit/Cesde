@@ -49,5 +49,24 @@
                 // echo "Tarea: {$task -> name} - Description: {$task -> description} - Fecha: {$task -> date}";
             ?>
         </div>
+
+        <div class="col-12 col-sm-4">
+            <div class="card h-100">
+                <img src="<?php echo base_url();?>/public/assets/img/house_5.jpg" class="card-img-top" alt="Producto">
+                <div class="card-body">
+                    <h5 class="card-title">Title</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem</p>
+                    <span class="precio">$158.900</span>
+                    <p class="descripcion">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure, commodi natus! Ipsum dicta, cum obcaecati rem, reprehenderit officiis quisquam animi cumque, autem ipsa deleniti! Rem assumenda similique perferendis quae quod.</p>
+                    
+                    <a href="#" name="botonEliminar">
+                        <div class="boton_delete material-icons">
+                            close
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
     </article>
 </main>
