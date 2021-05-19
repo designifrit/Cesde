@@ -18,4 +18,5 @@
     <string name="eliminar">Eliminar</string>
     <string name="informaci_n_del_producto">Información del producto</string>
     <string name="registrar">Registrar</string>
+    <string name="buscar_producto">Buscar producto</string>
 </resources>
