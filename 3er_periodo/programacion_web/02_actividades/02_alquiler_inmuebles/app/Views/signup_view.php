@@ -19,37 +19,30 @@
         <div class="col-12">
             <h2>Crear cuenta</h2>
         </div>
-        <form method="POST" action="<?php echo base_url();?>/public/signin">
+        <form method="POST" action="<?php echo base_url(); ?>/public/signin">
             <div class="mb-3">
                 <label for="nombre" class="form-label">Nombre completo</label>
-                <input type="text" class="form-control" id="nombre">
+                <input type="text" class="form-control" id="nombre" placeholder="John Doe">
             </div>
             <div class="mb-3">
                 <label for="correo" class="form-label">Correo electrónico</label>
-                <input type="email" class="form-control" id="correo" placeholder="name@domain.com">
+                <input type="email" class="form-control" id="correo" placeholder="nombre@dominio.com">
             </div>
             <div class="mb-3">
-                <label for="pais" class="form-label">País</label>
-                <select class="form-select" id="pais" aria-label="Default select example">
-                    <option selected>Selecciona tu país</option>
-                    <option value="1">Colombia</option>
-                    <option value="2">Chile</option>
-                    <option value="3">México</option>
-                    <option value="4">Perú</option>
+                <label for="countries" class="form-label">País</label>
+                <select class="form-select" name="countries" id="countries" aria-label="Default select example">
+                    <option value="" selected>Selecciona tu país</option>
+                    <?php
+                    foreach ($countries as $row) {
+                        echo '<option value="' . $row["id_country"] . '">' . $row["name_country"] . '</option>';
+                    }
+                    ?>
                 </select>
             </div>
             <div class="mb-3">
-                <label for="ciudad" class="form-label">Ciudad</label>
-                <select class="form-select" id="ciudad" aria-label="Default select example">
-                    <option selected>Selecciona tu ciudad</option>
-                    <option value="1">Colombia</option>
-                    <option value="2">Argentina</option>
-                    <option value="3">Brazil</option>
-                    <option value="4">Chile</option>
-                    <option value="5">Ecuador</option>
-                    <option value="6">México</option>
-                    <option value="7">Panamá</option>
-                    <option value="7">Perú</option>
+                <label for="cities" class="form-label">Ciudad</label>
+                <select class="form-select" name="cities" id="cities" aria-label="Default select example">
+                    <option value="" selected>Selecciona tu ciudad</option>
                 </select>
             </div>
             <div class="mb-3">
@@ -68,3 +61,37 @@
         </form>
     </article>
 </main>
+
+<script>
+    $(document).ready(function() {
+        $('#countries').change(function() {
+            var id_country = $('#countries').val();
+            var action = 'get_state';
+
+            if (id_country != '') {
+                $.ajax({
+                    url: "<?php echo base_url('/public/create-account/action'); ?>",
+                    method: "POST",
+                    data: {
+                        id_country: id_country,
+                        action: action
+                    },
+                    dataType: JSON,
+                    success: function(data) {
+                        var html = '<option value="">Selecciona la ciudad</option>'
+                        for (var count = 0; count < data.length; count++) {
+                            html += '<option value="' + data[count].id_city + '">' + data[count].name_city + '';
+                        }
+                        $('#cities').html(html);
+                    },
+                    error: function() {
+                        alert('error');
+                    },
+                });
+                $('#cities').prop('disable', false);
+            } else {
+                $('#cities').prop('disable', true);
+            }
+        });
+    });
+</script>
