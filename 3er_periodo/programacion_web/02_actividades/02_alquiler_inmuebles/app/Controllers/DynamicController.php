@@ -4,21 +4,43 @@ use App\Models\CountryModel;
 use App\Models\CityModel;
 
 class DynamicController extends BaseController{
-    function index(){
+    
+    // Para HTTP requests [ getVar() ] > IncomingRequest class
+    protected $mRequest;
+    public function __construct()
+    {
+        $this->mRequest = service("request");
+    }
+
+    //Obtiene las vistas y los paises desde la DB
+    // Luego envia paises a el html para el input
+    function index()
+    {
         echo view('layouts/header');
 		echo view('layouts/nav');
 
         $countryModel = new CountryModel();
         $data['countries'] = $countryModel -> orderBy('name_country','ASC') -> findAll();
-        return view('signup_view', $data);
 
+        echo view('signup_view', $data);
         echo view('layouts/footer');
     }
 
-    function action(){
-        if($this -> request -> getVar('action')){
+    function action()
+	{
+		if($this->mRequest->getVar('action'))
+		{
+			$action = $this->mRequest->getVar('action');
 
-        }
-    }
+			if($action == 'get_city')
+			{
+				$cityModel = new cityModel();
+
+				$citydata = $cityModel->where('id_country', $this->mRequest->getVar('id_country'))->findAll();
+
+				echo json_encode($citydata);
+			}
+		}
+	}
 }
 ?>

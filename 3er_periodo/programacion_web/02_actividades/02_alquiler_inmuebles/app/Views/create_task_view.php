@@ -33,7 +33,7 @@
                 <label for="imageTask" class="form-label">Imagen</label>
                 <input type="file" class="form-control" id="imageTask" name="imageTask">
             </div>
-            <button type="submit" class="btn btn-primary">Crear tarea</button>
+            <button type="submit" class="btn button">Crear tarea</button>
         </form>
     </article>
 </main>

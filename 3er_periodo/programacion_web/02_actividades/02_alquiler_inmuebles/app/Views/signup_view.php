@@ -19,7 +19,7 @@
         <div class="col-12">
             <h2>Crear cuenta</h2>
         </div>
-        <form method="POST" action="<?php echo base_url(); ?>/public/signin">
+        <form method="POST" action="<?php echo base_url(); ?>/public/create-account">
             <div class="mb-3">
                 <label for="nombre" class="form-label">Nombre completo</label>
                 <input type="text" class="form-control" id="nombre" placeholder="John Doe">
@@ -27,6 +27,14 @@
             <div class="mb-3">
                 <label for="correo" class="form-label">Correo electrónico</label>
                 <input type="email" class="form-control" id="correo" placeholder="nombre@dominio.com">
+            </div>
+            <div class="mb-3">
+                <label for="pass" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="pass">
+            </div>
+            <div class="mb-3">
+                <label for="image-user" class="form-label">Imagen</label>
+                <input type="file" class="form-control" id="image-user" name="image-user">
             </div>
             <div class="mb-3">
                 <label for="countries" class="form-label">País</label>
@@ -45,10 +53,6 @@
                     <option value="" selected>Selecciona tu ciudad</option>
                 </select>
             </div>
-            <div class="mb-3">
-                <label for="pass" class="form-label">Contraseña</label>
-                <input type="password" class="form-control" id="pass">
-            </div>
             <div class="mb-3 form-check">
                 <input type="checkbox" class="form-check-input" id="rol">
                 <label class="form-check-label" for="rol">Hazte anfitrión
@@ -65,32 +69,30 @@
 <script>
     $(document).ready(function() {
         $('#countries').change(function() {
+
             var id_country = $('#countries').val();
-            var action = 'get_state';
+            var action = 'get_city';
 
             if (id_country != '') {
                 $.ajax({
-                    url: "<?php echo base_url('/public/create-account/action'); ?>",
+                    url: "<?php echo base_url('/public/create-account/action');?>",
                     method: "POST",
                     data: {
                         id_country: id_country,
                         action: action
                     },
-                    dataType: JSON,
+                    dataType: "JSON",
                     success: function(data) {
-                        var html = '<option value="">Selecciona la ciudad</option>'
+                        var html = '<option value="">Selecciona la ciudad</option>';
+
                         for (var count = 0; count < data.length; count++) {
-                            html += '<option value="' + data[count].id_city + '">' + data[count].name_city + '';
+                            html += '<option value="' + data[count].id_city + '">' + data[count].name_city + '</option>';
                         }
                         $('#cities').html(html);
-                    },
-                    error: function() {
-                        alert('error');
-                    },
+                    }
                 });
-                $('#cities').prop('disable', false);
             } else {
-                $('#cities').prop('disable', true);
+                $('#cities').val('');
             }
         });
     });
