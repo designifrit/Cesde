@@ -32,9 +32,11 @@
                 <label for="countries" class="form-label">País</label>
                 <select class="form-select" name="countries" id="countries" aria-label="Default select example">
                     <option value="" selected>Selecciona tu país</option>
-                    <?php foreach($countries as $row) { ?>
-                        <option value="<?php echo $row->id_country; ?>"><?php echo $row->name_country; ?></option>"
-                    <?php } ?>
+                    <?php
+                    foreach ($countries as $row) {
+                        echo '<option value="' . $row["id_country"] . '">' . $row["name_country"] . '</option>';
+                    }
+                    ?>
                 </select>
             </div>
             <div class="mb-3">
@@ -60,30 +62,36 @@
     </article>
 </main>
 
-<script type='text/javascript'>
-    // baseURL variable
-    var baseURL = "<?php echo base_url(); ?>/public/create-account";
+<script>
     $(document).ready(function() {
-        // Country change
         $('#countries').change(function() {
-            var countries = $(this).val();
-            // AJAX request
-            $.ajax({
-                url: '<?php base_url() ?>/public/create-account/get-country',
-                method: 'GET',
-                data: {
-                    countries: countries
-                },
-                dataType: 'json',
-                success: function(response) {
-                    // Remove options 
-                    $('#cities').find('option').not(':first').remove();
-                    // Add options
-                    $.each(response, function(index, data) {
-                        $('#cities').append('<option value="' + data['id_city'] + '">' + data['name_city'] + '</option>');
-                    });
-                }
-            });
+            var id_country = $('#countries').val();
+            var action = 'get_state';
+
+            if (id_country != '') {
+                $.ajax({
+                    url: "<?php echo base_url('/public/create-account/action'); ?>",
+                    method: "POST",
+                    data: {
+                        id_country: id_country,
+                        action: action
+                    },
+                    dataType: JSON,
+                    success: function(data) {
+                        var html = '<option value="">Selecciona la ciudad</option>'
+                        for (var count = 0; count < data.length; count++) {
+                            html += '<option value="' + data[count].id_city + '">' + data[count].name_city + '';
+                        }
+                        $('#cities').html(html);
+                    },
+                    error: function() {
+                        alert('error');
+                    },
+                });
+                $('#cities').prop('disable', false);
+            } else {
+                $('#cities').prop('disable', true);
+            }
         });
     });
 </script>
