@@ -35,12 +35,16 @@ $routes->setAutoRoute(true);
 
 // Se debe agregar la ruta para poder iniciar el controllador
 $routes->get('/', 'Home::index');
+
 $routes->get('/login', 'LoginController::index');
 $routes->post('/signin', 'LoginController::signIn');
+
 $routes->get('/create-account', 'DynamicController::index');
-$routes->post('/create-account', 'DynamicController::action');
+$routes->post('/create-account/action', 'DynamicController::action');
 $routes->post('/create-account/signup', 'SignupController::signUp');
+
 $routes->get('/perfil', 'PerfilController::index');
+
 $routes->get('/task', 'TaskController::index');
 $routes->get('/task/create', 'TaskController::create');
 $routes->post('/add-task', 'TaskController::addTask');

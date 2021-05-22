@@ -37,19 +37,19 @@
                 <input type="file" class="form-control" id="image-user" name="image-user">
             </div>
             <div class="mb-3">
-                <label for="countries" class="form-label">País</label>
-                <select class="form-select" name="countries" id="countries" aria-label="Default select example">
+                <label for="country" class="form-label">País</label>
+                <select class="form-select" name="country" id="country" aria-label="Default select example">
                     <option value="" selected>Selecciona tu país</option>
                     <?php
-                    foreach ($countries as $row) {
+                    foreach ($country as $row) {
                         echo '<option value="' . $row["id_country"] . '">' . $row["name_country"] . '</option>';
                     }
                     ?>
                 </select>
             </div>
             <div class="mb-3">
-                <label for="cities" class="form-label">Ciudad</label>
-                <select class="form-select" name="cities" id="cities" aria-label="Default select example">
+                <label for="city" class="form-label">Ciudad</label>
+                <select class="form-select" name="city" id="city" aria-label="Default select example">
                     <option value="" selected>Selecciona tu ciudad</option>
                 </select>
             </div>
@@ -68,9 +68,9 @@
 
 <script>
     $(document).ready(function() {
-        $('#countries').change(function() {
+        $('#country').change(function() {
 
-            var id_country = $('#countries').val();
+            var id_country = $('#country').val();
             var action = 'get_city';
 
             if (id_country != '') {
@@ -88,11 +88,11 @@
                         for (var count = 0; count < data.length; count++) {
                             html += '<option value="' + data[count].id_city + '">' + data[count].name_city + '</option>';
                         }
-                        $('#cities').html(html);
+                        $('#city').html(html);
                     }
                 });
             } else {
-                $('#cities').val('');
+                $('#city').val('');
             }
         });
     });

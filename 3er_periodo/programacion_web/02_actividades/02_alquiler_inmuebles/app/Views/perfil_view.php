@@ -19,11 +19,12 @@
         <div class="col-12">
             <h2>Información de perfil</h2>
         </div>
-        <div class="col-8">
+        <div class="col-8 col-sm-9 col-md-10">
             <h4 class="mt-3">Alejandro<em>/<span>Anfitrión</span></em></h4>
             <strong>País</strong>
+            <hr>
         </div>
-        <div class="col-4">
+        <div class="col-4 col-sm-3 col-md-2">
             <img class="perfil" src="<?php echo base_url();?>/public/uploads/perfil/foto-perfil.jpg" alt="Foto de perfil">
         </div>
         <div class="col-12 mt-3">

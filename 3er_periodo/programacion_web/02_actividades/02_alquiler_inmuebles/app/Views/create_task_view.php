@@ -22,18 +22,46 @@
         </div>
         <form method="POST" action="<?php echo base_url();?>/public/add-task" enctype="multipart/form-data">
             <div class="mb-3">
-                <label for="task" class="form-label">Tarea</label>
-                <input type="text" class="form-control" id="task" name="task" aria-describedby="emailHelp">
+                <label for="country" class="form-label">País</label>
+                <select class="form-select" name="country" id="country" aria-label="Default select example">
+                    <option value="" selected>Selecciona tu país</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="city" class="form-label">Ciudad</label>
+                <select class="form-select" name="city" id="city" aria-label="Default select example">
+                    <option value="" selected>Selecciona tu ciudad</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="url" class="form-label">Dirección</label>
+                <input type="text" class="form-control" id="url" name="url" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <label for="url_map" class="form-label">Url google maps</label>
+                <input type="url" class="form-control" id="url_map" name="url_map" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <label for="roms" class="form-label">Habitaciones</label>
+                <input type="number" class="form-control" id="roms" name="roms" aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+                <label for="featured_image" class="form-label">Imagen destacada</label>
+                <input type="file" class="form-control" id="featured_image" name="featured_image">
+            </div>
+            <div class="mb-3">
+                <label for="value" class="form-label">Precio</label>
+                <input type="number" class="form-control" id="value" name="value" aria-describedby="emailHelp">
             </div>
             <div class="mb-3">
                 <label for="description" class="form-label">Descripción</label>
                 <input type="text" class="form-control" id="description" name="description">
             </div>
-            <div class="mb-3">
-                <label for="imageTask" class="form-label">Imagen</label>
-                <input type="file" class="form-control" id="imageTask" name="imageTask">
+            <div class="form-floating padding_bottom">
+                <textarea class="form-control" placeholder="Deja una reseña" id="review"></textarea>
+                <label for="review">Comments</label>
             </div>
-            <button type="submit" class="btn button">Crear tarea</button>
+            <button type="submit" class="btn button">Agregar propiedad</button>
         </form>
     </article>
 </main>
