@@ -20,7 +20,10 @@ class DynamicController extends BaseController{
 		echo view('layouts/nav');
 
         $countryModel = new CountryModel();
-        $data['country'] = $countryModel -> orderBy('name_country','ASC') -> findAll();
+		$cityModel = new CityModel();
+		
+		$data['country'] = $countryModel -> orderBy('name_country','ASC') -> findAll();
+		$data['city'] = $cityModel -> orderBy('name_city','ASC') -> findAll();
 
         echo view('signup_view', $data);
         echo view('layouts/footer');

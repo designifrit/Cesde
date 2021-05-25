@@ -13,8 +13,8 @@
             <a href="<?php echo base_url().'/public'?>" class="navbar-brand"><img src="<?php echo base_url();?>/public/assets/img/logo.png" width="70" alt="Logo - Volver al inicio"></a>
             <ul id="nav_desktop">
                 <li><a href="<?php echo base_url().'/public'?>">Home</a></li>
-                <li><a href="<?php echo base_url().'/public/task'?>">Apartamentos</a></li>
-                <li><a href="<?php echo base_url().'/public/task/create'?>">add apartamento</a></li>
+                <li><a href="<?php echo base_url().'/public/apartment'?>">Apartamentos</a></li>
+                <li><a href="<?php echo base_url().'/public/apartment/create'?>">add apartamento</a></li>
                 <li><a href="<?php echo base_url().'/public/perfil'?>">perfil</a></li>
             </ul>
 
@@ -34,8 +34,8 @@
                     <div class="offcanvas-body">
                         <ul>
                             <li><a href="<?php echo base_url().'/public'?>"><span class="material-icons">home</span>Home</a></li>
-                            <li><a href="<?php echo base_url().'/public/task'?>"><span class="material-icons">maps_home_work</span>Apartamentos</a></li>
-                            <li><a href="<?php echo base_url().'/public/task/create'?>"><span class="material-icons">add_circle</span>Registrar apartamento</a></li>
+                            <li><a href="<?php echo base_url().'/public/apartment'?>"><span class="material-icons">maps_home_work</span>Apartamentos</a></li>
+                            <li><a href="<?php echo base_url().'/public/apartment/create'?>"><span class="material-icons">add_circle</span>Registrar apartamento</a></li>
                             <li><a href="<?php echo base_url().'/public/perfil'?>"><span class="material-icons">perm_identity</span>perfil</a></li>
                         </ul>
                     </div>

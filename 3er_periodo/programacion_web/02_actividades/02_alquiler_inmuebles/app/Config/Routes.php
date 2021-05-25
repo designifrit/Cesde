@@ -45,12 +45,13 @@ $routes->post('/create-account/signup', 'SignupController::signUp');
 
 $routes->get('/perfil', 'PerfilController::index');
 
-$routes->get('/task', 'TaskController::index');
-$routes->get('/task/create', 'TaskController::create');
-$routes->post('/add-task', 'TaskController::addTask');
-$routes->get('/delete-task', 'TaskController::deleteTask');
-$routes->get('/update-task', 'TaskController::updateTask');
-$routes->post('/update-task', 'TaskController::updateEditedTask');
+$routes->get('/apartment', 'ApartmentController::index');
+$routes->get('/apartment/create', 'ApartmentController::create');
+
+$routes->post('/add-apartment', 'ApartmentController::addApartment');
+$routes->get('/delete-apartment', 'ApartmentController::deleteApartment');
+$routes->get('/update-apartment', 'ApartmentController::updateApartment');
+$routes->post('/update-apartment', 'ApartmentController::updateEditedApartment');
 /*
  * --------------------------------------------------------------------
  * Additional Routing

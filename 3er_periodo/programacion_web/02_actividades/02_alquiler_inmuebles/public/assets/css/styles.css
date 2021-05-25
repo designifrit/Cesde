@@ -4,6 +4,7 @@
 :root{
     --bg: rgb(7, 7, 7);
     --bg2: rgb(254, 254, 254);
+    --bg3: rgb(56, 56, 56);
     --hover: rgb(255, 221, 159);
     --hover2: rgb(61, 230, 159);
     --hover3: rgb(85, 47, 255);
@@ -73,6 +74,8 @@ p, a, em, strong, i, b, small, sup, sub,h1, h2, h3, h4, h5, h6, button, span, in
     color: white;
     display: inline-block;
     font-size: 1rem;
+    max-width: 200px;
+    min-width: 150px;
     padding: 7px 10px 7px 10px;
     transition: var(--transitions);
 }
@@ -84,6 +87,14 @@ p, a, em, strong, i, b, small, sup, sub,h1, h2, h3, h4, h5, h6, button, span, in
     display: inline-block;
     font-size: 1rem;
     padding: 7px 20px 7px 8px;
+}
+.cancel{
+    background-color: var(--bg3);
+}
+
+.cancel:hover{
+    background-color: var(--hover4);
+    border: 1px solid var(--bg3);
 }
 
 .card{
@@ -498,94 +509,113 @@ main#main{
 
 /* ################################################## MAIN > CARDS ################################################## */
 
-main#main .card .boton_delete{
-    /* background-color: rgba(255,255,255,1); */
-    border-radius: 50%;
-    box-sizing: border-box;
-    color: #222;
-    cursor: pointer;
-    display: none;
-    font-size: 2.2em;
-    font-weight: 300;
-    height: 50px;
-    padding: 8px 0 0 2px;
-    position: absolute;
-    right: 14px;
-    text-align: center;
-    transition: var(--transitions3);
-    top: 14px;
-    width: 50px;
-    z-index: 900;
+main#main article .card{
+    /* border: none; */
+    margin-bottom: 30px;
 }
 
-main#main .card:hover .boton_delete{
-    display: block;
-}
+        main#main article .card .card-body h5{
+            text-transform: uppercase;
+            transition: var(--transitions);
+        }
 
-main#main .card .boton_delete:hover{
-    /* background-color: var(--hover4); */
-    color: white;
-}
+        main#main article .card:hover .card-body h5{
+            color: var(--hover2);
+            cursor: pointer;
+        }
+        
+        main#main article .card .card-body p{
+            line-height: 1.2rem;
+        }
 
-    main#main .card .boton_delete::after{
-        background-color: white;
+        main#main article .card .card-body span.precio{
+            color: var(--font);
+            display: block;
+            font-size: 1.4rem;
+            line-height: 2.2rem;
+        }
+
+        main#main article .card .card-body p.descripcion{
+            color: var(--bg);
+            display: block;
+            font-size: 0.9rem;
+            line-height: 1.2rem;
+        }
+
+    main#main article .card .boton_delete{
+        /* background-color: rgba(255,255,255,1); */
         border-radius: 50%;
-        box-shadow: 1px 1px 7px rgba(34, 34, 34, 1);
-        content: "";
-        height: 100%;
-        left: 0;
-        position: absolute;
-        top: 0;
-        transform: scale(1);
-        transition: var(--transitions3);
-        width: 100%;
-        z-index: -1;
-    }
-
-    main#main .card .boton_delete:hover::after{
-        background-color: var(--hover4);
-        transform: scale(1.15);
-    }
-
-    main#main .card .boton_delete::before{
-        background-color: white;
-        border-radius: 2px;
+        box-sizing: border-box;
         color: #222;
-        content: "borrar registro";
-        font-size: 0.8rem;
-        height: 7px;
-        left: 0;
-        padding: 15px;
+        cursor: pointer;
+        display: none;
+        font-size: 2.2em;
+        font-weight: 300;
+        height: 50px;
+        padding: 8px 0 0 2px;
         position: absolute;
-        top: 0;
-        transition: var(--transitions3);
-        width: 70px;
-        z-index: -999;
-    }
-
-    main#main .card .boton_delete::before{
-        background-color: white;
-        border-radius: 3px;
-        color: #222;
-        content: "delete";
-        font-family: var(--font-parag);
-        font-size: 1rem;
-        height: 28px;
-        left: 0;
-        opacity: 0;
-        padding: 7px 12px;
-        position: absolute;
-        top: 0;
+        right: 14px;
         text-align: center;
-        transform: translate(-120%, 40%);
-        transition: var(--transitions2);
-        z-index: -999;
+        transition: var(--transitions3);
+        top: 14px;
+        width: 50px;
+        z-index: 900;
     }
 
-    main#main .card .boton_delete:hover::before{
-        /* transform: translate(-2px,-45px); */
-        opacity: 1;
+    main#main article .card:hover .boton_delete{
+        display: block;
     }
+
+    main#main article .card .boton_delete:hover{
+        /* background-color: var(--hover4); */
+        color: white;
+    }
+
+        main#main article .card .boton_delete::after{
+            background-color: white;
+            border-radius: 50%;
+            box-shadow: 1px 1px 7px rgba(34, 34, 34, 1);
+            content: "";
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            transform: scale(1);
+            transition: var(--transitions3);
+            width: 100%;
+            z-index: -1;
+        }
+
+        main#main article .card .boton_delete:hover::after{
+            background-color: var(--hover4);
+            transform: scale(1.15);
+        }
+
+ 
+
+        main#main article .card .boton_delete::before{
+            background-color: white;
+            border-radius: 3px;
+            color: #222;
+            content: "Eliminar apartamento";
+            font-family: var(--font-parag);
+            font-size: 1rem;
+            height: 28px;
+            left: 0;
+            opacity: 0;
+            padding: 7px 12px;
+            position: absolute;
+            top: 0;
+            text-align: center;
+            transform: translate(-120%, 40%);
+            transition: var(--transitions2);
+            z-index: -999;
+        }
+
+        main#main article .card .boton_delete:hover::before{
+            /* transform: translate(-2px,-45px); */
+            opacity: 1;
+        }
 
 /* ################################################## ASIDE CONTENT ################################################## */
 

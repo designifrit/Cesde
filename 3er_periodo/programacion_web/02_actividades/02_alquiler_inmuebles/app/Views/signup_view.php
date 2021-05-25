@@ -51,6 +51,11 @@
                 <label for="city" class="form-label">Ciudad</label>
                 <select class="form-select" name="city" id="city" aria-label="Default select example">
                     <option value="" selected>Selecciona tu ciudad</option>
+                    <?php
+                    foreach ($city as $row) {
+                            echo '<option value="' . $row["id_city"] . '">' . $row["name_city"] . '</option>';
+                    }
+                    ?>
                 </select>
             </div>
             <div class="mb-3 form-check">
@@ -61,39 +66,7 @@
                     </span>
                 </label>
             </div>
-            <button type="submit" class="btn button">Submit</button>
+            <button type="submit" class="btn button">Registrarse</button>
         </form>
     </article>
 </main>
-
-<script>
-    $(document).ready(function() {
-        $('#country').change(function() {
-
-            var id_country = $('#country').val();
-            var action = 'get_city';
-
-            if (id_country != '') {
-                $.ajax({
-                    url: "<?php echo base_url('/public/create-account/action');?>",
-                    method: "POST",
-                    data: {
-                        id_country: id_country,
-                        action: action
-                    },
-                    dataType: "JSON",
-                    success: function(data) {
-                        var html = '<option value="">Selecciona la ciudad</option>';
-
-                        for (var count = 0; count < data.length; count++) {
-                            html += '<option value="' + data[count].id_city + '">' + data[count].name_city + '</option>';
-                        }
-                        $('#city').html(html);
-                    }
-                });
-            } else {
-                $('#city').val('');
-            }
-        });
-    });
-</script>

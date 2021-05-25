@@ -33,7 +33,7 @@
                 <input type="checkbox" class="form-check-input" id="recordarme">
                 <label class="form-check-label" for="recordarme">Recordarme</label>
             </div>
-            <button type="submit" class="btn button">Submit</button>
+            <button type="submit" class="btn button">Ingresar</button>
         </form>
     </article>
 </main>

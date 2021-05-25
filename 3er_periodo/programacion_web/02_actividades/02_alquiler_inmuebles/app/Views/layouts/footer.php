@@ -1,7 +1,7 @@
 
     <footer class="container" id="footer">
         <div class="row">
-            <div class="col-12 col-sm-4 navmap">
+            <div class="col-12 col-sm-6 col-md-4 navmap">
                 <h5>Atención Cliente</h5>
                 <ul>
                     <li><a href="#">Centro de ayuda</a></li>
@@ -10,11 +10,11 @@
                     <li><a href="#">Términos</a></li>
                 </ul>
             </div>
-            <div class="col-12 col-sm-4 navmap">
+            <div class="col-12 col-sm-6 col-md-4 navmap">
                 <h5>Sobre</h5>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur, deleniti itaque rerum tempore laboriosam voluptates aliquam quasi dolorum iure, quod officia provident mollitia illum.</p>
             </div>
-            <div class="col-12 col-sm-4 navmap">
+            <div class="col-12 col-sm-12 col-md-4 navmap">
                 <h5>Newsletter</h5>
                 <p><em>Únete a nuestro correo promocional</em></p>
                 <form action="index.php" method="POST">
@@ -36,7 +36,7 @@
     <script src="<?php echo base_url();?>/public/assets/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
     <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- My script -->
     <script src="<?php echo base_url();?>/public/assets/js/script.js"></script>
 
