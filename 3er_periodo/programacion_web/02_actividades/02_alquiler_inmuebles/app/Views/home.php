@@ -79,23 +79,47 @@
             </div>
         </article>
 
+        <article class="row elige">
+            <div class="col-12">
+                <h2>Apartamentos destacados</h2>
+            </div>
+
+            <?php
+                foreach($apartments as $row){
+                    // Se asigna la ruta: base_url + la vista: delete-task + el dato que necesitamos traer: id
+                    // Esos datos quedan almacenados en la URL y con PHP se traen para disponer de estos
+                    $detailRoute = base_url()."/public/apartment/detail-apartment?id={$row -> idApartment}";
+                    
+                    $template = "
+                    <div class='col-12 col-sm-6 col-md-3'>
+                        <a href='{$detailRoute}'>
+                            <img class='fill' src='{$row -> photo}' alt='lease'>
+                        </a>
+                        <span>{$row -> location}</span>
+                        <small>{$row -> city} {$row -> country}</small>
+                    </div>";
+                    echo $template;
+                }
+            ?>
+        </article>
+
         <article class="row elige padding_bottom">
             <div class="col-12">
                 <h2>Elige cualquier lugar del mundo</h2>
             </div>
-            <div class="col-12 col-sm-6 col-md-3">
+            <div class="col-12 col-sm-6 col-md-3 col-lg-6">
                 <img class="fill" src="<?php echo base_url();?>/public/assets/img/house_5.jpg" alt="lease">
                 <span>Alojamientos en viviendas modernas</span>
             </div>
-            <div class="col-12 col-sm-6 col-md-3">
+            <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                 <img class="fill" src="<?php echo base_url();?>/public/assets/img/house_6.jpg" alt="lease">
                 <span>Casas al aire libre</span>
             </div>
-            <div class="col-12 col-sm-6 col-md-3">
+            <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                 <img class="fill" src="<?php echo base_url();?>/public/assets/img/house_7.jpg" alt="lease">
                 <span>Para reuniones familiares</span>
             </div>
-            <div class="col-12 col-sm-6 col-md-3">
+            <div class="col-12 col-sm-6 col-md-3 col-lg-2">
                 <img class="fill" src="<?php echo base_url();?>/public/assets/img/house_8.jpg" alt="lease">
                 <span>Con parquedaero amplio</span>
             </div>

@@ -4,7 +4,7 @@ use CodeIgniter\Model;
 
 class CountryModel extends Model{
     protected $table = 'country';
-    protected $primaryKey = 'id_country';
-    protected $allowedFields = ['name_country'];
+    protected $primaryKey = 'idCountry';
+    protected $allowedFields = ['country'];
 }
 ?>

@@ -2,13 +2,13 @@
 
 namespace App\Controllers;
 
-class LoginController extends BaseController
+class SigninController extends BaseController
 {
 	public function index()
 	{	
 		echo view('layouts/header');
 		echo view('layouts/nav');
-		echo view('login_view');
+		echo view('signin_view');
 		echo view('layouts/footer');
 	}
 
@@ -20,6 +20,6 @@ class LoginController extends BaseController
 			'logged_in' => TRUE
 		];
 		$session -> set($newdata);
-		return redirect() -> to('/public/task/create');
+		return redirect() -> to('/public/profile_view');
 	}
 }

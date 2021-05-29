@@ -1,0 +1,244 @@
+ERROR - 2021-05-28 13:20:24 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`lease`.`reservation`, CONSTRAINT `reservation_ibfk_1` FOREIGN KEY (`idApartment`) REFERENCES `apartment` (`idApartment`)) in C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php(314): mysqli->query('DELETE FROM apa...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM apa...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM apa...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Models\ApartmentModel.php(57): CodeIgniter\Database\BaseConnection->query('DELETE FROM apa...')
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(89): App\Models\ApartmentModel->deleteApartment('1')
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->deleteApartment()
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-05-28 13:20:55 --> Undefined array key "id_country"
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Views\signup_view.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 45)
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Common.php(1217): CodeIgniter\View\View->render('signup_view', Array, true)
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\DynamicController.php(29): view('signup_view', Array)
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\DynamicController->index()
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DynamicController))
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-05-28 13:20:59 --> Undefined array key "id_country"
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Views\signup_view.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 45)
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Common.php(1217): CodeIgniter\View\View->render('signup_view', Array, true)
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\DynamicController.php(29): view('signup_view', Array)
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\DynamicController->index()
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DynamicController))
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-05-28 13:48:32 --> Undefined variable $apartment
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Views\detail_apartment_view.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 38)
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Common.php(1217): CodeIgniter\View\View->render('detail_apartmen...', Array, true)
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(146): view('detail_apartmen...')
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->detailApartmet()
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-05-28 13:49:03 --> Undefined variable $apartment
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Views\detail_apartment_view.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 38)
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Common.php(1217): CodeIgniter\View\View->render('detail_apartmen...', Array, true)
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(146): view('detail_apartmen...')
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->detailApartmet()
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-05-28 14:16:10 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1, Apartamento en medellín / Laureles, Cr 81 # 6a 58, Apto. 1701, 1, 1, 2021...' at line 1 in C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php(314): mysqli->query('INSERT INTO apa...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO apa...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO apa...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Models\ApartmentModel.php(26): CodeIgniter\Database\BaseConnection->query('INSERT INTO apa...')
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(79): App\Models\ApartmentModel->addApartment('1', 'Apartamento en ...', 'Cr 81 # 6a 58, ...', '1', '1', '2021-05-28 14:1...', 'jdo', '4', '4', '2', '1', '145980', 'http://localhos...', 'https://goo.gl/...')
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->addApartment()
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-05-28 21:27:27 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1, Apartamento en medellín / Laureles, Cr 81 # 6a 58, Apto. 1701, 1, 1, 2021...' at line 1 in C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php(314): mysqli->query('INSERT INTO apa...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO apa...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO apa...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Models\ApartmentModel.php(26): CodeIgniter\Database\BaseConnection->query('INSERT INTO apa...')
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(79): App\Models\ApartmentModel->addApartment('1', 'Apartamento en ...', 'Cr 81 # 6a 58, ...', '1', '1', '2021-05-28 21:2...', 'lol', '3', '5', '3', '2', '185900', 'http://localhos...', 'https://goo.gl/...')
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->addApartment()
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-05-28 21:27:37 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`lease`.`reservation`, CONSTRAINT `reservation_ibfk_1` FOREIGN KEY (`idApartment`) REFERENCES `apartment` (`idApartment`)) in C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php(314): mysqli->query('DELETE FROM apa...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM apa...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM apa...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Models\ApartmentModel.php(57): CodeIgniter\Database\BaseConnection->query('DELETE FROM apa...')
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(89): App\Models\ApartmentModel->deleteApartment('1')
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->deleteApartment()
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-05-28 21:27:47 --> Call to a member function getRandomName() on null
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->updateEditedApartment()
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-05-28 21:43:06 --> Call to a member function getRandomName() on null
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->updateEditedApartment()
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-05-28 21:45:58 --> Call to a member function getRandomName() on null
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->updateApartment()
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-05-28 21:46:06 --> Call to a member function getRandomName() on null
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->updateApartment()
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-05-28 21:46:36 --> Call to a member function getRandomName() on null
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->updateApartment()
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+ERROR - 2021-05-28 21:49:21 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1, Apartamento en medellín / Laureles, Cr 81 # 6a 58, Apto. 1701, 1, 1, 2021...' at line 1 in C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php(314): mysqli->query('INSERT INTO apa...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO apa...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO apa...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Models\ApartmentModel.php(26): CodeIgniter\Database\BaseConnection->query('INSERT INTO apa...')
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(79): App\Models\ApartmentModel->addApartment('1', 'Apartamento en ...', 'Cr 81 # 6a 58, ...', '1', '1', '2021-05-28 21:4...', 'cdb', '4', '7', '4', '3', '425822', 'http://localhos...', 'https://goo.gl/...')
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->addApartment()
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-05-28 22:20:20 --> Undefined variable $country
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Views\signup_view.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 44)
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Common.php(1217): CodeIgniter\View\View->render('signup_view', Array, true)
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\SignupController.php(10): view('signup_view')
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\SignupController->index()
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-05-28 22:23:19 --> Undefined variable $country
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Views\signup_view.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 44)
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Common.php(1217): CodeIgniter\View\View->render('signup_view', Array, true)
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\SignupController.php(18): view('signup_view')
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\SignupController->index()
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-05-28 22:24:02 --> Undefined variable $country
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Views\signup_view.php(44): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 44)
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Common.php(1217): CodeIgniter\View\View->render('signup_view', Array, true)
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\SignupController.php(18): view('signup_view')
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\SignupController->index()
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SignupController))
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-05-28 22:33:44 --> Invalid file: update_apartment.php
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\View\View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('update_apartmen...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Common.php(1217): CodeIgniter\View\View->render('update_apartmen...', Array, true)
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(39): view('update_apartmen...', Array)
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->infoApartment()
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-05-28 22:35:01 --> Invalid file: detail_apartment_view.php
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\View\View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('detail_apartmen...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Common.php(1217): CodeIgniter\View\View->render('detail_apartmen...', Array, true)
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(152): view('detail_apartmen...', Array)
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->detailApartmet()
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-05-28 22:35:05 --> Invalid file: detail_apartment_view.php
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\View\View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('detail_apartmen...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Common.php(1217): CodeIgniter\View\View->render('detail_apartmen...', Array, true)
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(152): view('detail_apartmen...', Array)
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->detailApartmet()
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-05-28 22:35:08 --> Invalid file: update_apartment.php
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\View\View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('update_apartmen...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Common.php(1217): CodeIgniter\View\View->render('update_apartmen...', Array, true)
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(39): view('update_apartmen...', Array)
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->infoApartment()
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-05-28 22:35:11 --> Invalid file: update_apartment.php
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\View\View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('update_apartmen...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Common.php(1217): CodeIgniter\View\View->render('update_apartmen...', Array, true)
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(39): view('update_apartmen...', Array)
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->infoApartment()
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-05-28 22:35:13 --> Invalid file: detail_apartment_view.php
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\View\View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('detail_apartmen...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Common.php(1217): CodeIgniter\View\View->render('detail_apartmen...', Array, true)
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(152): view('detail_apartmen...', Array)
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->detailApartmet()
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2021-05-28 22:35:17 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`lease`.`reservation`, CONSTRAINT `reservation_ibfk_1` FOREIGN KEY (`idApartment`) REFERENCES `apartment` (`idApartment`)) in C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php(314): mysqli->query('DELETE FROM apa...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM apa...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM apa...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Models\ApartmentModel.php(46): CodeIgniter\Database\BaseConnection->query('DELETE FROM apa...')
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(102): App\Models\ApartmentModel->deleteApartment('1')
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->deleteApartment()
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-05-28 23:37:08 --> Undefined variable $country
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Views\profile_edit_view.php(49): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 49)
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Common.php(1217): CodeIgniter\View\View->render('profile_edit_vi...', Array, true)
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ProfileController.php(18): view('profile_edit_vi...')
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ProfileController->infoAccount()
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProfileController))
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}

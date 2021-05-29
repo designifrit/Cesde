@@ -5,7 +5,7 @@
                 <div class="box">
                     <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="#">Home</a></li>
+                            <li class="breadcrumb-item"><a href="<?php echo base_url(); ?>/public">Home</a></li>
                             <li class="breadcrumb-item active" aria-current="page">Perfil de usuario</li>
                         </ol>
                     </nav>
@@ -20,8 +20,9 @@
             <h2>Información de perfil</h2>
         </div>
         <div class="col-8 col-sm-9 col-md-10">
-            <h4 class="mt-3">Alejandro<em>/<span>Anfitrión</span></em></h4>
-            <strong>País</strong>
+            <h4 class="mt-3">Name<em> / <span>last name</span></em></h4>
+            <i class="ticket"><span class="material-icons">assignment_ind</span> Rol</i><i class="ticket"><span class="material-icons">email</span> email@domain.com</i>
+            <p class="mt-3 pcolor">Country • City</p>
             <hr>
         </div>
         <div class="col-4 col-sm-3 col-md-2">
@@ -32,5 +33,6 @@
             Nam omnis maiores, quia ipsum nulla eveniet quidem quo, deleniti distinctio ab ad dolor odit illum quas ea recusandae accusamus dignissimos ipsam, asperiores expedita. Voluptate dolorum ea impedit eligendi quae?
             Quos deleniti incidunt pariatur voluptatum distinctio illo voluptate id molestias animi ipsum, nam necessitatibus cumque minus unde, optio totam eaque, eum sequi quibusdam doloribus placeat at. Beatae corrupti architecto perspiciatis?</p>
         </div>
+        <a href='#' class='btn button mcontent_top'>Editar cuenta</a>
     </article>
 </main>

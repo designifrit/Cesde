@@ -36,22 +36,28 @@ $routes->setAutoRoute(true);
 // Se debe agregar la ruta para poder iniciar el controllador
 $routes->get('/', 'Home::index');
 
-$routes->get('/login', 'LoginController::index');
-$routes->post('/signin', 'LoginController::signIn');
+$routes->get('/login', 'SigninController::index');
+$routes->post('/signin', 'SigninController::signIn');
 
-$routes->get('/create-account', 'DynamicController::index');
-$routes->post('/create-account/action', 'DynamicController::action');
-$routes->post('/create-account/signup', 'SignupController::signUp');
+$routes->get('/signup', 'SignupController::index');
 
-$routes->get('/perfil', 'PerfilController::index');
+$routes->get('/signup/create-account', 'DynamicController::index');
+$routes->post('/signup/create-account/action', 'DynamicController::action');
+
+$routes->get('/account', 'ProfileController::index');
+$routes->get('/account/edit-account', 'ProfileController::infoAccount');
+$routes->post('/account/edit-account', 'ProfileController::editAccount');
 
 $routes->get('/apartment', 'ApartmentController::index');
-$routes->get('/apartment/create', 'ApartmentController::create');
+$routes->get('/apartment/create-apartment', 'ApartmentController::createApartment');
+$routes->get('/apartment/detail-apartment', 'ApartmentController::detailApartmet');
 
-$routes->post('/add-apartment', 'ApartmentController::addApartment');
-$routes->get('/delete-apartment', 'ApartmentController::deleteApartment');
-$routes->get('/update-apartment', 'ApartmentController::updateApartment');
-$routes->post('/update-apartment', 'ApartmentController::updateEditedApartment');
+$routes->post('/apartment/add-apartment', 'ApartmentController::addApartment');
+$routes->get('/apartment/delete-apartment', 'ApartmentController::deleteApartment');
+$routes->get('/apartment/update-apartment', 'ApartmentController::infoApartment');
+$routes->post('/apartment/update-apartment', 'ApartmentController::updateApartment');
+
+$routes->get('/reservation','ReservationController::index');
 /*
  * --------------------------------------------------------------------
  * Additional Routing

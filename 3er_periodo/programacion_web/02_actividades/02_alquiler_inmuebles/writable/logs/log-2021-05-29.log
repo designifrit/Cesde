@@ -1,0 +1,95 @@
+ERROR - 2021-05-29 16:36:20 --> mysqli_sql_exception: Unknown column 'apartment' in 'where clause' in C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT * FROM (...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM (...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM (...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Models\HomeModel.php(15): CodeIgniter\Database\BaseConnection->query('SELECT * FROM (...')
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\Home.php(10): App\Models\HomeModel->readApartment()
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\Home->index()
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-05-29 16:36:21 --> mysqli_sql_exception: Unknown column 'apartment' in 'where clause' in C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT * FROM (...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM (...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM (...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Models\HomeModel.php(15): CodeIgniter\Database\BaseConnection->query('SELECT * FROM (...')
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\Home.php(10): App\Models\HomeModel->readApartment()
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\Home->index()
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-05-29 16:36:23 --> mysqli_sql_exception: Unknown column 'apartment' in 'where clause' in C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT * FROM (...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM (...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM (...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Models\HomeModel.php(15): CodeIgniter\Database\BaseConnection->query('SELECT * FROM (...')
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\Home.php(10): App\Models\HomeModel->readApartment()
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\Home->index()
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-05-29 16:36:37 --> mysqli_sql_exception: Unknown column 'apartment' in 'where clause' in C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT * FROM (...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM (...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM (...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Models\HomeModel.php(15): CodeIgniter\Database\BaseConnection->query('SELECT * FROM (...')
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\Home.php(10): App\Models\HomeModel->readApartment()
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\Home->index()
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-05-29 16:36:49 --> mysqli_sql_exception: Unknown column 'apartment' in 'where clause' in C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT * FROM (...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM (...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM (...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Models\HomeModel.php(15): CodeIgniter\Database\BaseConnection->query('SELECT * FROM (...')
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\Home.php(10): App\Models\HomeModel->readApartment()
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\Home->index()
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-05-29 16:40:24 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'DES' at line 1 in C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT * FROM (...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM (...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM (...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Models\HomeModel.php(15): CodeIgniter\Database\BaseConnection->query('SELECT * FROM (...')
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\Home.php(10): App\Models\HomeModel->readApartment()
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\Home->index()
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-05-29 16:40:26 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'DES' at line 1 in C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT * FROM (...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM (...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM (...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Models\HomeModel.php(15): CodeIgniter\Database\BaseConnection->query('SELECT * FROM (...')
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\Home.php(10): App\Models\HomeModel->readApartment()
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\Home->index()
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-05-29 16:44:47 --> Undefined property: stdClass::$city
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Views\home.php(99): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 99)
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Common.php(1217): CodeIgniter\View\View->render('home', Array, true)
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\Home.php(19): view('home', Array)
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\Home->index()
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}

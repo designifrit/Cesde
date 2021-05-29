@@ -1,0 +1,138 @@
+CRITICAL - 2021-05-26 20:09:58 --> Invalid file: detail_apartment_view.php
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\View\View.php(203): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('detail_apartmen...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Common.php(1217): CodeIgniter\View\View->render('detail_apartmen...', Array, true)
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(134): view('detail_apartmen...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->detailApartmet()
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+ERROR - 2021-05-26 22:29:56 --> mysqli_sql_exception: Unknown column 'apartment.id_country' in 'on clause' in C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT * FROM (...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM (...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM (...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Models\ApartmentModel.php(10): CodeIgniter\Database\BaseConnection->query('SELECT * FROM (...')
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(16): App\Models\ApartmentModel->readApartment()
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->index()
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-05-26 23:06:54 --> Undefined property: stdClass::$id_apartment
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Views\apartment_view.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 29)
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Common.php(1217): CodeIgniter\View\View->render('apartment_view', Array, true)
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(26): view('apartment_view', Array)
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->index()
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-05-26 23:07:07 --> Undefined property: stdClass::$iApartment
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Views\apartment_view.php(29): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 29)
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Common.php(1217): CodeIgniter\View\View->render('apartment_view', Array, true)
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(26): view('apartment_view', Array)
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->index()
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-05-26 23:07:15 --> Undefined property: stdClass::$id_image
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Views\apartment_view.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 35)
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Common.php(1217): CodeIgniter\View\View->render('apartment_view', Array, true)
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(26): view('apartment_view', Array)
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->index()
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-05-26 23:09:30 --> mysqli_sql_exception: Unknown column 'name_country' in 'order clause' in C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\BaseModel.php(583): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(38): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->create()
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#9 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2021-05-26 23:09:30 --> mysqli_sql_exception: Unknown column 'name_city' in 'order clause' in C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\BaseModel.php(583): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(39): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->create()
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#9 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2021-05-26 23:46:57 --> mysqli_sql_exception: Unknown column 'name_country' in 'order clause' in C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\BaseModel.php(583): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(38): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->create()
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#9 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2021-05-26 23:46:57 --> mysqli_sql_exception: Unknown column 'name_city' in 'order clause' in C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\BaseModel.php(583): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(39): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->create()
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#9 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2021-05-26 23:57:43 --> mysqli_sql_exception: Unknown column 'name_country' in 'order clause' in C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\BaseModel.php(583): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(38): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->create()
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#9 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2021-05-26 23:57:43 --> mysqli_sql_exception: Unknown column 'name_city' in 'order clause' in C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\BaseModel.php(583): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(39): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->create()
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#9 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}

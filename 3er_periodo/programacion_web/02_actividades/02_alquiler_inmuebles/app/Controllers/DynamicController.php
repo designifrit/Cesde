@@ -22,9 +22,10 @@ class DynamicController extends BaseController{
         $countryModel = new CountryModel();
 		$cityModel = new CityModel();
 		
-		$data['country'] = $countryModel -> orderBy('name_country','ASC') -> findAll();
-		$data['city'] = $cityModel -> orderBy('name_city','ASC') -> findAll();
+		$data['country'] = $countryModel -> orderBy('country','ASC') -> findAll();
+		$data['city'] = $cityModel -> orderBy('city','ASC') -> findAll();
 
+        var_dump($data);
         echo view('signup_view', $data);
         echo view('layouts/footer');
     }
@@ -39,7 +40,7 @@ class DynamicController extends BaseController{
 			{
 				$cityModel = new cityModel();
 
-				$citydata = $cityModel->where('id_country', $this->mRequest->getVar('id_country'))->findAll();
+				$citydata = $cityModel->where('idCountry', $this->mRequest->getVar('idCountry'))->findAll();
 
 				echo json_encode($citydata);
 			}

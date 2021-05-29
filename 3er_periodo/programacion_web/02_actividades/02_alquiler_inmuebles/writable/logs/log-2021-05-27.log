@@ -1,0 +1,974 @@
+ERROR - 2021-05-27 00:01:56 --> mysqli_sql_exception: Unknown column 'name_country' in 'order clause' in C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\BaseModel.php(583): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(38): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->create()
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#9 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2021-05-27 00:01:56 --> mysqli_sql_exception: Unknown column 'name_city' in 'order clause' in C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\BaseModel.php(583): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(39): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->create()
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#9 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2021-05-27 00:03:43 --> mysqli_sql_exception: Unknown column 'name_country' in 'order clause' in C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\BaseModel.php(583): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(38): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->create()
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#9 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2021-05-27 00:03:43 --> mysqli_sql_exception: Unknown column 'name_city' in 'order clause' in C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\BaseModel.php(583): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(39): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->create()
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#9 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2021-05-27 00:03:45 --> mysqli_sql_exception: Unknown column 'name_country' in 'order clause' in C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\BaseModel.php(583): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(38): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->create()
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#9 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2021-05-27 00:03:45 --> mysqli_sql_exception: Unknown column 'name_city' in 'order clause' in C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\BaseModel.php(583): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(39): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->create()
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#9 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2021-05-27 00:05:32 --> mysqli_sql_exception: Unknown column 'name_country' in 'order clause' in C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\BaseModel.php(583): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(38): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->create()
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#9 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2021-05-27 00:05:32 --> mysqli_sql_exception: Unknown column 'name_city' in 'order clause' in C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\BaseModel.php(583): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(39): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->create()
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#9 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2021-05-27 00:05:35 --> mysqli_sql_exception: Unknown column 'name_country' in 'order clause' in C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\BaseModel.php(583): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(38): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->create()
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#9 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2021-05-27 00:05:35 --> mysqli_sql_exception: Unknown column 'name_city' in 'order clause' in C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\BaseModel.php(583): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(39): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->create()
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#9 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2021-05-27 00:05:47 --> mysqli_sql_exception: Unknown column 'name_country' in 'order clause' in C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\BaseModel.php(583): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(38): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->create()
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#9 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2021-05-27 00:05:47 --> mysqli_sql_exception: Unknown column 'name_city' in 'order clause' in C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\BaseModel.php(583): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(39): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->create()
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#9 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2021-05-27 00:05:48 --> mysqli_sql_exception: Unknown column 'name_country' in 'order clause' in C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\BaseModel.php(583): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(38): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->create()
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#9 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2021-05-27 00:05:48 --> mysqli_sql_exception: Unknown column 'name_city' in 'order clause' in C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\BaseModel.php(583): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(39): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->create()
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#9 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2021-05-27 00:07:01 --> mysqli_sql_exception: Unknown column 'name_country' in 'order clause' in C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\BaseModel.php(583): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(38): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->create()
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#9 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2021-05-27 00:07:01 --> mysqli_sql_exception: Unknown column 'name_city' in 'order clause' in C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT *\nFROM `...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseBuilder.php(1866): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Model.php(213): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\BaseModel.php(583): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(39): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->create()
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#9 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#11 {main}
+ERROR - 2021-05-27 00:12:43 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1, Apartamento en medellín / Laureles, Cr 81 # 6a 58, Apto. 1701, 1, 1, 2021...' at line 1 in C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php(314): mysqli->query('INSERT INTO apa...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO apa...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO apa...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Models\ApartmentModel.php(16): CodeIgniter\Database\BaseConnection->query('INSERT INTO apa...')
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(77): App\Models\ApartmentModel->addApartment('1', 'Apartamento en ...', 'Cr 81 # 6a 58, ...', '1', '1', '2021-05-27 00:1...', 'Apartamento muy...', '4', '2', '2', '2', '245900', 'http://localhos...', 'https://goo.gl/...')
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->addApartment()
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-05-27 00:15:47 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1, Apartamento en medellín / Laureles, Cr 81 # 6a 58, Apto. 1701, 1, 1, 2021...' at line 1 in C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php(314): mysqli->query('INSERT INTO apa...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO apa...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO apa...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Models\ApartmentModel.php(16): CodeIgniter\Database\BaseConnection->query('INSERT INTO apa...')
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(78): App\Models\ApartmentModel->addApartment('1', 'Apartamento en ...', 'Cr 81 # 6a 58, ...', '1', '1', '2021-05-27 00:1...', 'dafsgsrg', '4', '4', '2', '2', '145822', 'http://localhos...', 'https://goo.gl/...')
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->addApartment()
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-05-27 20:52:53 --> Array to string conversion
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Models\ApartmentModel.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', 'C:\\xampp\\htdocs...', 17)
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(76): App\Models\ApartmentModel->addApartment('1', 'Apartamento en ...', 'Cr 81 # 6a 58, ...', '1', '1', 'lol', '3', '4', '4', '2', '145920', 'http://localhos...', 'https://goo.gl/...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->addApartment()
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-05-27 21:05:22 --> Array to string conversion
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Models\ApartmentModel.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string...', 'C:\\xampp\\htdocs...', 17)
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(76): App\Models\ApartmentModel->addApartment('1', 'Apartamento en ...', 'Cr 81 # 6a 58, ...', '1', '1', 'lol', '3', '4', '4', '2', '145920', 'http://localhos...', 'https://goo.gl/...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->addApartment()
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#6 {main}
+ERROR - 2021-05-27 21:09:39 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1, Apartamento en medellín / Laureles, Cr 81 # 6a 58, Apto. 1701, 1, 1, 2021...' at line 1 in C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php(314): mysqli->query('INSERT INTO apa...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO apa...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO apa...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Models\ApartmentModel.php(18): CodeIgniter\Database\BaseConnection->query('INSERT INTO apa...')
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(76): App\Models\ApartmentModel->addApartment('1', 'Apartamento en ...', 'Cr 81 # 6a 58, ...', '1', '1', 'lol', '3', '4', '4', '2', '145920', 'http://localhos...', 'https://goo.gl/...')
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->addApartment()
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-05-27 21:09:46 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1, Apartamento en medellín / Laureles, Cr 81 # 6a 58, Apto. 1701, 1, 1, 2021...' at line 1 in C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php(314): mysqli->query('INSERT INTO apa...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO apa...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO apa...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Models\ApartmentModel.php(18): CodeIgniter\Database\BaseConnection->query('INSERT INTO apa...')
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(76): App\Models\ApartmentModel->addApartment('1', 'Apartamento en ...', 'Cr 81 # 6a 58, ...', '1', '1', 'lol', '3', '4', '4', '2', '145920', 'http://localhos...', 'https://goo.gl/...')
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->addApartment()
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-05-27 21:12:38 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1, Apartamento en medellín / Laureles, Cr 81 # 6a 58, Apto. 1701, 1, 1, 2021...' at line 1 in C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php(314): mysqli->query('INSERT INTO apa...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO apa...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO apa...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Models\ApartmentModel.php(16): CodeIgniter\Database\BaseConnection->query('INSERT INTO apa...')
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(81): App\Models\ApartmentModel->addApartment('1', 'Apartamento en ...', 'Cr 81 # 6a 58, ...', '1', '1', '2021-05-27 21:1...', 'ksorkg', '4', '8', '3', '3', '14526', 'http://localhos...', 'https://goo.gl/...')
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->addApartment()
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-05-27 21:16:24 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1, Apartamento en medellín / Laureles, Cr 81 # 6a 58, Apto. 1701, 1, 1, 2021...' at line 1 in C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php(314): mysqli->query('INSERT INTO apa...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO apa...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO apa...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Models\ApartmentModel.php(16): CodeIgniter\Database\BaseConnection->query('INSERT INTO apa...')
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(81): App\Models\ApartmentModel->addApartment('1', 'Apartamento en ...', 'Cr 81 # 6a 58, ...', '1', '1', '2021-05-27 21:1...', 'gfhjhfj', '3', '4', '4', '4', '154', 'http://localhos...', 'https://goo.gl/...')
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->addApartment()
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-05-27 21:18:01 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1, Apartamento en medellín / Laureles, Cr 81 # 6a 58, Apto. 1701, 1, 1, 2021...' at line 1 in C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php(314): mysqli->query('INSERT INTO apa...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO apa...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO apa...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Models\ApartmentModel.php(16): CodeIgniter\Database\BaseConnection->query('INSERT INTO apa...')
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(79): App\Models\ApartmentModel->addApartment('1', 'Apartamento en ...', 'Cr 81 # 6a 58, ...', '1', '1', '2021-05-27 21:1...', 'gdhh', '3', '3', '3', '1', '53635', 'http://localhos...', 'https://goo.gl/...')
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->addApartment()
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-05-27 21:19:06 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1, Apartamento en medellín / Laureles, Cr 81 # 6a 58, Apto. 1701, 1, 1, 2021...' at line 1 in C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php(314): mysqli->query('INSERT INTO apa...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO apa...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO apa...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Models\ApartmentModel.php(16): CodeIgniter\Database\BaseConnection->query('INSERT INTO apa...')
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(79): App\Models\ApartmentModel->addApartment('1', 'Apartamento en ...', 'Cr 81 # 6a 58, ...', '1', '1', '2021-05-27 21:1...', 'gdhh', '3', '3', '3', '1', '53635', 'http://localhos...', 'https://goo.gl/...')
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->addApartment()
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-05-27 21:19:56 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1, Apartamento en medellín / Laureles, Cr 81 # 6a 58, Apto. 1701, 1, 1, 2021...' at line 1 in C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php(314): mysqli->query('INSERT INTO apa...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO apa...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO apa...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Models\ApartmentModel.php(16): CodeIgniter\Database\BaseConnection->query('INSERT INTO apa...')
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(79): App\Models\ApartmentModel->addApartment('1', 'Apartamento en ...', 'Cr 81 # 6a 58, ...', '1', '1', '2021-05-27 21:1...', 'gdhh', '3', '3', '3', '1', '53635', 'http://localhos...', 'https://goo.gl/...')
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->addApartment()
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-05-27 21:20:05 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1, Apartamento en medellín / Laureles, Cr 81 # 6a 58, Apto. 1701, 1, 1, 2021...' at line 1 in C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php(314): mysqli->query('INSERT INTO apa...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO apa...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO apa...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Models\ApartmentModel.php(16): CodeIgniter\Database\BaseConnection->query('INSERT INTO apa...')
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(79): App\Models\ApartmentModel->addApartment('1', 'Apartamento en ...', 'Cr 81 # 6a 58, ...', '1', '1', '2021-05-27 21:2...', 'gdhh', '3', '3', '3', '1', '53635', 'http://localhos...', 'https://goo.gl/...')
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->addApartment()
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-05-27 21:20:13 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1, Apartamento en medellín / Laureles, Cr 81 # 6a 58, Apto. 1701, 1, 1, 2021...' at line 1 in C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php(314): mysqli->query('INSERT INTO apa...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO apa...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO apa...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Models\ApartmentModel.php(16): CodeIgniter\Database\BaseConnection->query('INSERT INTO apa...')
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(79): App\Models\ApartmentModel->addApartment('1', 'Apartamento en ...', 'Cr 81 # 6a 58, ...', '1', '1', '2021-05-27 21:2...', 'gdhh', '3', '3', '3', '1', '53635', 'http://localhos...', 'https://goo.gl/...')
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->addApartment()
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-05-27 21:20:28 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1, Apartamento en medellín / Laureles, Cr 81 # 6a 58, Apto. 1701, 1, 1, 2021...' at line 1 in C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php(314): mysqli->query('INSERT INTO apa...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO apa...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO apa...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Models\ApartmentModel.php(16): CodeIgniter\Database\BaseConnection->query('INSERT INTO apa...')
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(79): App\Models\ApartmentModel->addApartment('1', 'Apartamento en ...', 'Cr 81 # 6a 58, ...', '1', '1', '2021-05-27 21:2...', 'gdhh', '3', '3', '3', '1', '53635', 'http://localhos...', 'https://goo.gl/...')
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->addApartment()
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-05-27 21:20:35 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1, Apartamento en medellín / Laureles, Cr 81 # 6a 58, Apto. 1701, 1, 1, 2021...' at line 1 in C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php(314): mysqli->query('INSERT INTO apa...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO apa...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO apa...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Models\ApartmentModel.php(16): CodeIgniter\Database\BaseConnection->query('INSERT INTO apa...')
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(79): App\Models\ApartmentModel->addApartment('1', 'Apartamento en ...', 'Cr 81 # 6a 58, ...', '1', '1', '2021-05-27 21:2...', 'gdhh', '3', '3', '3', '1', '53635', 'http://localhos...', 'https://goo.gl/...')
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->addApartment()
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-05-27 21:20:41 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1, Apartamento en medellín / Laureles, Cr 81 # 6a 58, Apto. 1701, 1, 1, 2021...' at line 1 in C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php(314): mysqli->query('INSERT INTO apa...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO apa...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO apa...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Models\ApartmentModel.php(16): CodeIgniter\Database\BaseConnection->query('INSERT INTO apa...')
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(79): App\Models\ApartmentModel->addApartment('1', 'Apartamento en ...', 'Cr 81 # 6a 58, ...', '1', '1', '2021-05-27 21:2...', 'gdhh', '3', '3', '3', '1', '53635', 'http://localhos...', 'https://goo.gl/...')
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->addApartment()
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-05-27 21:20:47 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1, Apartamento en medellín / Laureles, Cr 81 # 6a 58, Apto. 1701, 1, 1, 2021...' at line 1 in C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php(314): mysqli->query('INSERT INTO apa...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO apa...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO apa...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Models\ApartmentModel.php(16): CodeIgniter\Database\BaseConnection->query('INSERT INTO apa...')
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(79): App\Models\ApartmentModel->addApartment('1', 'Apartamento en ...', 'Cr 81 # 6a 58, ...', '1', '1', '2021-05-27 21:2...', 'gdhh', '3', '3', '3', '1', '53635', 'http://localhos...', 'https://goo.gl/...')
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->addApartment()
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-05-27 21:20:53 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1, Apartamento en medellín / Laureles, Cr 81 # 6a 58, Apto. 1701, 1, 1, 2021...' at line 1 in C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php(314): mysqli->query('INSERT INTO apa...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO apa...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO apa...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Models\ApartmentModel.php(16): CodeIgniter\Database\BaseConnection->query('INSERT INTO apa...')
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(79): App\Models\ApartmentModel->addApartment('1', 'Apartamento en ...', 'Cr 81 # 6a 58, ...', '1', '1', '2021-05-27 21:2...', 'gdhh', '3', '3', '3', '1', '53635', 'http://localhos...', 'https://goo.gl/...')
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->addApartment()
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-05-27 21:21:00 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1, Apartamento en medellín / Laureles, Cr 81 # 6a 58, Apto. 1701, 1, 1, 2021...' at line 1 in C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php(314): mysqli->query('INSERT INTO apa...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO apa...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO apa...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Models\ApartmentModel.php(16): CodeIgniter\Database\BaseConnection->query('INSERT INTO apa...')
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(79): App\Models\ApartmentModel->addApartment('1', 'Apartamento en ...', 'Cr 81 # 6a 58, ...', '1', '1', '2021-05-27 21:2...', 'gdhh', '3', '3', '3', '1', '53635', 'http://localhos...', 'https://goo.gl/...')
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->addApartment()
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-05-27 21:21:07 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1, Apartamento en medellín / Laureles, Cr 81 # 6a 58, Apto. 1701, 1, 1, 2021...' at line 1 in C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php(314): mysqli->query('INSERT INTO apa...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO apa...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO apa...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Models\ApartmentModel.php(16): CodeIgniter\Database\BaseConnection->query('INSERT INTO apa...')
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(79): App\Models\ApartmentModel->addApartment('1', 'Apartamento en ...', 'Cr 81 # 6a 58, ...', '1', '1', '2021-05-27 21:2...', 'gdhh', '3', '3', '3', '1', '53635', 'http://localhos...', 'https://goo.gl/...')
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->addApartment()
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-05-27 21:21:18 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1, Apartamento en medellín / Laureles, Cr 81 # 6a 58, Apto. 1701, 1, 1, 2021...' at line 1 in C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php(314): mysqli->query('INSERT INTO apa...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO apa...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO apa...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Models\ApartmentModel.php(16): CodeIgniter\Database\BaseConnection->query('INSERT INTO apa...')
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(79): App\Models\ApartmentModel->addApartment('1', 'Apartamento en ...', 'Cr 81 # 6a 58, ...', '1', '1', '2021-05-27 21:2...', 'gdhh', '3', '3', '3', '1', '53635', 'http://localhos...', 'https://goo.gl/...')
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->addApartment()
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-05-27 21:21:34 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1, Apartamento en medellín / Laureles, Cr 81 # 6a 58, Apto. 1701, 1, 1, 2021...' at line 1 in C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php(314): mysqli->query('INSERT INTO apa...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO apa...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO apa...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Models\ApartmentModel.php(16): CodeIgniter\Database\BaseConnection->query('INSERT INTO apa...')
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(79): App\Models\ApartmentModel->addApartment('1', 'Apartamento en ...', 'Cr 81 # 6a 58, ...', '1', '1', '2021-05-27 21:2...', 'gdhh', '3', '3', '3', '1', '53635', 'http://localhos...', 'https://goo.gl/...')
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->addApartment()
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-05-27 21:21:45 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1, Apartamento en medellín / Laureles, Cr 81 # 6a 58, Apto. 1701, 1, 1, 2021...' at line 1 in C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php(314): mysqli->query('INSERT INTO apa...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO apa...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO apa...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Models\ApartmentModel.php(16): CodeIgniter\Database\BaseConnection->query('INSERT INTO apa...')
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(79): App\Models\ApartmentModel->addApartment('1', 'Apartamento en ...', 'Cr 81 # 6a 58, ...', '1', '1', '2021-05-27 21:2...', 'gdhh', '3', '3', '3', '1', '53635', 'http://localhos...', 'https://goo.gl/...')
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->addApartment()
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-05-27 21:21:52 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1, Apartamento en medellín / Laureles, Cr 81 # 6a 58, Apto. 1701, 1, 1, 2021...' at line 1 in C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php(314): mysqli->query('INSERT INTO apa...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO apa...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO apa...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Models\ApartmentModel.php(16): CodeIgniter\Database\BaseConnection->query('INSERT INTO apa...')
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(79): App\Models\ApartmentModel->addApartment('1', 'Apartamento en ...', 'Cr 81 # 6a 58, ...', '1', '1', '2021-05-27 21:2...', 'gdhh', '3', '3', '3', '1', '53635', 'http://localhos...', 'https://goo.gl/...')
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->addApartment()
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-05-27 21:23:55 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1, Apartamento en medellín / Laureles, Cr 81 # 6a 58, Apto. 1701, 1, 1, 2021...' at line 1 in C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php(314): mysqli->query('INSERT INTO apa...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO apa...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO apa...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Models\ApartmentModel.php(16): CodeIgniter\Database\BaseConnection->query('INSERT INTO apa...')
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(79): App\Models\ApartmentModel->addApartment('1', 'Apartamento en ...', 'Cr 81 # 6a 58, ...', '1', '1', '2021-05-27 21:2...', 'gdhh', '3', '3', '3', '1', '53635', 'http://localhos...', 'https://goo.gl/...')
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->addApartment()
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-05-27 21:25:12 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1, Apartamento en medellín / Laureles, Cr 81 # 6a 58, Apto. 1701, 1, 1, 2021...' at line 1 in C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php(314): mysqli->query('INSERT INTO apa...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO apa...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO apa...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Models\ApartmentModel.php(16): CodeIgniter\Database\BaseConnection->query('INSERT INTO apa...')
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(79): App\Models\ApartmentModel->addApartment('1', 'Apartamento en ...', 'Cr 81 # 6a 58, ...', '1', '1', '2021-05-27 21:2...', 'gdhh', '3', '3', '3', '1', '53635', 'http://localhos...', 'https://goo.gl/...')
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->addApartment()
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-05-27 21:33:42 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1, Apartamento en medellín / Laureles, Cr 81 # 6a 58, Apto. 1701, 1, 1, 2021...' at line 1 in C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php(314): mysqli->query('INSERT INTO apa...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO apa...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO apa...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Models\ApartmentModel.php(16): CodeIgniter\Database\BaseConnection->query('INSERT INTO apa...')
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(79): App\Models\ApartmentModel->addApartment('1', 'Apartamento en ...', 'Cr 81 # 6a 58, ...', '1', '1', '2021-05-27 21:3...', 'gdhh', '3', '3', '3', '1', '53635', 'http://localhos...', 'https://goo.gl/...')
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->addApartment()
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-05-27 21:44:40 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1, Apartamento en medellín / Laureles, Cr 81 # 6a 58, Apto. 1701, 1, 1, 2021...' at line 1 in C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php(314): mysqli->query('INSERT INTO apa...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO apa...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO apa...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Models\ApartmentModel.php(21): CodeIgniter\Database\BaseConnection->query('INSERT INTO apa...')
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(79): App\Models\ApartmentModel->addApartment('1', 'Apartamento en ...', 'Cr 81 # 6a 58, ...', '1', '1', '2021-05-27 21:4...', 'gdhh', '3', '3', '3', '1', '53635', 'http://localhos...', 'https://goo.gl/...')
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->addApartment()
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-05-27 21:48:18 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1, Apartamento en medellín / Laureles, Cr 81 # 6a 58, Apto. 1701, 1, 1, 2021...' at line 1 in C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php(314): mysqli->query('INSERT INTO apa...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO apa...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO apa...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Models\ApartmentModel.php(21): CodeIgniter\Database\BaseConnection->query('INSERT INTO apa...')
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(79): App\Models\ApartmentModel->addApartment('1', 'Apartamento en ...', 'Cr 81 # 6a 58, ...', '1', '1', '2021-05-27 21:4...', 'dgshg', '2', '3', '2', '3', '198500', 'http://localhos...', 'https://goo.gl/...')
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->addApartment()
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-05-27 21:48:49 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1, Apartamento en medellín / Laureles, Cr 81 # 6a 58, Apto. 1701, 1, 1, 2021...' at line 1 in C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php(314): mysqli->query('INSERT INTO apa...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO apa...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO apa...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Models\ApartmentModel.php(21): CodeIgniter\Database\BaseConnection->query('INSERT INTO apa...')
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(79): App\Models\ApartmentModel->addApartment('1', 'Apartamento en ...', 'Cr 81 # 6a 58, ...', '1', '1', '2021-05-27 21:4...', 'dgshg', '2', '3', '2', '3', '198500', 'http://localhos...', 'https://goo.gl/...')
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->addApartment()
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-05-27 21:51:38 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1, Apartamento en medellín / Laureles, Cr 81 # 6a 58, Apto. 1701, 1, 1, 2021...' at line 1 in C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php(314): mysqli->query('INSERT INTO apa...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO apa...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO apa...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Models\ApartmentModel.php(21): CodeIgniter\Database\BaseConnection->query('INSERT INTO apa...')
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(79): App\Models\ApartmentModel->addApartment('1', 'Apartamento en ...', 'Cr 81 # 6a 58, ...', '1', '1', '2021-05-27 21:5...', 'dgshg', '2', '3', '2', '3', '198500', 'http://localhos...', 'https://goo.gl/...')
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->addApartment()
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-05-27 21:51:51 --> mysqli_sql_exception: Unknown column 'id_apartment' in 'where clause' in C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php(314): mysqli->query('DELETE FROM apa...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM apa...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM apa...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Models\ApartmentModel.php(42): CodeIgniter\Database\BaseConnection->query('DELETE FROM apa...')
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(89): App\Models\ApartmentModel->deleteApartment('2')
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->deleteApartment()
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-05-27 21:59:06 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`lease`.`reservation`, CONSTRAINT `reservation_ibfk_1` FOREIGN KEY (`idApartment`) REFERENCES `apartment` (`idApartment`)) in C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php(314): mysqli->query('DELETE FROM apa...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM apa...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM apa...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Models\ApartmentModel.php(57): CodeIgniter\Database\BaseConnection->query('DELETE FROM apa...')
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(89): App\Models\ApartmentModel->deleteApartment('1')
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->deleteApartment()
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-05-27 21:59:54 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`lease`.`reservation`, CONSTRAINT `reservation_ibfk_1` FOREIGN KEY (`idApartment`) REFERENCES `apartment` (`idApartment`)) in C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php(314): mysqli->query('DELETE FROM apa...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM apa...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM apa...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Models\ApartmentModel.php(57): CodeIgniter\Database\BaseConnection->query('DELETE FROM apa...')
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(89): App\Models\ApartmentModel->deleteApartment('1')
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->deleteApartment()
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-05-27 22:00:31 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`lease`.`reservation`, CONSTRAINT `reservation_ibfk_1` FOREIGN KEY (`idApartment`) REFERENCES `apartment` (`idApartment`)) in C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php(314): mysqli->query('DELETE FROM apa...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM apa...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM apa...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Models\ApartmentModel.php(57): CodeIgniter\Database\BaseConnection->query('DELETE FROM apa...')
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(89): App\Models\ApartmentModel->deleteApartment('1')
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->deleteApartment()
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-05-27 22:00:41 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`lease`.`reservation`, CONSTRAINT `reservation_ibfk_1` FOREIGN KEY (`idApartment`) REFERENCES `apartment` (`idApartment`)) in C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php(314): mysqli->query('DELETE FROM apa...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM apa...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM apa...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Models\ApartmentModel.php(57): CodeIgniter\Database\BaseConnection->query('DELETE FROM apa...')
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(89): App\Models\ApartmentModel->deleteApartment('1')
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->deleteApartment()
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-05-27 22:00:58 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`lease`.`reservation`, CONSTRAINT `reservation_ibfk_1` FOREIGN KEY (`idApartment`) REFERENCES `apartment` (`idApartment`)) in C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php(314): mysqli->query('DELETE FROM apa...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM apa...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM apa...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Models\ApartmentModel.php(57): CodeIgniter\Database\BaseConnection->query('DELETE FROM apa...')
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(89): App\Models\ApartmentModel->deleteApartment('1')
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->deleteApartment()
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-05-27 22:00:59 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`lease`.`reservation`, CONSTRAINT `reservation_ibfk_1` FOREIGN KEY (`idApartment`) REFERENCES `apartment` (`idApartment`)) in C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php(314): mysqli->query('DELETE FROM apa...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM apa...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM apa...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Models\ApartmentModel.php(57): CodeIgniter\Database\BaseConnection->query('DELETE FROM apa...')
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(89): App\Models\ApartmentModel->deleteApartment('1')
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->deleteApartment()
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-05-27 22:01:41 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`lease`.`reservation`, CONSTRAINT `reservation_ibfk_1` FOREIGN KEY (`idApartment`) REFERENCES `apartment` (`idApartment`)) in C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php(314): mysqli->query('DELETE FROM apa...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM apa...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM apa...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Models\ApartmentModel.php(57): CodeIgniter\Database\BaseConnection->query('DELETE FROM apa...')
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(89): App\Models\ApartmentModel->deleteApartment('1')
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->deleteApartment()
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-05-27 22:02:06 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`lease`.`reservation`, CONSTRAINT `reservation_ibfk_1` FOREIGN KEY (`idApartment`) REFERENCES `apartment` (`idApartment`)) in C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php(314): mysqli->query('DELETE FROM apa...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM apa...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM apa...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Models\ApartmentModel.php(57): CodeIgniter\Database\BaseConnection->query('DELETE FROM apa...')
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(89): App\Models\ApartmentModel->deleteApartment('1')
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->deleteApartment()
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-05-27 22:02:23 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`lease`.`reservation`, CONSTRAINT `reservation_ibfk_1` FOREIGN KEY (`idApartment`) REFERENCES `apartment` (`idApartment`)) in C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php(314): mysqli->query('DELETE FROM apa...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM apa...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM apa...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Models\ApartmentModel.php(57): CodeIgniter\Database\BaseConnection->query('DELETE FROM apa...')
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(89): App\Models\ApartmentModel->deleteApartment('1')
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->deleteApartment()
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-05-27 22:02:30 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`lease`.`reservation`, CONSTRAINT `reservation_ibfk_1` FOREIGN KEY (`idApartment`) REFERENCES `apartment` (`idApartment`)) in C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php(314): mysqli->query('DELETE FROM apa...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM apa...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM apa...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Models\ApartmentModel.php(57): CodeIgniter\Database\BaseConnection->query('DELETE FROM apa...')
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(89): App\Models\ApartmentModel->deleteApartment('1')
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->deleteApartment()
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-05-27 22:04:36 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`lease`.`reservation`, CONSTRAINT `reservation_ibfk_1` FOREIGN KEY (`idApartment`) REFERENCES `apartment` (`idApartment`)) in C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php(314): mysqli->query('DELETE FROM apa...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM apa...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM apa...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Models\ApartmentModel.php(57): CodeIgniter\Database\BaseConnection->query('DELETE FROM apa...')
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(89): App\Models\ApartmentModel->deleteApartment('1')
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->deleteApartment()
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-05-27 22:06:24 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`lease`.`reservation`, CONSTRAINT `reservation_ibfk_1` FOREIGN KEY (`idApartment`) REFERENCES `apartment` (`idApartment`)) in C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php(314): mysqli->query('DELETE FROM apa...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM apa...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM apa...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Models\ApartmentModel.php(57): CodeIgniter\Database\BaseConnection->query('DELETE FROM apa...')
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(89): App\Models\ApartmentModel->deleteApartment('1')
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->deleteApartment()
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-05-27 22:10:25 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1, Apartamento en medellín / Laureles, Cr 81 # 6a 58, Apto. 1701, 1, 1, 2021...' at line 1 in C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php(314): mysqli->query('INSERT INTO apa...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO apa...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO apa...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Models\ApartmentModel.php(26): CodeIgniter\Database\BaseConnection->query('INSERT INTO apa...')
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(79): App\Models\ApartmentModel->addApartment('1', 'Apartamento en ...', 'Cr 81 # 6a 58, ...', '1', '1', '2021-05-27 22:1...', 'lol', '2', '7', '4', '3', '245000', 'http://localhos...', 'https://goo.gl/...')
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->addApartment()
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-05-27 22:10:30 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1, Apartamento en medellín / Laureles, Cr 81 # 6a 58, Apto. 1701, 1, 1, 2021...' at line 1 in C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php(314): mysqli->query('INSERT INTO apa...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO apa...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO apa...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Models\ApartmentModel.php(26): CodeIgniter\Database\BaseConnection->query('INSERT INTO apa...')
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(79): App\Models\ApartmentModel->addApartment('1', 'Apartamento en ...', 'Cr 81 # 6a 58, ...', '1', '1', '2021-05-27 22:1...', 'lol', '2', '7', '4', '3', '245000', 'http://localhos...', 'https://goo.gl/...')
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->addApartment()
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-05-27 22:10:34 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1, Apartamento en medellín / Laureles, Cr 81 # 6a 58, Apto. 1701, 1, 1, 2021...' at line 1 in C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php(314): mysqli->query('INSERT INTO apa...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO apa...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO apa...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Models\ApartmentModel.php(26): CodeIgniter\Database\BaseConnection->query('INSERT INTO apa...')
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(79): App\Models\ApartmentModel->addApartment('1', 'Apartamento en ...', 'Cr 81 # 6a 58, ...', '1', '1', '2021-05-27 22:1...', 'lol', '2', '7', '4', '3', '245000', 'http://localhos...', 'https://goo.gl/...')
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->addApartment()
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-05-27 22:11:46 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1, Apartamento en medellín / Laureles, Cr 81 # 6a 58, Apto. 1701, 1, 1, 2021...' at line 1 in C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php(314): mysqli->query('INSERT INTO apa...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO apa...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO apa...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Models\ApartmentModel.php(26): CodeIgniter\Database\BaseConnection->query('INSERT INTO apa...')
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(79): App\Models\ApartmentModel->addApartment('1', 'Apartamento en ...', 'Cr 81 # 6a 58, ...', '1', '1', '2021-05-27 22:1...', 'lok', 'Cantidad de hu\xC3...', 'Cantidad de hab...', 'Cantidad de cam...', 'Cantidad de ba\xC3...', '245900', 'http://localhos...', 'https://goo.gl/...')
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->addApartment()
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-05-27 22:12:03 --> mysqli_sql_exception: Unknown column 'id_apartment' in 'where clause' in C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php(314): mysqli->query('SELECT * FROM (...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM (...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM (...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Models\ApartmentModel.php(36): CodeIgniter\Database\BaseConnection->query('SELECT * FROM (...')
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(99): App\Models\ApartmentModel->updateApartment('1')
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->updateApartment()
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-05-27 22:12:03 --> Undefined array key 0
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'C:\\xampp\\htdocs...', 103)
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->updateApartment()
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-05-27 22:15:50 --> Undefined property: stdClass::$id_apartment
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Views\update_apartment.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 24)
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Common.php(1217): CodeIgniter\View\View->render('update_apartmen...', Array, true)
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(103): view('update_apartmen...', Array)
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->updateApartment()
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-05-27 22:17:12 --> Undefined property: stdClass::$name
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Views\update_apartment.php(27): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'C:\\xampp\\htdocs...', 27)
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Common.php(1217): CodeIgniter\View\View->render('update_apartmen...', Array, true)
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(103): view('update_apartmen...', Array)
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->updateApartment()
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-05-27 22:31:06 --> Undefined variable $country
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Views\update_apartment.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 40)
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Common.php(1217): CodeIgniter\View\View->render('update_apartmen...', Array, true)
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(103): view('update_apartmen...', Array)
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->updateApartment()
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-05-27 22:36:17 --> Undefined variable $country
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Views\update_apartment.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 40)
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Common.php(1217): CodeIgniter\View\View->render('update_apartmen...', Array, true)
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(103): view('update_apartmen...', Array)
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->updateApartment()
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-05-27 22:36:43 --> Undefined variable $country
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Views\update_apartment.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'C:\\xampp\\htdocs...', 40)
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\View\View.php(220): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\View\View.php(222): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Common.php(1217): CodeIgniter\View\View->render('update_apartmen...', Array, true)
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(103): view('update_apartmen...', Array)
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->updateApartment()
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-05-27 22:40:06 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' id_image='', value=342000, review='lol' WHERE id_apartment=''' at line 1 in C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php(314): mysqli->query('UPDATE apartmen...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE apartmen...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE apartmen...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Models\ApartmentModel.php(47): CodeIgniter\Database\BaseConnection->query('UPDATE apartmen...')
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(132): App\Models\ApartmentModel->updateEditedApartment(NULL, 'Colombia', 'Medell\xC3\xADn', NULL, 'Carrera 78 # 12...', NULL, NULL, NULL, '342000', 'lol')
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->updateEditedApartment()
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-05-27 22:43:19 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1, Apartamento en medellín / Laureles, Cr 81 # 6a 58, Apto. 1701, 1, 1, 2021...' at line 1 in C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php(314): mysqli->query('INSERT INTO apa...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO apa...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO apa...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Models\ApartmentModel.php(26): CodeIgniter\Database\BaseConnection->query('INSERT INTO apa...')
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(79): App\Models\ApartmentModel->addApartment('1', 'Apartamento en ...', 'Cr 81 # 6a 58, ...', '1', '1', '2021-05-27 22:4...', 'lol', '2', '5', '4', '5', '145800', 'http://localhos...', 'https://goo.gl/...')
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->addApartment()
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-05-27 22:50:08 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`lease`.`reservation`, CONSTRAINT `reservation_ibfk_1` FOREIGN KEY (`idApartment`) REFERENCES `apartment` (`idApartment`)) in C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php(314): mysqli->query('DELETE FROM apa...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM apa...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM apa...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Models\ApartmentModel.php(57): CodeIgniter\Database\BaseConnection->query('DELETE FROM apa...')
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(89): App\Models\ApartmentModel->deleteApartment('1')
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->deleteApartment()
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-05-27 22:50:20 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`lease`.`reservation`, CONSTRAINT `reservation_ibfk_1` FOREIGN KEY (`idApartment`) REFERENCES `apartment` (`idApartment`)) in C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php(314): mysqli->query('DELETE FROM apa...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM apa...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM apa...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Models\ApartmentModel.php(57): CodeIgniter\Database\BaseConnection->query('DELETE FROM apa...')
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(89): App\Models\ApartmentModel->deleteApartment('1')
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->deleteApartment()
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-05-27 22:50:48 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '1, Apartamento en medellín / Laureles, Cr 81 # 6a 58, Apto. 1701, 1, 1, 2021...' at line 1 in C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php(314): mysqli->query('INSERT INTO apa...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO apa...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO apa...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Models\ApartmentModel.php(26): CodeIgniter\Database\BaseConnection->query('INSERT INTO apa...')
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(79): App\Models\ApartmentModel->addApartment('1', 'Apartamento en ...', 'Cr 81 # 6a 58, ...', '1', '1', '2021-05-27 22:5...', '5ghfgj', '6', '5', '4', '3', '45555', 'http://localhos...', 'https://goo.gl/...')
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->addApartment()
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-05-27 22:51:03 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`lease`.`reservation`, CONSTRAINT `reservation_ibfk_1` FOREIGN KEY (`idApartment`) REFERENCES `apartment` (`idApartment`)) in C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php(314): mysqli->query('DELETE FROM apa...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM apa...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM apa...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Models\ApartmentModel.php(57): CodeIgniter\Database\BaseConnection->query('DELETE FROM apa...')
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(89): App\Models\ApartmentModel->deleteApartment('1')
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->deleteApartment()
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+ERROR - 2021-05-27 22:53:24 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`lease`.`reservation`, CONSTRAINT `reservation_ibfk_1` FOREIGN KEY (`idApartment`) REFERENCES `apartment` (`idApartment`)) in C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php:314
+Stack trace:
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\MySQLi\Connection.php(314): mysqli->query('DELETE FROM apa...')
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(713): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM apa...')
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Database\BaseConnection.php(641): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM apa...')
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Models\ApartmentModel.php(57): CodeIgniter\Database\BaseConnection->query('DELETE FROM apa...')
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ApartmentController.php(89): App\Models\ApartmentModel->deleteApartment('1')
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->deleteApartment()
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#7 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-05-27 23:05:44 --> Call to a member function getRandomName() on null
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->updateEditedApartment()
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-05-27 23:08:58 --> Call to a member function getRandomName() on null
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->updateEditedApartment()
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-05-27 23:11:04 --> Call to a member function getRandomName() on null
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->updateEditedApartment()
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-05-27 23:11:52 --> Call to a member function getRandomName() on null
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ApartmentController->updateEditedApartment()
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ApartmentController))
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#4 {main}

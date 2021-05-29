@@ -1,32 +1,59 @@
 <?php
 namespace App\Models;
 use CodeIgniter\Model;
+use Exception;
+
 class ApartmentModel extends Model
 {   
     function readApartment(){
-		$sql = "SELECT * FROM ((apartment INNER JOIN country ON apartment.id_country = country.id_country) INNER JOIN city ON apartment.id_city = city.id_city)";
+        try{
+            $sql = "SELECT * FROM (((apartment INNER JOIN country ON apartment.idCountry = country.idCountry)INNER JOIN city ON apartment.idCity = city.idCity) INNER JOIN user ON apartment.idUser = user.idUser)";
+        }catch(Exception $error){
+			print_r($error -> getMessage());
+		}
+		
 		$apartments = $this -> db -> query($sql);   // A través de esta variable se envia los datos al http
 		return $apartments -> getResult();
 	}
 
-    function addApartment($country, $city, $name, $address, $coordinates, $roms, $id_image, $value, $review){
-        $sql = "INSERT INTO apartment (id_country, id_city, name, address, coordinates, roms, id_image, value, review) VALUES ({$country}, {$city}, '{$name}', '{$address}','{$coordinates}', {$roms},'{$id_image}', {$value}, '{$review}')";
+    function addApartment($idUser, $location, $address, $idCity, $idCountry, $date, $review, $guest, $rom, $bed, $bathroom, $value, $photo, $url){
+        try{
+            $sql = "INSERT INTO apartment ($idUser, $location, $address, $idCity, $idCountry, $date, $review, $guest, $rom, $bed, $bathroom, $value, $photo, $url) VALUES ({$idUser}, '{$location}', '{$address}', {$idCity}, {$idCountry}, '{$date}', '{$review}', $guest, $rom, $bed, $bathroom, $value, '{$photo}', '{$url}')";
+        }catch(Exception $error){
+			print_r($error -> getMessage());
+		}
+
         $this -> db -> query($sql);
     }
 
-    function updateApartment($id_apartment){
-		$sql = "SELECT * FROM ((apartment INNER JOIN country ON apartment.id_country = country.id_country) INNER JOIN city ON apartment.id_city = city.id_city) WHERE id_apartment={$id_apartment}";
-		$id_apartment = $this -> db -> query($sql);
-		return $id_apartment -> getResult();
+    function updateApartment($idApartment, $location, $address, $idCity, $idCountry, $date, $review, $guest, $rom, $bed, $bathroom, $value, $photo, $url){
+        try{
+			$sql = "UPDATE apartment SET location='{$location}', address='{$address}', idCity={$idCity}, idCountry={$idCountry}, date='{$date}', review='{$review}', guest={$guest}, rom={$rom}, bed={$bed}, bathroom={$bathroom}, value={$value}, photo='{$photo}', url='{$url}' WHERE idApartment={$idApartment}";
+		}catch(Exception $error){
+			print_r($error -> getMessage());
+		}
+
+        $this -> db -> query($sql);
 	}
 
-    function updateEditedApartment($id_apartment, $country, $city, $name, $address, $coordinates, $roms, $id_image, $value, $review){
-		$sql = "UPDATE apartment SET country={$country}, city={$city}, address='{$address}', coordinates='{$coordinates}', roms={$roms}, id_image='{$id_image}', value={$value}, review='{$review}' WHERE id_apartment='{$id_apartment}'";
-		$this -> db -> query($sql);
-	}
-
-    function deleteApartment($id_apartment){
-        $sql = "DELETE FROM apartment WHERE id_apartment={$id_apartment}";
+    function deleteApartment($idApartment){
+        try{
+            $sql = "DELETE FROM apartment WHERE idApartment={$idApartment}";
+        }catch(Exception $error){
+			print_r($error -> getMessage());
+		}
+		
         $this -> db -> query($sql);
     }
+
+    function infoApartment($idApartment){
+        try{
+            $sql = "SELECT * FROM ((apartment INNER JOIN country ON apartment.idCountry = country.idCountry) INNER JOIN city ON apartment.idCity = city.idCity) WHERE idApartment={$idApartment}";
+        }catch(Exception $error){
+			print_r($error -> getMessage());
+		}
+		
+		$idApartment = $this -> db -> query($sql);
+		return $idApartment -> getResult();
+	}
 }

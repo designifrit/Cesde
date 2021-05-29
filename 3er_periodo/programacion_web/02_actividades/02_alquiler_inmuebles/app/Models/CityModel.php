@@ -4,7 +4,7 @@ use CodeIgniter\Model;
 
 class CityModel extends Model{
     protected $table = 'city';
-    protected $primaryKey = 'id_city';
-    protected $allowedFields = ['id_country','name_city'];
+    protected $primaryKey = 'idCity';
+    protected $allowedFields = ['idCountry','city'];
 }
 ?>
