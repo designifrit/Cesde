@@ -21,7 +21,7 @@
         <div class="col-12">
             <h2>Actualizar información del apartamento</h2>
         </div>
-        <form class="row" method="POST" action="<?php echo base_url();?>/public/update-apartment?id=<?php echo $apartment -> idApartment?>">
+        <form class="row" method="POST" action="<?php echo base_url();?>/public/apartment/update-apartment/update?id=<?php echo $apartment -> idApartment?>" accept-charset="utf-8" enctype='multipart/form-data'>
 
             <div class="col-12 mb-3">
                 <label for="location" class="form-label">Localización</label>
@@ -112,7 +112,7 @@
             </div>
             <div class="mb-3">
                 <label for="featured_image" class="form-label">Imagen destacada</label>
-                <input type="file" class="form-control" id="featured_image" name="featured_image" value="<?php echo $apartment -> photo ?>" required>
+                <input type="file" class="form-control" id="featured_image" name="featured_image" required>
             </div>
             <div class="mb-3">
                 <label for="value" class="form-label">Precio</label>

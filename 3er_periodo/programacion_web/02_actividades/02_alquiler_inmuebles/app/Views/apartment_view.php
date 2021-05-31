@@ -1,4 +1,3 @@
-
 <header id="header" class="header_image">
     <div class="container">
         <div class="row">
@@ -39,8 +38,10 @@
                                 <span>Dirección / {$row -> city}</span>
                                 <p class='card-text pcolor'>{$row -> address}</p>
                                 <h4 class='card-title'>{$row -> location}</h4>
-                                <p class='card-text'>{$row -> rom} habitaciones</p>
-                                <p class='descripcion'>{$row -> review}</p>
+
+                                <i class='ticket'><span class='material-icons'>people_outline</span>{$row -> guest}</i><i class='ticket'><span class='material-icons'>meeting_room</span>{$row -> rom}</i><i class='ticket'><span class='material-icons'>bed</span>{$row -> bed}</i><i class='ticket'><span class='material-icons'>shower</span>{$row -> bathroom}</i>
+
+                                <p class='descripcion mt-3'>{$row -> review}</p>
                                 <span class='precio d-flex justify-content-end'><strong>$ {$row -> value}</strong> / noche</span>
                             </div>
 

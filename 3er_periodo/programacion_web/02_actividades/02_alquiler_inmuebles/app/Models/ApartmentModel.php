@@ -16,9 +16,9 @@ class ApartmentModel extends Model
 		return $apartments -> getResult();
 	}
 
-    function addApartment($idUser, $location, $address, $idCity, $idCountry, $date, $review, $guest, $rom, $bed, $bathroom, $value, $photo, $url){
+    function addApartment($idUser, $location, $address, $idCity, $idCountry, $review, $guest, $rom, $bed, $bathroom, $value, $photo, $url){
         try{
-            $sql = "INSERT INTO apartment ($idUser, $location, $address, $idCity, $idCountry, $date, $review, $guest, $rom, $bed, $bathroom, $value, $photo, $url) VALUES ({$idUser}, '{$location}', '{$address}', {$idCity}, {$idCountry}, '{$date}', '{$review}', $guest, $rom, $bed, $bathroom, $value, '{$photo}', '{$url}')";
+            $sql = "INSERT INTO apartment (idUser, location, address, idCity, idCountry, date, review, guest, rom, bed, bathroom, value, photo, url) VALUES ({$idUser}, '{$location}', '{$address}', {$idCity}, {$idCountry}, NOW(), '{$review}', $guest, $rom, $bed, $bathroom, $value, '{$photo}', '{$url}')";
         }catch(Exception $error){
 			print_r($error -> getMessage());
 		}
@@ -26,9 +26,9 @@ class ApartmentModel extends Model
         $this -> db -> query($sql);
     }
 
-    function updateApartment($idApartment, $location, $address, $idCity, $idCountry, $date, $review, $guest, $rom, $bed, $bathroom, $value, $photo, $url){
+    function updateApartment($idApartment, $location, $address, $idCity, $idCountry, $review, $guest, $rom, $bed, $bathroom, $value, $photo, $url){
         try{
-			$sql = "UPDATE apartment SET location='{$location}', address='{$address}', idCity={$idCity}, idCountry={$idCountry}, date='{$date}', review='{$review}', guest={$guest}, rom={$rom}, bed={$bed}, bathroom={$bathroom}, value={$value}, photo='{$photo}', url='{$url}' WHERE idApartment={$idApartment}";
+			$sql = "UPDATE apartment SET location='{$location}', address='{$address}', idCity={$idCity}, idCountry={$idCountry}, date=NOW(), review='{$review}', guest={$guest}, rom={$rom}, bed={$bed}, bathroom={$bathroom}, value={$value}, photo='{$photo}', url='{$url}' WHERE idApartment={$idApartment}";
 		}catch(Exception $error){
 			print_r($error -> getMessage());
 		}
@@ -48,7 +48,7 @@ class ApartmentModel extends Model
 
     function infoApartment($idApartment){
         try{
-            $sql = "SELECT * FROM ((apartment INNER JOIN country ON apartment.idCountry = country.idCountry) INNER JOIN city ON apartment.idCity = city.idCity) WHERE idApartment={$idApartment}";
+            $sql = "SELECT * FROM (((apartment INNER JOIN country ON apartment.idCountry = country.idCountry)INNER JOIN city ON apartment.idCity = city.idCity) INNER JOIN user ON apartment.idUser = user.idUser) WHERE idApartment={$idApartment}";
         }catch(Exception $error){
 			print_r($error -> getMessage());
 		}

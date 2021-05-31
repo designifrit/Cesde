@@ -5,8 +5,8 @@
                 <div class="box">
                     <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="<?php echo base_url(); ?>/public">Home</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Sign up</li>
+                            <li class="breadcrumb-item"><a href="<?php echo base_url(); ?>/public">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Sign up</li>
                         </ol>
                     </nav>
                 </div>
@@ -19,7 +19,7 @@
         <div class="col-12">
             <h2>Crear cuenta</h2>
         </div>
-        <form method="POST" action="<?php echo base_url(); ?>/public/create-account">
+        <form method="POST" action="<?php echo base_url(); ?>/public/signup/create-account" accept-charset="utf-8" enctype='multipart/form-data'>
             <div class="mb-3">
                 <label for="name" class="form-label">Nombre</label>
                 <input type="text" class="form-control" id="name" name="name" placeholder="John Doe" maxlength="20" required>
@@ -57,22 +57,26 @@
                     <option value="" selected>Selecciona tu ciudad</option>
                     <?php
                     foreach ($city as $row) {
-                            echo '<option value="' . $row["idCity"] . '">' . $row["city"] . '</option>';
+                        echo '<option value="' . $row["idCity"] . '">' . $row["city"] . '</option>';
                     }
                     ?>
                 </select>
             </div>
-            <div class="form-floating padding_bottom">
+            <div class="form-floating mb-3">
                 <textarea class="form-control" placeholder="Deja una reseña" id="description" name="description" maxlength="300"></textarea>
                 <label for="description">Descripción</label>
             </div>
-            <div class="mb-3 form-check">
-                <input type="checkbox" class="form-check-input" id="role" name="role">
+            <div class="mb-3 form-check mcontent_bottom">
+                
+                <input type="hidden" class="form-check-input" id="role" name="role" name="accept" value="0">
+                <input type="checkbox" class="form-check-input" id="role" name="role" name="accept" value="1">
+                
                 <label class="form-check-label" for="role">Hazte anfitrión
                     <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="Disfruta de la flexibilidad de ser tu propio jefe, ganar ingresos extra y hacer amistades para toda la vida al compartir tu espacio">
-                        <button class="btn popover_helper ms-1" type="button">?</button>
+                        <button class="btn popover_helper ms-2" type="button">?</button>
                     </span>
                 </label>
+
             </div>
             <button type="submit" class="btn button mt-3">Registrarse</button>
         </form>

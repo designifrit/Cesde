@@ -96,7 +96,7 @@
                             <img class='fill' src='{$row -> photo}' alt='lease'>
                         </a>
                         <span>{$row -> location}</span>
-                        <small>{$row -> city} {$row -> country}</small>
+                        <small>{$row -> city} • {$row -> country}</small>
                     </div>";
                     echo $template;
                 }

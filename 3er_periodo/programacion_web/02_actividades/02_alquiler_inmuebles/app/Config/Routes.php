@@ -36,13 +36,11 @@ $routes->setAutoRoute(true);
 // Se debe agregar la ruta para poder iniciar el controllador
 $routes->get('/', 'Home::index');
 
-$routes->get('/login', 'SigninController::index');
-$routes->post('/signin', 'SigninController::signIn');
+$routes->get('/signin', 'SigninController::index');
+$routes->post('/signin/login', 'SigninController::signIn');
 
 $routes->get('/signup', 'SignupController::index');
-
-$routes->get('/signup/create-account', 'DynamicController::index');
-$routes->post('/signup/create-account/action', 'DynamicController::action');
+$routes->post('/signup/create-account', 'SignupController::signUp');
 
 $routes->get('/account', 'ProfileController::index');
 $routes->get('/account/edit-account', 'ProfileController::infoAccount');
@@ -55,7 +53,7 @@ $routes->get('/apartment/detail-apartment', 'ApartmentController::detailApartmet
 $routes->post('/apartment/add-apartment', 'ApartmentController::addApartment');
 $routes->get('/apartment/delete-apartment', 'ApartmentController::deleteApartment');
 $routes->get('/apartment/update-apartment', 'ApartmentController::infoApartment');
-$routes->post('/apartment/update-apartment', 'ApartmentController::updateApartment');
+$routes->post('/apartment/update-apartment/update', 'ApartmentController::updateApartment');
 
 $routes->get('/reservation','ReservationController::index');
 /*

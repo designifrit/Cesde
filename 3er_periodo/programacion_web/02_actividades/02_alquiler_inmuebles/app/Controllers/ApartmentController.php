@@ -43,7 +43,7 @@ class ApartmentController extends BaseController
 	public function createApartment(){
 		// Permite restringir o permitir contenido a través de las cookies
 		// En este caso por medio del inicio de sessión del usuario
-		$session = session();
+		// $session = session();
 
 		$countryModel = new CountryModel();
 		$cityModel = new CityModel();
@@ -76,20 +76,20 @@ class ApartmentController extends BaseController
 		$value = $request -> getPost('value');
 		$url = $request -> getPost('url');
 
-		helper('date');
-        $date = date('Y-m-d H:i:s');
-
 		$image = $request -> getFile('featured_image');
-		$imageName = $image -> getRandomName();	// Crea un nombre random para la imagen
 		$photo = "";	// Se crea la variable para asignar la ruta de almacenamiento
 		
 		// Si es válida la imagen y puede ser movida
 		if($image -> isValid(0 && !$image -> hasMoved())){
+			$imageName = $image -> getRandomName();	// Crea un nombre random para la imagen
 			$image -> move('./uploads/images/', $imageName);	// La carpeta predefinida para move() es la carpeta public
 			$photo = base_url().'/public/uploads/images/'.$imageName;
+		}else if(! $image->isValid())
+		{
+				throw new \RuntimeException($image->getErrorString().'('.$image->getError().')');
 		}
 		
-		$apartmentModel -> addApartment($idUser, $location, $address, $idCity, $idCountry, $date, $review, $guest, $rom, $bed, $bathroom, $value, $photo, $url);	// Almacenar los datos en la BD
+		$apartmentModel -> addApartment($idUser, $location, $address, $idCity, $idCountry, $review, $guest, $rom, $bed, $bathroom, $value, $photo, $url);	// Almacenar los datos en la BD
 
 		return redirect() -> to('/public/apartment');	// Redirigir a la View
 	}
@@ -122,20 +122,20 @@ class ApartmentController extends BaseController
 		$value = $request -> getPost('value');
 		$url = $request -> getPost('url');
 
-		helper('date');
-        $date = date('Y-m-d H:i:s');
-
 		$image = $request -> getFile('featured_image');
-		$imageName = $image -> getRandomName();	// Crea un nombre random para la imagen
 		$photo = "";	// Se crea la variable para asignar la ruta de almacenamiento
 		
 		// Si es válida la imagen y puede ser movida
 		if($image -> isValid(0 && !$image -> hasMoved())){
-			$image -> move('./uploads/images/', $imageName);	// La carpeta predefinida para move() es la carpeta public
-			$photo = base_url().'/public/uploads/images/'.$imageName;
+			// $imageName = $image -> getRandomName();	// Crea un nombre random para la imagen
+			$image -> move('./uploads/images/');	// La carpeta predefinida para move() es la carpeta public
+			$photo = base_url().'/public/uploads/images/';
+		}else if(! $image->isValid())
+		{
+				throw new \RuntimeException($image->getErrorString().'('.$image->getError().')');
 		}
 		
-		$apartmentModel -> updateApartment($idApartment, $location, $address, $idCity, $idCountry, $date, $review, $guest, $rom, $bed, $bathroom, $value, $photo, $url);	// Almacenar los datos en la BD
+		$apartmentModel -> updateApartment($idApartment, $location, $address, $idCity, $idCountry, $review, $guest, $rom, $bed, $bathroom, $value, $photo, $url);	// Almacenar los datos en la BD
 
 		return redirect() -> to('/public/apartment');
 	}

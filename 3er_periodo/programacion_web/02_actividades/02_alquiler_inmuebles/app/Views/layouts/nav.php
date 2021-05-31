@@ -2,7 +2,7 @@
     <div class="navbar">
         <div id="login" class="container">
             <ul>
-                <li class="nav-login"><a href="<?php echo base_url().'/public/login'?>"><span class="material-icons">account_circle</span>Log in</a></li>
+                <li class="nav-login"><a href="<?php echo base_url().'/public/signin'?>"><span class="material-icons">account_circle</span>Log in</a></li>
                 <li class="nav-signin"><a href="<?php echo base_url().'/public/signup'?>"><span>•</span>Crear cuenta</a></li>
                 <li class="nav-account"><a href="<?php echo base_url().'/public/account'?>"><span class="material-icons">face</span>Cuenta</a></li>
                 <li class="nav-signout"><a href="<?php echo base_url().'/public/account/signout'?>"><span>•</span>Salir</a></li>
