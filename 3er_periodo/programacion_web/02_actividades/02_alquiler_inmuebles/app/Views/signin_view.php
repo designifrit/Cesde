@@ -19,6 +19,12 @@
         <div class="col-12">
             <h2>Inicia sesión</h2>
         </div>
+
+        <?php if(isset($validation)):?>
+            <?= $validation -> listErrors(); ?>
+        <?php endif; ?>
+        
+        <?= form_open('form');?>
         <form method="POST" action="<?php echo base_url();?>/public/signin">
             <div class="mb-3">
                 <label for="email" class="form-label">Correo electrónico</label>
