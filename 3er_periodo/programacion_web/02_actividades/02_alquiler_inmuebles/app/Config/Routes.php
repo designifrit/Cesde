@@ -42,6 +42,8 @@ $routes->post('/signin/login', 'SigninController::signIn');
 $routes->get('/signup', 'SignupController::index');
 $routes->post('/signup/create-account', 'SignupController::signUp');
 
+$routes->get('/account/signout', 'HostController::logOut');
+
 $routes->get('/account', 'ProfileController::index');
 $routes->get('/account/edit-account', 'ProfileController::infoAccount');
 $routes->post('/account/edit-account', 'ProfileController::editAccount');

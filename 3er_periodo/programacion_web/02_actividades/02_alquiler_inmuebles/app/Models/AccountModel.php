@@ -5,14 +5,15 @@ use Exception;
 
 class AccountModel extends Model
 {   
-    public function readAccount(){
+    public function loginAccount($email, $password){
         try{
-            $sql = "SELECT idUser, name, lastName, idCity, idCountry, email, password, role, description, profilePhoto FROM user WHERE idUser = 1";
+            $sql = "SELECT * FROM ((user INNER JOIN country ON user.idCountry = country.idCountry)INNER JOIN city ON user.idCity = city.idCity) WHERE email = '{$email}' AND password = '{$password}'";
         }catch(Exception $error){
             var_dump($error -> getMessage());
         }
 
-        $this -> db -> query($sql);
+        $userLogin = $this -> db -> query($sql);
+        return $userLogin -> getResult();
     }
 
     public function createAccount($name, $lastName, $idCity, $idCountry, $email, $password, $role, $description, $profilePhoto){

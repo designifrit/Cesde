@@ -20,18 +20,16 @@
             <h2>Información de perfil</h2>
         </div>
         <div class="col-8 col-sm-9 col-md-10">
-            <h4 class="mt-3">Name<em> / <span>last name</span></em></h4>
-            <i class="ticket"><span class="material-icons">assignment_ind</span> Rol</i><i class="ticket"><span class="material-icons">email</span> email@domain.com</i>
-            <p class="mt-3 pcolor">Country • City</p>
+            <h4 class="mt-3"><?php echo (session("name")); ?><em> / <span><?php echo (session("lastName")); ?></span></em></h4>
+            <i class="ticket"><span class="material-icons">assignment_ind</span> <?php echo (session("role")); ?></i><i class="ticket"><span class="material-icons">email</span> <?php echo (session("email")); ?></i>
+            <p class="mt-3 pcolor"><?php echo (session("idCountry")); ?> • <?php echo (session("idCity")); ?></p>
             <hr>
         </div>
         <div class="col-4 col-sm-3 col-md-2">
-            <img class="perfil" src="<?php echo base_url();?>/public/uploads/perfil/foto-perfil.jpg" alt="Foto de perfil">
+            <img class="perfil" src="<?php echo (session("profilePhoto")); ?>" alt="Foto de perfil">
         </div>
         <div class="col-12 mt-3">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, nam dolorem. Dolorum dolore molestias placeat! Porro, placeat doloribus, quia ea sunt odio minima sed, blanditiis dolor quae asperiores! Eligendi, commodi.
-            Nam omnis maiores, quia ipsum nulla eveniet quidem quo, deleniti distinctio ab ad dolor odit illum quas ea recusandae accusamus dignissimos ipsam, asperiores expedita. Voluptate dolorum ea impedit eligendi quae?
-            Quos deleniti incidunt pariatur voluptatum distinctio illo voluptate id molestias animi ipsum, nam necessitatibus cumque minus unde, optio totam eaque, eum sequi quibusdam doloribus placeat at. Beatae corrupti architecto perspiciatis?</p>
+            <p><?php echo (session("description")); ?></p>
         </div>
         <a href='#' class='btn button mcontent_top'>Editar cuenta</a>
     </article>
