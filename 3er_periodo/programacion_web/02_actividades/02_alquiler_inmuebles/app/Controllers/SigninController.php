@@ -1,50 +1,60 @@
 <?php
 
 namespace App\Controllers;
+use App\Models\AccountModel;
 
 class SigninController extends BaseController
 {	
-	public function __construct()
-	{
-		helper("form");
-	}
-
 	public function index()
 	{	
-		$validation =  \Config\Services::validation();
-
-		$data = [];
-
-		$rules = [
-			'email' => 'required',
-			'password' => 'required'
-		];
-
-
-		if($this -> request -> getMethod() == 'post'){
-			
-				if($this -> validate($rules)){
-					echo "Listo para guardar";
-				}else{
-					$data['validation'] = $this -> validator;
-				}
-			}
-
 		echo view('layouts/header');
 		echo view('layouts/nav');
-		return view('signin_view', $data);
+		echo view('signin_view');
 		echo view('layouts/footer');
 	}
 		
 
-	// public function signIn(){
-	// 	$session = session();
-	// 	$newdata = [
-	// 		'username'  => 'johndoe',
-	// 		'email'     => 'johndoe@some-site.com',
-	// 		'logged_in' => TRUE
-	// 	];
-	// 	$session -> set($newdata);
-	// 	return redirect() -> to('/public/profile_view');
-	// }
+	public function signIn(){
+		$request = \Config\Services::request();
+		$email = $request -> getPost('email');
+		$password = $request -> getPost('password');
+
+		$login = new AccountModel();
+
+		$dataLogin = $login -> loginAccount($email, $password);
+
+		foreach($dataLogin as $row){
+			if($email == $row -> email && $password == $row -> password){
+				$dataLogin = [
+					"idUser" => $row -> idUser,
+					"name" => $row -> name,
+					"lastName" => $row -> lastName,
+					"idCity" => $row -> idCity,
+					"idCountry" => $row -> idCountry,
+					"email" => $row -> email,
+					"password" => $row -> password,
+					"role" => $row -> role,
+					"description" => $row -> description,
+					"profilePhoto" => $row -> profilePhoto
+				];
+
+				$session = session();
+				$session -> set($dataLogin);
+				
+				if(!$email == $row -> email || !$password == $row -> password){
+					echo "<h5>Correo o contraseña no válido</h5>";
+					break;
+				}else{
+					if($rol = $row -> role ==  1){
+						return redirect() -> to('/public/account');
+					}else if($rol = $row -> role ==  0){
+						return redirect() -> to('/public/account');
+					}
+				}
+				
+			}
+		}
+
+		
+	}
 }

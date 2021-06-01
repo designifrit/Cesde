@@ -19,21 +19,16 @@
         <div class="col-12">
             <h2>Inicia sesión</h2>
         </div>
-
-        <?php if(isset($validation)):?>
-            <?= $validation -> listErrors(); ?>
-        <?php endif; ?>
         
-        <?= form_open('form');?>
-        <form method="POST" action="<?php echo base_url();?>/public/signin">
+        <form method="POST" action="<?php echo base_url();?>/public/signin/login">
             <div class="mb-3">
                 <label for="email" class="form-label">Correo electrónico</label>
-                <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" maxlength="50">
+                <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" maxlength="50" required>
                 <div id="emailHelp" class="form-text">Respetamos tu privacidad, nunca compartimos tus datos con nadie.</div>
             </div>
             <div class="mb-3">
                 <label for="password" class="form-label">Contraseña</label>
-                <input type="password" class="form-control" id="password" name="password" maxlength="40">
+                <input type="password" class="form-control" id="password" name="password" maxlength="40" required>
             </div>
             <div class="mb-3 form-check">
                 <input type="checkbox" class="form-check-input" id="recordarme" name="recordarme">

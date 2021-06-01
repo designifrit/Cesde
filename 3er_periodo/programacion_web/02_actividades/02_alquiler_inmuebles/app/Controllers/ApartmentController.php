@@ -9,7 +9,12 @@ use App\Models\CityModel;
 use Exception;
 
 class ApartmentController extends BaseController
-{
+{	
+	// public function __construct()
+    // {
+	// 	$this->load->library('session');
+    // }
+
 	public function index()
 	{	
         $apartment = new ApartmentModel();	// Instancia la clase ApartmentModel
@@ -19,12 +24,17 @@ class ApartmentController extends BaseController
 		$data = array(
 			"apartments" => $resultApartment
 		);
+
+		if(session('role') == 1){
+			// Muestra las Views en el orden especificado
+			echo view('layouts/header');
+			echo view('layouts/nav');
+			echo view('apartment_view', $data);
+			echo view('layouts/footer');
+		}else{
+			return redirect() -> to(base_url('/public/home'));
+		}
 		
-		// Muestra las Views en el orden especificado
-		echo view('layouts/header');
-		echo view('layouts/nav');
-		echo view('apartment_view', $data);
-		echo view('layouts/footer');
 	}
 
 	public function infoApartment(){
@@ -43,7 +53,7 @@ class ApartmentController extends BaseController
 	public function createApartment(){
 		// Permite restringir o permitir contenido a través de las cookies
 		// En este caso por medio del inicio de sessión del usuario
-		// $session = session();
+		
 
 		$countryModel = new CountryModel();
 		$cityModel = new CityModel();
@@ -63,6 +73,7 @@ class ApartmentController extends BaseController
 		$request = \Config\Services::request();	// Activa el servicio de web services para poder obtener los datos
 
 		// A través de $request obtiene los datos en POST desde el formulario
+		// $idUser = $session->get('idUser');
 		$idUser = $request -> getPost('idUser');
 		$location = $request -> getPost('location');
 		$address = $request -> getPost('address');
@@ -86,13 +97,19 @@ class ApartmentController extends BaseController
 			$photo = base_url().'/public/uploads/images/'.$imageName;
 		}else if(! $image->isValid())
 		{
-				throw new \RuntimeException($image->getErrorString().'('.$image->getError().')');
+			throw new \RuntimeException($image->getErrorString().'('.$image->getError().')');
 		}
 		
-		$apartmentModel -> addApartment($idUser, $location, $address, $idCity, $idCountry, $review, $guest, $rom, $bed, $bathroom, $value, $photo, $url);	// Almacenar los datos en la BD
+		// $role = $this->session->userdata('role');
 
-		return redirect() -> to('/public/apartment');	// Redirigir a la View
-	}
+		// if($role == 0){
+		// 	echo "<h5>Debes ser un usuario Anfitrion</h5>";
+		// }else if($location == "" || $address == "" || $idCity == "" || $idCountry == "" || $review == "" || $guest == "" || $rom == "" || $bed == "" || $bathroom == "" || $value == "" || $photo == "" || $url){
+		// 	echo "<h5>Todos los campos son obligatorios</h5>";
+		// }else{
+			$apartmentModel -> addApartment($idUser, $location, $address, $idCity, $idCountry, $review, $guest, $rom, $bed, $bathroom, $value, $photo, $url);	// Almacenar los datos en la BD
+			return redirect() -> to('/public/apartment');	// Redirigir a la View
+		}
 
 	public function deleteApartment(){
 		$apartmentModel = new ApartmentModel();	// Instancia la clase TaskModel
