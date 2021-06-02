@@ -36,7 +36,7 @@
                 <div class="mcontent_bottom">
                     <h3><?php echo $apartment -> location?></h3>
                     <i class="ticket"><span class="material-icons">people_outline</span><?php echo $apartment -> guest?> huéspedes</i><i class="ticket"><span class="material-icons">other_houses</span><?php echo $apartment -> rom?> habitaciones</i><i class="ticket"><span class="material-icons">bed</span><?php echo $apartment -> bed?> camas</i><i class="ticket"><span class="material-icons">shower</span><?php echo $apartment -> bathroom?> baños</i>
-                    <p class="mt-3 pcolor"><?php echo $apartment -> address?></p>
+                    <p class="mt-3 pcolor"><?php echo $apartment -> address?> / <?php echo $apartment -> idCountry?></p>
                 </div>
                 <hr>
                 <div class="mcontent_top">

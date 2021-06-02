@@ -2,10 +2,36 @@
     <div class="navbar">
         <div id="login" class="container">
             <ul>
-                <li class="nav-login"><a href="<?php echo base_url().'/public/signin'?>"><span class="material-icons">account_circle</span>Log in</a></li>
-                <li class="nav-signin"><a href="<?php echo base_url().'/public/signup'?>"><span>•</span>Crear cuenta</a></li>
-                <li class="nav-account"><a href="<?php echo base_url().'/public/account'?>"><span class="material-icons">face</span>Cuenta</a></li>
-                <li class="nav-signout"><a href="<?php echo base_url().'/public/account/signout'?>"><span>•</span>Salir</a></li>
+                <?php
+                    $session = session();
+
+                    $signIn = base_url()."/public/signin";
+                    $signUp = base_url()."/public/signup";
+
+                    if($session = $session -> get('role') == 0){
+                        $template = "
+                            <li class='nav-login'><a href='{$signIn}'><span class='material-icons'>account_circle</span>Log in</a></li>
+                            <li class='nav-signin'><a href='{$signUp}'><span>•</span>Crear cuenta</a></li>
+                        ";
+                        echo $template;
+                    }
+                ?>
+
+                <?php
+                    $session = session();
+
+                    $account = base_url()."/public/account";
+                    $signout = base_url()."/public/account/signout";
+
+                    if($session = $session -> get('role') == 1){
+                        $template = "
+                            <li class='nav-account'><a href='{$account}'><span class='material-icons'>face</span>Cuenta</a></li>
+                            <li class='nav-signout'><a href='{$signout}'><span>•</span>Salir</a></li>
+                        ";
+                        echo $template;
+                    }
+                ?>
+
             </ul>
         </div>
     </div>
@@ -16,8 +42,23 @@
             <ul id="nav_desktop">
                 <li><a href="<?php echo base_url().'/public'?>">Home</a></li>
                 <li><a href="<?php echo base_url().'/public/apartment'?>">apartamentos</a></li>
-                <li><a href="<?php echo base_url().'/public/apartment/create-apartment'?>">add apartamento</a></li>
-                <li><a href="<?php echo base_url().'/public/reservation'?>">reservas</a></li>
+
+                <?php
+                    $session = session();
+
+                    $apartment = base_url()."/public/apartment";
+                    $addApartment = base_url()."/public/apartment/create-apartment";
+                    $reservation = base_url()."/public/reservation";
+
+                    if($session = $session -> get('role') == 1){
+                        $template = "
+                            <li><a href='{$addApartment}'>add apartamento</a></li>
+                            <li><a href='{$reservation}'>reservas</a></li>
+                        ";
+                        echo $template;
+                    }
+                ?>
+
             </ul>
 
             <!-- Mobile menu -->
@@ -36,9 +77,23 @@
                     <div class="offcanvas-body">
                         <ul>
                             <li><a href="<?php echo base_url().'/public'?>"><span class="material-icons">home</span>Home</a></li>
-                            <li><a href="<?php echo base_url().'/public/apartment'?>"><span class="material-icons">maps_home_work</span>Apartamentos</a></li>
-                            <li><a href="<?php echo base_url().'/public/apartment/create-apartment'?>"><span class="material-icons">add_circle</span>Registrar apartamento</a></li>
-                            <li><a href="<?php echo base_url().'/public/reservation'?>"><span class="material-icons">airplane_ticket</span>reservas</a></li>
+                            <li><a href="<?php echo base_url().'/public/apartment'?>"><span class='material-icons'>apartment</span>apartamentos</a></li>
+
+                            <?php
+                                $session = session();
+
+                                $apartment = base_url()."/public/apartment";
+                                $addApartment = base_url()."/public/apartment/create-apartment";
+                                $reservation = base_url()."/public/reservation";
+            
+                                if($session = $session -> get('role') == 1){
+                                    $template = "
+                                        <li><a href='{$addApartment}'><span class='material-icons'>add_circle</span>add apartamento</a></li>
+                                        <li><a href='{$reservation}'><span class='material-icons'>airplane_ticket</span>reservas</a></li>
+                                    ";
+                                    echo $template;
+                                }
+                            ?>
                         </ul>
                     </div>
                 </div>

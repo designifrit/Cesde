@@ -48,6 +48,8 @@ $routes->get('/account', 'ProfileController::index');
 $routes->get('/account/edit-account', 'ProfileController::infoAccount');
 $routes->post('/account/edit-account', 'ProfileController::editAccount');
 
+$routes->get('/forbidden', 'AccessController::index');
+
 $routes->get('/apartment', 'ApartmentController::index');
 $routes->get('/apartment/create-apartment', 'ApartmentController::createApartment');
 $routes->get('/apartment/detail-apartment', 'ApartmentController::detailApartmet');

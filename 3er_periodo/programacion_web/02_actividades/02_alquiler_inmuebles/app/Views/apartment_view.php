@@ -25,41 +25,68 @@
             foreach($apartments as $row){
                 // Se asigna la ruta: base_url + la vista: delete-task + el dato que necesitamos traer: id
                 // Esos datos quedan almacenados en la URL y con PHP se traen para disponer de estos
+                $session = session();
+
                 $deleteRoute = base_url()."/public/apartment/delete-apartment?id={$row -> idApartment}";
                 $updateRoute = base_url()."/public/apartment/update-apartment?id={$row -> idApartment}";
                 $detailRoute = base_url()."/public/apartment/detail-apartment?id={$row -> idApartment}";
                 
-                $template = "
-                <div class='col-12 col-sm-12 col-md-6 col-lg-4 padding_bottom'>
-                    <div class='card h-100'>
-                        <img src='{$row -> photo}' class='card-img-top' alt='Producto'>
-                        <div class='card-body d-flex align-content-between flex-wrap'>
-                            <div style='width:100%'>
-                                <span>Dirección / {$row -> city}</span>
-                                <p class='card-text pcolor'>{$row -> address}</p>
-                                <h4 class='card-title'>{$row -> location}</h4>
+                if(session('role') == 1){
+                    $template = "
+                        <div class='col-12 col-sm-12 col-md-6 col-lg-4 padding_bottom'>
+                            <div class='card h-100'>
+                                <img src='{$row -> photo}' class='card-img-top' alt='Producto'>
+                                <div class='card-body d-flex align-content-between flex-wrap'>
+                                    <div style='width:100%'>
+                                        <span>Dirección / {$row -> city}</span>
+                                        <p class='card-text pcolor'>{$row -> address}</p>
+                                        <h4 class='card-title'>{$row -> location}</h4>
 
-                                <i class='ticket'><span class='material-icons'>people_outline</span>{$row -> guest}</i><i class='ticket'><span class='material-icons'>meeting_room</span>{$row -> rom}</i><i class='ticket'><span class='material-icons'>bed</span>{$row -> bed}</i><i class='ticket'><span class='material-icons'>shower</span>{$row -> bathroom}</i>
+                                        <i class='ticket'><span class='material-icons'>people_outline</span>{$row -> guest}</i><i class='ticket'><span class='material-icons'>meeting_room</span>{$row -> rom}</i><i class='ticket'><span class='material-icons'>bed</span>{$row -> bed}</i><i class='ticket'><span class='material-icons'>shower</span>{$row -> bathroom}</i>
 
-                                <p class='descripcion mt-3'>{$row -> review}</p>
-                                <span class='precio d-flex justify-content-end'><strong>$ {$row -> value}</strong> / noche</span>
-                            </div>
+                                        <p class='descripcion mt-3'>{$row -> review}</p>
+                                        <span class='precio d-flex justify-content-end'><strong>$ {$row -> value}</strong> / noche</span>
+                                    </div>
 
-                            <div class='botones'>
-                                <a href='{$updateRoute}' class='btn btnver'>editar</a>
-                                <a href='{$detailRoute}' class='btn btnver'>ver</a>
-                            </div>
+                                    <div class='botones'>
+                                        <a href='{$updateRoute}' class='btn btnver'>editar</a>
+                                        <a href='{$detailRoute}' class='btn btnver'>ver</a>
+                                    </div>
 
-                            <a href='{$deleteRoute}' name='botonEliminar'>
-                                <div class='boton_delete material-icons'>
-                                    close
+                                    <a href='{$deleteRoute}' name='botonEliminar'>
+                                        <div class='boton_delete material-icons'>
+                                            close
+                                        </div>
+                                    </a>
                                 </div>
-                            </a>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                ";
-                echo $template;
+                        ";
+                    echo $template;
+                }elseif(session('role') == 0){
+                    $template = "
+                        <div class='col-12 col-sm-12 col-md-6 col-lg-4 padding_bottom'>
+                            <div class='card h-100'>
+                                <a href='{$detailRoute}'>
+                                    <img src='{$row -> photo}' class='card-img-top' alt='Producto'>
+                                    <div class='card-body d-flex align-content-between flex-wrap'>
+                                        <div style='width:100%'>
+                                            <span>Dirección / {$row -> city}</span>
+                                            <p class='card-text pcolor'>{$row -> address}</p>
+                                            <h4 class='card-title'>{$row -> location}</h4>
+
+                                            <i class='ticket'><span class='material-icons'>people_outline</span>{$row -> guest}</i><i class='ticket'><span class='material-icons'>meeting_room</span>{$row -> rom}</i><i class='ticket'><span class='material-icons'>bed</span>{$row -> bed}</i><i class='ticket'><span class='material-icons'>shower</span>{$row -> bathroom}</i>
+
+                                            <p class='descripcion mt-3'>{$row -> review}</p>
+                                            <span class='precio d-flex justify-content-end'><strong>$ {$row -> value}</strong> / noche</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        ";
+                    echo $template;
+                }
             }
         ?>
 
