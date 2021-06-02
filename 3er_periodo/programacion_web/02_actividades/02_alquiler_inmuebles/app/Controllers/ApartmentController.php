@@ -73,8 +73,9 @@ class ApartmentController extends BaseController
 		$request = \Config\Services::request();	// Activa el servicio de web services para poder obtener los datos
 
 		// A través de $request obtiene los datos en POST desde el formulario
-		// $idUser = $session->get('idUser');
-		$idUser = $request -> getPost('idUser');
+		$session = session();
+
+		$idUser = $session->get('idUser');
 		$location = $request -> getPost('location');
 		$address = $request -> getPost('address');
 		$idCity = $request -> getPost('city');
@@ -99,17 +100,18 @@ class ApartmentController extends BaseController
 		{
 			throw new \RuntimeException($image->getErrorString().'('.$image->getError().')');
 		}
-		
-		// $role = $this->session->userdata('role');
 
-		// if($role == 0){
-		// 	echo "<h5>Debes ser un usuario Anfitrion</h5>";
-		// }else if($location == "" || $address == "" || $idCity == "" || $idCountry == "" || $review == "" || $guest == "" || $rom == "" || $bed == "" || $bathroom == "" || $value == "" || $photo == "" || $url){
-		// 	echo "<h5>Todos los campos son obligatorios</h5>";
-		// }else{
+		// var_dump($idUser);
+		if($session = $session->get('role') == 0){
+			return redirect() -> to('/public/apartment/create-apartment');
+			echo "<h5>Debes ser un usuario Anfitrion</h5>";
+		}else if($location == "" || $address == "" || $idCity == "" || $idCountry == "" || $review == "" || $guest == "" || $rom == "" || $bed == "" || $bathroom == "" || $value == "" || $photo == "" || $url == ""){
+			echo "<h5>Todos los campos son obligatorios</h5>";
+		}else{
 			$apartmentModel -> addApartment($idUser, $location, $address, $idCity, $idCountry, $review, $guest, $rom, $bed, $bathroom, $value, $photo, $url);	// Almacenar los datos en la BD
 			return redirect() -> to('/public/apartment');	// Redirigir a la View
 		}
+	}
 
 	public function deleteApartment(){
 		$apartmentModel = new ApartmentModel();	// Instancia la clase TaskModel

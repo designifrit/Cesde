@@ -51,10 +51,7 @@ class SigninController extends BaseController
 						return redirect() -> to('/public/account');
 					}
 				}
-				
 			}
 		}
-
-		
 	}
 }

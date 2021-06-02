@@ -22,10 +22,10 @@
             <h2>Agregar apartamento</h2>
         </div>
         <form class="row" method="POST" action="<?php echo base_url();?>/public/apartment/add-apartment" enctype="multipart/form-data">
-            <div class="col-12 mb-3">
+            <!-- <div class="col-12 mb-3">
                 <label for="idUser" class="form-label">User</label>
                 <input type="number" class="form-control" id="idUser" name="idUser" maxlength="50">
-            </div>
+            </div> -->
             <div class="col-12 mb-3">
                 <label for="location" class="form-label">Localización</label>
                 <input type="text" class="form-control" id="location" name="location" maxlength="50" required>
