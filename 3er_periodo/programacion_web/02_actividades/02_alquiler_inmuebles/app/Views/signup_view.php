@@ -19,26 +19,36 @@
         <div class="col-12">
             <h2>Crear cuenta</h2>
         </div>
-        <form method="POST" action="<?php echo base_url(); ?>/public/signup/create-account" accept-charset="utf-8" enctype='multipart/form-data'>
+        <form class="row" method="POST" action="<?php echo base_url(); ?>/public/signup/create-account" accept-charset="utf-8" enctype='multipart/form-data'>
             <div class="mb-3">
                 <label for="name" class="form-label">Nombre</label>
                 <input type="text" class="form-control" id="name" name="name" placeholder="John Doe" maxlength="20" required>
+                <div id="nameHelp" class="form-text"></div>
             </div>
             <div class="mb-3">
                 <label for="last-name" class="form-label">Apellidos</label>
                 <input type="text" class="form-control" id="last-name" name="last-name" placeholder="John Doe" maxlength="50" required>
+                <div id="lastnameHelp" class="form-text"></div>
             </div>
             <div class="mb-3">
                 <label for="email" class="form-label">Correo electrónico</label>
-                <input type="email" class="form-control" id="email" name="email" placeholder="nombre@dominio.com" maxlength="50" required>
+                <input type="email" class="form-control" id="email" name="email" placeholder="nombre@dominio.com" maxlength="50" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+                <div id="emailHelp" class="form-text"></div>
             </div>
-            <div class="mb-3">
+            <div class="col-12 col-md-6 mb-3">
                 <label for="password" class="form-label">Contraseña</label>
                 <input type="password" class="form-control" id="password" name="password" maxlength="40" required>
+                <div id="passwordHelp" class="form-text"></div>
+            </div>
+            <div class="col-12 col-md-6 mb-3">
+                <label for="password-verify" class="form-label">Verifica la contraseña</label>
+                <input type="password" class="form-control" id="password-verify" name="password-verify" maxlength="40" required>
+                <div id="passwordVerify" class="form-text"></div>
             </div>
             <div class="mb-3">
                 <label for="profile-photo" class="form-label">Imagen</label>
-                <input type="file" class="form-control" id="profile-photo" name="profile-photo">
+                <input type="file" class="form-control" id="profile-photo" name="profile-photo" required>
+                <div id="imageHelp" class="form-text"></div>
             </div>
             <div class="mb-3">
                 <label for="country" class="form-label">País</label>
@@ -50,6 +60,7 @@
                     }
                     ?>
                 </select>
+                <div id="countryHelp" class="form-text"></div>
             </div>
             <div class="mb-3">
                 <label for="city" class="form-label">Ciudad</label>
@@ -61,10 +72,12 @@
                     }
                     ?>
                 </select>
+                <div id="cityHelp" class="form-text"></div>
             </div>
             <div class="form-floating mb-3">
-                <textarea class="form-control" placeholder="Deja una reseña" id="description" name="description" maxlength="300"></textarea>
+                <textarea class="form-control" placeholder="Deja una reseña" id="description" name="description" maxlength="300" required></textarea>
                 <label for="description">Descripción</label>
+                <div id="descriptionHelp" class="form-text"></div>
             </div>
             <div class="mb-3 form-check mcontent_bottom">
                 
@@ -78,7 +91,77 @@
                 </label>
 
             </div>
-            <button type="submit" class="btn button mt-3">Registrarse</button>
+            <button type="submit" class="btn button mt-3" onclick="validation()">Registrarse</button>
         </form>
     </article>
 </main>
+
+<script>
+    function validation() {
+        var nameHelp = document.getElementById("name");
+        var lastnameHelp = document.getElementById("last-name");
+        var emailHelp = document.getElementById("email");
+        var passwordHelp = document.getElementById("password");
+        var imageHelp = document.getElementById("profile-photo");
+        var countryHelp = document.getElementById("country");
+        var cityHelp = document.getElementById("city");
+        var descriptionHelp = document.getElementById("description");
+
+        var password = document.getElementById("password").value;
+        var passwordVerify = document.getElementById("password-verify").value;
+
+        if(!nameHelp.checkValidity()){
+            document.getElementById("nameHelp").innerHTML = nameHelp.validationMessage;
+        }else{
+            document.getElementById("nameHelp").innerHTML = "";
+        }
+
+        if(!lastnameHelp.checkValidity()){
+            document.getElementById("lastnameHelp").innerHTML = lastnameHelp.validationMessage;
+        }else{
+            document.getElementById("lastnameHelp").innerHTML = "";
+        }
+
+        if(!emailHelp.checkValidity()){
+            document.getElementById("emailHelp").innerHTML = emailHelp.validationMessage;
+        }else{
+            document.getElementById("emailHelp").innerHTML = "";
+        }
+
+        if(!passwordHelp.checkValidity()){
+            document.getElementById("passwordHelp").innerHTML = passwordHelp.validationMessage;
+        }else{
+            document.getElementById("passwordHelp").innerHTML = "";
+        }
+
+        if(password != passwordVerify){
+            document.getElementById("passwordVerify").innerHTML = "Las dos contraseñas deben coincidir";
+        }else{
+            document.getElementById("passwordVerify").innerHTML = "";
+        }
+
+        if(!imageHelp.checkValidity()){
+            document.getElementById("imageHelp").innerHTML = imageHelp.validationMessage;
+        }else{
+            document.getElementById("imageHelp").innerHTML = "";
+        }
+
+        if(!countryHelp.checkValidity()){
+            document.getElementById("countryHelp").innerHTML = countryHelp.validationMessage;
+        }else{
+            document.getElementById("countryHelp").innerHTML = "";
+        }
+
+        if(!cityHelp.checkValidity()){
+            document.getElementById("cityHelp").innerHTML = cityHelp.validationMessage;
+        }else{
+            document.getElementById("cityHelp").innerHTML = "";
+        }
+
+        if(!descriptionHelp.checkValidity()){
+            document.getElementById("descriptionHelp").innerHTML = descriptionHelp.validationMessage;
+        }else{
+            document.getElementById("descriptionHelp").innerHTML = "";
+        }
+    }
+</script>

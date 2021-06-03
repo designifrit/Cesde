@@ -10,6 +10,7 @@
     --hover2: rgb(61, 230, 159);
     --hover3: rgb(85, 47, 255);
     --hover4: rgba(255, 0, 55, 1);
+    --hover5: rgb(50, 220, 130);
     --font-titles: 'Lora', serif;
     --font-parag: 'Roboto', sans-serif;
     --transitions: all 0.3s ease 0s;
@@ -149,6 +150,24 @@ p, a, em, strong, i, b, small, sup, sub,h1, h2, h3, h4, h5, h6, button, span, in
 
 .pcolor{
     color: var(--bg4);
+}
+
+/* ################################################## FORM ################################################## */
+
+.form-check-input:checked{
+    background-color: rgba(85, 47, 255, 1);
+    border-color: var(--hover3);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(85, 47, 255, 0.4);
+}
+
+.form-control:focus, .form-select:focus{
+    background-color: rgba(85, 47, 255, 0.05);
+    border-color: var(--hover3);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(85, 47, 255, 0.4);
+}
+
+.form-text{
+    color: var(--hover3);
 }
 
 /* ################################################## NAV MENU ################################################## */

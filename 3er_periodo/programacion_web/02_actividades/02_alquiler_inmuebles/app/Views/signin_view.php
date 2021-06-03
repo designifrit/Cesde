@@ -23,18 +23,38 @@
         <form method="POST" action="<?php echo base_url();?>/public/signin/login">
             <div class="mb-3">
                 <label for="email" class="form-label">Correo electrónico</label>
-                <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" maxlength="50" required>
+                <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" maxlength="50" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
                 <div id="emailHelp" class="form-text">Respetamos tu privacidad, nunca compartimos tus datos con nadie.</div>
             </div>
             <div class="mb-3">
                 <label for="password" class="form-label">Contraseña</label>
                 <input type="password" class="form-control" id="password" name="password" maxlength="40" required>
+                <div id="passwordHelp" class="form-text"></div>
             </div>
             <div class="mb-3 form-check">
                 <input type="checkbox" class="form-check-input" id="recordarme" name="recordarme">
                 <label class="form-check-label" for="recordarme">Recordarme</label>
             </div>
-            <button type="submit" class="btn button mt-3">Ingresar</button>
+            <button type="submit" class="btn button mt-3" onclick="validation()">Ingresar</button>
         </form>
     </article>
 </main>
+
+<script>
+    function validation() {
+        var inputEmail = document.getElementById("email");
+        var inputPassword = document.getElementById("password");
+
+        if(!inputEmail.checkValidity()){
+            document.getElementById("emailHelp").innerHTML = inputEmail.validationMessage;
+        }else{
+            document.getElementById("emailHelp").innerHTML = "";
+        }
+
+        if(!inputPassword.checkValidity()){
+            document.getElementById("passwordHelp").innerHTML = inputPassword.validationMessage;
+        }else{
+            document.getElementById("passwordHelp").innerHTML = "";
+        }
+    }
+</script>

@@ -49,7 +49,12 @@ class ApartmentController extends BaseController
 
 		$idApartment = $request -> getGet('id');	// A través del $request obtiene el id con GET, que es enviado por el botón
 		$apartment = $apartmentModel -> infoApartment($idApartment);
-
+		
+		$countryModel = new CountryModel();
+		$cityModel = new CityModel();
+		$data['country'] = $countryModel -> orderBy('country','ASC') -> findAll();
+		$data['city'] = $cityModel -> orderBy('city','ASC') -> findAll();
+		
 		echo view('layouts/header');
 		echo view('layouts/nav');
 		echo view('apartment_update_view', array("apartment" => $apartment[0]));	// Pasa el arreglo a la vista como un objeto [] > id esta en la posicion 0
