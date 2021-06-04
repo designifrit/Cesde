@@ -35,4 +35,18 @@ class ProfileController extends BaseController
 
 		return redirect() -> to('/public/account');
 	}
+
+	public function editAccount(){
+
+
+		if(session('role') == 1){
+			// Muestra las Views en el orden especificado
+			echo view('layouts/header');
+			echo view('layouts/nav');
+			echo view('profile_edit_view');
+			echo view('layouts/footer');
+		}else{
+			return redirect() -> to(base_url('/public/forbidden'));
+		}
+	}
 }
