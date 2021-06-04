@@ -21,23 +21,23 @@
         <div class="col-12">
             <h2>Actualizar información del apartamento</h2>
         </div>
-        <form class="row" method="POST" action="<?php echo base_url();?>/public/apartment/update-apartment/update?id=<?php echo $apartment -> idApartment?>" accept-charset="utf-8" enctype='multipart/form-data'>
+        <form class="row" method="POST" action="<?php echo base_url();?>/public/apartment/update-apartment/update?id=<?php echo $apartment[0] -> idApartment?>" accept-charset="utf-8" enctype='multipart/form-data'>
 
             <div class="col-12 mb-3">
                 <label for="location" class="form-label">Localización</label>
-                <input type="text" class="form-control" id="location" name="location" maxlength="50" value="<?php echo $apartment -> location ?>" required>
+                <input type="text" class="form-control" id="location" name="location" maxlength="50" value="<?php echo $apartment[0] -> location ?>" required>
                 <div id="locationHelp" class="form-text"></div>
             </div>
             <div class="mb-3">
                 <label for="address" class="form-label">Dirección</label>
-                <input type="text" class="form-control" id="address" name="address" maxlength="50" value="<?php echo $apartment -> address ?>" aria-describedby="emailHelp" required>
+                <input type="text" class="form-control" id="address" name="address" maxlength="50" value="<?php echo $apartment[0] -> address ?>" aria-describedby="emailHelp" required>
                 <div id="addressHelp" class="form-text"></div>
             </div>
 
             <div class="col-12 col-md-6 mb-3">
                 <label for="country" class="form-label">País</label>
                 <select class="form-select" name="country" id="country" aria-label="Selecciona tu País" required>
-                    <option value="" selected><?php echo $apartment -> country ?></option>
+                    <option value="" selected><?php echo $apartment[0] -> country ?></option>
                     <?php
                         foreach ($country as $row) {
                             echo '<option value="' . $row["idCountry"] . '">' . $row["country"] . '</option>';
@@ -49,7 +49,7 @@
             <div class="col-12 col-md-6 mb-3">
                 <label for="city" class="form-label">Ciudad</label>
                 <select class="form-select" name="city" id="city" aria-label="Selecciona tu ciudad" required>
-                    <option value="" selected><?php echo $apartment -> city ?></option>
+                    <option value="" selected><?php echo $apartment[0] -> city ?></option>
                     <?php
                         foreach ($city as $row) {
                             echo '<option value="' . $row["idCity"] . '">' . $row["city"] . '</option>';
@@ -61,7 +61,7 @@
             <div class="col-12 col-md-6 mb-3">
                 <label for="guest" class="form-label">Huéspedes</label>
                 <select class="form-select" id="guest" name="guest" min="1" max="9" aria-label="Default select example" required>
-                    <option value="<?php echo $apartment -> guest ?>" selected>Cantidad de huéspedes <?php echo $apartment -> guest ?></option>
+                    <option value="<?php echo $apartment[0] -> guest ?>" selected>Cantidad de huéspedes <?php echo $apartment[0] -> guest ?></option>
                     <option value="1">Uno</option>
                     <option value="2">Dos</option>
                     <option value="3">Tres</option>
@@ -77,7 +77,7 @@
             <div class="col-12 col-md-6 mb-3">
                 <label for="rom" class="form-label">Habitaciones</label>
                 <select class="form-select" id="rom" name="rom" min="1" max="9" aria-label="Default select example" required>
-                    <option value="<?php echo $apartment -> rom ?>" selected>Cantidad de habitaciones <?php echo $apartment -> rom ?></option>
+                    <option value="<?php echo $apartment[0] -> rom ?>" selected>Cantidad de habitaciones <?php echo $apartment[0] -> rom ?></option>
                     <option value="1">Uno</option>
                     <option value="2">Dos</option>
                     <option value="3">Tres</option>
@@ -93,7 +93,7 @@
             <div class="col-12 col-md-6 mb-3">
                 <label for="bed" class="form-label">Camas</label>
                 <select class="form-select" id="bed" name="bed" min="1" max="9" aria-label="Default select example" required>
-                    <option value="<?php echo $apartment -> bed ?>" selected>Cantidad de camas <?php echo $apartment -> bed ?></option>
+                    <option value="<?php echo $apartment[0] -> bed ?>" selected>Cantidad de camas <?php echo $apartment[0] -> bed ?></option>
                     <option value="1">Uno</option>
                     <option value="2">Dos</option>
                     <option value="3">Tres</option>
@@ -109,7 +109,7 @@
             <div class="col-12 col-md-6 mb-3">
                 <label for="bathroom" class="form-label">Baños</label>
                 <select class="form-select" id="bathroom" name="bathroom" min="1" max="9" aria-label="Default select example" required>
-                    <option value="<?php echo $apartment -> bathroom ?>" selected>Cantidad de baños <?php echo $apartment -> bathroom ?></option>
+                    <option value="<?php echo $apartment[0] -> bathroom ?>" selected>Cantidad de baños <?php echo $apartment[0] -> bathroom ?></option>
                     <option value="1">Uno</option>
                     <option value="2">Dos</option>
                     <option value="3">Tres</option>
@@ -124,7 +124,7 @@
             </div>
             <div class="mb-3">
                 <label for="url" class="form-label">Url google maps</label>
-                <input type="url" class="form-control" id="url" name="url" maxlength="300" value="<?php echo $apartment -> url ?>" aria-describedby="emailHelp" required>
+                <input type="url" class="form-control" id="url" name="url" maxlength="300" value="<?php echo $apartment[0] -> url ?>" aria-describedby="emailHelp" required>
                 <div id="urlHelp" class="form-text"></div>
             </div>
             <div class="mb-3">
@@ -134,11 +134,11 @@
             </div>
             <div class="mb-3">
                 <label for="value" class="form-label">Precio</label>
-                <input type="number" class="form-control" id="value" name="value" min="1" max="99999999" value="<?php echo $apartment -> value ?>" aria-describedby="emailHelp" required>
+                <input type="number" class="form-control" id="value" name="value" min="1" max="99999999" value="<?php echo $apartment[0] -> value ?>" aria-describedby="emailHelp" required>
                 <div id="valueHelp" class="form-text"></div>
             </div>
             <div class="form-floating padding_bottom">
-                <textarea class="form-control" placeholder="Deja una reseña" id="review" name="review" maxlength="300" value="<?php echo $apartment -> review ?>" required></textarea>
+                <textarea class="form-control" placeholder="Deja una reseña" id="review" name="review" maxlength="300" value="<?php echo $apartment[0] -> review ?>" required></textarea>
                 <label for="review">Descripción</label>
                 <div id="reviewHelp" class="form-text"></div>
             </div>

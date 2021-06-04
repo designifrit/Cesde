@@ -52,12 +52,16 @@ class ApartmentController extends BaseController
 		
 		$countryModel = new CountryModel();
 		$cityModel = new CityModel();
+
+		$data['apartment'] = $apartment;
 		$data['country'] = $countryModel -> orderBy('country','ASC') -> findAll();
 		$data['city'] = $cityModel -> orderBy('city','ASC') -> findAll();
 		
+		// print_r($data['apartment']);
+
 		echo view('layouts/header');
 		echo view('layouts/nav');
-		echo view('apartment_update_view', array("apartment" => $apartment[0]));	// Pasa el arreglo a la vista como un objeto [] > id esta en la posicion 0
+		echo view('apartment_update_view', $data);	// Pasa el arreglo a la vista como un objeto [] > id esta en la posicion 0
 		echo view('layouts/footer');
 	}
 
