@@ -1,7 +1,11 @@
 <?php
 
 namespace App\Controllers;
+
+use App\Models\AccountModel;
 use App\Models\ProfileModel;
+use App\Models\CountryModel;
+use App\Models\CityModel;
 
 class ProfileController extends BaseController
 {
@@ -15,7 +19,9 @@ class ProfileController extends BaseController
 			"userLogin" => $readUser,
 		);
 
-		if(session('role') == 1){
+		$session = session();
+
+		if($session -> get('role') == '1' || $session -> get('role') == '0'){
 			// Muestra las Views en el orden especificado
 			echo view('layouts/header');
 			echo view('layouts/nav');
@@ -26,27 +32,66 @@ class ProfileController extends BaseController
 		}
 	}
 
-	public function infoAccount(){
-		$user = new ProfileModel();
-		$request = \Config\Services::request();
-
-		$id = $request -> getGet('id');
-		$user -> deleteUser($id);
-
-		return redirect() -> to('/public/account');
+	public function deleteAccount(){
+		
 	}
 
 	public function editAccount(){
 
+		$session = session();
 
-		if(session('role') == 1){
-			// Muestra las Views en el orden especificado
-			echo view('layouts/header');
-			echo view('layouts/nav');
-			echo view('profile_edit_view');
-			echo view('layouts/footer');
+		if(!empty($session)){
+
+			$accountModel = new AccountModel();
+			$request = \Config\Services::request();
+
+			$idUser = $session -> get('idUser');
+			$name = $request -> getPost('name');
+			$lastName = $request -> getPost('last-name');
+			$idCity = $request -> getPost('city');
+			$idCountry = $request -> getPost('country');
+			$email = $request -> getPost('email');
+			$password = $request -> getPost('password');
+			$role = $request -> getPost('role');
+			$description = $request -> getPost('description');
+
+			$image = $request -> getFile('profile-photo');
+			$profilePhoto = "";
+			
+			if($image -> isValid(0 && !$image -> hasMoved())){
+				$imageName = $image -> getRandomName();
+
+				$image -> move('./uploads/perfil/', $imageName);
+				$profilePhoto = base_url().'/public/uploads/perfil/'.$imageName;
+			}else if(! $image->isValid())
+			{
+				throw new \RuntimeException($image->getErrorString().'('.$image->getError().')');
+			}
+			
+				$accountModel -> updateAccount($idUser, $name, $lastName, $idCity, $idCountry, $email, $password, $role, $description, $profilePhoto);
+				return redirect() -> to('/public/account');
 		}else{
 			return redirect() -> to(base_url('/public/forbidden'));
 		}
 	}
+
+	public function infoAccount(){
+		$session = session();
+
+		$countryModel = new CountryModel();
+		$cityModel = new CityModel();
+		
+		$data['country'] = $countryModel -> orderBy('country','ASC') -> findAll();
+		$data['city'] = $cityModel -> orderBy('city','ASC') -> findAll();
+
+	if($session -> get('role') == '1' || $session -> get('role') == '0'){
+		// Muestra las Views en el orden especificado
+		echo view('layouts/header');
+		echo view('layouts/nav');
+		echo view('profile_edit_view', $data);
+		echo view('layouts/footer');
+	}else{
+		return redirect() -> to(base_url('/public/forbidden'));
+	}
+}
 }

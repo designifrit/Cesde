@@ -19,24 +19,24 @@
     <article class="row">
         <div class="col-12 mcontent_bottom">
             <div class="d-flex align-items-start">
-                <img class="edit_perfil" src="<?php echo base_url();?>/public/uploads/perfil/foto-perfil.jpg" alt="Foto de perfil">
+                <img class="edit_perfil" src="<?php echo (session("profilePhoto")); ?>" alt="Foto de perfil">
                 <h2 class="">Editar cuenta</h2>
             </div>
         </div>
-        <form class="row" method="POST" action="<?php echo base_url(); ?>/public/create-account">
+        <form class="row" method="POST" action="<?php echo base_url();?>/public/account/edit-account/update" accept-charset="utf-8" enctype="multipart/form-data">
             <div class="mb-3">
                 <label for="name" class="form-label">Nombre</label>
-                <input type="text" class="form-control" id="name" name="name" placeholder="John Doe" maxlength="20" required>
+                <input type="text" class="form-control" id="name" name="name" value="<?php echo (session("name")); ?>" placeholder="John Doe" maxlength="20" required>
                 <div id="nameHelp" class="form-text"></div>
             </div>
             <div class="mb-3">
                 <label for="last-name" class="form-label">Apellidos</label>
-                <input type="text" class="form-control" id="last-name" name="last-name" placeholder="John Doe" maxlength="50" required>
+                <input type="text" class="form-control" id="last-name" name="last-name" value="<?php echo (session("lastName")); ?>" placeholder="John Doe" maxlength="50" required>
                 <div id="lastnameHelp" class="form-text"></div>
             </div>
             <div class="mb-3">
                 <label for="email" class="form-label">Correo electrónico</label>
-                <input type="email" class="form-control" id="email" name="email" placeholder="nombre@dominio.com" maxlength="50" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+                <input type="email" class="form-control" id="email" name="email" value="<?php echo (session("email")); ?>" placeholder="nombre@dominio.com" maxlength="50" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
                 <div id="emailHelp" class="form-text"></div>
             </div>
             <div class="col-12 col-md-6 mb-3">
@@ -47,7 +47,7 @@
             <div class="col-12 col-md-6 mb-3">
                 <label for="passwordRecovery" class="form-label">Verifica tu contraseña</label>
                 <input type="password" class="form-control" id="passwordRecovery" name="passwordRecovery" maxlength="40" required>
-                <div id="passwordRecoveryHelp" class="form-text"></div>
+                <div id="passwordrecoveryHelp" class="form-text"></div>
             </div>
             <div class="mb-3">
                 <label for="profile-photo" class="form-label">Imagen</label>
@@ -57,33 +57,47 @@
             <div class="mb-3">
                 <label for="country" class="form-label">País</label>
                 <select class="form-select" name="country" id="country" aria-label="Default select example" required>
-                    <option value="" selected>Selecciona tu país</option>
-                    
+                    <option value="" selected>Selecciona tu país (<?php echo (session("country")); ?>)</option>
+                    <?php
+                        foreach ($country as $row) {
+                            echo '<option value="' . $row["idCountry"] . '">' . $row["country"] . '</option>';
+                        }
+                    ?>
                 </select>
                 <div id="countryHelp" class="form-text"></div>
             </div>
             <div class="mb-3">
                 <label for="city" class="form-label">Ciudad</label>
                 <select class="form-select" name="city" id="city" aria-label="Default select example" required>
-                    <option value="" selected>Selecciona tu ciudad</option>
-                    
+                    <option value="" selected>Selecciona tu ciudad (<?php echo (session("city")); ?>)</option>
+                    <?php
+                        foreach ($city as $row) {
+                            echo '<option value="' . $row["idCity"] . '">' . $row["city"] . '</option>';
+                        }
+                    ?>
                 </select>
                 <div id="cityHelp" class="form-text"></div>
             </div>
-            <div class="form-floating padding_bottom">
-                <textarea class="form-control" placeholder="Deja una reseña" id="description" name="description" maxlength="300" required></textarea>
+            <div class="form-floating mb-3">
+                <textarea class="form-control" placeholder="Deja una reseña" id="description" name="description" value="" maxlength="300" required><?php echo (session("description")); ?></textarea>
                 <label for="description">Descripción</label>
                 <div id="descriptionHelp" class="form-text"></div>
             </div>
-            <div class="mb-3 form-check">
-                <input type="checkbox" class="form-check-input" id="role" name="role">
+            <div class="mb-3 form-check mt-3 mcontent_bottom">
+
+                <input type="hidden" class="form-check-input" id="role" name="role" name="accept" value="0">
+                <input type="checkbox" class="form-check-input" id="role" name="role" name="accept" value="1">
+
                 <label class="form-check-label" for="role">Hazte anfitrión
                     <span class="d-inline-block" tabindex="0" data-bs-toggle="popover" data-bs-trigger="hover focus" data-bs-content="Disfruta de la flexibilidad de ser tu propio jefe, ganar ingresos extra y hacer amistades para toda la vida al compartir tu espacio">
                         <button class="btn popover_helper ms-1" type="button">?</button>
                     </span>
                 </label>
             </div>
-            <button type="submit" class="btn button mt-3" onclick="validation()">Guardar</button>
+            <div class="d-flex justify-content-center mt-3">
+                <button type="submit" class="btn button" onclick="validation()">Guardar</button>
+                <a href="<?php echo base_url();?>/public/account" class="btn button cancel" style="margin-left:1rem; border:none;">Cancelar</a>
+            </div>
         </form>
     </article>
 </main>
@@ -94,11 +108,13 @@
         var lastnameHelp = document.getElementById("last-name");
         var emailHelp = document.getElementById("email");
         var passwordHelp = document.getElementById("password");
-        var passwordRecoveryHelp = document.getElementById("passwordRecovery");
         var photoHelp = document.getElementById("profile-photo");
         var countryHelp = document.getElementById("country");
         var cityHelp = document.getElementById("city");
         var descriptionHelp = document.getElementById("description");
+        
+        var password = document.getElementById("password").value;
+        var passwordrecoveryHelp = document.getElementById("passwordRecovery").value;
 
         if(!nameHelp.checkValidity()){
             document.getElementById("nameHelp").innerHTML = nameHelp.validationMessage;
@@ -124,10 +140,10 @@
             document.getElementById("passwordHelp").innerHTML = "";
         }
 
-        if(passwordHelp != passwordRecoveryHelp){
-            document.getElementById("passwordRecoveryHelp").innerHTML = "Las dos contraseñas deben coincidir";
+        if(password != passwordrecoveryHelp){
+            document.getElementById("passwordrecoveryHelp").innerHTML = "Las dos contraseñas deben coincidir";
         }else{
-            document.getElementById("passwordRecoveryHelp").innerHTML = "";
+            document.getElementById("passwordrecoveryHelp").innerHTML = "";
         }
 
         if(!photoHelp.checkValidity()){

@@ -6,7 +6,9 @@ class ReservationController extends BaseController
 {
 	public function index()
 	{	
-		if(session('role') == 1){
+		$session = session();
+		
+		if(!empty($session)){
 			echo view('layouts/header');
 			echo view('layouts/nav');
 			echo view('reservation_view');

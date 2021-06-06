@@ -92,7 +92,7 @@ class ApartmentController extends BaseController
 		// A través de $request obtiene los datos en POST desde el formulario
 		$session = session();
 
-		$idUser = $session->get('idUser');
+		$idUser = $session -> get('idUser');
 		$location = $request -> getPost('location');
 		$address = $request -> getPost('address');
 		$idCity = $request -> getPost('city');

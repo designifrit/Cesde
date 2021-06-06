@@ -18,11 +18,33 @@ class AccountModel extends Model
 
     public function createAccount($name, $lastName, $idCity, $idCountry, $email, $password, $role, $description, $profilePhoto){
         try{
-            $sql = "INSERT INTO `user`(`name`, `lastName`, `idCity`, `idCountry`, `email`, `password`, `role`, `description`, `profilePhoto`) VALUES ('{$name}','{$lastName}',{$idCity},{$idCountry},'{$email}','{$password}',{$role},'{$description}','{$profilePhoto}')";
+            $sql = "INSERT INTO `user`(`name`, `lastName`, `idCity`, `idCountry`, `email`, `password`, `role`, `description`, `profilePhoto`) VALUES ('{$name}','{$lastName}',{$idCity},{$idCountry},'{$email}','{$password}','{$role}','{$description}','{$profilePhoto}')";
         }catch(Exception $error){
 			print_r($error -> getMessage());
 		}
 
         $this -> db -> query($sql);
     }
+
+    function updateAccount($idUser, $name, $lastName, $idCity, $idCountry, $email, $password, $role, $description, $profilePhoto){
+        try{
+            $sql = "UPDATE `user` SET `name`='{$name}',`lastName`='{$lastName}',`idCity`={$idCity},`idCountry`={$idCountry},`email`='{$email}',`password`='{$password}',`role`='{$role}',`description`='{$description}',`profilePhoto`='{$profilePhoto}' WHERE idUser = {$idUser}";
+        }catch(Exception $error){
+			print_r($error -> getMessage());
+		}
+		
+		$idUser = $this -> db -> query($sql);
+		return $idUser -> getResult();
+	}
+
+    function infoUser($idUser){
+        try{
+            $sql = "SELECT * FROM ((user INNER JOIN country ON user.idCountry = country.idCountry)INNER JOIN city ON user.idCity = city.idCity) WHERE idUser = {$idUser}";
+        }catch(Exception $error){
+			print_r($error -> getMessage());
+		}
+		
+		$idUser = $this -> db -> query($sql);
+		return $idUser -> getResult();
+	}
 }

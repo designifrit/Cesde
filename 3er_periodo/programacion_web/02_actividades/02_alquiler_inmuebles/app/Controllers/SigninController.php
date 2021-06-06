@@ -29,8 +29,8 @@ class SigninController extends BaseController
 					"idUser" => $row -> idUser,
 					"name" => $row -> name,
 					"lastName" => $row -> lastName,
-					"idCity" => $row -> idCity,
-					"idCountry" => $row -> idCountry,
+					"city" => $row -> city,
+					"country" => $row -> country,
 					"email" => $row -> email,
 					"password" => $row -> password,
 					"role" => $row -> role,
@@ -45,9 +45,9 @@ class SigninController extends BaseController
 					echo "<h5>Correo o contraseña no válido</h5>";
 					break;
 				}else{
-					if($rol = $row -> role ==  1){
+					if($dataLogin = $row -> role == '1'){
 						return redirect() -> to('/public/account');
-					}else if($rol = $row -> role ==  0){
+					}else if($dataLogin = $row -> role ==  '0'){
 						return redirect() -> to('/public/account');
 					}
 				}

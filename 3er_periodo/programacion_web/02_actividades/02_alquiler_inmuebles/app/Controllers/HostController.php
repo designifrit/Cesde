@@ -13,6 +13,8 @@ class HostController extends BaseController
 	public function logOut(){
         $session = session();
         $session -> destroy();
+		session_unset();
+
         return redirect() -> to(base_url('/public/signin'));
 	}
 }

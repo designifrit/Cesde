@@ -21,7 +21,7 @@
         <div class="col-12">
             <h2>Actualizar información del apartamento</h2>
         </div>
-        <form class="row" method="POST" action="<?php echo base_url();?>/public/apartment/update-apartment/update?id=<?php echo $apartment[0] -> idApartment?>" accept-charset="utf-8" enctype='multipart/form-data'>
+        <form class="row" method="POST" action="<?php echo base_url();?>/public/apartment/update-apartment/update?id=<?php echo $apartment[0] -> idApartment?>" accept-charset="utf-8" enctype="multipart/form-data">
             <div class="col-12 mb-3">
                 <label for="location" class="form-label">Localización</label>
                 <input type="text" class="form-control" id="location" name="location" maxlength="50" value="<?php echo $apartment[0] -> location ?>" required>

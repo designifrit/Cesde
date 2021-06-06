@@ -564,30 +564,44 @@ main#main{
         margin-bottom: 20px;
     }
 
-    main#main img.perfil{
-        background-color: #222;
-        border-radius: 50%;
-        box-shadow: 1px 3px 4px rgba(34, 34, 34, 0.5);
-        height: 100px;
-        margin-left: calc(100% - 110px);
-        object-fit: cover;
-        width: 100px;
-    }
-
-    main#main img.edit_perfil{
-        background-color: #222;
-        border-radius: 50%;
-        box-shadow: 1px 3px 4px rgba(34, 34, 34, 0.5);
-        height: 60px;
-        margin-right: 20px;
-        object-fit: cover;
-        width: 60px;
-    }
-
     main#main article.elige span{
         display: block;
         font-weight: 700;
         margin: 10px 0 0 0;
+    }
+
+/* ################################################## MAIN > PROFILE ################################################## */
+
+    main#main article .profile_photo{
+        float: left;
+        height: auto;
+        margin-top: 17px;
+        width: 135px;
+    }
+
+        main#main article .profile_photo img.photo{
+            background-color: white;
+            border-radius: 50%;
+            box-shadow: 1px 3px 4px rgba(34, 34, 34, 0.5);
+            height: 110px;
+            object-fit: cover;
+            width: 110px;
+        }
+
+    main#main article .profile_content{
+        float: left;
+        height: auto;
+        width: auto;
+    }
+
+    main#main .edit_perfil{
+        background-color: white;
+        border-radius: 50%;
+        box-shadow: 1px 3px 4px rgba(34, 34, 34, 0.5);
+        height: 75px;
+        margin-right: 20px;
+        object-fit: cover;
+        width: 75px;
     }
 
 /* ################################################## MAIN > CARDS ################################################## */

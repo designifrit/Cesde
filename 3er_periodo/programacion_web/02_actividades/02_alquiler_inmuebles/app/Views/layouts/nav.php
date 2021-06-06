@@ -7,26 +7,19 @@
 
                     $signIn = base_url()."/public/signin";
                     $signUp = base_url()."/public/signup";
-
-                    if($session = $session -> get('role') == 0){
-                        $template = "
-                            <li class='nav-login'><a href='{$signIn}'><span class='material-icons'>account_circle</span>Log in</a></li>
-                            <li class='nav-signin'><a href='{$signUp}'><span>•</span>Crear cuenta</a></li>
-                        ";
-                        echo $template;
-                    }
-                ?>
-
-                <?php
-                    $session = session();
-
                     $account = base_url()."/public/account";
                     $signout = base_url()."/public/account/signout";
 
-                    if($session = $session -> get('role') == 1){
+                    if($session -> get('role') == '1' || $session -> get('role') == '0'){
                         $template = "
                             <li class='nav-account'><a href='{$account}'><span class='material-icons'>face</span>Cuenta</a></li>
                             <li class='nav-signout'><a href='{$signout}'><span>•</span>Salir</a></li>
+                        ";
+                        echo $template;
+                    }else{
+                        $template = "
+                            <li class='nav-login'><a href='{$signIn}'><span class='material-icons'>account_circle</span>Log in</a></li>
+                            <li class='nav-signin'><a href='{$signUp}'><span>•</span>Crear cuenta</a></li>
                         ";
                         echo $template;
                     }
@@ -50,9 +43,14 @@
                     $addApartment = base_url()."/public/apartment/create-apartment";
                     $reservation = base_url()."/public/reservation";
 
-                    if($session = $session -> get('role') == 1){
+                    if($session -> get('role') == '1'){
                         $template = "
                             <li><a href='{$addApartment}'>add apartamento</a></li>
+                            <li><a href='{$reservation}'>reservas</a></li>
+                        ";
+                        echo $template;
+                    }elseif($session -> get('role') == '0'){
+                        $template = "
                             <li><a href='{$reservation}'>reservas</a></li>
                         ";
                         echo $template;
@@ -81,14 +79,19 @@
 
                             <?php
                                 $session = session();
-
+                                
                                 $apartment = base_url()."/public/apartment";
                                 $addApartment = base_url()."/public/apartment/create-apartment";
                                 $reservation = base_url()."/public/reservation";
             
-                                if($session = $session -> get('role') == 1){
+                                if($session -> get('role') == '1'){
                                     $template = "
                                         <li><a href='{$addApartment}'><span class='material-icons'>add_circle</span>add apartamento</a></li>
+                                        <li><a href='{$reservation}'><span class='material-icons'>airplane_ticket</span>reservas</a></li>
+                                    ";
+                                    echo $template;
+                                }elseif($session -> get('role') == '0'){
+                                    $template = "
                                         <li><a href='{$reservation}'><span class='material-icons'>airplane_ticket</span>reservas</a></li>
                                     ";
                                     echo $template;

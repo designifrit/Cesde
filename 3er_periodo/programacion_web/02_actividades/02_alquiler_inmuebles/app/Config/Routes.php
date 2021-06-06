@@ -45,8 +45,9 @@ $routes->post('/signup/create-account', 'SignupController::signUp');
 $routes->get('/account/signout', 'HostController::logOut');
 
 $routes->get('/account', 'ProfileController::index');
-$routes->get('/account/edit-account', 'ProfileController::editAccount');
-$routes->post('/account/edit-account', 'ProfileController::editAccount');
+$routes->get('/account/delete', 'ProfileController::deleteAccount');
+$routes->get('/account/edit-account', 'ProfileController::infoAccount');
+$routes->post('/account/edit-account/update', 'ProfileController::editAccount');
 
 $routes->get('/forbidden', 'AccessController::index');
 
