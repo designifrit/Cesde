@@ -136,6 +136,7 @@
 
         if(password != passwordVerify){
             document.getElementById("passwordVerify").innerHTML = "Las dos contraseñas deben coincidir";
+            return false;
         }else{
             document.getElementById("passwordVerify").innerHTML = "";
         }

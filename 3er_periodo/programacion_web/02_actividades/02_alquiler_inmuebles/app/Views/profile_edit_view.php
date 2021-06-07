@@ -19,24 +19,24 @@
     <article class="row">
         <div class="col-12 mcontent_bottom">
             <div class="d-flex align-items-start">
-                <img class="edit_perfil" src="<?php echo (session("profilePhoto")); ?>" alt="Foto de perfil">
+                <img class="edit_perfil" src="<?php echo $user[0] -> profilePhoto?>" alt="Foto de perfil">
                 <h2 class="">Editar cuenta</h2>
             </div>
         </div>
         <form class="row" method="POST" action="<?php echo base_url();?>/public/account/edit-account/update" accept-charset="utf-8" enctype="multipart/form-data">
             <div class="mb-3">
                 <label for="name" class="form-label">Nombre</label>
-                <input type="text" class="form-control" id="name" name="name" value="<?php echo (session("name")); ?>" placeholder="John Doe" maxlength="20" required>
+                <input type="text" class="form-control" id="name" name="name" value="<?php echo $user[0] -> name?>" placeholder="John Doe" maxlength="20" required>
                 <div id="nameHelp" class="form-text"></div>
             </div>
             <div class="mb-3">
                 <label for="last-name" class="form-label">Apellidos</label>
-                <input type="text" class="form-control" id="last-name" name="last-name" value="<?php echo (session("lastName")); ?>" placeholder="John Doe" maxlength="50" required>
+                <input type="text" class="form-control" id="last-name" name="last-name" value="<?php echo $user[0] -> lastName?>" placeholder="John Doe" maxlength="50" required>
                 <div id="lastnameHelp" class="form-text"></div>
             </div>
             <div class="mb-3">
                 <label for="email" class="form-label">Correo electrónico</label>
-                <input type="email" class="form-control" id="email" name="email" value="<?php echo (session("email")); ?>" placeholder="nombre@dominio.com" maxlength="50" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+                <input type="email" class="form-control" id="email" name="email" value="<?php echo $user[0] -> email?>" placeholder="nombre@dominio.com" maxlength="50" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
                 <div id="emailHelp" class="form-text"></div>
             </div>
             <div class="col-12 col-md-6 mb-3">
@@ -57,7 +57,7 @@
             <div class="mb-3">
                 <label for="country" class="form-label">País</label>
                 <select class="form-select" name="country" id="country" aria-label="Default select example" required>
-                    <option value="" selected>Selecciona tu país (<?php echo (session("country")); ?>)</option>
+                    <option value="" selected>Selecciona tu país (<?php echo $user[0] -> country?>)</option>
                     <?php
                         foreach ($country as $row) {
                             echo '<option value="' . $row["idCountry"] . '">' . $row["country"] . '</option>';
@@ -69,7 +69,7 @@
             <div class="mb-3">
                 <label for="city" class="form-label">Ciudad</label>
                 <select class="form-select" name="city" id="city" aria-label="Default select example" required>
-                    <option value="" selected>Selecciona tu ciudad (<?php echo (session("city")); ?>)</option>
+                    <option value="" selected>Selecciona tu ciudad (<?php echo $user[0] -> city?>)</option>
                     <?php
                         foreach ($city as $row) {
                             echo '<option value="' . $row["idCity"] . '">' . $row["city"] . '</option>';
@@ -79,7 +79,7 @@
                 <div id="cityHelp" class="form-text"></div>
             </div>
             <div class="form-floating mb-3">
-                <textarea class="form-control" placeholder="Deja una reseña" id="description" name="description" value="" maxlength="300" required><?php echo (session("description")); ?></textarea>
+                <textarea class="form-control" placeholder="Deja una reseña" id="description" name="description" value="" maxlength="300" required><?php echo $user[0] -> description?></textarea>
                 <label for="description">Descripción</label>
                 <div id="descriptionHelp" class="form-text"></div>
             </div>

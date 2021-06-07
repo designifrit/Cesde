@@ -11,18 +11,21 @@ class ProfileController extends BaseController
 {
 	public function index()
 	{	
-		$user = new ProfileModel();
-		$user -> readUser();
-		$readUser = $user -> readUser();
-
-		$data = array(
-			"userLogin" => $readUser,
-		);
-
 		$session = session();
 
 		if($session -> get('role') == '1' || $session -> get('role') == '0'){
-			// Muestra las Views en el orden especificado
+			$accountModel = new AccountModel();
+
+			$idUser = $session -> get('idUser');
+			$user = $accountModel -> infoUser($idUser);
+			
+			$countryModel = new CountryModel();
+			$cityModel = new CityModel();
+
+			$data['user'] = $user;
+			$data['country'] = $countryModel -> orderBy('country','ASC') -> findAll();
+			$data['city'] = $cityModel -> orderBy('city','ASC') -> findAll();
+
 			echo view('layouts/header');
 			echo view('layouts/nav');
 			echo view('profile_view', $data);
@@ -30,10 +33,45 @@ class ProfileController extends BaseController
 		}else{
 			return redirect() -> to(base_url('/public/forbidden'));
 		}
+
+		// $user = new ProfileModel();
+		// $user -> readUser();
+		// $readUser = $user -> readUser();
+
+		// $data = array(
+		// 	"userLogin" => $readUser,
+		// );
+
+		// $session = session();
+
+		// if($session -> get('role') == '1' || $session -> get('role') == '0'){
+		// 	// Muestra las Views en el orden especificado
+		// 	echo view('layouts/header');
+		// 	echo view('layouts/nav');
+		// 	echo view('profile_view', $data);
+		// 	echo view('layouts/footer');
+		// }else{
+		// 	return redirect() -> to(base_url('/public/forbidden'));
+		// }
 	}
 
 	public function deleteAccount(){
-		
+		$session = session();
+
+		if($session -> get('role') == '1' || $session -> get('role') == '0'){
+			$accountModel = new AccountModel();
+			$session = session();
+
+			$idUser = $session -> get('idUser');
+			$accountModel -> deleteUser($idUser);
+
+			$session -> destroy();
+			session_unset();
+
+			return redirect() -> to(base_url('/public/signin'));
+		}else{
+			return redirect() -> to(base_url('/public/forbidden'));
+		}
 	}
 
 	public function editAccount(){
@@ -67,7 +105,6 @@ class ProfileController extends BaseController
 			{
 				throw new \RuntimeException($image->getErrorString().'('.$image->getError().')');
 			}
-			
 				$accountModel -> updateAccount($idUser, $name, $lastName, $idCity, $idCountry, $email, $password, $role, $description, $profilePhoto);
 				return redirect() -> to('/public/account');
 		}else{
@@ -76,22 +113,46 @@ class ProfileController extends BaseController
 	}
 
 	public function infoAccount(){
+
 		$session = session();
 
-		$countryModel = new CountryModel();
-		$cityModel = new CityModel();
-		
-		$data['country'] = $countryModel -> orderBy('country','ASC') -> findAll();
-		$data['city'] = $cityModel -> orderBy('city','ASC') -> findAll();
+		if($session -> get('role') == '1' || $session -> get('role') == '0'){
+			$accountModel = new AccountModel();
 
-	if($session -> get('role') == '1' || $session -> get('role') == '0'){
-		// Muestra las Views en el orden especificado
-		echo view('layouts/header');
-		echo view('layouts/nav');
-		echo view('profile_edit_view', $data);
-		echo view('layouts/footer');
-	}else{
-		return redirect() -> to(base_url('/public/forbidden'));
+			$idUser = $session -> get('idUser');
+			$user = $accountModel -> infoUser($idUser);
+			
+			$countryModel = new CountryModel();
+			$cityModel = new CityModel();
+
+			$data['user'] = $user;
+			$data['country'] = $countryModel -> orderBy('country','ASC') -> findAll();
+			$data['city'] = $cityModel -> orderBy('city','ASC') -> findAll();
+
+			echo view('layouts/header');
+			echo view('layouts/nav');
+			echo view('profile_edit_view', $data);
+			echo view('layouts/footer');
+		}else{
+			return redirect() -> to(base_url('/public/forbidden'));
+		}
+
+		// $session = session();
+
+		// $countryModel = new CountryModel();
+		// $cityModel = new CityModel();
+		
+		// $data['country'] = $countryModel -> orderBy('country','ASC') -> findAll();
+		// $data['city'] = $cityModel -> orderBy('city','ASC') -> findAll();
+
+		// if($session -> get('role') == '1' || $session -> get('role') == '0'){
+		// 	// Muestra las Views en el orden especificado
+		// 	echo view('layouts/header');
+		// 	echo view('layouts/nav');
+		// 	echo view('profile_edit_view', $data);
+		// 	echo view('layouts/footer');
+		// }else{
+		// 	return redirect() -> to(base_url('/public/forbidden'));
+		// }
 	}
-}
 }

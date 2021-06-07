@@ -31,7 +31,7 @@
                 $updateRoute = base_url()."/public/apartment/update-apartment?id={$row -> idApartment}";
                 $detailRoute = base_url()."/public/apartment/detail-apartment?id={$row -> idApartment}";
                 
-                if(session('role') == 1){
+                if(session('role') == '1'){
                     $template = "
                         <div class='col-12 col-sm-12 col-md-6 col-lg-4 padding_bottom'>
                             <div class='card h-100'>
@@ -63,7 +63,7 @@
                         </div>
                         ";
                     echo $template;
-                }elseif(session('role') == 0){
+                }elseif(session('role') == '0'){
                     $template = "
                         <div class='col-12 col-sm-12 col-md-6 col-lg-4 padding_bottom'>
                             <div class='card h-100'>

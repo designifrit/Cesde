@@ -47,4 +47,14 @@ class AccountModel extends Model
 		$idUser = $this -> db -> query($sql);
 		return $idUser -> getResult();
 	}
+
+    function deleteUser($idUser){
+        try{
+            $sql = "DELETE FROM user WHERE idUser={$idUser}";
+        }catch(Exception $error){
+			print_r($error -> getMessage());
+		}
+		
+        $this -> db -> query($sql);
+    }
 }

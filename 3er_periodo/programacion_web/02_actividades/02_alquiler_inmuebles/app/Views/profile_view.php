@@ -21,21 +21,22 @@
         </div>
         <div class="col-12 profile">
             <div class="profile_photo">
-                <img class="photo" src="<?php echo (session("profilePhoto")); ?>" alt="Foto de perfil">
+                <img class="photo" src="<?php echo $user[0] -> profilePhoto ?>" alt="Foto de perfil">
             </div>
             <div class="profile_content">
-                <h4 class="mt-3"><?php echo (session("name")); ?> / <span><?php echo (session("lastName")); ?></span></h4>
-                <i class="ticket"><span class="material-icons">assignment_ind</span> <?php if (session("role") == 1) {
-                                                                                            echo "Anfitrión";
-                                                                                        } else {
-                                                                                            echo "Invitado";
-                                                                                        } ?></i><i class="ticket"><span class="material-icons">email</span> <?php echo (session("email")); ?></i>
-                <p class="mt-3 pcolor"><?php echo (session("country")); ?> • <?php echo (session("city")); ?></p>
+                <h4 class="mt-3"><?php echo $user[0] -> name ?> / <span><?php echo $user[0] -> lastName ?></span></h4>
+                <i class="ticket"><span class="material-icons">assignment_ind</span> <?php if ($user[0] -> role == '1') {
+                        echo "Anfitrión";
+                    } else {
+                        echo "Invitado";
+                    } ?></i>
+                <i class="ticket"><span class="material-icons">email</span><?php echo $user[0] -> email ?></i>
+                <p class="mt-3 pcolor"><?php echo $user[0] -> country ?> • <?php echo $user[0] -> city ?></p>
             </div>
         </div>
         <div class="col-12">
             <hr>
-            <p><?php echo (session("description")); ?></p>
+            <p><?php echo $user[0] -> description ?></p>
         </div>
         <div class="d-flex justify-content-end mcontent_top mt-3">
             <a href='<?php echo base_url(); ?>/public/account/edit-account' class='btn button'>Editar cuenta</a>
@@ -54,7 +55,9 @@
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn button" data-bs-dismiss="modal">Cerrar</button>
-                            <button type="button" class="btn button cancel" style="border:none;">Eliminar</button>
+                            <a href="<?php echo base_url(); ?>/public/account/delete">
+                                <button type="button" class="btn button cancel" style="border:none;">Eliminar</button>
+                            </a>
                         </div>
                     </div>
                 </div>
