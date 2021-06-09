@@ -61,6 +61,7 @@ $routes->get('/apartment/update-apartment', 'ApartmentController::infoApartment'
 $routes->post('/apartment/update-apartment/update', 'ApartmentController::updateApartment');
 
 $routes->get('/reservation','ReservationController::index');
+$routes->get('/reservation/delete','ReservationController::deleteReservation');
 /*
  * --------------------------------------------------------------------
  * Additional Routing

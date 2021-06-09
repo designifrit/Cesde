@@ -21,7 +21,34 @@
         </div>
     </article>
     <div class="list-group">
-        <a href="#" class="list-group-item list-group-item-action d-flex bd-highlight">
+
+        <?php
+            foreach($reservation as $row){
+                $deleteRoute = base_url()."/public/reservation/delete?id={$row -> idReservation}";
+                $detailRoute = base_url()."/public/apartment/detail-apartment?id={$row -> idApartment}";
+                
+                $template = "
+                    <a href='{$detailRoute}' class='list-group-item list-group-item-action d-flex bd-highlight list-element'>
+                        <div class='p-2 flex-grow-1'>
+                            <img src='{$row -> photo}' alt='Apartamento'>
+                        </div>
+                        <div class='p-2 flex-grow-1 w-100 list-info'>
+                            <div class='d-flex w-100 justify-content-between'>
+                                <h5 class='mb-1'>{$row -> location}</h5>
+                                <small class='text-muted'>{$row -> arrivalDate} <button href='{$deleteRoute}' class='material-icons'> remove_circle</button></small>
+                            </div>
+                            <div>
+                                <p class='mb-1'>{$row -> description}</p>
+                                <small>Reservado x {$row -> days} días</small>
+                            </div>
+                        </div>
+                    </a>
+                    ";
+                echo $template;
+            }
+        ?>
+
+        <!-- <a href="#" class="list-group-item list-group-item-action d-flex bd-highlight">
             <div class="p-2 flex-grow-1">
                 <img src="<?php echo base_url();?>/public/uploads/images/1622229370_3843e5c0b0690dc41fc0.jpg" alt="">
             </div>
@@ -35,36 +62,6 @@
                     <small>City • Country</small>
                 </div>
             </div>
-        </a>
-        <a href="#" class="list-group-item list-group-item-action d-flex bd-highlight">
-            <div class="p-2 flex-grow-1">
-                <img src="<?php echo base_url();?>/public/uploads/images/1622229370_3843e5c0b0690dc41fc0.jpg" alt="">
-            </div>
-            <div class="p-2 flex-grow-1 w-100 list-info">
-                <div class="d-flex w-100 justify-content-between">
-                    <h5 class="mb-1">Location</h5>
-                    <small class="text-muted">29/05/2021 <span class="material-icons"> remove_circle</span></small>
-                </div>
-                <div>
-                    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-                    <small>City • Country</small>
-                </div>
-            </div>
-        </a>
-        <a href="#" class="list-group-item list-group-item-action d-flex bd-highlight">
-            <div class="p-2 flex-grow-1">
-                <img src="<?php echo base_url();?>/public/uploads/images/1622229370_3843e5c0b0690dc41fc0.jpg" alt="">
-            </div>
-            <div class="p-2 flex-grow-1 w-100 list-info">
-                <div class="d-flex w-100 justify-content-between">
-                    <h5 class="mb-1">Location</h5>
-                    <small class="text-muted">29/05/2021 <span class="material-icons"> remove_circle</span></small>
-                </div>
-                <div>
-                    <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-                    <small>City • Country</small>
-                </div>
-            </div>
-        </a>
+        </a> -->
     </div>
 </main>

@@ -790,6 +790,15 @@ main#main article .card{
             padding: 7px 10px 7px 10px;
             transition: var(--transitions);
         }
+
+        main#main section#detail .card .btnreservado{
+            color: white;
+            display: inline-block;
+            font-size: 1rem;
+            width: 100%;
+            padding: 7px 10px 7px 10px;
+            transition: var(--transitions);
+        }
         
         main#main section#detail .card .btnreserva:hover{
             background-color: var(--hover3);
@@ -799,30 +808,34 @@ main#main article .card{
 
 /* ################################################## MAIN > RESERVATION ################################################## */
 
-main#main .list-group a div:first-child{
+main#main .list-group a.list-element div:first-child{
     width: 110px;
 }
 
-    main#main .list-group a div.list-info h5{
+    main#main .list-group a.list-element div.list-info h5{
         padding-top: 7px;
     }
 
-    main#main .list-group a div.list-info small{
+    main#main .list-group a.list-element div.list-info small{
         color: var(--bg4);
     }
 
-        main#main .list-group a div.list-info small span{
+        main#main .list-group a.list-element div.list-info small button.material-icons{
+            background-color: var(--bg2);
+            border: none;
+            color: var(--bg4);
             margin-left: 10px;
+            padding: initial;
             position: relative;
             top: 7px;
             transition: var(--transitions);
         }
 
-        main#main .list-group a div.list-info small span:hover{
+        main#main .list-group a.list-element div.list-info small button.material-icons:hover{
             color: var(--hover4);
         }
 
-        main#main .list-group a div.list-info small span::before{
+        main#main .list-group a.list-element div.list-info small button.material-icons::before{
             background-color: white;
             border-radius: 3px;
             color: #222;
@@ -841,20 +854,20 @@ main#main .list-group a div:first-child{
             z-index: 900;
         }
 
-        main#main .list-group a div.list-info small span:hover::before{
+        main#main .list-group a.list-element div.list-info small button.material-icons:hover::before{
             /* transform: translate(-2px,-45px); */
             opacity: 1;
         }
 
-main#main .list-group a img{
-    border-radius: 3px;
-    display: inline-block;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    position: relative;
-    width: 100px;
-}
+    main#main .list-group a.list-element img{
+        border-radius: 3px;
+        display: inline-block;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        position: relative;
+        width: 100px;
+    }
 
 /* ################################################## MAIN > ACCESS ################################################## */
 

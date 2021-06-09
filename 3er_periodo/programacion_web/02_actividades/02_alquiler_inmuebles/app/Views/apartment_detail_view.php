@@ -68,6 +68,10 @@
                         <div class="mcontent_top">
                             <a href="#" class="btn btnreserva">reservar</a>
                         </div>
+
+                        <div class="mcontent_top">
+                            <a href="#" class="btn btn-secondary btn-lg disabled btnreservado" tabindex="-1" role="button" aria-disabled="true">Reservado</a>
+                        </div>
                     </div>
                 </div>
             </div>
