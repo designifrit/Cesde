@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 31-05-2021 a las 06:17:07
--- Versión del servidor: 10.4.18-MariaDB
--- Versión de PHP: 8.0.3
+-- Tiempo de generación: 09-06-2021 a las 03:25:19
+-- Versión del servidor: 10.4.19-MariaDB
+-- Versión de PHP: 8.0.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -50,12 +50,10 @@ CREATE TABLE `apartment` (
 --
 
 INSERT INTO `apartment` (`idApartment`, `idUser`, `location`, `address`, `idCity`, `idCountry`, `date`, `review`, `guest`, `rom`, `bed`, `bathroom`, `value`, `photo`, `url`) VALUES
-(6, 1, 'Apartamento en Laureles', 'Carrera 45 # 2A 76', 1, 1, '2021-05-29 19:10:58', 'Se arrienda apartamento duplex, de 3 habitaciones, con vestier, 3 baños, 2 balcones, sala, comedor, cocina integral, patio cubierto con pergola. garaje sencillo, cuarto útil, zona de ropas. Edificio con portería diurna, ascensor, shut de basuras. Cerca del primer parque de laureles, zona gourmet', 4, 3, 3, 3, 245000, 'http://localhost:8080/Cesde/3er_periodo/programacion_web/02_actividades/02_alquiler_inmuebles/public/uploads/images/1622333458_6c6f0553d981c2563904.jpg', 'https://goo.gl/maps/51Mn4HJSTJAZhZw98'),
 (7, 1, 'Apartamento en Bogotá', 'Calle 23 # 23 34', 2, 1, '2021-05-29 19:54:35', 'Amplia alcoba principal con baño, vestier, jacuzzi y sala de estar, sala, comedor, estudio, baño social, cocina integral, servicios de gas, calentador de gas, alcoba de servicio, parqueadero doble, cuarto útil y portería 24 horas, juegos para niños, sauna, turco ', 3, 2, 2, 2, 365900, 'http://localhost:8080/Cesde/3er_periodo/programacion_web/02_actividades/02_alquiler_inmuebles/public/uploads/images/1622336075_2c230388bf7366f7cc11.jpg', 'https://goo.gl/maps/XXMuTYVGrEw2UGxm9'),
 (8, 1, 'Casa finca en Rionegro', 'Carrera 87 # 24 88B', 10, 1, '2021-05-29 19:58:11', 'En San Antonio muy bien ubicado ambiente muy tranquilo y familiar Administracion incluida Codigo Abad Faciolince ', 7, 4, 5, 3, 589000, 'http://localhost:8080/Cesde/3er_periodo/programacion_web/02_actividades/02_alquiler_inmuebles/public/uploads/images/1622336291_393a854c940a56060445.jpg', 'https://goo.gl/maps/LjFYkbV92CMktAMH8'),
 (9, 1, 'Finca en La Ceja', 'Calle 34 via oriente 4A 35', 10, 1, '2021-05-29 20:00:22', 'Y si de vivir relajado se trata.. Espectacular aparta suites Amoblado con 01 habitaciones,01 baños completo,garaje 01. En un excelente sector de la ciudad encuentras este inmueble, cerca a Centros Comerciales,supermercados,restaurantes. Porque los asuntos importantes deben quedar en manos de experto', 9, 5, 5, 3, 759800, 'http://localhost:8080/Cesde/3er_periodo/programacion_web/02_actividades/02_alquiler_inmuebles/public/uploads/images/1622336422_23d656b2b6d86f5e254f.jpg', 'https://goo.gl/maps/vUekGEFbdT8LNZ89A'),
-(10, 1, 'Apartamento en Medellín', 'Calle 24B # 23A 35', 1, 1, '2021-05-29 20:02:33', 'Apartamento de 53m2 aprox,cuenta con dos alcobas,una de ellas con baño,cocina integral con red de gas,baño social,sala comedor,zona de ropas.', 3, 2, 2, 2, 488000, 'http://localhost:8080/Cesde/3er_periodo/programacion_web/02_actividades/02_alquiler_inmuebles/public/uploads/images/1622336553_d7f8f04d4db18ff4d2f2.jpg', 'https://goo.gl/maps/VUovttB4yC2zZdAFA'),
-(11, 1, 'Apartamento en Laureles', 'Cr 81 # 6a 58, Apto. 1701', 1, 1, '2021-05-29 20:05:16', 'Arriendo Casa finca de dos niveles con excelente ubicación,4 alcobas,alcoba de servicio,4 baños,baño de servicio,4 closets,sala comedor,comedor auxiliar,cocina integral con pipeta de gas,parqueadero cubierto doble,parqueadero para visitantes,tiene Deck con pérgola,hermoso jardín,unidad cerrada', 9, 4, 6, 3, 1850300, 'http://localhost:8080/Cesde/3er_periodo/programacion_web/02_actividades/02_alquiler_inmuebles/public/uploads/images/1622336716_66a9e93d481631b6312e.jpg', 'https://goo.gl/maps/vXgxzFs6mKzWfPxo9');
+(10, 1, 'Apartamento en Medellín', 'Calle 24B # 23A 35', 1, 1, '2021-05-29 20:02:33', 'Apartamento de 53m2 aprox,cuenta con dos alcobas,una de ellas con baño,cocina integral con red de gas,baño social,sala comedor,zona de ropas.', 3, 2, 2, 2, 488000, 'http://localhost:8080/Cesde/3er_periodo/programacion_web/02_actividades/02_alquiler_inmuebles/public/uploads/images/1622336553_d7f8f04d4db18ff4d2f2.jpg', 'https://goo.gl/maps/VUovttB4yC2zZdAFA');
 
 -- --------------------------------------------------------
 
@@ -120,6 +118,15 @@ CREATE TABLE `reservation` (
   `totalRate` int(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Volcado de datos para la tabla `reservation`
+--
+
+INSERT INTO `reservation` (`idReservation`, `idUser`, `idApartment`, `arrivalDate`, `departureDate`, `days`, `state`, `totalRate`) VALUES
+(1, 1, 7, '2021-07-11', '2021-07-22', 11, 1, 950000),
+(2, 2, 8, '2021-08-13', '2021-08-16', 4, 1, 760000),
+(3, 3, 9, '2021-09-03', '2021-09-08', 6, 1, 830000);
+
 -- --------------------------------------------------------
 
 --
@@ -136,18 +143,19 @@ CREATE TABLE `user` (
   `password` varchar(40) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `role` varchar(9) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `description` varchar(300) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `profilePhoto` text COLLATE utf8mb4_unicode_ci DEFAULT NULL
+  `profilePhoto` text COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `idApartment` int(8) NOT NULL,
+  `idReservation` int(10) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Volcado de datos para la tabla `user`
 --
 
-INSERT INTO `user` (`idUser`, `name`, `lastName`, `idCity`, `idCountry`, `email`, `password`, `role`, `description`, `profilePhoto`) VALUES
-(1, 'Alejandro', 'Orozco', 1, 1, 'designifrit@gmail.com', '123', '1', 'Admin', 'https://pfpmaker.com/_nuxt/img/profile-3-1.3e702c5.png'),
-(2, 'Angelo', 'Orozco', 1, 1, 'angeloch02@gmail.com', '123', '0', 'invited', 'https://pfpmaker.com/_nuxt/img/profile-3-1.3e702c5.png'),
-(3, 'Juliana', 'Chavarriaga', 1, 1, 'julianach0204@gmail.com', '123', '1', 'lol', 'http://localhost:8080/Cesde/3er_periodo/programacion_web/02_actividades/02_alquiler_inmuebles/public/uploads/perfil/1622420362_88232e4696208f5223e2.png'),
-(4, 'Jorge', 'Orozco', 5, 1, 'joralbert56@gmail.com', '123', '0', 'lol', 'http://localhost:8080/Cesde/3er_periodo/programacion_web/02_actividades/02_alquiler_inmuebles/public/uploads/perfil/1622421872_b0c472dda517ad2ae8c7.jpg');
+INSERT INTO `user` (`idUser`, `name`, `lastName`, `idCity`, `idCountry`, `email`, `password`, `role`, `description`, `profilePhoto`, `idApartment`, `idReservation`) VALUES
+(1, 'Alejandro', 'Orozco', 1, 1, 'designifrit@gmail.com', '123', '1', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque eos mollitia numquam nemo error deleniti vitae totam qui nobis, maxime culpa, atque nesciunt molestiae tempora neque similique eum? Labore, tenetur', 'http://localhost:8080/Cesde/3er_periodo/programacion_web/02_actividades/02_alquiler_inmuebles/public/uploads/perfil/1623076188_91dc63a7a52947e44527.jpg', 8, 1),
+(2, 'Angelo', 'Orozco', 1, 1, 'angeloch02@gmail.com', '123', '0', 'invited', 'https://pfpmaker.com/_nuxt/img/profile-3-1.3e702c5.png', 7, 2),
+(3, 'Juliana', 'Chavarriaga', 1, 1, 'julianach0204@gmail.com', '123', '1', 'lol', 'http://localhost:8080/Cesde/3er_periodo/programacion_web/02_actividades/02_alquiler_inmuebles/public/uploads/perfil/1622420362_88232e4696208f5223e2.png', 9, 3);
 
 --
 -- Índices para tablas volcadas
@@ -189,7 +197,9 @@ ALTER TABLE `reservation`
 ALTER TABLE `user`
   ADD PRIMARY KEY (`idUser`),
   ADD KEY `idCity` (`idCity`),
-  ADD KEY `idCountry` (`idCountry`);
+  ADD KEY `idCountry` (`idCountry`),
+  ADD KEY `idApartment` (`idApartment`),
+  ADD KEY `idReservation` (`idReservation`);
 
 --
 -- AUTO_INCREMENT de las tablas volcadas
@@ -199,7 +209,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT de la tabla `apartment`
 --
 ALTER TABLE `apartment`
-  MODIFY `idApartment` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `idApartment` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- AUTO_INCREMENT de la tabla `city`
@@ -217,13 +227,13 @@ ALTER TABLE `country`
 -- AUTO_INCREMENT de la tabla `reservation`
 --
 ALTER TABLE `reservation`
-  MODIFY `idReservation` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `idReservation` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de la tabla `user`
 --
 ALTER TABLE `user`
-  MODIFY `idUser` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `idUser` int(8) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- Restricciones para tablas volcadas
@@ -255,7 +265,9 @@ ALTER TABLE `reservation`
 --
 ALTER TABLE `user`
   ADD CONSTRAINT `user_ibfk_1` FOREIGN KEY (`idCity`) REFERENCES `city` (`idCity`),
-  ADD CONSTRAINT `user_ibfk_2` FOREIGN KEY (`idCountry`) REFERENCES `country` (`idCountry`);
+  ADD CONSTRAINT `user_ibfk_2` FOREIGN KEY (`idCountry`) REFERENCES `country` (`idCountry`),
+  ADD CONSTRAINT `user_ibfk_3` FOREIGN KEY (`idApartment`) REFERENCES `apartment` (`idApartment`),
+  ADD CONSTRAINT `user_ibfk_4` FOREIGN KEY (`idReservation`) REFERENCES `reservation` (`idReservation`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
