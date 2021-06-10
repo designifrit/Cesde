@@ -1,0 +1,18 @@
+CRITICAL - 2021-06-09 00:06:33 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Model.php(615): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Model.php(834): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ReservationController.php(36): CodeIgniter\Model->__call('deleteApartment', Array)
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ReservationController->deleteReservation()
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReservationController))
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-06-09 00:09:41 --> You must set the database table to be used with your query.
+#0 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Model.php(615): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\Model.php(834): CodeIgniter\Model->builder()
+#2 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\app\Controllers\ReservationController.php(36): CodeIgniter\Model->__call('deleteApartment', Array)
+#3 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(936): App\Controllers\ReservationController->deleteReservation()
+#4 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(432): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReservationController))
+#5 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\system\CodeIgniter.php(333): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 C:\xampp\htdocs\Cesde\3er_periodo\programacion_web\02_actividades\02_alquiler_inmuebles\public\index.php(44): CodeIgniter\CodeIgniter->run()
+#7 {main}

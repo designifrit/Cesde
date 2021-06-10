@@ -4,7 +4,7 @@ use CodeIgniter\Model;
 use Exception;
 
 class ReservationModel extends Model
-{   
+{
     function readReservation($idUser){
         try{
             $sql = "SELECT * FROM ((reservation INNER JOIN user ON reservation.idUser = user.idUser)INNER JOIN apartment ON reservation.idApartment = apartment.idApartment) WHERE reservation.idUser = {$idUser}";

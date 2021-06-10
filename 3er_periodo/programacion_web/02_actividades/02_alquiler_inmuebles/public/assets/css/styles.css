@@ -829,6 +829,7 @@ main#main .list-group a.list-element div:first-child{
             position: relative;
             top: 7px;
             transition: var(--transitions);
+            z-index: 999;
         }
 
         main#main .list-group a.list-element div.list-info small button.material-icons:hover{

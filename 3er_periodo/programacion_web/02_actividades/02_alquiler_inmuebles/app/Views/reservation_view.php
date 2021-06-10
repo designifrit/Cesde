@@ -35,7 +35,11 @@
                         <div class='p-2 flex-grow-1 w-100 list-info'>
                             <div class='d-flex w-100 justify-content-between'>
                                 <h5 class='mb-1'>{$row -> location}</h5>
-                                <small class='text-muted'>{$row -> arrivalDate} <button href='{$deleteRoute}' class='material-icons'> remove_circle</button></small>
+                                <small class='text-muted'>{$row -> arrivalDate}
+                                    <form action='{$deleteRoute}'>
+                                        <button class='material-icons'> remove_circle</button>
+                                    </form>
+                                </small>
                             </div>
                             <div>
                                 <p class='mb-1'>{$row -> description}</p>

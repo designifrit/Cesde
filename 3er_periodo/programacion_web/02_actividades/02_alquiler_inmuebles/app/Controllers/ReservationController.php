@@ -29,12 +29,12 @@ class ReservationController extends BaseController
 	}
 
 	public function deleteReservation(){
-		$reservation = new ReservationModel();	// Instancia la clase
-		$request = \Config\Services::request();	// Activa el servicio de web services para poder obtener los datos
+		$reservation = new ReservationModel();
+		$request = \Config\Services::request();
 
-		$idReservation = $request -> getGet('id');	// A través del $request obtiene el id con GET, que es enviado por el botón
-		$reservation -> deleteApartment($idReservation);	// Como ya se obtuvo el $id, se elimina de la base de datos
-
-		return redirect() -> to('/public/apartment');
+		$idReservation = $request -> getGet('id');
+		$reservation -> deleteApartment($idReservation);
+		var_dump($idReservation);
+		// return redirect() -> to('/public/reservation');
 	}
 }

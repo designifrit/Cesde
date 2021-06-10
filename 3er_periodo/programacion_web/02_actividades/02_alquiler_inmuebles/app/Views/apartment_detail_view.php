@@ -65,6 +65,20 @@
                             </div>
                         </div>
 
+                        <?php
+                            if(){
+                                $template = "
+                                    
+                                ";
+                                echo $template;
+                            }else{
+                                $template = "
+
+                                ";
+                                echo $template;
+                            }
+                        ?>
+
                         <div class="mcontent_top">
                             <a href="#" class="btn btnreserva">reservar</a>
                         </div>
